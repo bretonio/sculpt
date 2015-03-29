@@ -1,0 +1,52 @@
+/*
+Theme Name: SCULPT
+Theme URI: http://underscores.me/
+Author: Eric Bailey
+Author URI: http://ericbailey.co
+Description: A theme for Sculpt.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: SCULPT
+
+sculpt is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+// Import this one first
+@import "scss/base/variables";
+
+// Global styles
+@import "scss/base/normalize";
+@import "scss/base/mixins";
+@import "scss/base/utilities";
+@import "scss/base/grid";
+@import "scss/base/typography";
+@import "scss/base/buttons";
+@import "scss/base/images";
+@import "scss/base/base";
+@import "scss/base/javascript";
+
+// Modules
+// @import "scss/modules/two-up";
+@import "scss/modules/header";
+@import "scss/modules/footer";
+
+// Partials
+// @import "scss/partials/home-page";
+
+
+
+/* Naming Conventions
+*
+*   .u-utilityClass {}
+*
+*   .componentName {}
+*   .componentName--modifierName {}
+*   .componentName-descendantName {}
+*
+*   .componentName.is-someState {}
+*   .js-componentName
+*/
