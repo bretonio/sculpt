@@ -1,46 +1,30 @@
-<?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package sculpt
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+  <?php
+  while ( have_posts() ) { the_post();
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+    // Check if ACF is enabled and the modules field exists
+    if ( function_exists('get_field') && get_field('modules') !== null ) {
 
-		<?php if ( have_posts() ) : ?>
+      // Loop through rows of flexible content field
+      while( the_flexible_field('modules') ) {
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+        // Render module template based on the row layout's name
+        $module_name = str_replace('_', '-', get_row_layout());
+        // Use "include(locate_template(...))" instead of "get_template_part" to retain scope
+        include( locate_template( "/modules/$module_name/$module_name.php" ) );
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+      }
 
-			<?php endwhile; ?>
+    } else {
 
-			<?php the_posts_navigation(); ?>
+      // Standard post content
+      the_title('<h1>', '</h1>');
+      the_content();
 
-		<?php else : ?>
+    }
 
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+  }
+  ?>
+  
 <?php get_footer(); ?>
