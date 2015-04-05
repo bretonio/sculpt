@@ -1537,7 +1537,7 @@ h2, .h2 {
   margin-bottom: 1rem; }
 @media screen and (min-width: 550px) {
   h2, .h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 4rem; } }
 
 h3, .h3 {
@@ -1710,7 +1710,7 @@ button.light:hover, .button.light:hover {
   color: #ff9254; }
 @media screen and (min-width: 550px) {
   .button-lg {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 4rem; } }
 
 .button-sm {
@@ -1981,6 +1981,10 @@ a.u {
 .icon-twitter:before {
   content: "\e60b"; }
 
+.hero {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 @media screen and (min-width: 768px) {
   .hero.u-h_s1 {
     height: calc(100vh - 4rem); } }
@@ -1989,10 +1993,12 @@ a.u {
   display: block;
   position: absolute;
   bottom: 0;
-  color: #ffffff;
   left: 0;
   padding: 2rem;
-  width: 100%; }
+  width: 100%;
+  /*
+   * Color classes added by user
+   */ }
 @media screen and (min-width: 768px) {
   .hero-content {
     padding: 4rem;
@@ -2001,6 +2007,12 @@ a.u {
   .hero-content {
     padding: 4rem;
     width: 75%; } }
+.hero-content.hero-content--dark {
+  color: #33333d; }
+.hero-content.hero-content--white {
+  color: #FFFFFF; }
+.hero-content.hero-content--orange {
+  color: #ff9254; }
 
 .header {
   display: block;
@@ -2019,7 +2031,13 @@ a.u {
 .header-desktop-inner {
   display: block;
   position: relative;
-  text-align: right; }
+  text-align: right;
+  /*
+   * Menu Items within .header-desktop-inner
+   */
+  /*
+   * Color classes added by user
+   */ }
 .header-desktop-inner li {
   display: inline-block;
   position: relative;
@@ -2027,17 +2045,17 @@ a.u {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.5rem;
-  color: #33333d;
   display: none;
   font-weight: 500;
   margin: 1rem 1rem 0;
   transition: .2s color;
-  vertical-align: middle; }
+  vertical-align: middle;
+  /*
+   * Hamburger Icon
+   */ }
 @media screen and (min-width: 768px) {
   .header-desktop-inner li {
     display: inline-block; } }
-.header-desktop-inner li:hover {
-  color: #FFFFFF; }
 .header-desktop-inner li.menuToggle {
   display: inline-block;
   cursor: pointer;
@@ -2050,6 +2068,18 @@ a.u {
     top: 3px; }
   .header-desktop-inner li.menuToggle .icon-menu {
     font-size: 2rem; } }
+.header-desktop-inner.menu-items--dark li {
+  color: #33333d; }
+.header-desktop-inner.menu-items--dark li:hover {
+  color: #616175; }
+.header-desktop-inner.menu-items--white li {
+  color: #FFFFFF; }
+.header-desktop-inner.menu-items--white li:hover {
+  color: rgba(255, 255, 255, 0.6); }
+.header-desktop-inner.menu-items--orange li {
+  color: #ff9254; }
+.header-desktop-inner.menu-items--orange li:hover {
+  color: #1c1c21; }
 
 .mainLogo {
   float: left;

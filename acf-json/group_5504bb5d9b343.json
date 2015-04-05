@@ -3,6 +3,67 @@
     "title": "Page Modules",
     "fields": [
         {
+            "key": "field_55216c652a26a",
+            "label": "Logo",
+            "name": "logo_params",
+            "prefix": "",
+            "type": "select",
+            "instructions": "Change header type depending on the hero background you want to use.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sculptLogo": "Orange mark, dark text (default)",
+                "sculptLogo--light": "White mark, dark text",
+                "sculptLogo--white": "White",
+                "sculptLogo--orange": "Orange"
+            },
+            "default_value": {
+                "sculptLogo": "sculptLogo"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_5521ab5900f36",
+            "label": "Menu Color",
+            "name": "menu_color",
+            "prefix": "",
+            "type": "select",
+            "instructions": "Change the color of the menu links.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "menu-items--dark": "Dark (default)",
+                "menu-items--white": "White",
+                "menu-items--orange": "Orange"
+            },
+            "default_value": {
+                "": ""
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
             "key": "field_5504bb62a6c8f",
             "label": "Modules",
             "name": "modules",
@@ -41,13 +102,13 @@
                                 "id": ""
                             },
                             "choices": {
-                                "Homepage": "Homepage",
-                                "Secondary Page": "Secondary Page",
-                                "Tertiary Page": "Tertiary Page",
-                                "CTA": "CTA"
+                                "primary": "Primary Pages (Homepage)",
+                                "secondary": "Secondary Pages (About, Services)",
+                                "tertiary": "Tertiary Pages (Projects, Team Pages)",
+                                "cta": "Marketing CTA Page"
                             },
                             "default_value": {
-                                "Secondary Page": "Secondary Page"
+                                "secondary": "secondary"
                             },
                             "allow_null": 0,
                             "multiple": 0,
@@ -95,7 +156,7 @@
                             "min_size": "",
                             "max_width": "",
                             "max_height": "",
-                            "max_size": ".5",
+                            "max_size": "",
                             "mime_types": ".jpg"
                         },
                         {
@@ -108,7 +169,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
@@ -116,34 +177,42 @@
                             "default_value": 0
                         },
                         {
-                            "key": "field_55204156ba796",
-                            "label": "Hero CTA",
-                            "name": "hero_cta",
+                            "key": "field_5521b03720779",
+                            "label": "Hero Content Color",
+                            "name": "hero_content_color",
                             "prefix": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 1,
+                            "type": "select",
+                            "instructions": "Change content color styles.",
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55204058ba795",
+                                        "field": "field_5504bb87a6c91",
                                         "operator": "==",
-                                        "value": "CTA"
+                                        "value": "1"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "Learn More",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": "",
-                            "readonly": 0,
-                            "disabled": 0
+                            "choices": {
+                                "hero-content--dark": "Dark",
+                                "hero-content--white": "White",
+                                "hero-content--orange": "Orange"
+                            },
+                            "default_value": {
+                                "hero-content--dark": "hero-content--dark"
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
                         },
                         {
                             "key": "field_55205aa93280a",
@@ -198,6 +267,66 @@
                                 "id": ""
                             },
                             "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_55204156ba796",
+                            "label": "Hero CTA",
+                            "name": "hero_cta",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_55204058ba795",
+                                        "operator": "==",
+                                        "value": "CTA"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Learn More",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552166f03b194",
+                            "label": "Hero CTA Link",
+                            "name": "hero_cta_link",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "Link to a page e.g. \/about, \/services",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_55204058ba795",
+                                        "operator": "==",
+                                        "value": "CTA"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "\/",
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
@@ -319,6 +448,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
         ]
     ],
     "menu_order": 0,
@@ -329,5 +465,5 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "modified": 1428184934
+    "modified": 1428271429
 }

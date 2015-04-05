@@ -19,12 +19,13 @@
 
 	text-align: right;
 
-	// menu items
+	/*
+	 * Menu Items within .header-desktop-inner
+	 */
 	li {
 		@include inlineRel;
 		@include h4;
 
-		color: $c2;
 		display: none; // hide on mobile
 		font-weight: 500;
 		margin: 1rem 1rem 0;
@@ -35,10 +36,10 @@
 			display: inline-block;
 		}
 
-		&:hover {
-			color: #FFFFFF;
-		}
 
+		/*
+		 * Hamburger Icon
+		 */
 		&.menuToggle {
 			display: inline-block;
 			cursor: pointer;
@@ -55,6 +56,31 @@
 					font-size: 2rem;
 				}
 			}
+		}
+	}
+
+	/*
+	 * Color classes added by user
+	 */
+	&.menu-items--dark li {
+		color: $c2;
+
+		&:hover {
+			color: $c2l;
+		}
+	}
+	&.menu-items--white li {
+		color: #FFFFFF;
+
+		&:hover {
+			color: rgba(#FFFFFF, .6);
+		}
+	}
+	&.menu-items--orange li {
+		color: $c1;
+
+		&:hover {
+			color: $c2d;
 		}
 	}
 }

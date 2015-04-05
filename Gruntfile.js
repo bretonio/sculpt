@@ -47,7 +47,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          'assets/sculpt_logo_src.svg' : 'assets/sculpt_logo.svg',
+          'assets/sculpt_logo.svg' : 'assets/icons/src/logo/*.svg',
         }
       }
     },

@@ -1,4 +1,7 @@
 .hero {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	// above 768px wide, the page has a border
 	&.u-h_s1 {
@@ -11,7 +14,6 @@
 	@include blockAb;
 
 	bottom: 0;
-	color: #ffffff;
 	left: 0;
 	padding: 2rem;
 	width: 100%;
@@ -24,5 +26,18 @@
 	@media screen and (min-width: $xl) {
 		padding: 4rem;
 		width: 75%;
+	}
+
+	/*
+	 * Color classes added by user
+	 */
+	&.hero-content--dark {
+		color: $c2;
+	}
+	&.hero-content--white {
+		color: #FFFFFF;
+	}
+	&.hero-content--orange {
+		color: $c1;
 	}
 }
