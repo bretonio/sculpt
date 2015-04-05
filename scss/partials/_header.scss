@@ -1,0 +1,85 @@
+.header {
+	@include blockFix;
+
+	height: 80px;
+	left: 0;
+	padding: 2rem;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+
+	@media screen and (min-width: $med) {
+		padding: 5rem 6rem;
+	}
+}
+
+.header-desktop-inner {
+	@include blockRel;
+
+	text-align: right;
+
+	// menu items
+	li {
+		@include inlineRel;
+		@include h4;
+
+		color: $c2;
+		display: none; // hide on mobile
+		font-weight: 500;
+		margin: 1rem 1rem 0;
+		transition: .2s color;
+		vertical-align: middle;
+
+		@media screen and (min-width: $med) {
+			display: inline-block;
+		}
+
+		&:hover {
+			color: #FFFFFF;
+		}
+
+		&.menuToggle {
+			display: inline-block;
+			cursor: pointer;
+			margin-left: 2rem;
+			top: 5px;
+			.icon-menu {
+				font-size: 4rem;
+			}
+
+			@media screen and (min-width: $med){
+				top: 3px;
+
+				.icon-menu {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
+
+.mainLogo {
+	float: left;
+	width: 65px;
+
+	h1 {
+		font-size: 0;
+		line-height: 0;
+	}
+
+	.sculptLogo {
+		display: none;
+	}
+
+	@media screen and (min-width: $med) {
+		width: 130px;
+
+		.sculptLogo {
+			display: block;
+		}
+		.sculptMark {
+			display: none;
+		}
+	}
+}

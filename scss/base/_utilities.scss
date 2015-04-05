@@ -1,3 +1,6 @@
+/*
+ * Alignment classes
+ */
 .u-align-center {
 	text-align: center !important;
 }
@@ -12,6 +15,68 @@
 }
 
 
+/*
+ * Height classes
+ */
+.u-h_s1 {
+	height: 500px; //fallback
+	height: 100%;
+	height: 100vh;
+
+	@media screen and (min-width: $sm) {
+		height: 800px;
+		height: 100vh;
+	}
+}
+.u-h_s12 {
+	height: 250px; //fallback
+	height: 50%;
+	height: 50vh;
+
+	@media screen and (min-width: $sm) {
+		height: 400px;
+		height: 50vh;
+	}
+}
+.u-h_s23 {
+	height: 350px; //fallback
+	height: 66vh;
+
+	@media screen and (min-width: $sm) {
+		height: 600px;
+		height: 66vh;
+	}
+}
+
+/*
+ * Padding
+ */
+.pad-sm {
+    padding: 1.5rem 0rem;
+
+    @media screen and (min-width: $sm) {
+        padding: 3rem 0rem;
+    }
+}
+.pad-med {
+    padding: 3.33rem 0rem;
+
+    @media screen and (min-width: $sm) {
+        padding: 6.66rem 0rem;
+    }
+}
+.pad-lg {
+    padding: 5rem 0rem;
+
+    @media screen and (min-width: $sm) {
+        padding: 10rem 0rem;
+    }
+}
+
+
+/*
+ * Floats
+ */
 .u-float-r {
 	float: right;
 }

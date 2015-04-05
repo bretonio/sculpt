@@ -47,17 +47,8 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          'assets/images/svg_sprite.svg' : ['assets/images/svg/*.svg'],
+          'assets/sculpt_logo_src.svg' : 'assets/sculpt_logo.svg',
         }
-      }
-    },
-
-    sprite:{
-      all: {
-        src: 'assets/images/packs/*.png',
-        dest: 'assets/images/pack_sprite.png',
-        destCss: 'scss/base/_pack-sprite.scss',
-        cssFormat: 'css'
       }
     },
 
@@ -90,7 +81,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-svgstore');
-  grunt.loadNpmTasks('grunt-spritesmith');
 
   // Default tasks
   grunt.registerTask('default', ['watch']);

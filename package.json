@@ -1,7 +1,7 @@
 {
-  "name": "svbstrate",
+  "name": "sculpt_site",
   "version": "1.0.0",
-  "description": "SUITCSS and OOCSS inspired base templates.",
+  "description": "A site for Sculpt, wearesculpt.com",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,6 @@
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-newer": "^1.1.0",
-    "grunt-spritesmith": "^3.6.1",
     "grunt-svgstore": "^0.5.0"
   }
 }

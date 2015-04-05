@@ -28,14 +28,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "scss/base/images";
 @import "scss/base/base";
 @import "scss/base/javascript";
+@import "scss/base/icons";
 
 // Modules
-// @import "scss/modules/two-up";
-@import "scss/modules/header";
-@import "scss/modules/footer";
+@import "scss/modules/hero";
 
 // Partials
-// @import "scss/partials/home-page";
+@import "scss/partials/header";
+@import "scss/partials/footer";
+@import "scss/partials/page";
 
 
 

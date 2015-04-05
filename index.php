@@ -12,7 +12,7 @@
         // Render module template based on the row layout's name
         $module_name = str_replace('_', '-', get_row_layout());
         // Use "include(locate_template(...))" instead of "get_template_part" to retain scope
-        include( locate_template( "/modules/$module_name/$module_name.php" ) );
+        include( locate_template( "/modules/$module_name.php" ) );
 
       }
 

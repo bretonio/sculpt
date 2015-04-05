@@ -1,5 +1,7 @@
 <?php
 
+show_admin_bar( false );
+
 add_action( 'after_setup_theme', function() {
 
   add_theme_support( 'title-tag' );
@@ -26,3 +28,19 @@ add_action( 'wp_enqueue_scripts', function() {
   );
 
 } );
+
+require get_template_directory() . '/inc/jetpack.php';
+
+// MENU
+register_nav_menus( array(
+  'primary' => __( 'Primary Menu', 'sculpt' ),
+) );
+
+
+//Clean Menus
+function wp_nav_menu_attributes_filter($var) {
+  return is_array($var) ? array_intersect($var, array('current-menu-item')) : '';
+}
+add_filter('nav_menu_css_class', 'wp_nav_menu_attributes_filter', 100, 1);
+add_filter('nav_menu_item_id', 'wp_nav_menu_attributes_filter', 100, 1);
+add_filter('page_css_class', 'wp_nav_menu_attributes_filter', 100, 1);

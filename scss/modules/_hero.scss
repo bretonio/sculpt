@@ -1,0 +1,28 @@
+.hero {
+
+	// above 768px wide, the page has a border
+	&.u-h_s1 {
+		@media screen and (min-width: $med) {
+			height: calc(100vh - 4rem);
+		}
+	}
+}
+.hero-content {
+	@include blockAb;
+
+	bottom: 0;
+	color: #ffffff;
+	left: 0;
+	padding: 2rem;
+	width: 100%;
+
+	@media screen and (min-width: $med) {
+		padding: 4rem;
+		width: 100%;
+	}
+
+	@media screen and (min-width: $xl) {
+		padding: 4rem;
+		width: 75%;
+	}
+}

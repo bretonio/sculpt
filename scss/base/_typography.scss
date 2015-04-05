@@ -4,8 +4,8 @@ html, body {
 }
 
 // Default font stacks
-$font-one: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
-$font-two: Georgia, Times New Roman, serif;
+$font-one: "museo-sans", Helvetica, arial, sans-serif;
+$font-two: "museo-sans", Helvetica, arial, sans-serif;
 
 // Default font mixins
 .f1 {
@@ -16,6 +16,24 @@ $font-two: Georgia, Times New Roman, serif;
 }
 
 // Assign font stack
+@mixin h0 {
+    font-family: $font-one;
+    font-size: 3.8rem;
+    font-weight: 900;
+    line-height: 4rem;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $sm) {
+        font-size: 6rem;
+        line-height: 5.5rem;
+    }
+
+    // Desktop sizes
+    @media screen and (min-width: $lg) {
+        font-size: 4.5vw;
+        line-height: 5vw;
+    }
+}
 @mixin h1 {
     font-family: $font-one;
     font-size: 3.2rem;
@@ -78,9 +96,7 @@ $font-two: Georgia, Times New Roman, serif;
 }
 
 .h0 {
-    @include h1;
-
-    font-size: 4rem;
+    @include h0;
 }
 
 h1,

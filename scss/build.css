@@ -325,7 +325,7 @@ table {
  * SVBSTRATE: A few global settings here.
  */
 ::selection {
-  color: #00d7dd;
+  color: #ff9254;
   background: #f5f5f5; }
 
 html, html a {
@@ -345,6 +345,9 @@ nav, main, section, article, aside, header, footer, div, details, summary, form,
 
 /* Linear Gradients - Bourbon */
 /* From the awesome Bourbon Library https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/css3/_linear-gradient.scss */
+/*
+ * Alignment classes
+ */
 .u-align-center {
   text-align: center !important; }
 
@@ -357,6 +360,59 @@ nav, main, section, article, aside, header, footer, div, details, summary, form,
 .u-align-justify {
   text-align: justify !important; }
 
+/*
+ * Height classes
+ */
+.u-h_s1 {
+  height: 500px;
+  height: 100%;
+  height: 100vh; }
+@media screen and (min-width: 550px) {
+  .u-h_s1 {
+    height: 800px;
+    height: 100vh; } }
+
+.u-h_s12 {
+  height: 250px;
+  height: 50%;
+  height: 50vh; }
+@media screen and (min-width: 550px) {
+  .u-h_s12 {
+    height: 400px;
+    height: 50vh; } }
+
+.u-h_s23 {
+  height: 350px;
+  height: 66vh; }
+@media screen and (min-width: 550px) {
+  .u-h_s23 {
+    height: 600px;
+    height: 66vh; } }
+
+/*
+ * Padding
+ */
+.pad-sm {
+  padding: 1.5rem 0rem; }
+@media screen and (min-width: 550px) {
+  .pad-sm {
+    padding: 3rem 0rem; } }
+
+.pad-med {
+  padding: 3.33rem 0rem; }
+@media screen and (min-width: 550px) {
+  .pad-med {
+    padding: 6.66rem 0rem; } }
+
+.pad-lg {
+  padding: 5rem 0rem; }
+@media screen and (min-width: 550px) {
+  .pad-lg {
+    padding: 10rem 0rem; } }
+
+/*
+ * Floats
+ */
 .u-float-r {
   float: right; }
 
@@ -1442,24 +1498,28 @@ html, body {
   color: #111f2d; }
 
 .f1 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif; }
+  font-family: "museo-sans", Helvetica, arial, sans-serif; }
 
 .f2 {
-  font-family: Georgia, Times New Roman, serif; }
+  font-family: "museo-sans", Helvetica, arial, sans-serif; }
 
 .h0 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
-  font-size: 3.2rem;
-  font-weight: 100;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 3.8rem;
+  font-weight: 900;
   line-height: 4rem;
-  font-size: 4rem; }
+  margin-bottom: 0; }
 @media screen and (min-width: 550px) {
   .h0 {
-    font-size: 4.5rem;
+    font-size: 6rem;
     line-height: 5.5rem; } }
+@media screen and (min-width: 1000px) {
+  .h0 {
+    font-size: 4.5vw;
+    line-height: 5vw; } }
 
 h1, .h1 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 3.2rem;
   font-weight: 100;
   line-height: 4rem;
@@ -1470,7 +1530,7 @@ h1, .h1 {
     line-height: 5.5rem; } }
 
 h2, .h2 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 100;
   line-height: 3.3rem;
@@ -1481,7 +1541,7 @@ h2, .h2 {
     line-height: 4rem; } }
 
 h3, .h3 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2rem;
   font-weight: 100;
   line-height: 3rem;
@@ -1492,35 +1552,35 @@ h3, .h3 {
     line-height: 3.3rem; } }
 
 h4, .h4 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.5rem;
   margin-bottom: .618rem; }
 
 h5, .h5 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2rem;
   font-weight: 100;
   line-height: 2.5rem;
   margin-bottom: .618rem; }
 
 h6, .h6 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 100;
   line-height: 2.5rem;
   margin-bottom: .618rem; }
 
 p, .p {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.5rem;
   margin-bottom: .618rem; }
 
 .p0 {
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.5rem;
@@ -1535,16 +1595,16 @@ strong, b, .bold {
   font-weight: 900; }
 
 .f-c1 {
-  color: #00d7dd; }
+  color: #ff9254; }
 
 .f-c2 {
-  color: #264465; }
+  color: #33333d; }
 
 .f-c2l {
-  color: #4276af; }
+  color: #616175; }
 
 .f-c2d {
-  color: #182b40; }
+  color: #1c1c21; }
 
 .f-c3 {
   color: #ff3556; }
@@ -1558,7 +1618,7 @@ strong, b, .bold {
 button, .button {
   display: inline-block;
   position: relative;
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2rem;
   font-weight: 100;
   line-height: 3rem;
@@ -1586,11 +1646,11 @@ button.inline, .button.inline {
   margin-right: 1rem; }
 button.alt, .button.alt {
   background-color: rgba(255, 255, 255, 0);
-  border: 3px solid #00d7dd;
-  color: #00d7dd; }
+  border: 3px solid #ff9254;
+  color: #ff9254; }
 button.alt:hover, .button.alt:hover {
-  background-color: #00d7dd;
-  border: 3px solid #00d7dd;
+  background-color: #ff9254;
+  border: 3px solid #ff9254;
   color: #ffffff; }
 button.light, .button.light {
   border-color: #ffffff;
@@ -1598,12 +1658,12 @@ button.light, .button.light {
 button.light:hover, .button.light:hover {
   background-color: white;
   border-color: white;
-  color: #00d7dd; }
+  color: #ff9254; }
 
 .button-lg {
   display: inline-block;
   position: relative;
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2rem;
   font-weight: 100;
   line-height: 3rem;
@@ -1618,7 +1678,7 @@ button.light:hover, .button.light:hover {
   padding: 1rem 4rem;
   margin: auto;
   text-decoration: none !important;
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 100;
   line-height: 3.3rem; }
@@ -1635,11 +1695,11 @@ button.light:hover, .button.light:hover {
   margin-right: 1rem; }
 .button-lg.alt {
   background-color: rgba(255, 255, 255, 0);
-  border: 3px solid #00d7dd;
-  color: #00d7dd; }
+  border: 3px solid #ff9254;
+  color: #ff9254; }
 .button-lg.alt:hover {
-  background-color: #00d7dd;
-  border: 3px solid #00d7dd;
+  background-color: #ff9254;
+  border: 3px solid #ff9254;
   color: #ffffff; }
 .button-lg.light {
   border-color: #ffffff;
@@ -1647,7 +1707,7 @@ button.light:hover, .button.light:hover {
 .button-lg.light:hover {
   background-color: white;
   border-color: white;
-  color: #00d7dd; }
+  color: #ff9254; }
 @media screen and (min-width: 550px) {
   .button-lg {
     font-size: 3.2rem;
@@ -1656,7 +1716,7 @@ button.light:hover, .button.light:hover {
 .button-sm {
   display: inline-block;
   position: relative;
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2rem;
   font-weight: 100;
   line-height: 3rem;
@@ -1671,7 +1731,7 @@ button.light:hover, .button.light:hover {
   padding: 1rem 4rem;
   margin: auto;
   text-decoration: none !important;
-  font-family: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.5rem;
@@ -1689,11 +1749,11 @@ button.light:hover, .button.light:hover {
   margin-right: 1rem; }
 .button-sm.alt {
   background-color: rgba(255, 255, 255, 0);
-  border: 3px solid #00d7dd;
-  color: #00d7dd; }
+  border: 3px solid #ff9254;
+  color: #ff9254; }
 .button-sm.alt:hover {
-  background-color: #00d7dd;
-  border: 3px solid #00d7dd;
+  background-color: #ff9254;
+  border: 3px solid #ff9254;
   color: #ffffff; }
 .button-sm.light {
   border-color: #ffffff;
@@ -1701,7 +1761,7 @@ button.light:hover, .button.light:hover {
 .button-sm.light:hover {
   background-color: white;
   border-color: white;
-  color: #00d7dd; }
+  color: #ff9254; }
 
 .bg-cover {
   background-repeat: no-repeat;
@@ -1763,13 +1823,13 @@ a {
   color: inherit;
   text-decoration: none; }
 a.link {
-  color: #00d7dd; }
+  color: #ff9254; }
 a.link:hover {
-  color: #00a5aa; }
+  color: #ff7121; }
 a.link-alt {
-  color: #264465; }
+  color: #33333d; }
 a.link-alt:hover {
-  color: #182b40; }
+  color: #1c1c21; }
 a.link-alt-2 {
   color: #ff3556; }
 a.link-alt-2:hover {
@@ -1786,29 +1846,11 @@ a.u {
   margin-top: -0.1rem;
   z-index: 0; }
 .container.dark {
-  background-color: #182b40; }
+  background-color: #1c1c21; }
 .container.darker {
-  background-color: #111f2d; }
+  background-color: #101013; }
 .container.light {
   background-color: #ffeabb; }
-
-.pad-sm {
-  padding: 1.5rem 0rem; }
-@media screen and (min-width: 550px) {
-  .pad-sm {
-    padding: 3rem 0rem; } }
-
-.pad-med {
-  padding: 3.33rem 0rem; }
-@media screen and (min-width: 550px) {
-  .pad-med {
-    padding: 6.66rem 0rem; } }
-
-.pad-lg {
-  padding: 5rem 0rem; }
-@media screen and (min-width: 550px) {
-  .pad-lg {
-    padding: 10rem 0rem; } }
 
 /* Use a row to specify width and .inline or .float options
  * to set up a wrapper for grids.
@@ -1867,87 +1909,12 @@ a.u {
   position: relative;
   float: none;
   vertical-align: top; }
-.row.vm-child::after {
-  display: inline-block;
-  position: relative;
-  content: '';
-  height: 50%;
-  width: 0px; }
 
 .block {
   display: block;
   position: relative;
   float: left;
   text-align: left; }
-
-.content {
-  display: inline-block;
-  position: relative;
-  margin: auto;
-  text-align: left;
-  width: 99%;
-  vertical-align: middle; }
-
-.inner {
-  display: block;
-  position: relative;
-  height: 100%;
-  margin: 0 auto;
-  padding: .01rem;
-  width: 100%;
-  z-index: 1; }
-.inner::before, .inner::after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-.inner::after {
-  clear: both; }
-.inner.small {
-  width: 90%; }
-@media screen and (min-width: 399px) {
-  .inner.small {
-    width: 70%; } }
-@media screen and (min-width: 768px) {
-  .inner.small {
-    width: 50%; } }
-.inner.medium {
-  width: 90%; }
-@media screen and (min-width: 399px) {
-  .inner.medium {
-    width: 80%; } }
-@media screen and (min-width: 768px) {
-  .inner.medium {
-    width: 70%; } }
-.inner.large {
-  width: 95%; }
-@media screen and (min-width: 399px) {
-  .inner.large {
-    width: 92.5%; } }
-@media screen and (min-width: 768px) {
-  .inner.large {
-    width: 90%; } }
-.inner.inline {
-  margin-top: calc(3rem);
-  text-align: justify; }
-.inner.inline::after {
-  display: inline-block;
-  position: relative;
-  content: '';
-  width: 100%; }
-.inner.inline.center {
-  text-align: center; }
-.inner.inline .block {
-  display: inline-block;
-  position: relative;
-  float: none;
-  vertical-align: top; }
-.inner.vm-child::after {
-  display: inline-block;
-  position: relative;
-  content: '';
-  height: 50%;
-  width: 0px; }
 
 .divider {
   display: block;
@@ -1959,6 +1926,158 @@ a.u {
 
 .affix {
   position: fixed !important; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("./assets/icons/icomoon.eot?yq1qds");
+  src: url("./assets/icons/icomoon.eot?#iefixyq1qds") format("embedded-opentype"), url("./assets/icons/icomoon.woff?yq1qds") format("woff"), url("./assets/icons/icomoon.ttf?yq1qds") format("truetype"), url("./assets/icons/icomoon.svg?yq1qds#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow:before {
+  content: "\e600"; }
+
+.icon-close:before {
+  content: "\e601"; }
+
+.icon-facebook:before {
+  content: "\e602"; }
+
+.icon-flickr:before {
+  content: "\e603"; }
+
+.icon-foursquare:before {
+  content: "\e604"; }
+
+.icon-instagram:before {
+  content: "\e605"; }
+
+.icon-linkedin:before {
+  content: "\e606"; }
+
+.icon-logo:before {
+  content: "\e607"; }
+
+.icon-menu:before {
+  content: "\e608"; }
+
+.icon-pinterest:before {
+  content: "\e609"; }
+
+.icon-quotation:before {
+  content: "\e60a"; }
+
+.icon-twitter:before {
+  content: "\e60b"; }
+
+@media screen and (min-width: 768px) {
+  .hero.u-h_s1 {
+    height: calc(100vh - 4rem); } }
+
+.hero-content {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  left: 0;
+  padding: 2rem;
+  width: 100%; }
+@media screen and (min-width: 768px) {
+  .hero-content {
+    padding: 4rem;
+    width: 100%; } }
+@media screen and (min-width: 1280px) {
+  .hero-content {
+    padding: 4rem;
+    width: 75%; } }
+
+.header {
+  display: block;
+  position: fixed;
+  height: 80px;
+  left: 0;
+  padding: 2rem;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 5rem 6rem; } }
+
+.header-desktop-inner {
+  display: block;
+  position: relative;
+  text-align: right; }
+.header-desktop-inner li {
+  display: inline-block;
+  position: relative;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  color: #33333d;
+  display: none;
+  font-weight: 500;
+  margin: 1rem 1rem 0;
+  transition: .2s color;
+  vertical-align: middle; }
+@media screen and (min-width: 768px) {
+  .header-desktop-inner li {
+    display: inline-block; } }
+.header-desktop-inner li:hover {
+  color: #FFFFFF; }
+.header-desktop-inner li.menuToggle {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 2rem;
+  top: 5px; }
+.header-desktop-inner li.menuToggle .icon-menu {
+  font-size: 4rem; }
+@media screen and (min-width: 768px) {
+  .header-desktop-inner li.menuToggle {
+    top: 3px; }
+  .header-desktop-inner li.menuToggle .icon-menu {
+    font-size: 2rem; } }
+
+.mainLogo {
+  float: left;
+  width: 65px; }
+.mainLogo h1 {
+  font-size: 0;
+  line-height: 0; }
+.mainLogo .sculptLogo {
+  display: none; }
+@media screen and (min-width: 768px) {
+  .mainLogo {
+    width: 130px; }
+  .mainLogo .sculptLogo {
+    display: block; }
+  .mainLogo .sculptMark {
+    display: none; } }
+
+body {
+  background-color: #f4f4f4; }
+@media screen and (min-width: 768px) {
+  body {
+    padding: 2rem; } }
+
+.body-wrapper {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  width: 100%; }
 
 /* Naming Conventions
 *

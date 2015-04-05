@@ -18,50 +18,69 @@
         <!-- Open Graph data -->
 	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Basic starter templates SASS projects."/>
 	<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="SVBSTRATE"/>
-    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="SVBSTRATE" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://svbstrate.io/resources/images/ogImg.png" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://svbstrate.io/" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="SVBSTRATE" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://svbstrate.io/resources/images/ogImg.png" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://svbstrate.io/" />
 
-        <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="http://svbstrate.io">
-    <meta name="twitter:title" content="SVBSTRATE">
-    <meta name="twitter:description" content="Basic starter templates SASS projects.">
-    <meta name="twitter:creator" content="@estrattonbailey">
-    <meta name="twitter:image:src" content="http://svbstrate.io/resources/images/ogImg.png">
+      <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="http://svbstrate.io">
+  <meta name="twitter:title" content="SVBSTRATE">
+  <meta name="twitter:description" content="Basic starter templates SASS projects.">
+  <meta name="twitter:creator" content="@estrattonbailey">
+  <meta name="twitter:image:src" content="http://svbstrate.io/resources/images/ogImg.png">
 
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <link href="style.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+  <link href="style.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
 
-        <!--    Fonts from TypeKit-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,800' rel='stylesheet' type='text/css'>
+      <!--    Fonts from TypeKit-->
+  <script src="//use.typekit.net/hxi4ugl.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 
-        <!--    FontAwesome-->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <!--    FontAwesome-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <title><?php wp_title(); ?></title>
+  <title><?php wp_title(); ?></title>
 
-    <?php wp_head(); ?>
+  <?php wp_head(); ?>
 
 </head>
 <body <?php body_class(); ?>>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'sculpt' ); ?></a>
+  <?php include_once("assets/sculpt_logo.svg"); ?>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div><!-- .site-branding -->
+  <div class="body-wrapper">
+    <header class="header">
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'sculpt' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+      <nav class="header-desktop-inner">
+        <div class="mainLogo">
+          <h1>
+            <a href="/">
+              Sculpt
+              <svg class="sculptLogo" viewBox="0 0 300 100">
+                <use xlink:href="#sculpt_logo"></use>
+              </svg>
+              <svg class="sculptMark" viewBox="0 0 100 100">
+                <use xlink:href="#sculpt_mark"></use>
+              </svg>
+            </a>
+          </h1>
+        </div>
 
-	<div id="content" class="site-content">
+        <?php
+          $menu = array( 'theme_location' => 'primary', 'container' => '', 'items_wrap' => '%3$s', 'depth' => -1);
+
+          wp_nav_menu( $menu ); 
+        ?>
+
+        <li class="js-menuToggle menuToggle">
+          <span class="icon-menu"></span>
+        </li>
+
+      </nav>
+
+    </header>
 
 
 

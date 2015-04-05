@@ -1,0 +1,13 @@
+body {
+	background-color: #f4f4f4;
+
+	@media screen and (min-width: $med){
+		padding: 2rem;
+	}
+}
+.body-wrapper {
+	@include blockRel;
+
+	background-color: #ffffff;
+	width:100%;
+}
