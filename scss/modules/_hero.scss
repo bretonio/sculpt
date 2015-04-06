@@ -6,7 +6,7 @@
 	// above 768px wide, the page has a border
 	&.u-h_s1 {
 		@media screen and (min-width: $med) {
-			height: calc(100vh - 4rem);
+			height: calc(100vh - 3rem);
 		}
 	}
 }

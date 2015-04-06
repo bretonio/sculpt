@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <head>
-    <link rel="icon" type="image/ico" href="assets/favicon.ico"/>
+  <link rel="icon" type="image/ico" href="assets/favicon.ico"/>
 
-    <meta charset="UTF-8"/>
+  <meta charset="UTF-8"/>
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-    <meta name="author" content="Eric Bailey">
+  <meta name="author" content="Eric Bailey">
 	<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -50,9 +50,9 @@
   ?>
 
   <div class="body-wrapper">
-    <header class="header">
+    <header class="header container">
 
-      <nav class="header-desktop-inner<?php echo ' '.$menu_color; ?>">
+      <nav class="header-desktop-inner<?php echo ' '.$menu_color; ?> row row--lg">
 
             <div class="mainLogo">
               <h1>

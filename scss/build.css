@@ -1863,7 +1863,7 @@ a.u {
   background-repeat: no-repeat; }
 @media screen and (min-width: 768px) {
   .hero.u-h_s1 {
-    height: calc(100vh - 4rem); } }
+    height: calc(100vh - 3rem); } }
 
 .hero-content {
   display: block;
@@ -1897,14 +1897,14 @@ a.u {
   position: fixed;
   height: 80px;
   left: 0;
-  padding: 2rem;
+  padding: 2rem 0;
   right: 0;
   top: 0;
   width: 100%;
   z-index: 100; }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 5rem 6rem; } }
+    padding: 5rem 1.5rem; } }
 
 .header-desktop-inner {
   display: block;
@@ -1979,7 +1979,7 @@ body {
   background-color: #f4f4f4; }
 @media screen and (min-width: 768px) {
   body {
-    padding: 1rem; } }
+    padding: 1.5rem; } }
 
 .body-wrapper {
   display: block;

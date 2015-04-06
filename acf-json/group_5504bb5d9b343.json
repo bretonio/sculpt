@@ -728,56 +728,6 @@
                     ],
                     "min": "",
                     "max": ""
-                },
-                {
-                    "key": "5504d162446b7",
-                    "name": "text_columns",
-                    "label": "Text Columns",
-                    "display": "table",
-                    "sub_fields": [
-                        {
-                            "key": "field_5504d16b446b8",
-                            "label": "Columns",
-                            "name": "columns",
-                            "prefix": "",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "min": 1,
-                            "max": 3,
-                            "layout": "block",
-                            "button_label": "Add Column",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5504d183446b9",
-                                    "label": "Content",
-                                    "name": "content",
-                                    "prefix": "",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
                 }
             ]
         }
@@ -806,5 +756,5 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "modified": 1428288409
+    "modified": 1428290136
 }
