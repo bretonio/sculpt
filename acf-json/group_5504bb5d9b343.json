@@ -340,49 +340,390 @@
                 },
                 {
                     "key": "5504bbf5a6c95",
-                    "name": "carousel",
-                    "label": "Carousel",
-                    "display": "table",
+                    "name": "ledeModule",
+                    "label": "Lede",
+                    "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5504bbfca6c96",
-                            "label": "Slides",
-                            "name": "slides",
+                            "key": "field_5521cf482105b",
+                            "label": "Section Title",
+                            "name": "ledeModule_title",
                             "prefix": "",
-                            "type": "repeater",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": 40,
                                 "class": "",
                                 "id": ""
                             },
-                            "min": 1,
-                            "max": "",
-                            "layout": "block",
-                            "button_label": "Add Slide",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5504bc0da6c97",
-                                    "label": "Content",
-                                    "name": "content",
-                                    "prefix": "",
-                                    "type": "wysiwyg",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
+                            "default_value": "",
+                            "placeholder": "who we are",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d0a12105e",
+                            "label": "Background Color",
+                            "name": "ledeModule_bg_color",
+                            "prefix": "",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 30,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#FFFFFF"
+                        },
+                        {
+                            "key": "field_5521d0ec2105f",
+                            "label": "Lede Module Type",
+                            "name": "ledeModule_type",
+                            "prefix": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 30,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "lede": "Lede Only",
+                                "lede_body": "Lede and Paragraph",
+                                "lede_body_threeUp": "Lede, Paragraph and Three Col Text"
+                            },
+                            "default_value": {
+                                "lede_body": "lede_body"
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_5521cf832105c",
+                            "label": "Lede",
+                            "name": "ledeModule_lede",
+                            "prefix": "",
+                            "type": "textarea",
+                            "instructions": "This is the large lede text to begin the section, though not required. Keep this short, ideally, though you can hit return and separate paragraphs if you want.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": "br",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d0142105d",
+                            "label": "Body",
+                            "name": "ledeModule_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "Content section. Use this to add copy and paragraphs. Again, this section ideally does not have much content in it. Try to keep it to one paragraph if possible.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_body"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_body_threeUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_5521f2ac9b075",
+                            "label": "CTA Button",
+                            "name": "ledeModule_cta",
+                            "prefix": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 20,
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Show a CTA button?",
+                            "default_value": 0
+                        },
+                        {
+                            "key": "field_5521f2ec9b076",
+                            "label": "CTA Text",
+                            "name": "ledeModule_cta_text",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 40,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "learn more",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d3a6d9684",
+                            "label": "Column One Title",
+                            "name": "ledeModule_col_1_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_content_threeUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d3d8d9685",
+                            "label": "Column One Body",
+                            "name": "ledeModule_col_1_body",
+                            "prefix": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_content_threeUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 66,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "br",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d41bd9687",
+                            "label": "Column Two Title",
+                            "name": "ledeModule_col_2_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_content_threeUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d431d9688",
+                            "label": "Column Two Body",
+                            "name": "ledeModule_col_2_body",
+                            "prefix": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_content_threeUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 66,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "br",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d44bd9689",
+                            "label": "Column Three Title",
+                            "name": "ledeModule_col_3_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_content_threeUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d463d968a",
+                            "label": "Column Three Body",
+                            "name": "ledeModule_col_3_body",
+                            "prefix": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_content_threeUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 66,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "new_lines": "br",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521f35e9b077",
+                            "label": "CTA Link",
+                            "name": "ledeModule_cta_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "Link to a page e.g. \/about",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 40,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
                         }
                     ],
                     "min": "",
@@ -465,5 +806,5 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "modified": 1428271429
+    "modified": 1428288409
 }

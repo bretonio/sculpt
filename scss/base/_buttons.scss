@@ -1,28 +1,40 @@
 @mixin button {
 	@include inlineRel;
-	@include h3;
 
-	background-color: $c3;
-	border: 0px;
-	border-radius: 100px;
-	color: white !important;
 	cursor: pointer;
-	font-weight: 700;
-	line-height: 1;
-	outline: 0px;
-	padding: 1rem 4rem;
-	margin: auto;
+	height: 40px;
 	text-decoration: none !important; // In case this, .button is applied to an anchor tag.
 
-	&:hover {
-		background-color: darken($c3, 5%);
-		color: white;
+	.button-left {
+		@include blockRel;
+		@include h3;
+
+		background-color: $c1l;
+		color: #FFFFFF;
+		height: 100%;
+		font-weight: 900;
+		float: left;
+		line-height: 1;
+		padding: .3rem 1.5rem;
+		transition: .3s background;
+	}
+	.button-right {
+		@include blockRel;
+
+		background-color: $c1;
+		color: #FFFFFF;
+		font-size: 1.3rem;
+		float: left;
+		height: 100%;
+		line-height: 40px;
+		// padding-top: 1.5rem;
+		text-align: center;
+		width: 40px;
+		transition: .3s background;
 	}
 
-	&.inline {
-		@include inlineRel;
-
-		margin-right: 1rem;
+	&:hover .button-left {
+		background-color: $c1;
 	}
 
 	&.alt {
@@ -51,16 +63,4 @@
 
 button, .button {
 	@include button;
-}
-
-.button-lg {
-	@include button;
-	@include h2;
-}
-
-.button-sm {
-	@include button;
-	@include h4;
-
-	padding: .3rem 1rem;
 }

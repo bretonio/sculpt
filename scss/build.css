@@ -1,15 +1,11 @@
 /*
 Theme Name: SCULPT
-Theme URI: http://underscores.me/
 Author: Eric Bailey
 Author URI: http://ericbailey.co
 Description: A theme for Sculpt.
 Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: All Rights Reserved
 Text Domain: SCULPT
-
-sculpt is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -338,7 +334,7 @@ html, html a {
 h1, h2, h3, h4, h5, h6, p {
   margin: auto; }
 
-nav, main, section, article, aside, header, footer, div, details, summary, form, fieldset, textarea, input[type="text"], input[type="tel"], input[type="url"], input[type="email"], input[type="search"], input[type="number"], input[type="password"], .border-box {
+nav, span, main, section, article, aside, header, footer, div, details, summary, form, fieldset, textarea, input[type="text"], input[type="tel"], input[type="url"], input[type="email"], input[type="search"], input[type="number"], input[type="password"], .border-box {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
@@ -1543,26 +1539,26 @@ h2, .h2 {
 h3, .h3 {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 900;
   line-height: 3rem;
   margin-bottom: 1rem; }
 @media screen and (min-width: 550px) {
   h3, .h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 3.3rem; } }
 
 h4, .h4 {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 2.5rem;
   margin-bottom: .618rem; }
 
 h5, .h5 {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 100;
-  line-height: 2.5rem;
+  line-height: 2rem;
   margin-bottom: .618rem; }
 
 h6, .h6 {
@@ -1601,13 +1597,13 @@ strong, b, .bold {
   color: #33333d; }
 
 .f-c2l {
-  color: #616175; }
+  color: #4a4a59; }
 
 .f-c2d {
   color: #1c1c21; }
 
 .f-c3 {
-  color: #ff3556; }
+  color: #e1e1e1; }
 
 .f-cw {
   color: white; }
@@ -1618,32 +1614,42 @@ strong, b, .bold {
 button, .button {
   display: inline-block;
   position: relative;
+  cursor: pointer;
+  height: 40px;
+  text-decoration: none !important; }
+button .button-left, .button .button-left {
+  display: block;
+  position: relative;
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 900;
   line-height: 3rem;
-  background-color: #ff3556;
-  border: 0px;
-  border-radius: 100px;
-  color: white !important;
-  cursor: pointer;
-  font-weight: 700;
+  background-color: #ffb387;
+  color: #FFFFFF;
+  height: 100%;
+  font-weight: 900;
+  float: left;
   line-height: 1;
-  outline: 0px;
-  padding: 1rem 4rem;
-  margin: auto;
-  text-decoration: none !important; }
+  padding: .3rem 1.5rem;
+  transition: .3s background; }
 @media screen and (min-width: 550px) {
-  button, .button {
-    font-size: 2.5rem;
+  button .button-left, .button .button-left {
+    font-size: 2.2rem;
     line-height: 3.3rem; } }
-button:hover, .button:hover {
-  background-color: #ff1c41;
-  color: white; }
-button.inline, .button.inline {
-  display: inline-block;
+button .button-right, .button .button-right {
+  display: block;
   position: relative;
-  margin-right: 1rem; }
+  background-color: #ff9254;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  float: left;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+  transition: .3s background; }
+button:hover .button-left, .button:hover .button-left {
+  background-color: #ff9254; }
 button.alt, .button.alt {
   background-color: rgba(255, 255, 255, 0);
   border: 3px solid #ff9254;
@@ -1656,109 +1662,6 @@ button.light, .button.light {
   border-color: #ffffff;
   color: #ffffff; }
 button.light:hover, .button.light:hover {
-  background-color: white;
-  border-color: white;
-  color: #ff9254; }
-
-.button-lg {
-  display: inline-block;
-  position: relative;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 3rem;
-  background-color: #ff3556;
-  border: 0px;
-  border-radius: 100px;
-  color: white !important;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 1;
-  outline: 0px;
-  padding: 1rem 4rem;
-  margin: auto;
-  text-decoration: none !important;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
-  font-size: 2.5rem;
-  font-weight: 100;
-  line-height: 3.3rem; }
-@media screen and (min-width: 550px) {
-  .button-lg {
-    font-size: 2.5rem;
-    line-height: 3.3rem; } }
-.button-lg:hover {
-  background-color: #ff1c41;
-  color: white; }
-.button-lg.inline {
-  display: inline-block;
-  position: relative;
-  margin-right: 1rem; }
-.button-lg.alt {
-  background-color: rgba(255, 255, 255, 0);
-  border: 3px solid #ff9254;
-  color: #ff9254; }
-.button-lg.alt:hover {
-  background-color: #ff9254;
-  border: 3px solid #ff9254;
-  color: #ffffff; }
-.button-lg.light {
-  border-color: #ffffff;
-  color: #ffffff; }
-.button-lg.light:hover {
-  background-color: white;
-  border-color: white;
-  color: #ff9254; }
-@media screen and (min-width: 550px) {
-  .button-lg {
-    font-size: 3rem;
-    line-height: 4rem; } }
-
-.button-sm {
-  display: inline-block;
-  position: relative;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
-  line-height: 3rem;
-  background-color: #ff3556;
-  border: 0px;
-  border-radius: 100px;
-  color: white !important;
-  cursor: pointer;
-  font-weight: 700;
-  line-height: 1;
-  outline: 0px;
-  padding: 1rem 4rem;
-  margin: auto;
-  text-decoration: none !important;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 2.5rem;
-  padding: .3rem 1rem; }
-@media screen and (min-width: 550px) {
-  .button-sm {
-    font-size: 2.5rem;
-    line-height: 3.3rem; } }
-.button-sm:hover {
-  background-color: #ff1c41;
-  color: white; }
-.button-sm.inline {
-  display: inline-block;
-  position: relative;
-  margin-right: 1rem; }
-.button-sm.alt {
-  background-color: rgba(255, 255, 255, 0);
-  border: 3px solid #ff9254;
-  color: #ff9254; }
-.button-sm.alt:hover {
-  background-color: #ff9254;
-  border: 3px solid #ff9254;
-  color: #ffffff; }
-.button-sm.light {
-  border-color: #ffffff;
-  color: #ffffff; }
-.button-sm.light:hover {
   background-color: white;
   border-color: white;
   color: #ff9254; }
@@ -1783,7 +1686,7 @@ NOTE: must specify z-index values for siblings.*/
   z-index: 0; }
 
 .bg-image {
-  background-color: #ff3556;
+  background-color: #e1e1e1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1805,20 +1708,6 @@ NOTE: must specify z-index values for siblings.*/
   top: 0;
   z-index: 1; }
 
-html {
-  background-color: #f5f5f5; }
-
-body {
-  display: block;
-  position: relative; }
-
-.body-wrapper {
-  display: block;
-  position: relative;
-  max-width: 1500px;
-  margin: 0rem auto;
-  width: 100%; }
-
 a {
   color: inherit;
   text-decoration: none; }
@@ -1831,9 +1720,9 @@ a.link-alt {
 a.link-alt:hover {
   color: #1c1c21; }
 a.link-alt-2 {
-  color: #ff3556; }
+  color: #e1e1e1; }
 a.link-alt-2:hover {
-  color: #ff022b; }
+  color: #c8c8c8; }
 a.hu:hover {
   text-decoration: underline; }
 a.u {
@@ -1870,30 +1759,24 @@ a.u {
   /* 2 */ }
 .row::after {
   clear: both; }
-.row.small {
+.row.row--sm {
   width: 90%; }
 @media screen and (min-width: 399px) {
-  .row.small {
+  .row.row--sm {
     width: 70%; } }
 @media screen and (min-width: 768px) {
-  .row.small {
+  .row.row--sm {
     width: 50%; } }
-.row.medium {
+.row.row--med {
   width: 90%; }
 @media screen and (min-width: 399px) {
-  .row.medium {
+  .row.row--med {
     width: 80%; } }
 @media screen and (min-width: 768px) {
-  .row.medium {
+  .row.row--med {
     width: 70%; } }
-.row.large {
+.row.row--lg {
   width: 95%; }
-@media screen and (min-width: 399px) {
-  .row.large {
-    width: 92.5%; } }
-@media screen and (min-width: 768px) {
-  .row.large {
-    width: 90%; } }
 .row.inline {
   margin-top: calc(3rem);
   text-align: justify; }
@@ -1916,14 +1799,6 @@ a.u {
   float: left;
   text-align: left; }
 
-.divider {
-  display: block;
-  position: relative;
-  background-color: #ff3556;
-  height: 4px;
-  margin: 1rem 0rem 1.4rem;
-  width: 100px; }
-
 .affix {
   position: fixed !important; }
 
@@ -1934,6 +1809,7 @@ a.u {
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -1994,25 +1870,27 @@ a.u {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 2rem;
-  width: 100%;
+  padding-bottom: 3rem;
   /*
    * Color classes added by user
    */ }
 @media screen and (min-width: 768px) {
   .hero-content {
-    padding: 4rem;
-    width: 100%; } }
+    padding-bottom: 3rem; } }
 @media screen and (min-width: 1280px) {
   .hero-content {
-    padding: 4rem;
-    width: 75%; } }
+    padding-bottom: 3rem; } }
 .hero-content.hero-content--dark {
   color: #33333d; }
 .hero-content.hero-content--white {
   color: #FFFFFF; }
 .hero-content.hero-content--orange {
   color: #ff9254; }
+
+.ledeModule {
+  padding: 12rem 0; }
+.ledeModule .ledeModule-title {
+  color: #e1e1e1; }
 
 .header {
   display: block;
@@ -2043,8 +1921,8 @@ a.u {
   position: relative;
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 2.5rem;
+  font-weight: 100;
+  line-height: 2rem;
   display: none;
   font-weight: 500;
   margin: 1rem 1rem 0;
@@ -2071,7 +1949,7 @@ a.u {
 .header-desktop-inner.menu-items--dark li {
   color: #33333d; }
 .header-desktop-inner.menu-items--dark li:hover {
-  color: #616175; }
+  color: #4a4a59; }
 .header-desktop-inner.menu-items--white li {
   color: #FFFFFF; }
 .header-desktop-inner.menu-items--white li:hover {
@@ -2101,7 +1979,7 @@ body {
   background-color: #f4f4f4; }
 @media screen and (min-width: 768px) {
   body {
-    padding: 2rem; } }
+    padding: 1rem; } }
 
 .body-wrapper {
   display: block;

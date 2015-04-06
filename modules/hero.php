@@ -38,18 +38,19 @@ $hero_content_color = get_sub_field('hero_content_color');
 
 ?>
 
-<section class="hero <?php echo $hero_size; ?>" style="<?php echo $hero_bg; ?>">
-  
-  <?php if(get_sub_field('hero_content')) { ?>
-  	<div class="hero-content<?php echo ' '.$hero_content_color; ?>">
-	  	<?php if($hero_type == 'primary') { ?>
-	    	<h1 class="h0"><?php the_sub_field('hero_title'); ?></h1>
-	    <?php } elseif ($hero_type == 'tertiary') { ?>
-	    	<h1><?php the_sub_field('hero_title'); ?></h1>
-	    <?php } elseif ($hero_type == 'secondary') { ?>
-	    	<h1 class="h0"><?php the_sub_field('hero_title'); ?></h1>
-	    	<h2><?php the_sub_field('hero_copy'); ?></h2>
-	    <?php } ?>
-  	</div>
-  <?php } ?>
+<section class="container hero<?php echo ' '.$hero_size; ?>" style="<?php echo $hero_bg; ?>">
+	<div class="row row--lg">
+	  <?php if(get_sub_field('hero_content')) { ?>
+	  	<div class="hero-content block s1 xl_s34<?php echo ' '.$hero_content_color; ?>">
+		  	<?php if($hero_type == 'primary') { ?>
+		    	<h1 class="h0"><?php the_sub_field('hero_title'); ?></h1>
+		    <?php } elseif ($hero_type == 'tertiary') { ?>
+		    	<h1><?php the_sub_field('hero_title'); ?></h1>
+		    <?php } elseif ($hero_type == 'secondary') { ?>
+		    	<h1 class="h0"><?php the_sub_field('hero_title'); ?></h1>
+		    	<h2><?php the_sub_field('hero_copy'); ?></h2>
+		    <?php } ?>
+	  	</div>
+	  <?php } ?>
+  </div>
 </section>

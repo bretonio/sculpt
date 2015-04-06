@@ -24,7 +24,7 @@
 	 */
 	li {
 		@include inlineRel;
-		@include h4;
+		@include h5;
 
 		display: none; // hide on mobile
 		font-weight: 500;

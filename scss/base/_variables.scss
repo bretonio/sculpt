@@ -1,10 +1,10 @@
 // Colors
 $c1: #ff9254; // sculpt orange
 $c2: #33333d; // deep gray blue
-$c3: #ff3556; // bright red
-$c4: #c4324c; // darker red
-$c5: #ffca55; // pastel yellow
-$c6: #ffeabb; // faint yellow
+$c3: #e1e1e1; // light gray
+$c4: #c4324c;
+$c5: #ffca55;
+$c6: #ffeabb;
 
 $c1d: darken($c1, 10%);
 $c2d: darken($c2, 10%);
@@ -13,12 +13,12 @@ $c4d: darken($c4, 10%);
 $c5d: darken($c5, 10%);
 $c6d: darken($c6, 10%);
 
-$c1l: lighten($c1, 20%);
-$c2l: lighten($c2, 20%);
-$c3l: lighten($c3, 20%);
-$c4l: lighten($c4, 20%);
-$c5l: lighten($c5, 20%);
-$c6l: lighten($c6, 20%);
+$c1l: lighten($c1, 10%);
+$c2l: lighten($c2, 10%);
+$c3l: lighten($c3, 10%);
+$c4l: lighten($c4, 10%);
+$c5l: lighten($c5, 10%);
+$c6l: lighten($c6, 10%);
 
 $black: #111f2d; // set your black level - mine has a little blue in it
 $gray: #333333;

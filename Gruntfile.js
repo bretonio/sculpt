@@ -52,6 +52,18 @@ module.exports = function(grunt) {
       }
     },
 
+    phplint: {
+      options: {
+        phpArgs : {
+            '-lf': null
+        }
+      },
+
+      all : {
+        src : ['modules/*.php', '*.php']
+      }
+    },
+
     watch: {
       css: {
         files: 'scss/**/*.scss',
@@ -61,13 +73,9 @@ module.exports = function(grunt) {
         files: ['js/*.js', 'js/**/*.js', '!js/build.js'],
         tasks: ['newer:concat']
       },
-      svg: {
-        files: 'assets/images/svg/*.svg',
-        tasks: 'svgstore'
-      },
-      png: {
-        files: 'assets/images/png/*.png',
-        tasks: 'sprite'
+      php: {
+        files: '**/*.php',
+        tasks: 'phplint'
       }
     }
 
@@ -81,6 +89,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-svgstore');
+  grunt.loadNpmTasks('grunt-phplint');
 
   // Default tasks
   grunt.registerTask('default', ['watch']);

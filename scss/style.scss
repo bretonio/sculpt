@@ -1,15 +1,11 @@
 /*
 Theme Name: SCULPT
-Theme URI: http://underscores.me/
 Author: Eric Bailey
 Author URI: http://ericbailey.co
 Description: A theme for Sculpt.
 Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: All Rights Reserved
 Text Domain: SCULPT
-
-sculpt is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -32,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 // Modules
 @import "scss/modules/hero";
+@import "scss/modules/ledeModule";
 
 // Partials
 @import "scss/partials/header";

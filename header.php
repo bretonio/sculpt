@@ -88,6 +88,14 @@
                     <svg class="sculptMark" viewBox="0 0 100 100">
                       <use xlink:href="#sculptMark"></use>
                     </svg>
+                  <?php } else { ?>
+                    <!-- default -->
+                    <svg class="sculptLogo" viewBox="0 0 300 100">
+                      <use xlink:href="#sculptLogo"></use>
+                    </svg>
+                    <svg class="sculptMark" viewBox="0 0 100 100">
+                      <use xlink:href="#sculptMark"></use>
+                    </svg>
                   <?php } ?>
                 </a>
               </h1>
