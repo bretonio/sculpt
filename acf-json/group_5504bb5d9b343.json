@@ -516,6 +516,36 @@
                             "disabled": 0
                         },
                         {
+                            "key": "field_5521f35e9b077",
+                            "label": "CTA Link",
+                            "name": "ledeModule_cta_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 40,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
                             "key": "field_5521d3a6d9684",
                             "label": "Column One Title",
                             "name": "ledeModule_col_1_title",
@@ -694,36 +724,6 @@
                             "new_lines": "br",
                             "readonly": 0,
                             "disabled": 0
-                        },
-                        {
-                            "key": "field_5521f35e9b077",
-                            "label": "CTA Link",
-                            "name": "ledeModule_cta_url",
-                            "prefix": "",
-                            "type": "text",
-                            "instructions": "Link to a page e.g. \/about",
-                            "required": 1,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5521f2ac9b075",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": 40,
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "\/about",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": "",
-                            "readonly": 0,
-                            "disabled": 0
                         }
                     ],
                     "min": "",
@@ -756,5 +756,5 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "modified": 1428290136
+    "modified": 1428290828
 }
