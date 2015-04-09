@@ -1894,6 +1894,17 @@ a.u {
 .ledeModule .button {
   margin-top: 1rem; }
 
+.photoModule {
+  height: 320px; }
+.photoModule.photoModule--large {
+  height: 640px; }
+
+.photoModule-photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%; }
+
 .header {
   display: block;
   position: fixed;
