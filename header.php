@@ -52,7 +52,7 @@
   <div class="body-wrapper">
     <header class="header container">
 
-      <nav class="header-desktop-inner<?php echo ' '.$menu_color; ?> row row--lg">
+      <nav class="header-desktop-inner<?php echo ' '.$menu_color; ?> row">
 
             <div class="mainLogo">
               <h1>
@@ -65,6 +65,9 @@
                     </svg>
                     <svg class="sculptMark" viewBox="0 0 100 100">
                       <use xlink:href="#sculptMark--white"></use>
+                    </svg>
+                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                      <use xlink:href="#sculptLogo"></use>
                     </svg>
                   <?php } elseif ($logo == 'sculptLogo--white') { ?>
                     <svg class="sculptLogo" viewBox="0 0 300 100">

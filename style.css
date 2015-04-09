@@ -1629,7 +1629,7 @@ button .button-left, .button .button-left {
   height: 100%;
   font-weight: 900;
   float: left;
-  line-height: 1;
+  line-height: 3.3rem;
   padding: .3rem 1.5rem;
   transition: .3s background; }
 @media screen and (min-width: 550px) {
@@ -1891,20 +1891,32 @@ a.u {
   padding: 12rem 0; }
 .ledeModule .ledeModule-title {
   color: #e1e1e1; }
+.ledeModule .button {
+  margin-top: 1rem; }
 
 .header {
   display: block;
   position: fixed;
   height: 80px;
   left: 0;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   right: 0;
   top: 0;
+  transition: padding .2s ease-out, background .2s ease-out;
   width: 100%;
   z-index: 100; }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 5rem 1.5rem; } }
+    padding: 5rem calc(2.5% + 1.5rem); } }
+.header.has-scrolled .sculptMark {
+  -webkit-transform: translateY(-150px);
+      -ms-transform: translateY(-150px);
+          transform: translateY(-150px); }
+@media screen and (min-width: 768px) {
+  .header.has-scrolled {
+    background-color: #FFFFFF;
+    padding: 2rem 2rem;
+    transition: padding 0.2s cubic-bezier(0.54, 0.17, 0.79, 0.41), background 0.2s cubic-bezier(0.54, 0.17, 0.79, 0.41); } }
 
 .header-desktop-inner {
   display: block;
@@ -1967,10 +1979,19 @@ a.u {
   line-height: 0; }
 .mainLogo .sculptLogo {
   display: none; }
+.mainLogo .sculptLogo-fallback {
+  display: none; }
+.mainLogo .sculptMark {
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out; }
 @media screen and (min-width: 768px) {
   .mainLogo {
     width: 130px; }
   .mainLogo .sculptLogo {
+    display: block; }
+  .has-scrolled .mainLogo .sculptLogo {
+    display: none; }
+  .has-scrolled .mainLogo .sculptLogo-fallback {
     display: block; }
   .mainLogo .sculptMark {
     display: none; } }

@@ -3,14 +3,26 @@
 
 	height: 80px;
 	left: 0;
-	padding: 2rem 0;
+	padding: 2rem 2rem;
 	right: 0;
 	top: 0;
+	transition: padding .2s ease-out, background .2s ease-out;
 	width: 100%;
 	z-index: 100;
 
 	@media screen and (min-width: $med) {
-		padding: 5rem 1.5rem;
+		padding: 5rem calc(2.5% + 1.5rem);
+	}
+
+	&.has-scrolled {
+		.sculptMark {
+			transform: translateY(-150px);
+		}
+		@media screen and (min-width: $med) {
+			background-color: #FFFFFF;
+			padding: 2rem 2rem;
+			transition: padding .2s cubic-bezier(.54,.17,.79,.41), background .2s cubic-bezier(.54,.17,.79,.41);	
+		}
 	}
 }
 
@@ -96,12 +108,26 @@
 	.sculptLogo {
 		display: none;
 	}
+	.sculptLogo-fallback {
+		display: none;
+	}
+	.sculptMark {
+		transition: transform .5s ease-in-out;
+	}
 
 	@media screen and (min-width: $med) {
 		width: 130px;
 
 		.sculptLogo {
 			display: block;
+		}
+		.has-scrolled & {
+			.sculptLogo {
+				display: none;
+			}
+			.sculptLogo-fallback {
+				display: block;
+			}
 		}
 		.sculptMark {
 			display: none;
