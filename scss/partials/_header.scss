@@ -21,7 +21,7 @@
 		@media screen and (min-width: $med) {
 			background-color: #FFFFFF;
 			padding: 2rem 2rem;
-			transition: padding .2s cubic-bezier(.54,.17,.79,.41), background .2s cubic-bezier(.54,.17,.79,.41);	
+			transition: padding .2s ease-out, background .2s ease-out;	
 		}
 	}
 }

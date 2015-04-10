@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+@mixin icon {
 	display: inline-block;
 	font-family: 'icomoon';
 	speak: none;
@@ -22,6 +22,10 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	@include icon;
 }
 
 .icon-arrow:before {

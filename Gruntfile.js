@@ -4,11 +4,7 @@ module.exports = function(grunt) {
 
     concat: {
       build: {
-        src: ['js/inc/*.js'],
-        dest: 'js/build.js',
-      },
-      deploy: {
-        src: ['js/**/*.js', 'sculpt.js', '!scripts.js'],
+        src: ['js/inc/*.js', 'js/sculpt.js'],
         dest: 'js/scripts.js',
       }
     },
@@ -70,7 +66,7 @@ module.exports = function(grunt) {
         tasks: ['sass', 'autoprefixer']
       },
       js: {
-        files: ['js/*.js', 'js/**/*.js', '!js/build.js'],
+        files: ['js/sculpt.js', 'js/inc/*.js'],
         tasks: ['newer:concat']
       },
       php: {

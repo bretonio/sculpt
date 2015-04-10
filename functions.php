@@ -21,7 +21,7 @@ add_action( 'wp_enqueue_scripts', function() {
   );
 
   wp_enqueue_script( 'main',
-    get_template_directory_uri().'/js/sculpt.js',
+    get_template_directory_uri().'/js/scripts.js',
     array( 'jquery' ),
     $theme_ver,
     true
