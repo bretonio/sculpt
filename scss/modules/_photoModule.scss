@@ -4,6 +4,10 @@
 	&.photoModule--large {
 		height: 640px;
 	}
+
+	.row {
+		height: 100%;
+	}
 }
 .photoModule-photo {
 	background-size: cover;

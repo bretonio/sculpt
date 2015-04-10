@@ -1,5 +1,5 @@
 <?php
-	$type = get_sub_field('photoModule_type');
+	$layout = get_sub_field('photoModule_layout');
 	$photo = get_sub_field('photoModule_img_1');
 	$photo12 = get_sub_field('photoModule_img_12');
 	$photo22 = get_sub_field('photoModule_img_22');
@@ -8,7 +8,7 @@
 	$photo34 = get_sub_field('photoModule_img_34');
 	$photo44 = get_sub_field('photoModule_img_44');
 
-	if ($type == 'single_large' || $type == 'twoUp_large') {
+	if ($layout == 'single_large' || $layout == 'twoUp_large') {
 		$size = 'photoModule--large';
 	}
 ?>
@@ -16,12 +16,12 @@
 <section class="container photoModule <?php echo $size ?>">
 	<div class="row">
 
-		<?php if ($type == 'single_large' || $type == 'single_small') { ?>
+		<?php if ($layout == 'single_large' || $layout == 'single_small') { ?>
 			<div class="block photoModule-photo s1" style="background-image: url('<?php echo $photo ?>');"></div>
-		<?php } elseif ($type == 'twoUp_large' || $type == 'twoUp_small') { ?>
+		<?php } elseif ($layout == 'twoUp_large' || $layout == 'twoUp_small') { ?>
 			<div class="block photoModule-photo s12" style="background-image: url('<?php echo $photo12 ?>');"></div>
 			<div class="block photoModule-photo s12" style="background-image: url('<?php echo $photo22 ?>');"></div>
-		<?php } elseif ($type == 'fourUp') { ?>
+		<?php } elseif ($layout == 'fourUp') { ?>
 			<div class="block photoModule-photo s12 med_s14" style="background-image: url('<?php echo $photo14 ?>');"></div>
 			<div class="block photoModule-photo s12 med_s14" style="background-image: url('<?php echo $photo24 ?>');"></div>
 			<div class="block photoModule-photo s12 med_s14" style="background-image: url('<?php echo $photo34 ?>');"></div>

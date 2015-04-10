@@ -9,6 +9,11 @@
 			height: calc(100vh - 3rem);
 		}
 	}
+
+	// since .hero-content is blockAb, needs to fill height
+	.row {
+		height: 100%;
+	}
 }
 .hero-content {
 	@include blockAb;
