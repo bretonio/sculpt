@@ -1739,7 +1739,7 @@ a.u {
   padding: 3rem 0 2rem; }
 @media screen and (min-width: 550px) {
   .pad--sm {
-    padding: 3rem 0; } }
+    padding: 5rem 0 3rem; } }
 
 .pad--med {
   padding: 3rem 0; }
