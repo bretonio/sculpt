@@ -37,13 +37,13 @@ $font-two: "museo-sans", Helvetica, arial, sans-serif;
 @mixin h1 {
     font-family: $font-one;
     font-size: 3.2rem;
-    font-weight: 100;
+    font-weight: 900;
     line-height: 4rem;
 
     // Desktop sizes
     @media screen and (min-width: $sm) {
         font-size: 4.5rem;
-        line-height: 5.5rem;
+        line-height: 4.7rem;
     }
 }
 @mixin h2 {
@@ -74,7 +74,7 @@ $font-two: "museo-sans", Helvetica, arial, sans-serif;
     font-family: $font-one;
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 2.5rem;
+    line-height: 3rem;
 }
 @mixin h5 {
     font-family: $font-one;

@@ -369,18 +369,27 @@ nav, span, main, section, article, aside, header, footer, div, details, summary,
     height: 100vh; } }
 
 .u-h_s12 {
-  height: 250px;
-  height: 50%;
-  height: 50vh; }
+  height: 500px;
+  height: 100%;
+  height: 100vh; }
 @media screen and (min-width: 550px) {
   .u-h_s12 {
-    height: 400px;
+    height: 66%;
+    height: 66vh; } }
+@media screen and (min-width: 768px) {
+  .u-h_s12 {
+    height: 450px;
     height: 50vh; } }
 
 .u-h_s23 {
-  height: 350px;
-  height: 66vh; }
+  height: 500px;
+  height: 100%;
+  height: 100vh; }
 @media screen and (min-width: 550px) {
+  .u-h_s23 {
+    height: 80%;
+    height: 80vh; } }
+@media screen and (min-width: 768px) {
   .u-h_s23 {
     height: 600px;
     height: 66vh; } }
@@ -1517,13 +1526,13 @@ html, body {
 h1, .h1 {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 3.2rem;
-  font-weight: 100;
+  font-weight: 900;
   line-height: 4rem;
   margin-bottom: 1.4rem; }
 @media screen and (min-width: 550px) {
   h1, .h1 {
     font-size: 4.5rem;
-    line-height: 5.5rem; } }
+    line-height: 4.7rem; } }
 
 h2, .h2 {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
@@ -1551,7 +1560,7 @@ h4, .h4 {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 2.5rem;
+  line-height: 3rem;
   margin-bottom: .618rem; }
 
 h5, .h5 {
@@ -1597,7 +1606,7 @@ strong, b, .bold {
   color: #2b2e33; }
 
 .f-c2l {
-  color: #42474f; }
+  color: #4e535d; }
 
 .f-c2d {
   color: #141517; }
@@ -1624,7 +1633,7 @@ button .button-left, .button .button-left {
   font-size: 2rem;
   font-weight: 900;
   line-height: 3rem;
-  background-color: #ffb387;
+  background-color: #ffc3a1;
   color: #FFFFFF;
   height: 100%;
   font-weight: 900;
@@ -1877,34 +1886,59 @@ a.u {
 .hero {
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  /*
+   * Color Schemes
+   */ }
 @media screen and (min-width: 768px) {
   .hero.u-h_s1 {
     height: calc(100vh - 3rem); } }
 .hero .row {
   height: 100%; }
+.hero.colorScheme--light {
+  background-color: #f5f5f5; }
+.hero.colorScheme--orange {
+  background-color: #ff9254; }
+.hero.colorScheme--orange .hero-title {
+  color: #FFFFFF; }
+.hero.colorScheme--orange .hero-body {
+  color: #2b2e33; }
+.hero.colorScheme--orange .hero-cta:hover .button-left {
+  background-color: white; }
+.hero.colorScheme--orange .hero-cta .button-left {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2b2e33; }
+.hero.colorScheme--orange .hero-cta .button-right {
+  background-color: #FFFFFF;
+  color: #ff9254; }
+.hero.colorScheme--dark {
+  background-color: #2b2e33; }
+.hero.colorScheme--dark .hero-title {
+  color: #FFFFFF; }
+.hero.colorScheme--dark .hero-body {
+  color: #FFFFFF; }
 
 .hero-content {
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-bottom: 3rem;
-  /*
-   * Color classes added by user
-   */ }
+  padding-bottom: 3rem; }
 @media screen and (min-width: 768px) {
   .hero-content {
     padding-bottom: 3rem; } }
 @media screen and (min-width: 1280px) {
   .hero-content {
     padding-bottom: 3rem; } }
-.hero-content.hero-content--dark {
-  color: #2b2e33; }
-.hero-content.hero-content--white {
-  color: #FFFFFF; }
-.hero-content.hero-content--orange {
-  color: #ff9254; }
+
+.hero-body {
+  margin-top: 1.2rem; }
+@media screen and (min-width: 1000px) {
+  .hero-body {
+    max-width: 75%; } }
+
+.hero-cta {
+  margin-top: 1.5rem; }
 
 .ledeModule {
   background-color: #FFFFFF;
@@ -2160,10 +2194,14 @@ a.u {
 @media screen and (min-width: 1280px) {
   .header-desktop-inner li.menuToggle {
     margin-left: 5rem; } }
+.has-scrolled .header-desktop-inner li {
+  color: #2b2e33 !important; }
+.has-scrolled .header-desktop-inner li:hover {
+  color: #4e535d !important; }
 .header-desktop-inner.menu-items--dark li {
   color: #2b2e33; }
 .header-desktop-inner.menu-items--dark li:hover {
-  color: #42474f; }
+  color: #4e535d; }
 .header-desktop-inner.menu-items--white li {
   color: #FFFFFF; }
 .header-desktop-inner.menu-items--white li:hover {

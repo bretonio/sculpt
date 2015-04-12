@@ -76,12 +76,18 @@
                     <svg class="sculptMark" viewBox="0 0 100 100">
                       <use xlink:href="#sculptMark--white"></use>
                     </svg>
-                  <?php } elseif ($logo == 'sculptLogo--orange') { ?>
-                    <svg class="sculptLogo" viewBox="0 0 300 100">
+                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
                       <use xlink:href="#sculptLogo"></use>
                     </svg>
+                  <?php } elseif ($logo == 'sculptLogo--orange') { ?>
+                    <svg class="sculptLogo" viewBox="0 0 300 100">
+                      <use xlink:href="#sculptLogo--orange"></use>
+                    </svg>
                     <svg class="sculptMark" viewBox="0 0 100 100">
-                      <use xlink:href="#sculptMark"></use>
+                      <use xlink:href="#sculptMark--orange"></use>
+                    </svg>
+                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                      <use xlink:href="#sculptLogo"></use>
                     </svg>
                   <?php } elseif ($logo == 'sculptLogo') { ?>
                     <!-- default -->
@@ -89,7 +95,10 @@
                       <use xlink:href="#sculptLogo"></use>
                     </svg>
                     <svg class="sculptMark" viewBox="0 0 100 100">
-                      <use xlink:href="#sculptMark"></use>
+                      <use xlink:href="#sculptMark--orange"></use>
+                    </svg>
+                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                      <use xlink:href="#sculptLogo"></use>
                     </svg>
                   <?php } else { ?>
                     <!-- default -->
@@ -97,7 +106,10 @@
                       <use xlink:href="#sculptLogo"></use>
                     </svg>
                     <svg class="sculptMark" viewBox="0 0 100 100">
-                      <use xlink:href="#sculptMark"></use>
+                      <use xlink:href="#sculptMark--orange"></use>
+                    </svg>
+                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                      <use xlink:href="#sculptLogo"></use>
                     </svg>
                   <?php } ?>
                 </a>

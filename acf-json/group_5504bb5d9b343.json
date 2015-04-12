@@ -89,26 +89,25 @@
                     "sub_fields": [
                         {
                             "key": "field_55204058ba795",
-                            "label": "Hero Type",
-                            "name": "hero_type",
+                            "label": "Layout",
+                            "name": "hero_layout",
                             "prefix": "",
                             "type": "select",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
                             "choices": {
-                                "primary": "Primary Pages (Homepage)",
-                                "secondary": "Secondary Pages (About, Services)",
-                                "tertiary": "Tertiary Pages (Projects, Team Pages)",
-                                "cta": "Marketing CTA Page"
+                                "hero_primary": "Primary Pages (Homepage)",
+                                "hero_secondary": "Secondary Pages (About, Services)",
+                                "hero_tertiary": "Tertiary Pages (Projects, Team Pages)"
                             },
                             "default_value": {
-                                "secondary": "secondary"
+                                "hero_secondary": "hero_secondary"
                             },
                             "allow_null": 0,
                             "multiple": 0,
@@ -120,23 +119,38 @@
                         },
                         {
                             "key": "field_552041baba797",
-                            "label": "Hero Background Color",
-                            "name": "hero_bg_color",
+                            "label": "Color Scheme",
+                            "name": "hero_color",
                             "prefix": "",
-                            "type": "color_picker",
+                            "type": "select",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#ff9254"
+                            "choices": {
+                                "colorScheme--white": "White (default)",
+                                "colorScheme--light": "Light Gray",
+                                "colorScheme--orange": "Sculpt Orange",
+                                "colorScheme--dark": "Dark"
+                            },
+                            "default_value": {
+                                "colorScheme--white": "colorScheme--white"
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
                         },
                         {
                             "key": "field_5504bb7ea6c90",
-                            "label": "Hero Background Image",
+                            "label": "Background Image",
                             "name": "hero_bg_img",
                             "prefix": "",
                             "type": "image",
@@ -161,62 +175,24 @@
                         },
                         {
                             "key": "field_5504bb87a6c91",
-                            "label": "Hero Content",
-                            "name": "hero_content",
+                            "label": "Show Content?",
+                            "name": "hero_content_enabled",
                             "prefix": "",
                             "type": "true_false",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": 50,
+                                "width": 20,
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "Add content to hero?",
+                            "message": "",
                             "default_value": 0
                         },
                         {
-                            "key": "field_5521b03720779",
-                            "label": "Hero Content Color",
-                            "name": "hero_content_color",
-                            "prefix": "",
-                            "type": "select",
-                            "instructions": "Change content color styles.",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5504bb87a6c91",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": 50,
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "hero-content--dark": "Dark",
-                                "hero-content--white": "White",
-                                "hero-content--orange": "Orange"
-                            },
-                            "default_value": {
-                                "hero-content--dark": "hero-content--dark"
-                            },
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0
-                        },
-                        {
                             "key": "field_55205aa93280a",
-                            "label": "Hero Title",
+                            "label": "Title",
                             "name": "hero_title",
                             "prefix": "",
                             "type": "text",
@@ -232,7 +208,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": 80,
                                 "class": "",
                                 "id": ""
                             },
@@ -246,8 +222,8 @@
                         },
                         {
                             "key": "field_55205aca3280b",
-                            "label": "Hero Copy",
-                            "name": "hero_copy",
+                            "label": "Body",
+                            "name": "hero_body",
                             "prefix": "",
                             "type": "textarea",
                             "instructions": "",
@@ -262,21 +238,38 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": 100,
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "",
                             "placeholder": "",
                             "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop",
+                            "rows": 4,
+                            "new_lines": "br",
                             "readonly": 0,
                             "disabled": 0
                         },
                         {
+                            "key": "field_552ae7fb76b10",
+                            "label": "Show CTA Button",
+                            "name": "hero_cta_enabled",
+                            "prefix": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 20,
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
+                        },
+                        {
                             "key": "field_55204156ba796",
-                            "label": "Hero CTA",
+                            "label": "CTA Text",
                             "name": "hero_cta",
                             "prefix": "",
                             "type": "text",
@@ -285,14 +278,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55204058ba795",
+                                        "field": "field_552ae7fb76b10",
                                         "operator": "==",
-                                        "value": "cta"
+                                        "value": "1"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": 50,
+                                "width": 40,
                                 "class": "",
                                 "id": ""
                             },
@@ -306,28 +299,28 @@
                         },
                         {
                             "key": "field_552166f03b194",
-                            "label": "Hero CTA Link",
-                            "name": "hero_cta_link",
+                            "label": "CTA Link",
+                            "name": "hero_cta_url",
                             "prefix": "",
                             "type": "text",
-                            "instructions": "Link to a page e.g. \/about, \/services",
+                            "instructions": "",
                             "required": 1,
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55204058ba795",
+                                        "field": "field_552ae7fb76b10",
                                         "operator": "==",
-                                        "value": "cta"
+                                        "value": "1"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": 50,
+                                "width": 40,
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "\/about",
+                            "placeholder": "\/about-us",
                             "prepend": "",
                             "append": "",
                             "maxlength": "",
@@ -2171,5 +2164,5 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "modified": 1428798852
+    "modified": 1428875386
 }

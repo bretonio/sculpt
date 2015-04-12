@@ -1,57 +1,49 @@
 <?php
-	$hero_type = get_sub_field('hero_type');
-	$hero_bg_img = get_sub_field('hero_bg_img');
-	$hero_bg_color = get_sub_field('hero_bg_color');
-	$hero_content = get_sub_field('hero_content');
-	$hero_content_color = get_sub_field('hero_content_color');
+	$layout = get_sub_field('hero_layout');
+	$color = get_sub_field('hero_color');
+	$bg_img = get_sub_field('hero_bg_img');
+	
+	$content_enabled = get_sub_field('hero_content_enabled');
+	$title = get_sub_field('hero_title');
+	$body = get_sub_field('hero_body');
+
+	$cta_enabled = get_sub_field('hero_cta_enabled');
+	$cta = get_sub_field('hero_cta');
+	$cta_url = get_sub_field('hero_cta_url');
 
 	/*
 	 * The hero type and size
 	 */
-	if ($hero_type == 'primary') {
+	if ($layout == 'hero_primary') {
 		$hero_size = 'u-h_s1';
-		$hero_big = 'hero-content-large';
-	} elseif ($hero_type == 'tertiary') {
-		$hero_size = 'u-h_s2';
-	} elseif ($hero_type == 'secondary') {
+	} elseif ($layout == 'hero_tertiary') {
+		$hero_size = 'u-h_s12';
+	} elseif ($layout == 'hero_secondary') {
 		$hero_size = 'u-h_s23';
-	} elseif ($hero_type == 'cta') {
-		$hero_size = 'u-h_s23';
-		$hero_cta;
-	}
-
-	/*
-	 * Set background image/color.
-	 */
-	if ($hero_bg_img != '' && $hero_bg_color == '') {
-		$hero_bg = 'background-image: url('.$hero_bg_img.');' ;
-	} elseif ($hero_bg_img == '' && $hero_bg_color != '') {
-		$hero_bg = 'background-color: '.$hero_bg_color.';' ;
-	} else {
-		$hero_bg = 'background-color: '.$hero_bg_color.';background-image:  url('.$hero_bg_img.');' ;
 	}
 ?>
 
-<section class="container hero<?php echo ' '.$hero_size; ?>" style="<?php echo $hero_bg; ?>">
+<section class="container hero<?php echo ' '.$hero_size; ?><?php echo ' '.$color; ?>" style="background-image: url('<?php echo $bg_img; ?>');">
 	<div class="row row--lg">
-	  <?php if($hero_content != '') { ?>
-	  	<div class="hero-content block s1 xl_s34<?php echo ' '.$hero_content_color; ?>">
-		  	<?php if($hero_type == 'primary') { ?>
-		    	<h1 class="h0"><?php the_sub_field('hero_title'); ?></h1>
-		    <?php } elseif ($hero_type == 'tertiary') { ?>
-		    	<h1><?php the_sub_field('hero_title'); ?></h1>
-		    <?php } elseif ($hero_type == 'secondary') { ?>
-		    	<h1 class="h0"><?php the_sub_field('hero_title'); ?></h1>
-		    	<h2><?php the_sub_field('hero_copy'); ?></h2>
+
+	  <?php if($content_enabled == true) { ?>
+	  	<div class="hero-content block s1 xl_s34">
+		  	<?php if($layout == 'hero_primary' || $layout == 'hero_secondary') { ?>
+		    	<h1 class="h0 hero-title"><?php echo $title; ?></h1>
+		    	<h2 class="hero-body"><?php echo $body; ?></h2>
+		    <?php } elseif ($layout == 'hero_tertiary') { ?>
+		    	<h1 class="hero-title"><?php echo $title; ?></h1>
+		    	<h4 class="hero-body"><?php echo $body; ?></h4>
 		    <?php } ?>
+
+		    <?php if ($cta_enabled == true) { ?>
+				<a href="<?php echo $cta_url; ?>" class="button hero-cta">
+					<span class="button-left"><?php echo $cta; ?></span>
+					<span class="button-right icon-arrow"></span>
+				</a>
+			<?php } ?>
 	  	</div>
 	  <?php } ?>
 
-	  <?php if ($cta == true) { ?>
-		<a href="<?php echo $cta_url; ?>" class="button">
-			<span class="button-left"><?php echo $cta_text; ?></span>
-			<span class="button-right icon-arrow"></span>
-		</a>
-	<?php } ?>
   </div>
 </section>

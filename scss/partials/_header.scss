@@ -75,6 +75,14 @@
 				margin-left: 5rem;
 			}
 		}
+
+		.has-scrolled & {
+			color: $c2 !important;
+
+			&:hover {
+				color: $c2l !important;
+			}
+		}
 	}
 
 	/*

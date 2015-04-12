@@ -14,6 +14,66 @@
 	.row {
 		height: 100%;
 	}
+
+	/*
+	 * Color Schemes
+	 */
+	// &.colorScheme--white // Default
+	&.colorScheme--light {
+		background-color: $gray10;
+	}
+	&.colorScheme--orange {
+		background-color: $c1;
+
+		.hero-title {
+			color: #FFFFFF;
+		}
+		.hero-body {
+			color: $c2;
+		}
+		.hero-cta {
+			&:hover {
+				.button-left {
+					background-color: rgba(#FFFFFF, 1);
+				}
+			}
+
+			.button-left {
+				background-color: rgba(#FFFFFF, .8);
+				color: $c2;
+			}
+			.button-right {
+				background-color: #FFFFFF;
+				color: $c1;
+			}
+		}
+	}
+	&.colorScheme--dark {
+		background-color: $c2;
+
+		.hero-title {
+			color: #FFFFFF;
+		}
+		.hero-body {
+			color: #FFFFFF;
+		}
+		// .hero-cta {
+		// 	&:hover {
+		// 		.button-left {
+		// 			background-color: rgba(#FFFFFF, 1);
+		// 		}
+		// 	}
+
+		// 	.button-left {
+		// 		background-color: rgba(#FFFFFF, .8);
+		// 		color: $c2;
+		// 	}
+		// 	.button-right {
+		// 		background-color: #FFFFFF;
+		// 		color: $c1;
+		// 	}
+		// }
+	}
 }
 .hero-content {
 	@include blockAb;
@@ -29,17 +89,17 @@
 	@media screen and (min-width: $xl) {
 		padding-bottom: 3rem;
 	}
+}
+.hero-title {
 
-	/*
-	 * Color classes added by user
-	 */
-	&.hero-content--dark {
-		color: $c2;
+}
+.hero-body {
+	margin-top: 1.2rem;
+
+	@media screen and (min-width: $lg) {
+		max-width: 75%;
 	}
-	&.hero-content--white {
-		color: #FFFFFF;
-	}
-	&.hero-content--orange {
-		color: $c1;
-	}
+}
+.hero-cta {
+	margin-top: 1.5rem;
 }

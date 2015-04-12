@@ -29,20 +29,31 @@
 	}
 }
 .u-h_s12 {
-	height: 250px; //fallback
-	height: 50%;
-	height: 50vh;
+	height: 500px; //fallback
+	height: 100%;
+	height: 100vh;
 
 	@media screen and (min-width: $sm) {
-		height: 400px;
+		height: 66%;
+		height: 66vh;
+	}
+
+	@media screen and (min-width: $med) {
+		height: 450px;
 		height: 50vh;
 	}
 }
 .u-h_s23 {
-	height: 350px; //fallback
-	height: 66vh;
+	height: 500px; //fallback
+	height: 100%;
+	height: 100vh;
 
 	@media screen and (min-width: $sm) {
+		height: 80%;
+		height: 80vh;
+	}
+
+	@media screen and (min-width: $med) {
 		height: 600px;
 		height: 66vh;
 	}
