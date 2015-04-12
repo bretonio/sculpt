@@ -10,22 +10,28 @@
 
 	if ($layout == 'single_large' || $layout == 'twoUp_large') {
 		$size = 'photoModule--large';
+	} else if ($layout == 'single_full') {
+		$size = 'photoModule--full';
+	} else if ($layout == 'single_small' || $layout == 'twoUp_small') {
+		$size = 'h-photoModule--small';
 	}
 ?>
 
 <section class="container photoModule <?php echo $size ?>">
 	<div class="row">
 
-		<?php if ($layout == 'single_large' || $layout == 'single_small') { ?>
+		<?php if ($layout == 'single_full') { ?>
+			<div class="block photoModule-photo s1" style="background-image: url('<?php echo $photo ?>');"></div>
+		<?php } elseif ($layout == 'single_large' || $layout == 'single_small') { ?>
 			<div class="block photoModule-photo s1" style="background-image: url('<?php echo $photo ?>');"></div>
 		<?php } elseif ($layout == 'twoUp_large' || $layout == 'twoUp_small') { ?>
-			<div class="block photoModule-photo s12" style="background-image: url('<?php echo $photo12 ?>');"></div>
-			<div class="block photoModule-photo s12" style="background-image: url('<?php echo $photo22 ?>');"></div>
+			<div class="block photoModule-photo s1 med_s12" style="background-image: url('<?php echo $photo12 ?>');"></div>
+			<div class="block photoModule-photo s1 med_s12" style="background-image: url('<?php echo $photo22 ?>');"></div>
 		<?php } elseif ($layout == 'fourUp') { ?>
-			<div class="block photoModule-photo s12 med_s14" style="background-image: url('<?php echo $photo14 ?>');"></div>
-			<div class="block photoModule-photo s12 med_s14" style="background-image: url('<?php echo $photo24 ?>');"></div>
-			<div class="block photoModule-photo s12 med_s14" style="background-image: url('<?php echo $photo34 ?>');"></div>
-			<div class="block photoModule-photo s12 med_s14" style="background-image: url('<?php echo $photo44 ?>');"></div>
+			<div class="block photoModule-photo s12 lg_s14" style="background-image: url('<?php echo $photo14 ?>');"></div>
+			<div class="block photoModule-photo s12 lg_s14" style="background-image: url('<?php echo $photo24 ?>');"></div>
+			<div class="block photoModule-photo s12 lg_s14" style="background-image: url('<?php echo $photo34 ?>');"></div>
+			<div class="block photoModule-photo s12 lg_s14" style="background-image: url('<?php echo $photo44 ?>');"></div>
 		<?php } ?>
 	</div>
 </section>

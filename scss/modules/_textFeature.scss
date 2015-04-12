@@ -1,0 +1,63 @@
+.textFeature {
+	.row {
+		text-align: center;
+	}
+
+	.icon-quotation {
+		@include blockRel;
+
+		font-size: 3rem;
+		opacity: .8;
+		text-align: center;
+	}
+	.textFeature-body p {
+		@include h2;
+
+		margin: 4rem 0 3rem;
+		text-align: center;
+	}
+	.textFeature-byline {
+		p {
+			opacity: .8;
+			text-align: center;
+		}
+		a {
+			font-weight: 900;
+			opacity: .8;
+		}
+	}
+
+	/*
+	 * Color Schemes
+	 */
+	// .colorScheme--white // Default
+	&.colorScheme--light {
+		background-color: $gray10;
+	}
+	&.colorScheme--orange {
+		background-color: $c1;
+
+		.icon-quotation {
+			color: #FFFFFF;
+		}
+
+		.textFeature-byline p {
+			color: #FFFFFF;
+		}
+	}
+	&.colorScheme--dark {
+		background-color: $c2;
+
+		.icon-quotation {
+			color: #FFFFFF;
+		}
+
+		.textFeature-body p {
+			color: #FFFFFF;
+		}
+
+		.textFeature-byline p {
+			color: #FFFFFF;
+		}
+	}
+}

@@ -1,46 +1,93 @@
 .textModule {
 	background-color: #FFFFFF;
-	padding: 6rem 0;
+}
+.textModule-block {
+	margin: 10px 0;
+	vertical-align: middle !important;
 
-	.textModule-block {
-		vertical-align: middle !important;
+	@media screen and (min-width: $med) {
+		margin: 20px 0;
+	}
 
-		.textModule-img {
-			@include blockRel;
+	.textModule-img {
+		@include blockRel;
 
-			max-width: 80%;
-			margin: 0 auto;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	.textModule-title {
+		opacity: .9;
+	}
+
+	.textModule-block-link {
+		@include inlineRel;
+
+		&:hover::after {
+			background-color: rgba($c2, 1);
 		}
 
-		// textModule-title
-		h3 {
-			opacity: .8;
+		&::after {
+			@include blockAb;
+			@include icon;
+
+			background-color: rgba($c2, .8); //same as textModule-title
+			content: '\e600';
+			color: #FFFFFF;
+			font-size: 1.3rem;
+			float: left;
+			height: 32px;
+			line-height: 32px;
+			right: -50px;
+			top: 0;
+			text-align: center;
+			width: 32px;
+			transition: .3s background;
+		}
+	}
+
+	/*
+	 * Color Schemes
+	 */
+	// .textModule--white // Default
+	.colorScheme--light & {
+		background-color: $gray10;
+	}
+
+	.colorScheme--orange & {
+		background-color: $c1;
+
+		.textModule-title {
+			color: rgba(#FFFFFF, .8);
 		}
 
 		.textModule-block-link {
-			@include inlineRel;
-
 			&:hover::after {
-				background-color: rgba($c2, 1);
+				background-color: rgba(#FFFFFF, 1);
 			}
-
 			&::after {
-				@include blockAb;
-				@include icon;
-
-				background-color: rgba($c2, .8); //same as textModule-title
-				content: '\e600';
-				color: #FFFFFF;
-				font-size: 1.3rem;
-				float: left;
-				height: 32px;
-				line-height: 32px;
-				right: -50px;
-				top: 0;
-				text-align: center;
-				width: 32px;
-				transition: .3s background;
+				background-color: rgba(#FFFFFF, .8); //same as textModule-title
 			}
+		}
+	}
+	.colorScheme--dark & {
+		background-color: $c2;
+
+		.textModule-title {
+			color: rgba(#FFFFFF, .8);
+		}
+
+		.textModule-block-link {
+			&:hover::after {
+				background-color: rgba(#FFFFFF, 1);
+			}
+			&::after {
+				background-color: rgba(#FFFFFF, .8); //same as textModule-title
+			}
+		}
+
+		p {
+			color: white;
 		}
 	}
 }

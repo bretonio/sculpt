@@ -1,7 +1,6 @@
 .header {
 	@include blockFix;
 
-	height: 80px;
 	left: 0;
 	padding: 2rem 2rem;
 	right: 0;
@@ -20,7 +19,7 @@
 		}
 		@media screen and (min-width: $med) {
 			background-color: #FFFFFF;
-			padding: 2rem 2rem;
+			padding: 1rem 1.5rem;
 			transition: padding .2s ease-out, background .2s ease-out;	
 		}
 	}
@@ -40,12 +39,16 @@
 
 		display: none; // hide on mobile
 		font-weight: 500;
-		margin: 1rem 1rem 0;
+		margin: 1rem 0 0 2rem;
 		transition: .2s color;
 		vertical-align: middle;
 
 		@media screen and (min-width: $med) {
 			display: inline-block;
+			margin: 1rem 0 0 2rem;
+		}
+		@media screen and (min-width: $xl) {
+			margin: 1rem 0 0 4rem;
 		}
 
 		/*
@@ -54,7 +57,7 @@
 		&.menuToggle {
 			display: inline-block;
 			cursor: pointer;
-			margin-left: 2rem;
+			margin-left: 3rem;
 			top: 5px;
 			.icon-menu {
 				font-size: 4rem;
@@ -66,6 +69,10 @@
 				.icon-menu {
 					font-size: 2rem;
 				}
+			}
+
+			@media screen and (min-width: $xl) {
+				margin-left: 5rem;
 			}
 		}
 	}
@@ -103,6 +110,7 @@
 	h1 {
 		font-size: 0;
 		line-height: 0;
+		margin-bottom: 0;
 	}
 
 	.sculptLogo {

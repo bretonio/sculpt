@@ -1,11 +1,88 @@
 .ledeModule {
-	padding: 12rem 0;
+	background-color: #FFFFFF;
 
 	.ledeModule-title {
-		color: $c3;
+		color: rgba($c2, .15);
+		margin-bottom: 15px;
+
+		&::after {
+			@include blockRel;
+
+			background-color: rgba($c2, .15);
+			content: '';
+			height: 4px;
+			margin-top: 10px;
+			width: 100px;
+		}
+	}
+
+	.ledeModule-lede {
+		margin-bottom: 12px;
+
+		@media screen and (min-width: $sm) {
+			max-width: 75%;
+		}
+	}
+
+	.ledeModule-body {
+		max-width: 60%;
+
+		@media screen and (min-width: $lg) {
+			max-width: 50%;
+		}
 	}
 
 	.button {
 		margin-top: 1rem;
+	}
+
+
+	/*
+	 * Color Schemes
+	 */
+	// .ledeModule--white // Default
+	&.colorScheme--light {
+		background-color: $gray10;
+	}
+
+	&.colorScheme--orange {
+		background-color: $c1;
+
+		.ledeModule-title {
+			color: rgba(#FFFFFF, .3);
+
+			&::after {
+				background-color: rgba(#FFFFFF, .3);
+			}
+		}
+	}
+
+	&.colorScheme--dark {
+		background-color: $c2;
+
+		.ledeModule-title {
+			color: rgba(#FFFFFF, .3);
+
+			&::after {
+				background-color: rgba(#FFFFFF, .3);
+			}
+		}
+
+		.ledeModule-lede, p {
+			color: white;
+		}
+	}
+
+
+	/*
+	 * For ledeModules with textModules appended
+	 */
+	.textModule-block {
+		&:first-of-type {
+			margin: 20px 0 10px;
+		}
+		&:last-of-type {
+			margin: 10px 0 0;
+		}
 	}
 }

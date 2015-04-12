@@ -249,7 +249,7 @@
                             "label": "Hero Copy",
                             "name": "hero_copy",
                             "prefix": "",
-                            "type": "text",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -268,9 +268,9 @@
                             },
                             "default_value": "",
                             "placeholder": "",
-                            "prepend": "",
-                            "append": "",
                             "maxlength": "",
+                            "rows": "",
+                            "new_lines": "wpautop",
                             "readonly": 0,
                             "disabled": 0
                         },
@@ -287,12 +287,12 @@
                                     {
                                         "field": "field_55204058ba795",
                                         "operator": "==",
-                                        "value": "CTA"
+                                        "value": "cta"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
@@ -317,17 +317,17 @@
                                     {
                                         "field": "field_55204058ba795",
                                         "operator": "==",
-                                        "value": "CTA"
+                                        "value": "cta"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "\/",
-                            "placeholder": "",
+                            "default_value": "",
+                            "placeholder": "\/about",
                             "prepend": "",
                             "append": "",
                             "maxlength": "",
@@ -368,10 +368,10 @@
                         },
                         {
                             "key": "field_5521d0a12105e",
-                            "label": "Background Color",
-                            "name": "ledeModule_bg_color",
+                            "label": "Color Scheme",
+                            "name": "ledeModule_color",
                             "prefix": "",
-                            "type": "color_picker",
+                            "type": "select",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -380,12 +380,27 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#FFFFFF"
+                            "choices": {
+                                "colorScheme--white": "White",
+                                "colorScheme--light": "Light Gray",
+                                "colorScheme--orange": "Sculpt Orange",
+                                "colorScheme--dark": "Dark"
+                            },
+                            "default_value": {
+                                "": ""
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
                         },
                         {
                             "key": "field_5521d0ec2105f",
-                            "label": "Lede Module Type",
-                            "name": "ledeModule_type",
+                            "label": "Lede Module Layout",
+                            "name": "ledeModule_layout",
                             "prefix": "",
                             "type": "select",
                             "instructions": "",
@@ -399,10 +414,12 @@
                             "choices": {
                                 "lede": "Lede Only",
                                 "lede_body": "Lede and Paragraph",
-                                "lede_body_threeUp": "Lede, Paragraph and Three Col Text"
+                                "lede_twoUp": "Lede and Two Col Text",
+                                "lede_threeUp": "Lede and Three Col Text",
+                                "lede_fourUp": "Lede and Four Col Text"
                             },
                             "default_value": {
-                                "lede_body": "lede_body"
+                                "lede": "lede"
                             },
                             "allow_null": 0,
                             "multiple": 0,
@@ -476,7 +493,22 @@
                             "type": "true_false",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_body"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": 20,
                                 "class": "",
@@ -558,12 +590,26 @@
                                     {
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
-                                        "value": "lede_content_threeUp"
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": 33,
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
@@ -576,11 +622,11 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d3d8d9685",
-                            "label": "Column One Body",
-                            "name": "ledeModule_col_1_body",
+                            "key": "field_552991e18a5d4",
+                            "label": "Column One Link",
+                            "name": "ledeModule_col_1_url",
                             "prefix": "",
-                            "type": "textarea",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -588,22 +634,77 @@
                                     {
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
-                                        "value": "lede_content_threeUp"
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": 66,
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
+                            "placeholder": "\/about-us",
+                            "prepend": "",
+                            "append": "",
                             "maxlength": "",
-                            "rows": 3,
-                            "new_lines": "br",
                             "readonly": 0,
                             "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d3d8d9685",
+                            "label": "Column One Body",
+                            "name": "ledeModule_col_1_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
                         },
                         {
                             "key": "field_5521d41bd9687",
@@ -618,12 +719,26 @@
                                     {
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
-                                        "value": "lede_content_threeUp"
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": 33,
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
@@ -636,11 +751,11 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d431d9688",
-                            "label": "Column Two Body",
-                            "name": "ledeModule_col_2_body",
+                            "key": "field_552992518a5db",
+                            "label": "Column Two Link",
+                            "name": "ledeModule_col_2_url",
                             "prefix": "",
-                            "type": "textarea",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -648,22 +763,77 @@
                                     {
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
-                                        "value": "lede_content_threeUp"
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": 66,
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
+                            "placeholder": "\/about-us",
+                            "prepend": "",
+                            "append": "",
                             "maxlength": "",
-                            "rows": 3,
-                            "new_lines": "br",
                             "readonly": 0,
                             "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d431d9688",
+                            "label": "Column Two Body",
+                            "name": "ledeModule_col_2_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
                         },
                         {
                             "key": "field_5521d44bd9689",
@@ -678,12 +848,19 @@
                                     {
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
-                                        "value": "lede_content_threeUp"
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": 33,
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
@@ -696,11 +873,11 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d463d968a",
-                            "label": "Column Three Body",
-                            "name": "ledeModule_col_3_body",
+                            "key": "field_5529931a99ce4",
+                            "label": "Column Three Link",
+                            "name": "ledeModule_col_3_url",
                             "prefix": "",
-                            "type": "textarea",
+                            "type": "text",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -708,22 +885,150 @@
                                     {
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
-                                        "value": "lede_content_threeUp"
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": 66,
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about-us",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5521d463d968a",
+                            "label": "Column Three Body",
+                            "name": "ledeModule_col_3_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5521d0a12105e",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_5529936c99ce6",
+                            "label": "Column Four Title",
+                            "name": "ledeModule_col_4_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
                                 "class": "",
                                 "id": ""
                             },
                             "default_value": "",
                             "placeholder": "",
+                            "prepend": "",
+                            "append": "",
                             "maxlength": "",
-                            "rows": 3,
-                            "new_lines": "br",
                             "readonly": 0,
                             "disabled": 0
+                        },
+                        {
+                            "key": "field_5529938799ce7",
+                            "label": "Column Four Link",
+                            "name": "ledeModule_col_4_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about-us",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5529939a99ce8",
+                            "label": "Column Four Body",
+                            "name": "ledeModule_col_4_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5521d0ec2105f",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
                         }
                     ],
                     "min": "",
@@ -750,6 +1055,7 @@
                                 "id": ""
                             },
                             "choices": {
+                                "single_full": "Single Full Screen",
                                 "single_large": "Single Large",
                                 "single_small": "Single Small",
                                 "twoUp_large": "Two Up Large",
@@ -788,6 +1094,13 @@
                                         "field": "field_5525dca978a25",
                                         "operator": "==",
                                         "value": "single_small"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5525dca978a25",
+                                        "operator": "==",
+                                        "value": "single_full"
                                     }
                                 ]
                             ],
@@ -1039,7 +1352,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": 60,
+                                "width": 33,
                                 "class": "",
                                 "id": ""
                             },
@@ -1078,7 +1391,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": 40,
+                                "width": 33,
                                 "class": "",
                                 "id": ""
                             },
@@ -1093,35 +1406,34 @@
                         },
                         {
                             "key": "field_55273d1b52289",
-                            "label": "Background Color",
-                            "name": "textModule_bg_color",
+                            "label": "Color Scheme",
+                            "name": "textModule_color",
                             "prefix": "",
-                            "type": "color_picker",
-                            "instructions": "Sculpt Orange: #ff9254\r\nDeep blue: #33333d",
+                            "type": "select",
+                            "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": 50,
+                                "width": 33,
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "#FFFFFF"
-                        },
-                        {
-                            "key": "field_55273e94c6b33",
-                            "label": "Text Color",
-                            "name": "textModule_text_color",
-                            "prefix": "",
-                            "type": "color_picker",
-                            "instructions": "Default black: #111f2d",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": 50,
-                                "class": "",
-                                "id": ""
+                            "choices": {
+                                "colorScheme--white": "White (default)",
+                                "colorScheme--light": "Light Gray",
+                                "colorScheme--orange": "Sculpt Orange",
+                                "colorScheme--dark": "Dark"
                             },
-                            "default_value": "#111f2d"
+                            "default_value": {
+                                "textModule--white": "textModule--white"
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
                         },
                         {
                             "key": "field_55272f0009156",
@@ -1727,6 +2039,110 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "55299946671f1",
+                    "name": "textFeature",
+                    "label": "Text Feature",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5529997a671f2",
+                            "label": "Color Scheme",
+                            "name": "textFeature_color",
+                            "prefix": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "colorScheme--white": "White (default)",
+                                "colorScheme--light": "Light Gray",
+                                "colorScheme--orange": "Sculpt Orange",
+                                "colorScheme--dark": "Dark"
+                            },
+                            "default_value": {
+                                "textFeature--white": "textFeature--white"
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_552999db671f3",
+                            "label": "Quotation?",
+                            "name": "textFeature_quotation",
+                            "prefix": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "If this is a quotation, this will style the featured text as such.",
+                            "default_value": 0
+                        },
+                        {
+                            "key": "field_55299a0d671f4",
+                            "label": "Body",
+                            "name": "textFeature_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_55299a32671f5",
+                            "label": "Byline",
+                            "name": "textFeature_byline",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "Quote attribution. Link to their social\/website if you want too, but use target \"_blank\".",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552999db671f3",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Josh Krakauer <a href=\"http:\/\/twitter.com\/jhrak\" target=\"_blank\">@jhrak<\/a>",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -1755,5 +2171,5 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "modified": 1428635656
+    "modified": 1428798852
 }

@@ -42,19 +42,38 @@ a {
     padding: .01rem; // prevents margin-collapse
     margin-top: -0.1rem;
     z-index: 0;
-
-    &.dark {
-        background-color: $c2d;
-    }
-    &.darker {
-        background-color: darken($c2d, 5%);
-    }
-    &.light {
-        background-color: $c6;
-    }
 }
 .container {
     @include container;
+}
+
+.pad--sm {
+    padding: 3rem 0 2rem;
+
+    @media screen and (min-width: $sm) {
+        padding: 3rem 0;
+    }
+}
+.pad--med {
+    padding: 3rem 0;
+
+    @media screen and (min-width: $sm) {
+        padding: 6rem 0;
+    }
+}
+.pad--lg {
+    padding: 5rem 0 4rem;
+
+    @media screen and (min-width: $sm) {
+        padding: 8rem 0;
+    }
+}
+.pad--xl {
+    padding: 8rem 0;
+
+    @media screen and (min-width: $sm) {
+        padding: 12rem 0;
+    }
 }
 
 /* Use a row to specify width and .inline or .float options
@@ -105,7 +124,6 @@ a {
     }
 
     &.inline {
-        margin-top: calc(#{$gutter/2}); //offset the bottom margin on the .block class
         text-align: justify;
 
         &::after {
@@ -136,7 +154,6 @@ a {
     @include blockRel;
 
     float: left;
-    // margin-bottom: calc(#{$gutter}/2);
-    // padding: 2rem;
+    margin: auto;
     text-align: left;
 }
