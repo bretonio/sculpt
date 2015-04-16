@@ -1,0 +1,59 @@
+<?php 
+	$layout = get_sub_field('signUp_layout');
+	$color = get_sub_field('signUp_color');
+	$bg_img = get_sub_field('signUp_bg_image');
+
+	$title = get_sub_field('signUp_title');
+	$body = get_sub_field('signUp_body');
+
+	$cta = get_sub_field('signUp_cta');
+	$mce_url = get_sub_field('signUp_mce_url');
+?>
+
+<?php if ($layout == 'signUp--small') { ?>
+	<section class="signUp<?php echo ' '.$layout; ?> container pad--sm<?php echo ' '.$color; ?>">
+		<div class="row row--lg">
+			<h3 class="signUp-title"><?php echo $title; ?></h3>
+
+			<form class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+				<div class="inputGroup mc-field-group">
+					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="youremail@email.com">
+					<button type="submit" class="signUp-submit icon-arrow" name="subscribe" id="mc-embedded-subscribe"></button>
+				</div>
+				
+				<!-- real people should not fill this in and expect good things -->
+				<div style="position: absolute; left: -5000px;"><input type="text" name="b_b27ba410d303e0a239c8ba8e5_3568ace95e" tabindex="-1" value=""></div>
+
+				<div id="mce-responses" class="signUp-responses clear">
+					<div class="signUp-response response" id="mce-error-response" style="display:none"></div>
+					<div class="signUp-response response" id="mce-success-response" style="display:none"></div>
+				</div>
+			</form>
+
+		</div>
+	</section>
+
+<?php } elseif ($layout == 'signUp--large') { ?>
+	<section class="signUp<?php echo ' '.$layout; ?>  container pad--xl<?php echo ' '.$color; ?>">
+		<div class="row row--lg">
+			<h1 class="signUp-title"><?php echo $title; ?></h1>
+			<h2 class="signUp-body"><?php echo $body; ?></h2>
+
+			<form class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+				<div class="inputGroup mc-field-group">
+					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="youremail@email.com">
+					<button type="submit" class="signUp-submit" name="subscribe" id="mc-embedded-subscribe"><?php echo $cta; ?></button>
+				</div>
+
+				<!-- real people should not fill this in and expect good things -->
+				<div style="position: absolute; left: -5000px;"><input type="text" name="b_b27ba410d303e0a239c8ba8e5_3568ace95e" tabindex="-1" value=""></div>
+
+				<div id="mce-responses" class="signUp-responses clear">
+					<div class="signUp-response response" id="mce-error-response"></div>
+					<div class="signUp-response response" id="mce-success-response"></div>
+				</div>
+			</form>
+
+		</div>
+	</section>
+<?php } ?>

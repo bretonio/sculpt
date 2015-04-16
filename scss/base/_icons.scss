@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('./assets/icons/icomoon.eot?yq1qds');
-	src:url('./assets/icons/icomoon.eot?#iefixyq1qds') format('embedded-opentype'),
-		url('./assets/icons/icomoon.woff?yq1qds') format('woff'),
-		url('./assets/icons/icomoon.ttf?yq1qds') format('truetype'),
-		url('./assets/icons/icomoon.svg?yq1qds#icomoon') format('svg');
+	src:url('./assets/icons/icomoon.eot?-aos216');
+	src:url('./assets/icons/icomoon.eot?#iefix-aos216') format('embedded-opentype'),
+		url('./assets/icons/icomoon.woff?-aos216') format('woff'),
+		url('./assets/icons/icomoon.ttf?-aos216') format('truetype'),
+		url('./assets/icons/icomoon.svg?-aos216#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -76,3 +76,22 @@
 	content: "\e60b";
 }
 
+.icon-web:before {
+	content: "\e9c9";
+}
+
+.icon-googleplus:before {
+	content: "\ea88";
+}
+
+.icon-dribbble:before {
+	content: "\eaa6";
+}
+
+.icon-github:before {
+	content: "\eab1";
+}
+
+.icon-tumblr:before {
+	content: "\eabb";
+}

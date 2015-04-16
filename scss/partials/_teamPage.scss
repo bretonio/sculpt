@@ -1,0 +1,33 @@
+.teamPage-social {
+	margin-top: 10px;
+
+	h3, [class^="icon-"] {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	h3 {
+		margin: 3px 0 0;
+		width: 100%;
+
+		@media screen and (min-width: $sm){
+			width: auto;
+		}
+	}
+	[class^="icon-"] {
+		color: $c1;
+		font-size: 2.5rem;
+		margin: .5rem .3rem;
+
+		&:first-of-type {
+			margin-left: 0rem;
+		}
+		@media screen and (min-width: $sm){
+			font-size: 2rem;
+			margin: 0 .3rem;
+
+			&:first-of-type {
+				margin-left: 1.2rem;
+			}
+		}
+	}
+}

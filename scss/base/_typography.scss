@@ -73,7 +73,7 @@ $font-two: "museo-sans", Helvetica, arial, sans-serif;
 @mixin h4 {
     font-family: $font-one;
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 900;
     line-height: 3rem;
 }
 @mixin h5 {
@@ -84,15 +84,15 @@ $font-two: "museo-sans", Helvetica, arial, sans-serif;
 }
 @mixin h6 {
     font-family: $font-one;
-    font-size: 1.6rem;
-    font-weight: 100;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 1.8rem;
 }
 @mixin p {
     font-family: $font-one;
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 3rem;
+    line-height: 1.4;
 }
 
 .h0 {
