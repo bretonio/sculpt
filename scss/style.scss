@@ -25,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "scss/base/base";
 @import "scss/base/javascript";
 @import "scss/base/icons";
+@import "scss/base/pre";
 
 // Modules
 @import "scss/modules/hero";
@@ -32,11 +33,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "scss/modules/photoModule";
 @import "scss/modules/textModule";
 @import "scss/modules/textFeature";
+@import "scss/modules/rte";
+@import "scss/modules/signUp";
 
 // Partials
 @import "scss/partials/header";
 @import "scss/partials/footer";
 @import "scss/partials/page";
+@import "scss/partials/teamPage";
 
 
 

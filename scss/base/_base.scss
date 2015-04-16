@@ -48,10 +48,10 @@ a {
 }
 
 .pad--sm {
-    padding: 3rem 0 2rem;
+    padding: 3rem 0;
 
     @media screen and (min-width: $sm) {
-        padding: 5rem 0 3rem;
+        padding: 4.5rem 0;
     }
 }
 .pad--med {
@@ -62,7 +62,7 @@ a {
     }
 }
 .pad--lg {
-    padding: 5rem 0 4rem;
+    padding: 5rem 0;
 
     @media screen and (min-width: $sm) {
         padding: 8rem 0;
@@ -98,13 +98,14 @@ a {
     }
 
     &.row--sm {
+        max-width: 750px;
         width: 90%;
 
-        @media screen and (min-width: $xs) {
-            width: 70%;
-        }
         @media screen and (min-width: $med) {
-            width: 50%;
+            width: 80%;
+        }
+        @media screen and (min-width: $lg) {
+            width: 60%;
         }
     }
 
@@ -120,7 +121,14 @@ a {
     }
 
     &.row--lg {
-        width: 95%;
+        width: 90%;
+
+        @media screen and (min-width: $xs) {
+            width: 92.5%;
+        }
+        @media screen and (min-width: $med) {
+            width: 95%;
+        }
     }
 
     &.inline {

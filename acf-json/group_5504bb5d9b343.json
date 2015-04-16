@@ -2136,6 +2136,267 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "552c555305d4c",
+                    "name": "rte",
+                    "label": "Body Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_552c558b05d4d",
+                            "label": "Color Scheme",
+                            "name": "rte_color",
+                            "prefix": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "colorScheme--white": "White (default)",
+                                "colorScheme--light": "Light Gray",
+                                "colorScheme--orange": "Sculpt Orange",
+                                "colorScheme--dark": "Dark"
+                            },
+                            "default_value": {
+                                "colorScheme--white": "colorScheme--white"
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_552c55d305d4e",
+                            "label": "Content",
+                            "name": "rte_content",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "552c744965c9b",
+                    "name": "signUp",
+                    "label": "Sign Up Form",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_552c746165c9c",
+                            "label": "Layout",
+                            "name": "signUp_layout",
+                            "prefix": "",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "signUp--small": "Small",
+                                "signUp--large": "Large"
+                            },
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "signUp--small",
+                            "layout": "horizontal"
+                        },
+                        {
+                            "key": "field_552c74b965c9d",
+                            "label": "Color Scheme",
+                            "name": "signUp_color",
+                            "prefix": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "colorScheme--white": "White (default)",
+                                "colorScheme--light": "Light Gray",
+                                "colorScheme--orange": "Sculpt Orange",
+                                "colorScheme--dark": "Dark"
+                            },
+                            "default_value": {
+                                "": ""
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_552c74ed65c9e",
+                            "label": "Background Image",
+                            "name": "signUp_bg_image",
+                            "prefix": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552c746165c9c",
+                                        "operator": "==",
+                                        "value": "signUp--large"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 33,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_552c752565c9f",
+                            "label": "Title",
+                            "name": "signUp_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552c754465ca0",
+                            "label": "Body",
+                            "name": "signUp_body",
+                            "prefix": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552c746165c9c",
+                                        "operator": "==",
+                                        "value": "signUp--large"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": "br",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552c756365ca1",
+                            "label": "CTA",
+                            "name": "signUp_cta",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "CTA for the submit button",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552c746165c9c",
+                                        "operator": "==",
+                                        "value": "signUp--large"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "submit",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552c75ab65ca2",
+                            "label": "MailChimp URL",
+                            "name": "signUp_mce_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "\/\/wearesculpt.us7.list-manage.com\/subscribe\/post?u=b27ba410d303e0a239c8ba8e5&amp;id=3568ace95e",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -2164,5 +2425,5 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "modified": 1428875386
+    "modified": 1428982041
 }

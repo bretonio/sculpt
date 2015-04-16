@@ -1,0 +1,127 @@
+.rte {
+	h1 {
+		margin-bottom: 1.6rem;
+		opacity: .8;
+	}
+	h3, h4 {
+		opacity: .9;
+	}
+	h2, h3, h4, p {
+		margin-bottom: 1.2rem;
+	}
+	blockquote {
+		border-left: 4px solid $c1;
+		margin: 20px 0;
+		padding: 0 0 0 1rem;
+
+		@media screen and (min-width: $med) {
+			padding: 0 0 0 3rem;
+		}
+	}
+	ul, ol {
+		margin: 0 0 1.6rem;
+		padding: 0 0 0 3rem;
+	}
+	li {
+		@include p;
+	}
+	pre {
+		@include p;
+
+		border-left: 4px solid $gray20;
+		background-color: $gray10;
+		font-family: Consolas , Monaco, monospace;
+		overflow: auto;
+		overflow-y: hidden;
+		padding: 2rem 0 2rem 3rem;
+	}
+	figure {
+		@include blockRel;
+
+		margin: 20px 0;
+		max-width: 100%;
+
+		img {
+			@include blockRel; 
+
+			max-width: 100%;
+			height: auto !important;
+		}
+
+		figcaption {
+			@include h5;
+
+			border-left: 2px solid $gray10;
+			padding: 1rem 1.5rem;
+		}
+	}
+
+	/*
+	 * Color Schemes
+	 */
+	// &.colorScheme--white // Default
+	&.colorScheme--light {
+		background-color: $gray10;
+
+		pre {
+			background-color: #FFFFFF;
+		}
+		figure {
+			figcaption {
+				border-left: 2px solid $gray20;
+			}
+		}
+	}
+	&.colorScheme--orange {
+		background-color: $c1;
+
+		h1, h2, h3, h4,
+	 	blockquote {
+			color: #FFFFFF;
+		}
+
+		blockquote {
+			border-left: 4px solid #FFFFFF;
+		}
+
+		pre {
+			@include p;
+
+			border-left: 4px solid rgba(#FFFFFF, .6);
+			background-color: rgba(#FFFFFF, .1);
+			color: #FFFFFF;
+		}
+
+		figure {
+			figcaption {
+				border-left: 2px solid rgba(#FFFFFF, .6);
+			}
+		}
+	}
+	&.colorScheme--dark {
+		background-color: $c2;
+
+		h1, h2, h3, h4, h5, p,
+	 	li, blockquote, figcaption {
+			color: #FFFFFF;
+		}
+
+		blockquote {
+			border-left: 4px solid #FFFFFF;
+		}
+
+		pre {
+			@include p;
+
+			border-left: 4px solid rgba(#FFFFFF, .6);
+			background-color: rgba(#FFFFFF, .1);
+			color: #FFFFFF;
+		}
+
+		figure {
+			figcaption {
+				border-left: 2px solid rgba(#FFFFFF, .6);
+			}
+		}
+	}
+}

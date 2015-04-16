@@ -1,9 +1,228 @@
 {
-    "key": "group_552b3d902e53f",
+    "key": "group_552f1731b9eb5",
     "title": "Sculptrons",
     "fields": [
         {
-            "key": "field_552b3d903bc27",
+            "key": "field_552f26c4a2dac",
+            "label": "Profile Photo",
+            "name": "sculptron_pic",
+            "prefix": "",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_552f17ab7e562",
+            "label": "Name",
+            "name": "sculptron_name",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552f24c4809a9",
+            "label": "User",
+            "name": "sculptron_user",
+            "prefix": "",
+            "type": "user",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "role": "",
+            "allow_null": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_552f17d97e563",
+            "label": "Sub-headline-thingy",
+            "name": "sculptron_subtitle",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 100,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "CEO, Chief Executive Intern, and resident That Guy.",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552f18797e567",
+            "label": "Website URL",
+            "name": "sculptron_website_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552f184e7e564",
+            "label": "Twitter URL",
+            "name": "sculptron_twitter_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552f18697e565",
+            "label": "Facebook Url",
+            "name": "sculptron_facebook_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552f18707e566",
+            "label": "Instagram URL",
+            "name": "sculptron_instagram_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552f189bd36e7",
+            "label": "Pinterest URL",
+            "name": "sculptron_pinterest_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552f18a4d36e8",
+            "label": "Tumblr URL",
+            "name": "sculptron_tumblr_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_552f1731c8fca",
             "label": "Modules",
             "name": "modules",
             "prefix": "",
@@ -21,13 +240,709 @@
             "max": "",
             "layouts": [
                 {
+                    "key": "5504bbf5a6c95",
+                    "name": "ledeModule",
+                    "label": "Lede",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_552f1731cf157",
+                            "label": "Section Title",
+                            "name": "ledeModule_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 40,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "who we are",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf16b",
+                            "label": "Color Scheme",
+                            "name": "ledeModule_color",
+                            "prefix": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 30,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "colorScheme--white": "White",
+                                "colorScheme--light": "Light Gray",
+                                "colorScheme--orange": "Sculpt Orange",
+                                "colorScheme--dark": "Dark"
+                            },
+                            "default_value": {
+                                "": ""
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_552f1731cf180",
+                            "label": "Lede Module Layout",
+                            "name": "ledeModule_layout",
+                            "prefix": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 30,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "lede": "Lede Only",
+                                "lede_body": "Lede and Paragraph",
+                                "lede_twoUp": "Lede and Two Col Text",
+                                "lede_threeUp": "Lede and Three Col Text",
+                                "lede_fourUp": "Lede and Four Col Text"
+                            },
+                            "default_value": {
+                                "lede": "lede"
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_552f1731cf195",
+                            "label": "Lede",
+                            "name": "ledeModule_lede",
+                            "prefix": "",
+                            "type": "textarea",
+                            "instructions": "This is the large lede text to begin the section, though not required. Keep this short, ideally, though you can hit return and separate paragraphs if you want.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": "br",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf1a9",
+                            "label": "Body",
+                            "name": "ledeModule_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "Content section. Use this to add copy and paragraphs. Again, this section ideally does not have much content in it. Try to keep it to one paragraph if possible.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_body"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_body_threeUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_552f1731cf1bd",
+                            "label": "CTA Button",
+                            "name": "ledeModule_cta",
+                            "prefix": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_body"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 20,
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Show a CTA button?",
+                            "default_value": 0
+                        },
+                        {
+                            "key": "field_552f1731cf1d1",
+                            "label": "CTA Text",
+                            "name": "ledeModule_cta_text",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf1bd",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 40,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "learn more",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf1e6",
+                            "label": "CTA Link",
+                            "name": "ledeModule_cta_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf1bd",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 40,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf1f9",
+                            "label": "Column One Title",
+                            "name": "ledeModule_col_1_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf20d",
+                            "label": "Column One Link",
+                            "name": "ledeModule_col_1_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about-us",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf222",
+                            "label": "Column One Body",
+                            "name": "ledeModule_col_1_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_552f1731cf235",
+                            "label": "Column Two Title",
+                            "name": "ledeModule_col_2_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf249",
+                            "label": "Column Two Link",
+                            "name": "ledeModule_col_2_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about-us",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf25d",
+                            "label": "Column Two Body",
+                            "name": "ledeModule_col_2_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_twoUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_552f1731cf271",
+                            "label": "Column Three Title",
+                            "name": "ledeModule_col_3_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf285",
+                            "label": "Column Three Link",
+                            "name": "ledeModule_col_3_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about-us",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf2c2",
+                            "label": "Column Three Body",
+                            "name": "ledeModule_col_3_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_threeUp"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_552f1731cf16b",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        },
+                        {
+                            "key": "field_552f1731cf2d6",
+                            "label": "Column Four Title",
+                            "name": "ledeModule_col_4_title",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf2ea",
+                            "label": "Column Four Link",
+                            "name": "ledeModule_col_4_url",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "\/about-us",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_552f1731cf2fe",
+                            "label": "Column Four Body",
+                            "name": "ledeModule_col_4_body",
+                            "prefix": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_552f1731cf180",
+                                        "operator": "==",
+                                        "value": "lede_fourUp"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 100,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
                     "key": "5525dc9678a24",
                     "name": "photoModules",
                     "label": "Photos",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_552b3d9041cc7",
+                            "key": "field_552f1731cf312",
                             "label": "Layout",
                             "name": "photoModule_layout",
                             "prefix": "",
@@ -60,7 +975,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_552b3d9041cda",
+                            "key": "field_552f1731cf326",
                             "label": "Photo",
                             "name": "photoModule_img_1",
                             "prefix": "",
@@ -70,21 +985,21 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "single_large"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "single_small"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "single_full"
                                     }
@@ -107,7 +1022,7 @@
                             "mime_types": ".jpg"
                         },
                         {
-                            "key": "field_552b3d9041cee",
+                            "key": "field_552f1731cf33a",
                             "label": "Photo One",
                             "name": "photoModule_img_12",
                             "prefix": "",
@@ -117,14 +1032,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "twoUp_large"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "twoUp_small"
                                     }
@@ -147,7 +1062,7 @@
                             "mime_types": ".jpg"
                         },
                         {
-                            "key": "field_552b3d9041d01",
+                            "key": "field_552f1731cf34e",
                             "label": "Photo Two",
                             "name": "photoModule_img_22",
                             "prefix": "",
@@ -157,14 +1072,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "twoUp_large"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "twoUp_small"
                                     }
@@ -187,7 +1102,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_552b3d9041d14",
+                            "key": "field_552f1731cf362",
                             "label": "Photo One",
                             "name": "photoModule_img_14",
                             "prefix": "",
@@ -197,7 +1112,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -220,7 +1135,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_552b3d9041d27",
+                            "key": "field_552f1731cf376",
                             "label": "Photo Two",
                             "name": "photoModule_img_24",
                             "prefix": "",
@@ -230,7 +1145,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -253,7 +1168,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_552b3d9041d3a",
+                            "key": "field_552f1731cf38a",
                             "label": "Photo Three",
                             "name": "photoModule_img_34",
                             "prefix": "",
@@ -263,7 +1178,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -286,7 +1201,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_552b3d9041d4d",
+                            "key": "field_552f1731cf39e",
                             "label": "Photo Four",
                             "name": "photoModule_img_44",
                             "prefix": "",
@@ -296,7 +1211,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041cc7",
+                                        "field": "field_552f1731cf312",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -329,7 +1244,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_552b3d9041d60",
+                            "key": "field_552f1731cf3b2",
                             "label": "Layout",
                             "name": "textModule_layout",
                             "prefix": "",
@@ -360,7 +1275,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_552b3d9041d73",
+                            "key": "field_552f1731cf3c5",
                             "label": "Image Position",
                             "name": "textModule_img_pos",
                             "prefix": "",
@@ -370,7 +1285,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     }
@@ -391,7 +1306,7 @@
                             "layout": "horizontal"
                         },
                         {
-                            "key": "field_552b3d9041d86",
+                            "key": "field_552f1731cf3d9",
                             "label": "Color Scheme",
                             "name": "textModule_color",
                             "prefix": "",
@@ -422,7 +1337,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_552b3d9041d99",
+                            "key": "field_552f1731cf3ed",
                             "label": "Column One Image",
                             "name": "textModule_col_1_img",
                             "prefix": "",
@@ -432,12 +1347,12 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_552b3d9041d73",
+                                        "field": "field_552f1731cf3c5",
                                         "operator": "==",
                                         "value": "textModule_img_left"
                                     }
@@ -460,7 +1375,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_552b3d9041dac",
+                            "key": "field_552f1731cf401",
                             "label": "Column One Title",
                             "name": "textModule_col_1_title",
                             "prefix": "",
@@ -470,33 +1385,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_552b3d9041d73",
+                                        "field": "field_552f1731cf3c5",
                                         "operator": "==",
                                         "value": "textModule_img_right"
                                     }
@@ -516,7 +1431,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552b3d9041dbf",
+                            "key": "field_552f1731cf415",
                             "label": "Column One Title Link",
                             "name": "textModule_col_1_url",
                             "prefix": "",
@@ -526,33 +1441,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_552b3d9041d73",
+                                        "field": "field_552f1731cf3c5",
                                         "operator": "==",
                                         "value": "textModule_img_right"
                                     }
@@ -572,7 +1487,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552b3d9041dd3",
+                            "key": "field_552f1731cf429",
                             "label": "Column One Body",
                             "name": "textModule_col_1_body",
                             "prefix": "",
@@ -582,33 +1497,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_552b3d9041d73",
+                                        "field": "field_552f1731cf3c5",
                                         "operator": "==",
                                         "value": "textModule_img_right"
                                     }
@@ -625,7 +1540,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_552b3d9041de8",
+                            "key": "field_552f1731cf43f",
                             "label": "Column Two Image",
                             "name": "textModule_col_2_img",
                             "prefix": "",
@@ -635,12 +1550,12 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_552b3d9041d73",
+                                        "field": "field_552f1731cf3c5",
                                         "operator": "==",
                                         "value": "textModule_img_right"
                                     }
@@ -663,7 +1578,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_552b3d9041dfb",
+                            "key": "field_552f1731cf453",
                             "label": "Column Two Title",
                             "name": "textModule_col_2_title",
                             "prefix": "",
@@ -673,33 +1588,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_552b3d9041d73",
+                                        "field": "field_552f1731cf3c5",
                                         "operator": "==",
                                         "value": "textModule_img_left"
                                     }
@@ -719,7 +1634,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552b3d9041e0e",
+                            "key": "field_552f1731cf467",
                             "label": "Column Two Title Link",
                             "name": "textModule_col_2_url",
                             "prefix": "",
@@ -729,33 +1644,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_552b3d9041d73",
+                                        "field": "field_552f1731cf3c5",
                                         "operator": "==",
                                         "value": "textModule_img_left"
                                     }
@@ -775,7 +1690,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552b3d9041e22",
+                            "key": "field_552f1731cf47b",
                             "label": "Column Two Body",
                             "name": "textModule_col_2_body",
                             "prefix": "",
@@ -785,33 +1700,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_552b3d9041d73",
+                                        "field": "field_552f1731cf3c5",
                                         "operator": "==",
                                         "value": "textModule_img_left"
                                     }
@@ -828,7 +1743,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_552b3d9041e35",
+                            "key": "field_552f1731cf48f",
                             "label": "Column Three Title",
                             "name": "textModule_col_3_title",
                             "prefix": "",
@@ -838,14 +1753,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -865,7 +1780,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552b3d9041e48",
+                            "key": "field_552f1731cf4a3",
                             "label": "Column Three Title Link",
                             "name": "textModule_col_3_url",
                             "prefix": "",
@@ -875,14 +1790,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -902,7 +1817,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552b3d9041e5b",
+                            "key": "field_552f1731cf4b6",
                             "label": "Column Three Body",
                             "name": "textModule_col_3_body",
                             "prefix": "",
@@ -912,14 +1827,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -936,7 +1851,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_552b3d9041e6e",
+                            "key": "field_552f1731cf4ca",
                             "label": "Column Four Title",
                             "name": "textModule_col_4_title",
                             "prefix": "",
@@ -946,7 +1861,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -966,7 +1881,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552b3d9041e81",
+                            "key": "field_552f1731cf4de",
                             "label": "Column Four Title Link",
                             "name": "textModule_col_4_url",
                             "prefix": "",
@@ -976,7 +1891,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -996,7 +1911,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552b3d9041e94",
+                            "key": "field_552f1731cf4f2",
                             "label": "Column Four Body",
                             "name": "textModule_col_4_body",
                             "prefix": "",
@@ -1006,7 +1921,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041d60",
+                                        "field": "field_552f1731cf3b2",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1033,7 +1948,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_552b3d9041ea7",
+                            "key": "field_552f1731cf506",
                             "label": "Color Scheme",
                             "name": "textFeature_color",
                             "prefix": "",
@@ -1064,7 +1979,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_552b3d9041eba",
+                            "key": "field_552f1731cf51a",
                             "label": "Quotation?",
                             "name": "textFeature_quotation",
                             "prefix": "",
@@ -1081,7 +1996,7 @@
                             "default_value": 0
                         },
                         {
-                            "key": "field_552b3d9041ecd",
+                            "key": "field_552f1731cf52e",
                             "label": "Body",
                             "name": "textFeature_body",
                             "prefix": "",
@@ -1100,7 +2015,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_552b3d9041ee0",
+                            "key": "field_552f1731cf542",
                             "label": "Byline",
                             "name": "textFeature_byline",
                             "prefix": "",
@@ -1110,7 +2025,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552b3d9041eba",
+                                        "field": "field_552f1731cf51a",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -1138,7 +2053,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "people"
+                "value": "team"
             }
         ]
     ],
@@ -1154,12 +2069,11 @@
         "discussion",
         "comments",
         "revisions",
-        "slug",
+        "author",
         "format",
-        "page_attributes",
         "categories",
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1428898011
+    "modified": 1429153534
 }
