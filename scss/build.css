@@ -2814,12 +2814,6 @@ div.mce_inline_error {
   background-color: #e1e1e1;
   padding: 3rem 5%;
   text-align: left; }
-.footer-social-links::after {
-  display: inline-block;
-  position: relative;
-  content: '';
-  height: 100%;
-  vertical-align: middle; }
 @media screen and (min-width: 399px) {
   .footer-social-links {
     padding: 3rem 3.75%; } }
@@ -2829,7 +2823,13 @@ div.mce_inline_error {
     text-align: center; } }
 @media screen and (min-width: 1000px) {
   .footer-social-links {
-    height: 160px; } }
+    height: 160px; }
+  .footer-social-links::after {
+    display: inline-block;
+    position: relative;
+    content: '';
+    height: 100%;
+    vertical-align: middle; } }
 .footer-social-links .footer-social-link {
   display: inline-block;
   position: relative;

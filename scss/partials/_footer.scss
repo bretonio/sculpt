@@ -52,14 +52,6 @@
 	padding: 3rem 5%;
 	text-align: left;
 
-	&::after {
-		@include inlineRel;
-
-		content:'';
-		height: 100%;
-		vertical-align: middle;
-	}
-
 	@media screen and (min-width: $xs) {
 		padding: 3rem 3.75%;
 	}
@@ -69,6 +61,14 @@
 	}
 	@media screen and (min-width: $lg) {
 		height: 160px;
+
+		&::after {
+			@include inlineRel;
+
+			content:'';
+			height: 100%;
+			vertical-align: middle;
+		}
 	}
 
 	.footer-social-link {
