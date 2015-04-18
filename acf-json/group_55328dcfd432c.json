@@ -1,70 +1,34 @@
 {
-    "key": "group_5504bb5d9b343",
-    "title": "Pages",
+    "key": "group_55328dcfd432c",
+    "title": "Projects",
     "fields": [
         {
-            "key": "field_55216c652a26a",
-            "label": "Logo",
-            "name": "logo_params",
+            "key": "field_55328f9690863",
+            "label": "Featured Image",
+            "name": "featured_img",
             "prefix": "",
-            "type": "select",
-            "instructions": "Change header type depending on the hero background you want to use.",
+            "type": "image",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": 50,
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "sculptLogo": "Orange mark, dark text (default)",
-                "sculptLogo--light": "White mark, dark text",
-                "sculptLogo--white": "White",
-                "sculptLogo--orange": "Orange"
-            },
-            "default_value": {
-                "sculptLogo": "sculptLogo"
-            },
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": "",
-            "disabled": 0,
-            "readonly": 0
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
-            "key": "field_5521ab5900f36",
-            "label": "Menu Color",
-            "name": "menu_color",
-            "prefix": "",
-            "type": "select",
-            "instructions": "Change the color of the menu links.",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": 50,
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "menu-items--dark": "Dark (default)",
-                "menu-items--white": "White",
-                "menu-items--orange": "Orange"
-            },
-            "default_value": {
-                "": ""
-            },
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": "",
-            "disabled": 0,
-            "readonly": 0
-        },
-        {
-            "key": "field_5504bb62a6c8f",
+            "key": "field_55328dcfe6810",
             "label": "Modules",
             "name": "modules",
             "prefix": "",
@@ -88,7 +52,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_55204058ba795",
+                            "key": "field_55328dcfecd7d",
                             "label": "Layout",
                             "name": "hero_layout",
                             "prefix": "",
@@ -118,7 +82,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_552041baba797",
+                            "key": "field_55328dcfecd92",
                             "label": "Color Scheme",
                             "name": "hero_color",
                             "prefix": "",
@@ -149,7 +113,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_5504bb7ea6c90",
+                            "key": "field_55328dcfecda3",
                             "label": "Background Image",
                             "name": "hero_bg_img",
                             "prefix": "",
@@ -174,7 +138,7 @@
                             "mime_types": ".jpg"
                         },
                         {
-                            "key": "field_5504bb87a6c91",
+                            "key": "field_55328dcfecdb4",
                             "label": "Show Content?",
                             "name": "hero_content_enabled",
                             "prefix": "",
@@ -191,7 +155,7 @@
                             "default_value": 0
                         },
                         {
-                            "key": "field_55205aa93280a",
+                            "key": "field_55328dcfecdc5",
                             "label": "Title",
                             "name": "hero_title",
                             "prefix": "",
@@ -201,7 +165,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5504bb87a6c91",
+                                        "field": "field_55328dcfecdb4",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -221,7 +185,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55205aca3280b",
+                            "key": "field_55328dcfecdd5",
                             "label": "Body",
                             "name": "hero_body",
                             "prefix": "",
@@ -231,7 +195,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5504bb87a6c91",
+                                        "field": "field_55328dcfecdb4",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -251,7 +215,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552ae7fb76b10",
+                            "key": "field_55328dcfecde5",
                             "label": "Show CTA Button",
                             "name": "hero_cta_enabled",
                             "prefix": "",
@@ -268,7 +232,7 @@
                             "default_value": 0
                         },
                         {
-                            "key": "field_55204156ba796",
+                            "key": "field_55328dcfecdf5",
                             "label": "CTA Text",
                             "name": "hero_cta",
                             "prefix": "",
@@ -278,7 +242,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552ae7fb76b10",
+                                        "field": "field_55328dcfecde5",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -298,7 +262,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552166f03b194",
+                            "key": "field_55328dcfece06",
                             "label": "CTA Link",
                             "name": "hero_cta_url",
                             "prefix": "",
@@ -308,7 +272,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552ae7fb76b10",
+                                        "field": "field_55328dcfecde5",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -338,7 +302,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5521cf482105b",
+                            "key": "field_55328dcfece16",
                             "label": "Section Title",
                             "name": "ledeModule_title",
                             "prefix": "",
@@ -360,7 +324,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d0a12105e",
+                            "key": "field_55328dcfece27",
                             "label": "Color Scheme",
                             "name": "ledeModule_color",
                             "prefix": "",
@@ -391,7 +355,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_5521d0ec2105f",
+                            "key": "field_55328dcfece37",
                             "label": "Lede Module Layout",
                             "name": "ledeModule_layout",
                             "prefix": "",
@@ -423,7 +387,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_5521cf832105c",
+                            "key": "field_55328dcfece4a",
                             "label": "Lede",
                             "name": "ledeModule_lede",
                             "prefix": "",
@@ -445,7 +409,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d0142105d",
+                            "key": "field_55328dcfece5a",
                             "label": "Body",
                             "name": "ledeModule_body",
                             "prefix": "",
@@ -455,14 +419,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_body"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_body_threeUp"
                                     }
@@ -479,7 +443,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_5521f2ac9b075",
+                            "key": "field_55328dcfece6b",
                             "label": "CTA Button",
                             "name": "ledeModule_cta",
                             "prefix": "",
@@ -489,14 +453,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_body"
                                     }
@@ -511,7 +475,7 @@
                             "default_value": 0
                         },
                         {
-                            "key": "field_5521f2ec9b076",
+                            "key": "field_55328dcfece7c",
                             "label": "CTA Text",
                             "name": "ledeModule_cta_text",
                             "prefix": "",
@@ -521,7 +485,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521f2ac9b075",
+                                        "field": "field_55328dcfece6b",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -541,7 +505,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521f35e9b077",
+                            "key": "field_55328dcfece8d",
                             "label": "CTA Link",
                             "name": "ledeModule_cta_url",
                             "prefix": "",
@@ -551,7 +515,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521f2ac9b075",
+                                        "field": "field_55328dcfece6b",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -571,7 +535,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d3a6d9684",
+                            "key": "field_55328dcfece9d",
                             "label": "Column One Title",
                             "name": "ledeModule_col_1_title",
                             "prefix": "",
@@ -581,21 +545,21 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -615,7 +579,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552991e18a5d4",
+                            "key": "field_55328dcfeceae",
                             "label": "Column One Link",
                             "name": "ledeModule_col_1_url",
                             "prefix": "",
@@ -625,21 +589,21 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -659,7 +623,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d3d8d9685",
+                            "key": "field_55328dcfecebe",
                             "label": "Column One Body",
                             "name": "ledeModule_col_1_body",
                             "prefix": "",
@@ -669,21 +633,21 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -700,7 +664,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_5521d41bd9687",
+                            "key": "field_55328dcfececf",
                             "label": "Column Two Title",
                             "name": "ledeModule_col_2_title",
                             "prefix": "",
@@ -710,21 +674,21 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -744,7 +708,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552992518a5db",
+                            "key": "field_55328dcfecee1",
                             "label": "Column Two Link",
                             "name": "ledeModule_col_2_url",
                             "prefix": "",
@@ -754,21 +718,21 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -788,7 +752,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d431d9688",
+                            "key": "field_55328dcfecef4",
                             "label": "Column Two Body",
                             "name": "ledeModule_col_2_body",
                             "prefix": "",
@@ -798,21 +762,21 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -829,7 +793,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_5521d44bd9689",
+                            "key": "field_55328dcfecf04",
                             "label": "Column Three Title",
                             "name": "ledeModule_col_3_title",
                             "prefix": "",
@@ -839,14 +803,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -866,7 +830,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5529931a99ce4",
+                            "key": "field_55328dcfecf15",
                             "label": "Column Three Link",
                             "name": "ledeModule_col_3_url",
                             "prefix": "",
@@ -876,14 +840,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -903,7 +867,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5521d463d968a",
+                            "key": "field_55328dcfecf25",
                             "label": "Column Three Body",
                             "name": "ledeModule_col_3_body",
                             "prefix": "",
@@ -913,14 +877,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5521d0a12105e",
+                                        "field": "field_55328dcfece27",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -937,7 +901,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_5529936c99ce6",
+                            "key": "field_55328dcfecf37",
                             "label": "Column Four Title",
                             "name": "ledeModule_col_4_title",
                             "prefix": "",
@@ -947,7 +911,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -967,7 +931,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5529938799ce7",
+                            "key": "field_55328dcfecf47",
                             "label": "Column Four Link",
                             "name": "ledeModule_col_4_url",
                             "prefix": "",
@@ -977,7 +941,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -997,7 +961,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5529939a99ce8",
+                            "key": "field_55328dcfecf57",
                             "label": "Column Four Body",
                             "name": "ledeModule_col_4_body",
                             "prefix": "",
@@ -1007,7 +971,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5521d0ec2105f",
+                                        "field": "field_55328dcfece37",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -1034,7 +998,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5525dca978a25",
+                            "key": "field_55328dcfecf68",
                             "label": "Layout",
                             "name": "photoModule_layout",
                             "prefix": "",
@@ -1067,7 +1031,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_5525ddd078a26",
+                            "key": "field_55328dcfecf78",
                             "label": "Photo",
                             "name": "photoModule_img_1",
                             "prefix": "",
@@ -1077,21 +1041,21 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "single_large"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "single_small"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "single_full"
                                     }
@@ -1114,7 +1078,7 @@
                             "mime_types": ".jpg"
                         },
                         {
-                            "key": "field_5525de5478a28",
+                            "key": "field_55328dcfecf89",
                             "label": "Photo One",
                             "name": "photoModule_img_12",
                             "prefix": "",
@@ -1124,14 +1088,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "twoUp_large"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "twoUp_small"
                                     }
@@ -1154,7 +1118,7 @@
                             "mime_types": ".jpg"
                         },
                         {
-                            "key": "field_5525de7a78a2a",
+                            "key": "field_55328dcfecf99",
                             "label": "Photo Two",
                             "name": "photoModule_img_22",
                             "prefix": "",
@@ -1164,14 +1128,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "twoUp_large"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "twoUp_small"
                                     }
@@ -1194,7 +1158,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5525de9978a2c",
+                            "key": "field_55328dcfecfa9",
                             "label": "Photo One",
                             "name": "photoModule_img_14",
                             "prefix": "",
@@ -1204,7 +1168,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1227,7 +1191,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5525dec078a2d",
+                            "key": "field_55328dcfecfb9",
                             "label": "Photo Two",
                             "name": "photoModule_img_24",
                             "prefix": "",
@@ -1237,7 +1201,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1260,7 +1224,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5525ded778a2e",
+                            "key": "field_55328dcfecfc9",
                             "label": "Photo Three",
                             "name": "photoModule_img_34",
                             "prefix": "",
@@ -1270,7 +1234,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1293,7 +1257,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_5525deeb78a2f",
+                            "key": "field_55328dcfecfda",
                             "label": "Photo Four",
                             "name": "photoModule_img_44",
                             "prefix": "",
@@ -1303,7 +1267,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5525dca978a25",
+                                        "field": "field_55328dcfecf68",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1336,7 +1300,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_55272b524c543",
+                            "key": "field_55328dcfecfea",
                             "label": "Layout",
                             "name": "textModule_layout",
                             "prefix": "",
@@ -1367,7 +1331,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_55272fc209157",
+                            "key": "field_55328dcfecffa",
                             "label": "Image Position",
                             "name": "textModule_img_pos",
                             "prefix": "",
@@ -1377,7 +1341,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     }
@@ -1398,7 +1362,7 @@
                             "layout": "horizontal"
                         },
                         {
-                            "key": "field_55273d1b52289",
+                            "key": "field_55328dcfed025",
                             "label": "Color Scheme",
                             "name": "textModule_color",
                             "prefix": "",
@@ -1429,7 +1393,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_55272f0009156",
+                            "key": "field_55328dcfed03c",
                             "label": "Column One Image",
                             "name": "textModule_col_1_img",
                             "prefix": "",
@@ -1439,12 +1403,12 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_55272fc209157",
+                                        "field": "field_55328dcfecffa",
                                         "operator": "==",
                                         "value": "textModule_img_left"
                                     }
@@ -1467,7 +1431,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_55272bde4c544",
+                            "key": "field_55328dcfed04d",
                             "label": "Column One Title",
                             "name": "textModule_col_1_title",
                             "prefix": "",
@@ -1477,33 +1441,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_55272fc209157",
+                                        "field": "field_55328dcfecffa",
                                         "operator": "==",
                                         "value": "textModule_img_right"
                                     }
@@ -1523,7 +1487,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55272d5a4c545",
+                            "key": "field_55328dcfed05e",
                             "label": "Column One Title Link",
                             "name": "textModule_col_1_url",
                             "prefix": "",
@@ -1533,33 +1497,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_55272fc209157",
+                                        "field": "field_55328dcfecffa",
                                         "operator": "==",
                                         "value": "textModule_img_right"
                                     }
@@ -1579,7 +1543,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55272dc54c546",
+                            "key": "field_55328dcfed06e",
                             "label": "Column One Body",
                             "name": "textModule_col_1_body",
                             "prefix": "",
@@ -1589,33 +1553,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_55272fc209157",
+                                        "field": "field_55328dcfecffa",
                                         "operator": "==",
                                         "value": "textModule_img_right"
                                     }
@@ -1632,7 +1596,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_5527303109158",
+                            "key": "field_55328dcfed082",
                             "label": "Column Two Image",
                             "name": "textModule_col_2_img",
                             "prefix": "",
@@ -1642,12 +1606,12 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_55272fc209157",
+                                        "field": "field_55328dcfecffa",
                                         "operator": "==",
                                         "value": "textModule_img_right"
                                     }
@@ -1670,7 +1634,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_55272e4c09150",
+                            "key": "field_55328dcfed093",
                             "label": "Column Two Title",
                             "name": "textModule_col_2_title",
                             "prefix": "",
@@ -1680,33 +1644,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_55272fc209157",
+                                        "field": "field_55328dcfecffa",
                                         "operator": "==",
                                         "value": "textModule_img_left"
                                     }
@@ -1726,7 +1690,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55272e6909151",
+                            "key": "field_55328dcfed0a3",
                             "label": "Column Two Title Link",
                             "name": "textModule_col_2_url",
                             "prefix": "",
@@ -1736,33 +1700,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_55272fc209157",
+                                        "field": "field_55328dcfecffa",
                                         "operator": "==",
                                         "value": "textModule_img_left"
                                     }
@@ -1782,7 +1746,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55272e9109152",
+                            "key": "field_55328dcfed0b4",
                             "label": "Column Two Body",
                             "name": "textModule_col_2_body",
                             "prefix": "",
@@ -1792,33 +1756,33 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "twoUp_img"
                                     },
                                     {
-                                        "field": "field_55272fc209157",
+                                        "field": "field_55328dcfecffa",
                                         "operator": "==",
                                         "value": "textModule_img_left"
                                     }
@@ -1835,7 +1799,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_55272ea909153",
+                            "key": "field_55328dcfed0c4",
                             "label": "Column Three Title",
                             "name": "textModule_col_3_title",
                             "prefix": "",
@@ -1845,14 +1809,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1872,7 +1836,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55272eb709154",
+                            "key": "field_55328dcfed0dd",
                             "label": "Column Three Title Link",
                             "name": "textModule_col_3_url",
                             "prefix": "",
@@ -1882,14 +1846,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1909,7 +1873,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55272ec509155",
+                            "key": "field_55328dcfed109",
                             "label": "Column Three Body",
                             "name": "textModule_col_3_body",
                             "prefix": "",
@@ -1919,14 +1883,14 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "threeUp"
                                     }
                                 ],
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1943,7 +1907,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_552731f6bcae9",
+                            "key": "field_55328dcfed125",
                             "label": "Column Four Title",
                             "name": "textModule_col_4_title",
                             "prefix": "",
@@ -1953,7 +1917,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -1973,7 +1937,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55273204bcaea",
+                            "key": "field_55328dcfed13a",
                             "label": "Column Four Title Link",
                             "name": "textModule_col_4_url",
                             "prefix": "",
@@ -1983,7 +1947,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -2003,7 +1967,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55273214bcaeb",
+                            "key": "field_55328dcfed178",
                             "label": "Column Four Body",
                             "name": "textModule_col_4_body",
                             "prefix": "",
@@ -2013,7 +1977,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55272b524c543",
+                                        "field": "field_55328dcfecfea",
                                         "operator": "==",
                                         "value": "fourUp"
                                     }
@@ -2040,7 +2004,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5529997a671f2",
+                            "key": "field_55328dcfed18c",
                             "label": "Color Scheme",
                             "name": "textFeature_color",
                             "prefix": "",
@@ -2071,7 +2035,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_552999db671f3",
+                            "key": "field_55328dcfed1a1",
                             "label": "Quotation?",
                             "name": "textFeature_quotation",
                             "prefix": "",
@@ -2088,7 +2052,7 @@
                             "default_value": 0
                         },
                         {
-                            "key": "field_55299a0d671f4",
+                            "key": "field_55328dcfed1de",
                             "label": "Body",
                             "name": "textFeature_body",
                             "prefix": "",
@@ -2107,7 +2071,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_55299a32671f5",
+                            "key": "field_55328dcfed1f2",
                             "label": "Byline",
                             "name": "textFeature_byline",
                             "prefix": "",
@@ -2117,7 +2081,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552999db671f3",
+                                        "field": "field_55328dcfed1a1",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -2144,7 +2108,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_552c558b05d4d",
+                            "key": "field_55328dcfed206",
                             "label": "Color Scheme",
                             "name": "rte_color",
                             "prefix": "",
@@ -2175,7 +2139,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_552c55d305d4e",
+                            "key": "field_55328dcfed21a",
                             "label": "Content",
                             "name": "rte_content",
                             "prefix": "",
@@ -2204,7 +2168,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_552c746165c9c",
+                            "key": "field_55328dcfed257",
                             "label": "Layout",
                             "name": "signUp_layout",
                             "prefix": "",
@@ -2227,7 +2191,7 @@
                             "layout": "horizontal"
                         },
                         {
-                            "key": "field_552c74b965c9d",
+                            "key": "field_55328dcfed26c",
                             "label": "Color Scheme",
                             "name": "signUp_color",
                             "prefix": "",
@@ -2258,7 +2222,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_552c74ed65c9e",
+                            "key": "field_55328dcfed280",
                             "label": "Background Image",
                             "name": "signUp_bg_image",
                             "prefix": "",
@@ -2268,7 +2232,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552c746165c9c",
+                                        "field": "field_55328dcfed257",
                                         "operator": "==",
                                         "value": "signUp--large"
                                     }
@@ -2291,7 +2255,7 @@
                             "mime_types": ""
                         },
                         {
-                            "key": "field_552c752565c9f",
+                            "key": "field_55328dcfed2bc",
                             "label": "Title",
                             "name": "signUp_title",
                             "prefix": "",
@@ -2313,7 +2277,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552c754465ca0",
+                            "key": "field_55328dcfed2d1",
                             "label": "Body",
                             "name": "signUp_body",
                             "prefix": "",
@@ -2323,7 +2287,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552c746165c9c",
+                                        "field": "field_55328dcfed257",
                                         "operator": "==",
                                         "value": "signUp--large"
                                     }
@@ -2343,7 +2307,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552c756365ca1",
+                            "key": "field_55328dcfed2e5",
                             "label": "CTA",
                             "name": "signUp_cta",
                             "prefix": "",
@@ -2353,7 +2317,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_552c746165c9c",
+                                        "field": "field_55328dcfed257",
                                         "operator": "==",
                                         "value": "signUp--large"
                                     }
@@ -2373,7 +2337,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_552c75ab65ca2",
+                            "key": "field_55328dcfed2f9",
                             "label": "MailChimp URL",
                             "name": "signUp_mce_url",
                             "prefix": "",
@@ -2405,7 +2369,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_553085991eb3c",
+                            "key": "field_55328dcfed340",
                             "label": "Size",
                             "name": "endModule_size",
                             "prefix": "",
@@ -2434,7 +2398,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_553069afd4d43",
+                            "key": "field_55328dcfed355",
                             "label": "Color Scheme",
                             "name": "endModule_color",
                             "prefix": "",
@@ -2465,7 +2429,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_55306a30d4d44",
+                            "key": "field_55328dcfed380",
                             "label": "Extra Content",
                             "name": "endModule_extra",
                             "prefix": "",
@@ -2488,7 +2452,7 @@
                             "layout": "horizontal"
                         },
                         {
-                            "key": "field_55306944d4d42",
+                            "key": "field_55328dcfed3a6",
                             "label": "Content",
                             "name": "endModule_content",
                             "prefix": "",
@@ -2507,7 +2471,7 @@
                             "media_upload": 0
                         },
                         {
-                            "key": "field_55306ab7d4d45",
+                            "key": "field_55328dcfed3bb",
                             "label": "CTA",
                             "name": "endModule_cta",
                             "prefix": "",
@@ -2517,7 +2481,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55306a30d4d44",
+                                        "field": "field_55328dcfed380",
                                         "operator": "==",
                                         "value": "cta"
                                     }
@@ -2537,7 +2501,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55306ad7d4d46",
+                            "key": "field_55328dcfed3f7",
                             "label": "CTA URL",
                             "name": "endModule_cta_url",
                             "prefix": "",
@@ -2547,7 +2511,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55306a30d4d44",
+                                        "field": "field_55328dcfed380",
                                         "operator": "==",
                                         "value": "cta"
                                     }
@@ -2567,7 +2531,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_5530742a302f7",
+                            "key": "field_55328dcfed40c",
                             "label": "Links Heading",
                             "name": "endModule_links_heading",
                             "prefix": "",
@@ -2577,7 +2541,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55306a30d4d44",
+                                        "field": "field_55328dcfed380",
                                         "operator": "==",
                                         "value": "links"
                                     }
@@ -2597,7 +2561,7 @@
                             "disabled": 0
                         },
                         {
-                            "key": "field_55306e41d4d47",
+                            "key": "field_55328dcfed41f",
                             "label": "Links",
                             "name": "endModule_links",
                             "prefix": "",
@@ -2607,7 +2571,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_55306a30d4d44",
+                                        "field": "field_55328dcfed380",
                                         "operator": "==",
                                         "value": "links"
                                     }
@@ -2624,7 +2588,7 @@
                             "button_label": "Add Row",
                             "sub_fields": [
                                 {
-                                    "key": "field_55306e5bd4d48",
+                                    "key": "field_55328dd05c226",
                                     "label": "Icon",
                                     "name": "endModule_link_icon",
                                     "prefix": "",
@@ -2646,7 +2610,7 @@
                                     "disabled": 0
                                 },
                                 {
-                                    "key": "field_55306ec4d4d49",
+                                    "key": "field_55328dd05c23f",
                                     "label": "Text",
                                     "name": "endModule_link_text",
                                     "prefix": "",
@@ -2668,7 +2632,7 @@
                                     "disabled": 0
                                 },
                                 {
-                                    "key": "field_55306fd9d4d4a",
+                                    "key": "field_55328dd05c254",
                                     "label": "URL",
                                     "name": "endModule_link_url",
                                     "prefix": "",
@@ -2702,7 +2666,7 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_553271cc589ad",
+                            "key": "field_55328dcfed433",
                             "label": "Type",
                             "name": "featuredPost_type",
                             "prefix": "",
@@ -2731,7 +2695,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_553272a3589ae",
+                            "key": "field_55328dcfed447",
                             "label": "Color Scheme",
                             "name": "featuredPost_color",
                             "prefix": "",
@@ -2762,7 +2726,7 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_553272e0589af",
+                            "key": "field_55328dcfed45b",
                             "label": "Blog Post",
                             "name": "featuredPost_blog",
                             "prefix": "",
@@ -2772,7 +2736,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_553271cc589ad",
+                                        "field": "field_55328dcfed433",
                                         "operator": "==",
                                         "value": "blog"
                                     }
@@ -2793,7 +2757,7 @@
                             "ui": 1
                         },
                         {
-                            "key": "field_5532731a589b0",
+                            "key": "field_55328dcfed46f",
                             "label": "Project",
                             "name": "featuredPost_project",
                             "prefix": "",
@@ -2803,7 +2767,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_553271cc589ad",
+                                        "field": "field_55328dcfed433",
                                         "operator": "==",
                                         "value": "project"
                                     }
@@ -2835,22 +2799,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "page_template",
-                "operator": "!=",
-                "value": "template-work.php"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
                 "value": "projects"
-            },
-            {
-                "param": "post_type",
-                "operator": "!=",
-                "value": "team"
             }
         ]
     ],
@@ -2869,7 +2818,10 @@
         "slug",
         "author",
         "format",
+        "featured_image",
+        "categories",
+        "tags",
         "send-trackbacks"
     ],
-    "modified": 1429376783
+    "modified": 1429377017
 }

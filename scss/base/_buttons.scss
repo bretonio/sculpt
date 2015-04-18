@@ -36,26 +36,34 @@
 		background-color: $c1;
 	}
 
-	&.alt {
-		background-color: rgba(255,255,255,0);
-		border: 3px solid $c1;
-		color: $c1;
-
+	&.button--dark {
+		.button-left {
+			background-color: $c2l;
+			color: #FFFFFF;
+		}
+		.button-right {
+			background-color: $c2;
+			color: #FFFFFF;
+		}
 		&:hover {
-			background-color: $c1;
-			border: 3px solid $c1;
-			color: #ffffff;
+			.button-left {
+				background-color: $c2;
+			}
 		}
 	}
-
-	&.light {
-		border-color: #ffffff;
-		color: #ffffff;
-
-		&:hover {
-			background-color: rgba(255,255,255,1);
-			border-color: rgba(255,255,255,1);
+	&.button--white {
+		.button-left {
+			background-color: rgba(#FFFFFF, .8);
 			color: $c1;
+		}
+		.button-right {
+			background-color: #FFFFFF;
+			color: $c1;
+		}
+		&:hover {
+			.button-left {
+				background-color: rgba(#FFFFFF, 1);
+			}
 		}
 	}
 }

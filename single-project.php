@@ -1,12 +1,27 @@
 <?php
 /*
-Template Name: About Template
+Template Name: Project Template
 */
+  
+  $title = get_field('project_title');
+  $lede = get_field('project_lede');
 
-get_header();
-
+  get_header();
 ?>
 
+<!-- HERO SECTION -->
+<section class="workPage container hero u-h_s23">
+  <div class="row row--lg">
+
+      <div class="hero-content block s1 xl_s34">
+          <h1 class="hero-title"><?php echo $title; ?></h1>
+          <p class="hero-body"><?php echo $lede; ?></p>
+      </div>
+
+  </div>
+</section>
+
+<!-- PAGE MODULES -->
 <?php
 while ( have_posts() ) { the_post();
 
@@ -36,14 +51,4 @@ while ( have_posts() ) { the_post();
 }
 ?>
 
-<?php 
-	$team = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1 ) ); 
-	while ( $team->have_posts() ) : $team->the_post(); 
-?>
-
-	<h1>A Post!</h1>
-
-<?php endwhile; wp_reset_query();?>
-
-
-<?php get_footer(); ?>
+<?php get_footer('secondary'); ?>

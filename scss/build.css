@@ -1661,21 +1661,22 @@ button .button-right, .button .button-right {
   transition: .3s background; }
 button:hover .button-left, .button:hover .button-left {
   background-color: #ff9254; }
-button.alt, .button.alt {
-  background-color: rgba(255, 255, 255, 0);
-  border: 3px solid #ff9254;
+button.button--dark .button-left, .button.button--dark .button-left {
+  background-color: #5a606a;
+  color: #FFFFFF; }
+button.button--dark .button-right, .button.button--dark .button-right {
+  background-color: #2b2e33;
+  color: #FFFFFF; }
+button.button--dark:hover .button-left, .button.button--dark:hover .button-left {
+  background-color: #2b2e33; }
+button.button--white .button-left, .button.button--white .button-left {
+  background-color: rgba(255, 255, 255, 0.8);
   color: #ff9254; }
-button.alt:hover, .button.alt:hover {
-  background-color: #ff9254;
-  border: 3px solid #ff9254;
-  color: #ffffff; }
-button.light, .button.light {
-  border-color: #ffffff;
-  color: #ffffff; }
-button.light:hover, .button.light:hover {
-  background-color: white;
-  border-color: white;
+button.button--white .button-right, .button.button--white .button-right {
+  background-color: #FFFFFF;
   color: #ff9254; }
+button.button--white:hover .button-left, .button.button--white:hover .button-left {
+  background-color: white; }
 
 .button--alt {
   display: inline-block;
@@ -2893,6 +2894,20 @@ div.mce_inline_error {
     padding: .6rem 2.5%; } }
 .footer-colophon h6 {
   margin-bottom: 0; }
+
+/*
+ * Secondary Footer
+ */
+.footContact {
+  background-color: #ff9254;
+  text-align: left; }
+.footContact h2 {
+  color: white;
+  display: inline-block;
+  margin: 0 2rem 0 0;
+  vertical-align: middle; }
+.footContact .button {
+  vertical-align: middle; }
 
 body {
   background-color: #FFFFFF;

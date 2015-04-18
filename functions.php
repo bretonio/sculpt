@@ -53,6 +53,19 @@ add_filter('page_css_class', 'wp_nav_menu_attributes_filter', 100, 1);
  */
 add_action( 'init', 'create_posttype' );
 function create_posttype() {
+  register_post_type( 'projects',
+    array(
+      'labels' => array(
+        'name' => __( 'Projects' ),
+        'singular_name' => __( 'Project' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'projects'),
+      'supports' => array('title','author'),
+    )
+  );
+  
   register_post_type( 'team',
     array(
       'labels' => array(
@@ -63,19 +76,6 @@ function create_posttype() {
       'has_archive' => true,
       'rewrite' => array('slug' => 'team'),
       'supports' => array('title','author','thumbnail'),
-    )
-  );
-
-  register_post_type( 'work',
-    array(
-      'labels' => array(
-        'name' => __( 'Projects' ),
-        'singular_name' => __( 'Project' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'rewrite' => array('slug' => 'work'),
-      'supports' => array('title','author'),
     )
   );
 }

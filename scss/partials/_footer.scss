@@ -150,3 +150,22 @@
 
 	h6 {margin-bottom: 0;}
 }
+
+
+/*
+ * Secondary Footer
+ */
+.footContact {
+	background-color: $c1;
+	text-align: left;
+
+	h2 {
+		color: white;
+		display: inline-block;
+		margin: 0 2rem 0 0;
+		vertical-align: middle;
+	}
+	.button {
+		vertical-align: middle;
+	}
+}

@@ -36,7 +36,7 @@
   <script src="//use.typekit.net/hxi4ugl.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
-  <title><?php wp_title(); ?></title>
+  <title><?php wp_title('|','true','right'); ?><?php bloginfo('name'); ?></title>
 
   <?php wp_head(); ?>
 
