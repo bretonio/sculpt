@@ -2,6 +2,8 @@
 
 show_admin_bar( false );
 
+add_editor_style( 'inc/editor.css' );
+
 add_action( 'after_setup_theme', function() {
 
   add_theme_support( 'title-tag' );

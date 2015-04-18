@@ -49,82 +49,115 @@
     $menu_color = get_field('menu_color');
   ?>
 
+  <div class="bodyOverlay"></div>
+
+  <div class="navContainer">
+    <div class="navContainer-scroll">
+      <div class="js-menuToggle menuClose">
+        <span class="icon-close"></span>
+      </div>
+
+      <nav class="mainNav">
+        <li>
+          <a href="#0">home</a>
+        </li>
+        <li>
+          <a href="#0">about</a>
+        </li>
+        <li>
+          <a href="#0">services</a>
+        </li>
+        <li>
+          <a href="#0">blog</a>
+        </li>
+        <li>
+          <a href="#0">startups</a>
+        </li>
+        <li>
+          <a href="#0">contact</a>
+        </li>
+      </nav>
+    </div>
+  </div>
+
   <div class="body-wrapper">
+
+    <div class="mainLogo-mobile">
+      <?php if ($logo == 'sculptLogo--light' || $logo == 'sculptLogo--white') { ?>
+        <svg class="sculptMark" viewBox="0 0 100 100">
+          <use xlink:href="#sculptMark--white"></use>
+        </svg>
+      <?php } elseif ($logo == 'sculptLogo--orange' || $logo == 'sculptLogo') { ?>
+        <svg class="sculptMark" viewBox="0 0 100 100">
+          <use xlink:href="#sculptMark--orange"></use>
+        </svg>
+      <?php } else { ?>
+        <svg class="sculptMark" viewBox="0 0 100 100">
+          <use xlink:href="#sculptMark--orange"></use>
+        </svg>
+      <?php } ?>
+    </div>
+
     <header class="header container">
 
       <nav class="header-desktop-inner<?php echo ' '.$menu_color; ?> row">
 
-            <div class="mainLogo">
-              <h1>
-                <a href="/">
-                  Sculpt
+        <div class="mainLogo">
+          <h1>
+            <a href="/">
+              Sculpt
 
-                  <?php if ($logo == 'sculptLogo--light') { ?>
-                    <svg class="sculptLogo" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo--light"></use>
-                    </svg>
-                    <svg class="sculptMark" viewBox="0 0 100 100">
-                      <use xlink:href="#sculptMark--white"></use>
-                    </svg>
-                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo"></use>
-                    </svg>
-                  <?php } elseif ($logo == 'sculptLogo--white') { ?>
-                    <svg class="sculptLogo" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo--white"></use>
-                    </svg>
-                    <svg class="sculptMark" viewBox="0 0 100 100">
-                      <use xlink:href="#sculptMark--white"></use>
-                    </svg>
-                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo"></use>
-                    </svg>
-                  <?php } elseif ($logo == 'sculptLogo--orange') { ?>
-                    <svg class="sculptLogo" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo--orange"></use>
-                    </svg>
-                    <svg class="sculptMark" viewBox="0 0 100 100">
-                      <use xlink:href="#sculptMark--orange"></use>
-                    </svg>
-                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo"></use>
-                    </svg>
-                  <?php } elseif ($logo == 'sculptLogo') { ?>
-                    <!-- default -->
-                    <svg class="sculptLogo" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo"></use>
-                    </svg>
-                    <svg class="sculptMark" viewBox="0 0 100 100">
-                      <use xlink:href="#sculptMark--orange"></use>
-                    </svg>
-                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo"></use>
-                    </svg>
-                  <?php } else { ?>
-                    <!-- default -->
-                    <svg class="sculptLogo" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo"></use>
-                    </svg>
-                    <svg class="sculptMark" viewBox="0 0 100 100">
-                      <use xlink:href="#sculptMark--orange"></use>
-                    </svg>
-                    <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
-                      <use xlink:href="#sculptLogo"></use>
-                    </svg>
-                  <?php } ?>
-                </a>
-              </h1>
-            </div>
+              <?php if ($logo == 'sculptLogo--light') { ?>
+                <svg class="sculptLogo" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo--light"></use>
+                </svg>
+                <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo"></use>
+                </svg>
+              <?php } elseif ($logo == 'sculptLogo--white') { ?>
+                <svg class="sculptLogo" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo--white"></use>
+                </svg>
+                <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo"></use>
+                </svg>
+              <?php } elseif ($logo == 'sculptLogo--orange') { ?>
+                <svg class="sculptLogo" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo--orange"></use>
+                </svg>
+                <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo"></use>
+                </svg>
+              <?php } elseif ($logo == 'sculptLogo') { ?>
+                <!-- default -->
+                <svg class="sculptLogo" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo"></use>
+                </svg>
+                <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo"></use>
+                </svg>
+              <?php } else { ?>
+                <!-- default -->
+                <svg class="sculptLogo" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo"></use>
+                </svg>
+                <svg class="sculptLogo-fallback" viewBox="0 0 300 100">
+                  <use xlink:href="#sculptLogo"></use>
+                </svg>
+              <?php } ?>
+            </a>
+          </h1>
+        </div>
 
-            <?php
-              $menu = array( 'theme_location' => 'primary', 'container' => '', 'items_wrap' => '%3$s', 'depth' => -1);
+        <?php
+          $menu = array( 'theme_location' => 'primary', 'container' => '', 'items_wrap' => '%3$s', 'depth' => -1);
 
-              wp_nav_menu( $menu ); 
-            ?>
+          wp_nav_menu( $menu ); 
+        ?>
 
-            <li class="js-menuToggle menuToggle">
-              <span class="icon-menu"></span>
-            </li>
+        <li class="js-menuToggle menuToggle">
+          <span class="icon-menu"></span>
+        </li>
 
       </nav>
 

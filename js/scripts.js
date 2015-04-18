@@ -132,6 +132,7 @@ jQuery(function($){
 		init: function(){
 
 			this.headerOffset();
+			this.offCanvas();
 
 			if ($('pre').length) {
 				this.syntax();
@@ -152,6 +153,27 @@ jQuery(function($){
 					$header.removeClass('has-scrolled');
 				}
 			});
+		},
+
+		offCanvas: function(){
+			var	$body = $('body'),
+				$bodyOverlay = $('.bodyOverlay');
+
+			$body.on('click', '.js-menuToggle', function(e){
+				e.preventDefault();
+
+				var $this = $(this);
+
+				if ($body.hasClass('nav--is-visible')){
+					$body.addClass('nav--is-hiding');
+					setTimeout(function(){
+						$body.removeClass('nav--is-visible');
+						$body.removeClass('nav--is-hiding');
+					}, 300);
+				} else {
+					$body.addClass('nav--is-visible');
+				}
+			}); 
 		},
 
 		syntax: function(){

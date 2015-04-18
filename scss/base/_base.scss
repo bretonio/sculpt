@@ -134,6 +134,10 @@ a {
     &.inline {
         text-align: justify;
 
+        &::before {
+            display: none;
+        }
+
         &::after {
             @include inlineRel;
 

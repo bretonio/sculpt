@@ -1,0 +1,152 @@
+.footer {
+}
+.footer-row-one {
+	background-color: $gray10;
+}
+.footer-location {
+	padding: 3rem 5% 2.6rem;
+
+	@media screen and (min-width: $xs) {
+		padding: 3rem 3.75% 2.6rem;
+	}
+	@media screen and (min-width: $med) {
+		padding: 3rem 2.5% 2.6rem;
+	}
+	@media screen and (min-width: $lg) {
+		height: 160px;
+		line-height: 160px;
+		padding: 0 3.75%;
+	}
+
+	&.row {
+		.footer-location-left {
+			vertical-align: middle;
+		}
+
+		.footer-location-right {
+			margin-top: 1.5rem;
+			text-align: left;
+			vertical-align: middle;
+
+			a {
+				color: $c1;
+				transition: color .3s;
+
+				&:hover {
+					color: $c1l;
+				}
+			}
+
+			@media screen and (min-width: $sm) {
+				text-align: right;
+			}
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+.footer-social-links {
+	background-color: $c3;
+	padding: 3rem 5%;
+	text-align: left;
+
+	&::after {
+		@include inlineRel;
+
+		content:'';
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	@media screen and (min-width: $xs) {
+		padding: 3rem 3.75%;
+	}
+	@media screen and (min-width: $med) {
+		padding: 3rem 2.5%;
+		text-align: center;
+	}
+	@media screen and (min-width: $lg) {
+		height: 160px;
+	}
+
+	.footer-social-link {
+		@include inlineRel;
+
+		color: $gray-a;
+		font-size: 2rem;
+		margin: 0 2rem 0 0;
+		opacity: .8;
+		transition: opacity .3s;
+		vertical-align: middle;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		@media screen and (min-width: $lg) {
+			margin: 0 1rem;
+		}
+	}
+}
+.footer-nav {
+	background-color: #FFFFFF;
+
+	&::after {
+		display: none !important;
+	}
+
+	@media screen and (min-width: $med) {
+		padding: 1rem 2.5% .6rem;
+
+		&::after {
+			display: inline-block !important;
+		}
+	}
+
+	li {
+		@include inlineRel;
+		@include h4;
+
+		color: $gray-a;
+		height: 50px;
+		line-height: 50px;
+		padding: 0 5%;
+		transition: color .3s;
+		width: 100%;
+
+		&:hover {
+			color: $black;
+		}
+
+		&:nth-of-type(even) {
+			background-color: $gray10;
+		}
+
+		@media screen and (min-width: $xs) {
+			padding: 0 3.75%;
+		}
+
+		@media screen and (min-width: $med) {
+			height: 0;
+			line-height: 1;
+			padding: 0;
+			width: auto;
+		}
+	}
+}
+.footer-colophon {
+	background-color: $c2;
+	color: rgba(#FFFFFF, .4);
+	padding: .6rem 5%;
+
+	@media screen and (min-width: $xs) {
+		padding: .6rem 3.75%;
+	}
+	@media screen and (min-width: $med) {
+		padding: .6rem 2.5%;
+	}
+
+	h6 {margin-bottom: 0;}
+}

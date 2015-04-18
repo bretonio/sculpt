@@ -1,8 +1,13 @@
 body {
 	background-color: #FFFFFF;
+	overflow-x: hidden;
 
 	@media screen and (min-width: $med){
 		padding: 1.5rem;
+	}
+
+	&.nav--is-visible {
+		overflow: hidden;
 	}
 }
 .body-wrapper {
@@ -10,4 +15,21 @@ body {
 
 	background-color: #ffffff;
 	width:100%;
+}
+
+.bodyOverlay {
+	@include blockFix;
+
+	background-color: rgba($black, 0);
+	bottom: 0; left: 100%; right: 0; top: 0;
+	transition: background .3s, opacity .3s;
+	z-index: 100;
+
+	.nav--is-visible & {
+		background-color: rgba($black, .95);
+		left: 0;
+	}
+	.nav--is-hiding & {
+		opacity: 0;
+	}
 }

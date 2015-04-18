@@ -1,0 +1,92 @@
+.endModule {
+
+	.endModule-content {
+		@include blockRel;
+
+		margin-bottom: 1rem;
+
+		@media screen and (min-width: $sm) {
+			max-width: 75%;
+		}
+
+		a {
+			color: $c1;
+			font-weight: 900;
+			transition: color .2s;
+		}
+	}
+
+	.endModule-cta {
+		margin-top: 1rem;
+	}
+
+	.endModule-links-heading {
+		margin-top: 4rem;
+	}
+
+	.button--alt {
+		margin-right: 1rem;
+	}
+
+
+	/*
+	 * Color Schemes
+	 */
+	&.colorScheme--light {
+		background-color: $gray10;
+	}
+	&.colorScheme--orange {
+		background-color: $c1;
+		color: #FFFFFF;
+
+		.endModule-content {
+			color: #FFFFFF;
+
+			a {
+				color: $c2;
+
+				&:hover {
+					color: $c2l;
+				}
+			}
+		}
+
+		.button--alt {
+			background-color: rgba(#FFFFFF, .4);
+
+			&:hover {
+				background-color: rgba(#FFFFFF, .5);
+				border-left: 3px solid #FFFFFF;
+			}
+		}
+	}
+	&.colorScheme--dark {
+		background-color: $c2;
+		color: #FFFFFF;
+
+		.endModule-content {
+			color: #FFFFFF;
+
+			a {
+				color: $c1;
+
+				&:hover {
+					color: $c1l;
+				}
+			}
+		}
+
+		.button--alt {
+			background-color: rgba(#FFFFFF, .2);
+
+			&:hover {
+				background-color: rgba(#FFFFFF, .3);
+				border-left: 3px solid $c1;
+			}
+
+			.button--alt-icon, .button--alt-text {
+				color: #FFFFFF;
+			}
+		}
+	}
+}

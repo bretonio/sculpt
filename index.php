@@ -1,4 +1,6 @@
 <?php
+get_header();
+
 while ( have_posts() ) { the_post();
 
   // Check if ACF is enabled and the modules field exists
@@ -7,14 +9,10 @@ while ( have_posts() ) { the_post();
     // Loop through rows of flexible content field
     while( the_flexible_field('modules') ) {
 
-      get_header();
-
       // Render module template based on the row layout's name
       $module_name = str_replace('_', '-', get_row_layout());
       // Use "include(locate_template(...))" instead of "get_template_part" to retain scope
       include( locate_template( "/modules/$module_name.php" ) );
-
-      get_footer();
 
     }
 
@@ -27,4 +25,6 @@ while ( have_posts() ) { the_post();
   }
 
 }
+
+get_footer();
 ?>
