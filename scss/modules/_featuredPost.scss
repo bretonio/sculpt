@@ -1,0 +1,77 @@
+.featPost {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 75%;
+
+	&:hover .featPost-overlay {
+		opacity: 0;
+	}
+
+	@media screen and (min-width: $sm){
+		padding-top: 66%;
+	}
+	@media screen and (min-width: $med){
+		padding-top: 50%;
+	}
+	@media screen and (min-width: $lg){
+		padding-top: 40%;
+	}
+	@media screen and (min-width: $xl){
+		padding-top: 33%;
+	}
+}
+.featPost-inner {
+	@include blockAb;
+
+	bottom: 0; left: 0; right: 0; top: 0;
+	color: #FFFFFF;
+	padding: 3rem 0;
+
+	h4 {
+		font-weight: 100;
+	}
+}
+.featPost-overlay {
+	@include blockAb;
+
+	bottom: 0; left: 0; right: 0; top: 0;
+	background-color: $c2;
+	opacity: .9;
+	transition: opacity .3s ease-in-out;
+}
+.featPost-footLink {
+	@include blockAb;
+
+	bottom: 0; left: 0; right: 0;
+	padding: 0 0 3rem;
+}
+.footLink-link {
+	@include inlineRel;
+	@include p;
+
+	color: #FFFFFF;
+	margin-bottom: 0;
+
+	&:hover::before {
+		background-color: #FFFFFF;
+	}
+
+	&::before {
+		@include inlineRel;
+		@include icon;
+
+		background-color: rgba(#FFFFFF, .8); //same as textModule-title
+		content: '\e600';
+		color: $c2;
+		font-size: 1.3rem;
+		height: 32px;
+		line-height: 32px;
+		margin-right: 1.5rem;
+		top: 0;
+		text-align: center;
+		width: 32px;
+		transition: .3s background;
+		transform: rotate(180deg);
+	}
+}

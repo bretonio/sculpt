@@ -2696,22 +2696,22 @@
                     "max": ""
                 },
                 {
-                    "key": "553271b9589ac",
+                    "key": "5533f12ba5b7a",
                     "name": "featuredPost",
                     "label": "Featured Post",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_553271cc589ad",
+                            "key": "field_5533f13da5b7b",
                             "label": "Type",
                             "name": "featuredPost_type",
                             "prefix": "",
                             "type": "select",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": 50,
+                                "width": 33,
                                 "class": "",
                                 "id": ""
                             },
@@ -2731,55 +2731,16 @@
                             "readonly": 0
                         },
                         {
-                            "key": "field_553272a3589ae",
-                            "label": "Color Scheme",
-                            "name": "featuredPost_color",
-                            "prefix": "",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": 50,
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "colorScheme--white": "White (default)",
-                                "colorScheme--light": "Light Gray",
-                                "colorScheme--orange": "Sculpt Orange",
-                                "colorScheme--dark": "Dark"
-                            },
-                            "default_value": {
-                                "": ""
-                            },
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0
-                        },
-                        {
-                            "key": "field_553272e0589af",
+                            "key": "field_5533f16ea5b7c",
                             "label": "Blog Post",
                             "name": "featuredPost_blog",
                             "prefix": "",
                             "type": "post_object",
                             "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_553271cc589ad",
-                                        "operator": "==",
-                                        "value": "blog"
-                                    }
-                                ]
-                            ],
+                            "required": 1,
+                            "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": 66,
                                 "class": "",
                                 "id": ""
                             },
@@ -2793,29 +2754,21 @@
                             "ui": 1
                         },
                         {
-                            "key": "field_5532731a589b0",
+                            "key": "field_5533f1f9c3577",
                             "label": "Project",
                             "name": "featuredPost_project",
                             "prefix": "",
                             "type": "post_object",
                             "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_553271cc589ad",
-                                        "operator": "==",
-                                        "value": "project"
-                                    }
-                                ]
-                            ],
+                            "required": 1,
+                            "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": 66,
                                 "class": "",
                                 "id": ""
                             },
                             "post_type": [
-                                "work"
+                                "project"
                             ],
                             "taxonomy": "",
                             "allow_null": 0,
@@ -2824,6 +2777,15 @@
                             "ui": 1
                         }
                     ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "5533dae48be28",
+                    "name": "projectsModule",
+                    "label": "Projects Module",
+                    "display": "block",
+                    "sub_fields": [],
                     "min": "",
                     "max": ""
                 }
@@ -2845,7 +2807,7 @@
             {
                 "param": "post_type",
                 "operator": "!=",
-                "value": "projects"
+                "value": "project"
             },
             {
                 "param": "post_type",
@@ -2871,5 +2833,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1429376783
+    "modified": 1429467972
 }

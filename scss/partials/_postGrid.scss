@@ -5,13 +5,13 @@
 	overflow: hidden;
 
 	@media screen and (min-width: $med){
-		padding-top: 20%;
+		padding-top: 30%;
 	}
 	@media screen and (min-width: $xl){
-		padding-top: 15%;
+		padding-top: 25%;
 	}
 	@media screen and (min-width: $xxl){
-		padding-top: 12%;
+		padding-top: 20%;
 	}
 
 	&:hover .postGrid-block-caption {
@@ -45,8 +45,10 @@
 
 	@media screen and (min-width: $med){
 		background-color: rgba(#FFFFFF, .9);
+		bottom: 0; left: 0; right: 0;
 		margin-bottom: 0;
 		padding: 3rem;
+		position: absolute;
 		transform: translateY(100%);
 		transition: transform .3s;
 	}

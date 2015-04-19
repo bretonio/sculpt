@@ -2694,44 +2694,13 @@
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": 50,
+                                "width": 33,
                                 "class": "",
                                 "id": ""
                             },
                             "choices": {
                                 "blog": "Blog Post",
                                 "project": "Project"
-                            },
-                            "default_value": {
-                                "": ""
-                            },
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": "",
-                            "disabled": 0,
-                            "readonly": 0
-                        },
-                        {
-                            "key": "field_5532795b41846",
-                            "label": "Color Scheme",
-                            "name": "featuredPost_color",
-                            "prefix": "",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": 50,
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "colorScheme--white": "White (default)",
-                                "colorScheme--light": "Light Gray",
-                                "colorScheme--orange": "Sculpt Orange",
-                                "colorScheme--dark": "Dark"
                             },
                             "default_value": {
                                 "": ""
@@ -2762,7 +2731,7 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": 66,
                                 "class": "",
                                 "id": ""
                             },
@@ -2793,12 +2762,12 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": 66,
                                 "class": "",
                                 "id": ""
                             },
                             "post_type": [
-                                "work"
+                                "project"
                             ],
                             "taxonomy": "",
                             "allow_null": 0,
@@ -2842,5 +2811,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1429375117
+    "modified": 1429468188
 }

@@ -8,6 +8,9 @@ add_action( 'after_setup_theme', function() {
 
   add_theme_support( 'title-tag' );
   add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
+  add_image_size( 'src', 2000, 1333 );
+  add_image_size( 'two_up', 1000, 666 );
+  add_image_size( 'four_up', 500, 333 );
 
 } );
 
@@ -52,18 +55,21 @@ add_filter('page_css_class', 'wp_nav_menu_attributes_filter', 100, 1);
  * Custom Post Types
  */
 add_action( 'init', 'create_posttype' );
+
+
 function create_posttype() {
-  register_post_type( 'projects',
+  register_post_type( 'project',
     array(
       'labels' => array(
         'name' => __( 'Projects' ),
         'singular_name' => __( 'Project' )
       ),
       'public' => true,
-      'has_archive' => true,
+      'has_archive' => false,
       'rewrite' => array('slug' => 'work/projects'),
-      'supports' => array('title','author', 'tags'),
-      'taxonomies' => array('post_tag')
+      'supports' => array('title','author', 'custom-fields', 'post-format'),
+      'taxonomies' => array('post_tag', 'category'),
+      'menu_position' => 5
     )
   );
   
@@ -74,9 +80,10 @@ function create_posttype() {
         'singular_name' => __( 'Sculptron' )
       ),
       'public' => true,
-      'has_archive' => true,
+      'has_archive' => false,
       'rewrite' => array('slug' => 'about/team'),
-      'supports' => array('title','author','thumbnail'),
+      'supports' => array('title','author','thumbnail', 'custom-fields', 'post-format'),
+      'menu_position' => 5
     )
   );
 }
