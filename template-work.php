@@ -28,14 +28,21 @@ Template Name: Work Template
       $projects = new WP_Query( array( 'post_type' => 'projects', 'posts_per_page' => -1 ) ); 
       while ( $projects->have_posts() ) : $projects->the_post(); 
 
+      // Get current post ID
       $postID = get_the_id();
-      $fields = get_field($postID);
 
-      $modules = $fields[modules];
+      // Current Post:
+      $img = get_field('featured_img', false);
+      $tags = get_the_tags($postID);
     ?>
 
-      <div class="block s14">
-      <?php the_title(); ?>
+      <div class="postGrid-block block s1 med_s12 xl_s13 xxl_s14">
+        <a href="<?php the_permalink(); ?>" class="postGrid-block-img" style="background-image: url('<?php echo $img[sizes][large]; ?>');"></a>
+        <div class="postGrid-block-caption">
+          <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+          <span class="postGrid-block-tags"><?php foreach($tags as $tag) { echo $tag->name . ' ';}?></span>
+          <span class="divider"></span>
+        </div>
       </div>
 
     <?php endwhile; wp_reset_query();?>

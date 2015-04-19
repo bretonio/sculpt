@@ -61,8 +61,9 @@ function create_posttype() {
       ),
       'public' => true,
       'has_archive' => true,
-      'rewrite' => array('slug' => 'projects'),
-      'supports' => array('title','author'),
+      'rewrite' => array('slug' => 'work/projects'),
+      'supports' => array('title','author', 'tags'),
+      'taxonomies' => array('post_tag')
     )
   );
   
@@ -74,7 +75,7 @@ function create_posttype() {
       ),
       'public' => true,
       'has_archive' => true,
-      'rewrite' => array('slug' => 'team'),
+      'rewrite' => array('slug' => 'about/team'),
       'supports' => array('title','author','thumbnail'),
     )
   );
