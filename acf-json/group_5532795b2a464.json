@@ -145,7 +145,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1085,7 +1085,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1125,7 +1125,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1165,7 +1165,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1198,7 +1198,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1231,7 +1231,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1264,7 +1264,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1297,7 +1297,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -2811,5 +2811,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1429468188
+    "modified": 1429500021
 }

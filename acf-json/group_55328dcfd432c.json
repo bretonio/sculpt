@@ -126,7 +126,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1066,7 +1066,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1106,7 +1106,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1179,7 +1179,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1212,7 +1212,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1245,7 +1245,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1278,7 +1278,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -2790,5 +2790,5 @@
         "featured_image",
         "send-trackbacks"
     ],
-    "modified": 1429467950
+    "modified": 1429500042
 }

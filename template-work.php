@@ -28,7 +28,7 @@ Template Name: Work Template
       $projects = new WP_Query( array( 'post_type' => 'project', 'posts_per_page' => -1 ) ); 
       while ( $projects->have_posts() ) : $projects->the_post(); ?>
 
-      <?php include( locate_template('partials/teamGrid-block.php') ); ?>
+      <?php include( locate_template('partials/postGrid-block.php') ); ?>
 
     <?php endwhile; wp_reset_query();?>
   </div>
