@@ -1,5 +1,50 @@
 .textModule {
 	background-color: #FFFFFF;
+
+	/*
+	 * Color Schemes
+	 */
+	// .textModule--white // Default
+	&.colorScheme--light {
+		background-color: $gray10;
+	}
+
+	&.colorScheme--orange {
+		background-color: $c1;
+
+		.textModule-title {
+			color: rgba(#FFFFFF, .8);
+		}
+
+		.textModule-block-link {
+			&:hover::after {
+				background-color: rgba(#FFFFFF, 1);
+			}
+			&::after {
+				background-color: rgba(#FFFFFF, .8); //same as textModule-title
+			}
+		}
+	}
+	&.colorScheme--dark {
+		background-color: $c2;
+
+		.textModule-title {
+			color: rgba(#FFFFFF, .8);
+		}
+
+		.textModule-block-link {
+			&:hover::after {
+				background-color: rgba(#FFFFFF, 1);
+			}
+			&::after {
+				background-color: rgba(#FFFFFF, .8); //same as textModule-title
+			}
+		}
+
+		p {
+			color: white;
+		}
+	}
 }
 .textModule-block {
 	margin: 10px 0;
@@ -43,51 +88,6 @@
 			text-align: center;
 			width: 32px;
 			transition: .3s background;
-		}
-	}
-
-	/*
-	 * Color Schemes
-	 */
-	// .textModule--white // Default
-	.colorScheme--light & {
-		background-color: $gray10;
-	}
-
-	.colorScheme--orange & {
-		background-color: $c1;
-
-		.textModule-title {
-			color: rgba(#FFFFFF, .8);
-		}
-
-		.textModule-block-link {
-			&:hover::after {
-				background-color: rgba(#FFFFFF, 1);
-			}
-			&::after {
-				background-color: rgba(#FFFFFF, .8); //same as textModule-title
-			}
-		}
-	}
-	.colorScheme--dark & {
-		background-color: $c2;
-
-		.textModule-title {
-			color: rgba(#FFFFFF, .8);
-		}
-
-		.textModule-block-link {
-			&:hover::after {
-				background-color: rgba(#FFFFFF, 1);
-			}
-			&::after {
-				background-color: rgba(#FFFFFF, .8); //same as textModule-title
-			}
-		}
-
-		p {
-			color: white;
 		}
 	}
 }

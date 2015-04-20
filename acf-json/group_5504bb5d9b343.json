@@ -1102,7 +1102,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1142,7 +1142,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1215,7 +1215,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1248,7 +1248,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1281,7 +1281,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -1314,7 +1314,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "array",
                             "preview_size": "thumbnail",
                             "library": "all",
                             "min_width": "",
@@ -2833,5 +2833,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1429467972
+    "modified": 1429498192
 }

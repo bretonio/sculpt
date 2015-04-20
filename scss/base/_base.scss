@@ -39,8 +39,8 @@ a {
 @mixin container {
     @include blockRel;
 
-    padding: .01rem; // prevents margin-collapse
-    margin-top: -0.1rem;
+    // padding: .01rem; // prevents margin-collapse
+    // margin-top: -0.1rem;
     z-index: 0;
 }
 .container {
@@ -83,7 +83,7 @@ a {
     @include blockRel;
 
     margin: 0 auto;
-    padding: .01rem; // must have some padding to prevent margin-collapse
+    // padding: .01rem; // must have some padding to prevent margin-collapse
     width: 100%;
     z-index: 1;
 

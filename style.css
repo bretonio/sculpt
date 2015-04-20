@@ -1768,8 +1768,6 @@ a.u {
 .container {
   display: block;
   position: relative;
-  padding: .01rem;
-  margin-top: -0.1rem;
   z-index: 0; }
 
 .pad--sm {
@@ -1803,7 +1801,6 @@ a.u {
   display: block;
   position: relative;
   margin: 0 auto;
-  padding: .01rem;
   width: 100%;
   z-index: 1; }
 .row::before, .row::after {
@@ -2127,16 +2124,39 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .photoModule--full .photoModule-photo {
   height: 100vh;
   padding-top: 60%; }
+@media screen and (max-width: 768px) {
+  .photoModule-photo.photoModule-fourUp {
+    padding-top: 50%; } }
 
 .textModule {
-  background-color: #FFFFFF; }
-
-.textModule-block {
-  margin: 10px 0;
-  vertical-align: middle !important;
+  background-color: #FFFFFF;
   /*
    * Color Schemes
    */ }
+.textModule.colorScheme--light {
+  background-color: #f5f5f5; }
+.textModule.colorScheme--orange {
+  background-color: #ff9254; }
+.textModule.colorScheme--orange .textModule-title {
+  color: rgba(255, 255, 255, 0.8); }
+.textModule.colorScheme--orange .textModule-block-link:hover::after {
+  background-color: white; }
+.textModule.colorScheme--orange .textModule-block-link::after {
+  background-color: rgba(255, 255, 255, 0.8); }
+.textModule.colorScheme--dark {
+  background-color: #2b2e33; }
+.textModule.colorScheme--dark .textModule-title {
+  color: rgba(255, 255, 255, 0.8); }
+.textModule.colorScheme--dark .textModule-block-link:hover::after {
+  background-color: white; }
+.textModule.colorScheme--dark .textModule-block-link::after {
+  background-color: rgba(255, 255, 255, 0.8); }
+.textModule.colorScheme--dark p {
+  color: white; }
+
+.textModule-block {
+  margin: 10px 0;
+  vertical-align: middle !important; }
 @media screen and (min-width: 768px) {
   .textModule-block {
     margin: 20px 0; } }
@@ -2178,26 +2198,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   text-align: center;
   width: 32px;
   transition: .3s background; }
-.colorScheme--light .textModule-block {
-  background-color: #f5f5f5; }
-.colorScheme--orange .textModule-block {
-  background-color: #ff9254; }
-.colorScheme--orange .textModule-block .textModule-title {
-  color: rgba(255, 255, 255, 0.8); }
-.colorScheme--orange .textModule-block .textModule-block-link:hover::after {
-  background-color: white; }
-.colorScheme--orange .textModule-block .textModule-block-link::after {
-  background-color: rgba(255, 255, 255, 0.8); }
-.colorScheme--dark .textModule-block {
-  background-color: #2b2e33; }
-.colorScheme--dark .textModule-block .textModule-title {
-  color: rgba(255, 255, 255, 0.8); }
-.colorScheme--dark .textModule-block .textModule-block-link:hover::after {
-  background-color: white; }
-.colorScheme--dark .textModule-block .textModule-block-link::after {
-  background-color: rgba(255, 255, 255, 0.8); }
-.colorScheme--dark .textModule-block p {
-  color: white; }
 
 .textFeature {
   /*
@@ -2918,12 +2918,17 @@ div.mce_inline_error {
     padding: 3rem 3.75%; } }
 @media screen and (min-width: 768px) {
   .footer-social-links {
-    padding: 3rem 2.5%;
-    text-align: center; } }
+    padding: 3rem 2.5% 2rem;
+    text-align: justify; }
+  .footer-social-links::after {
+    display: inline-block;
+    position: relative;
+    content: '';
+    width: 100%; } }
 @media screen and (min-width: 1024px) {
   .footer-social-links {
     height: 160px; }
-  .footer-social-links::after {
+  .footer-social-links::before {
     display: inline-block;
     position: relative;
     content: '';
@@ -2933,16 +2938,17 @@ div.mce_inline_error {
   display: inline-block;
   position: relative;
   color: #55555d;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0 2rem 0 0;
   opacity: .8;
   transition: opacity .3s;
   vertical-align: middle; }
 .footer-social-links .footer-social-link:hover {
   opacity: 1; }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .footer-social-links .footer-social-link {
-    margin: 0 1rem; } }
+    font-size: 2.4rem;
+    margin: 0 1.5rem; } }
 
 .footer-nav {
   background-color: #FFFFFF; }
@@ -3129,6 +3135,76 @@ body.nav--is-visible {
     display: none; } }
 
 .postGrid-block-tags {
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2rem; }
+
+.teamGrid-block {
+  overflow: hidden; }
+.teamGrid-block:nth-of-type(odd) {
+  background-color: #f5f5f5; }
+@media screen and (min-width: 768px) {
+  .teamGrid-block {
+    padding-top: 50%; } }
+@media screen and (min-width: 1280px) {
+  .teamGrid-block {
+    padding-top: 33%; } }
+.teamGrid-block:hover .teamGrid-block-caption {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0); }
+
+.teamGrid-block-img {
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 50%;
+  width: 100%; }
+@media screen and (min-width: 768px) {
+  .teamGrid-block-img {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    padding-top: 0; } }
+
+.teamGrid-block-caption {
+  display: block;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 1.5rem 2rem; }
+.teamGrid-block-caption h3 {
+  margin-bottom: 0; }
+@media screen and (min-width: 768px) {
+  .teamGrid-block-caption {
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    padding: 3rem;
+    position: absolute;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    transition: -webkit-transform .3s;
+    transition: transform .3s; } }
+.teamGrid-block-caption .divider {
+  display: block;
+  position: relative;
+  background-color: #f5f5f5;
+  height: 4px;
+  margin-top: 1rem;
+  width: 100px; }
+@media screen and (min-width: 768px) {
+  .teamGrid-block-caption .divider {
+    display: none; } }
+
+.teamGrid-position {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 100;

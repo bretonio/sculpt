@@ -37,13 +37,17 @@ while ( have_posts() ) { the_post();
 ?>
 
 <!-- POSTS LOOP -->
-<?php 
-  $team = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1 ) ); 
-  while ( $team->have_posts() ) : $team->the_post(); 
-?>
+<section class="teamGrid container">
+  <div class="row">
+    <?php 
+      $team = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1 ) ); 
+      while ( $team->have_posts() ) : $team->the_post(); 
+    ?>
 
-  <h1>A Post!</h1>
+    <?php include( locate_template('partials/teamGrid-block.php') ); ?>
 
-<?php endwhile; wp_reset_query();?>
+    <?php endwhile; wp_reset_query();?>
+  </div>
+</section>
 
 <?php get_footer('secondary'); ?>

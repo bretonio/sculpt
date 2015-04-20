@@ -56,13 +56,20 @@
 		padding: 3rem 3.75%;
 	}
 	@media screen and (min-width: $med) {
-		padding: 3rem 2.5%;
-		text-align: center;
+		padding: 3rem 2.5% 2rem;
+		text-align: justify;
+
+		&::after {
+			@include inlineRel;
+
+			content:'';
+			width: 100%;
+		}
 	}
 	@media screen and (min-width: $lg) {
 		height: 160px;
 
-		&::after {
+		&::before {
 			@include inlineRel;
 
 			content:'';
@@ -75,7 +82,7 @@
 		@include inlineRel;
 
 		color: $gray-a;
-		font-size: 2rem;
+		font-size: 3rem;
 		margin: 0 2rem 0 0;
 		opacity: .8;
 		transition: opacity .3s;
@@ -85,8 +92,9 @@
 			opacity: 1;
 		}
 
-		@media screen and (min-width: $lg) {
-			margin: 0 1rem;
+		@media screen and (min-width: $med) {
+			font-size: 2.4rem;
+			margin: 0 1.5rem;
 		}
 	}
 }

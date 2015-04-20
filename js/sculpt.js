@@ -11,14 +11,25 @@ jQuery(function($){
 
 			this.headerOffset();
 			this.offCanvas();
+			if ($('pre').length) { this.syntax(); }
+			if ($('#mc-embedded-subscribe-form').length){ this.mcValidate(); }
 
-			if ($('pre').length) {
-				this.syntax();
-			}
+			// Lazy Load
+			// $(window).load(function(){
 
-			if ($('#mc-embedded-subscribe-form').length){
-				this.mcValidate();
-			}
+			//     $('.lazyload').each(function() {
+
+			//         var lazy = $(this);
+			//         var src = lazy.attr('data-src');
+
+			//         $('<img>').attr('src', src).load(function(){
+			//             lazy.find('img.spinner').remove();
+			//             lazy.css('background-image', 'url("'+src+'")');
+			//         });
+
+			//     });
+
+			// });
 		},
 
 		headerOffset: function(){

@@ -1,21 +1,22 @@
-.postGrid-block {
+.teamGrid-block {
 	overflow: hidden;
 
-	@media screen and (min-width: $med){
-		padding-top: 30%;
-	}
-	@media screen and (min-width: $xl){
-		padding-top: 25%;
-	}
-	@media screen and (min-width: $xxl){
-		padding-top: 20%;
+	&:nth-of-type(odd) {
+		background-color: $gray10;
 	}
 
-	&:hover .postGrid-block-caption {
+	@media screen and (min-width: $med){
+		padding-top: 50%;
+	}
+	@media screen and (min-width: $xl){
+		padding-top: 33%;
+	}
+
+	&:hover .teamGrid-block-caption {
 		transform: translateY(0);
 	}
 }
-.postGrid-block-img {
+.teamGrid-block-img {
 	@include blockRel;
 
 	background-size: cover;
@@ -30,7 +31,7 @@
 		padding-top: 0;
 	}
 }
-.postGrid-block-caption {
+.teamGrid-block-caption {
 	@include blockRel;
 
 	margin-bottom: 1rem;
@@ -63,6 +64,6 @@
 		}
 	}
 }
-.postGrid-block-tags {
+.teamGrid-position {
 	@include h5;
 }

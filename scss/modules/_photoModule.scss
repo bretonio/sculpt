@@ -23,4 +23,10 @@
 		height: 100vh;
 		padding-top: 60%
 	}
+
+	&.photoModule-fourUp {
+		@media screen and (max-width: $med) {
+			padding-top: 50%;
+		}
+	}
 }
