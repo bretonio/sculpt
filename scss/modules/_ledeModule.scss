@@ -78,6 +78,8 @@
 	 * For ledeModules with textModules appended
 	 */
 	.textModule-block {
+		vertical-align: top;
+		
 		&:first-of-type {
 			margin: 20px 0 10px;
 		}

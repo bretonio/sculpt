@@ -52,12 +52,12 @@ get_header();
 	    	<h2 class="hero-body"><?php echo $subtitle; ?></h2>
 	    	<div class="teamPage-social">
 		    	<h3>Follow <?php the_title(); ?>:</h3>
-	    		<?php echo $web != '' ? '<a class="icon-web" href="'.$web.'"></a>' : '';?>
-	    		<?php echo $twitter != '' ? '<a class="icon-twitter" href="'.$twitter.'"></a>' : '';?>
-	    		<?php echo $facebook != '' ? '<a class="icon-facebook" href="'.$facebook.'"></a>' : '';?>
-	    		<?php echo $instagram != '' ? '<a class="icon-instagram" href="'.$instagram.'"></a>' : '';?>
-	    		<?php echo $pinterest != '' ? '<a class="icon-pinterest" href="'.$pinterest.'"></a>' : '';?>
-	    		<?php echo $tumblr != '' ? '<a class="icon-tumblr" href="'.$tumblr.'"></a>' : '';?>
+	    		<?php echo $web != '' ? '<a class="icon-web" href="'.$web.'" target="_blank"></a>' : '';?>
+	    		<?php echo $twitter != '' ? '<a class="icon-twitter" href="'.$twitter.'" target="_blank"></a>' : '';?>
+	    		<?php echo $facebook != '' ? '<a class="icon-facebook" href="'.$facebook.'" target="_blank"></a>' : '';?>
+	    		<?php echo $instagram != '' ? '<a class="icon-instagram" href="'.$instagram.'" target="_blank"></a>' : '';?>
+	    		<?php echo $pinterest != '' ? '<a class="icon-pinterest" href="'.$pinterest.'" target="_blank"></a>' : '';?>
+	    		<?php echo $tumblr != '' ? '<a class="icon-tumblr" href="'.$tumblr.'" target="_blank"></a>' : '';?>
 		    </div>
 	  	</div>
 
@@ -80,8 +80,6 @@ while ( have_posts() ) { the_post();
       // Use "include(locate_template(...))" instead of "get_template_part" to retain scope
       include( locate_template( "/modules/$module_name.php" ) );
 
-      get_footer();
-
     }
 
   } else {
@@ -94,3 +92,5 @@ while ( have_posts() ) { the_post();
 
 }
 ?>
+
+<?php get_footer('secondary'); ?>

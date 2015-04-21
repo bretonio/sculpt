@@ -33,8 +33,10 @@
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
       <!--    Fonts from TypeKit-->
-  <script src="//use.typekit.net/hxi4ugl.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="//use.typekit.net/hxi4ugl.js" onload="try{Typekit.load();}catch(e){}" async></script>
+    <!--[if IE 9]>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <![endif]-->
 
   <title><?php wp_title('|','true','right'); ?><?php bloginfo('name'); ?></title>
 

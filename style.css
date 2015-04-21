@@ -2106,6 +2106,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   background-color: rgba(255, 255, 255, 0.3); }
 .ledeModule.colorScheme--dark .ledeModule-lede, .ledeModule.colorScheme--dark p {
   color: white; }
+.ledeModule .textModule-block {
+  vertical-align: top; }
 .ledeModule .textModule-block:first-of-type {
   margin: 20px 0 10px; }
 .ledeModule .textModule-block:last-of-type {
@@ -2133,6 +2135,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   /*
    * Color Schemes
    */ }
+.textModule .row.inline .block {
+  vertical-align: middle; }
 .textModule.colorScheme--light {
   background-color: #f5f5f5; }
 .textModule.colorScheme--orange {
@@ -2155,8 +2159,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: white; }
 
 .textModule-block {
-  margin: 10px 0;
-  vertical-align: middle !important; }
+  margin: 10px 0; }
 @media screen and (min-width: 768px) {
   .textModule-block {
     margin: 20px 0; } }

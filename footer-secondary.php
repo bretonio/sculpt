@@ -11,7 +11,7 @@
 	</section>
 
 	<footer class="footer container">
-		<div class="footer-row-one row pad--med">
+		<div class="footer-row-one row">
 			<div class="block s1 lg_s23">
 				<div class="footer-location row inline">
 					<div class="footer-location-left block s1 sm_s12">
@@ -50,7 +50,6 @@
 
 	</div>
 	<!-- end .body-wrapper -->
-	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 	<?php wp_footer(); ?>
 
 </body>

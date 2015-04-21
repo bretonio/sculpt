@@ -9,9 +9,9 @@ add_action( 'after_setup_theme', function() {
   add_theme_support( 'title-tag' );
   add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
   add_image_size( 'src' );
-  add_image_size( 'high_res', 2000, 1333 );
-  add_image_size( 'two_up', 1000, 800 );
-  add_image_size( 'four_up', 500, 400 );
+  add_image_size( 'high_res', 2000 );
+  add_image_size( 'two_up', 1000 );
+  add_image_size( 'four_up', 600 );
 
 } );
 

@@ -24,7 +24,7 @@
 	$col_4_body = get_sub_field('ledeModule_col_4_body');
 ?>
 
-<section class="container ledeModule pad--lg<?php echo ' '.$color; ?>">
+<section class="rte ledeModule container pad--lg<?php echo ' '.$color; ?>">
 	<div class="row row--lg inline">
 		<div class="block s1">
 

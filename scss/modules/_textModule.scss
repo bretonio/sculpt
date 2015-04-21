@@ -1,6 +1,11 @@
 .textModule {
 	background-color: #FFFFFF;
 
+	// Override default 'top' for textModule, w/o !important
+	.row.inline .block {
+		vertical-align: middle;
+	}
+
 	/*
 	 * Color Schemes
 	 */
@@ -48,7 +53,6 @@
 }
 .textModule-block {
 	margin: 10px 0;
-	vertical-align: middle !important;
 
 	@media screen and (min-width: $med) {
 		margin: 20px 0;

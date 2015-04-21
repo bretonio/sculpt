@@ -14,10 +14,12 @@
 		$size = 'photoModule--full';
 	} else if ($layout == 'single_small' || $layout == 'twoUp_small') {
 		$size = 'h-photoModule--small';
+	} else if ($layout == 'fourUp') {
+		$size = '';
 	}
 ?>
 
-<section class="container photoModule <?php echo $size ?>">
+<section class="container photoModule<?php echo ' '.$size ?>">
 	<div class="row">
 
 		<?php if ($layout == 'single_full') { ?>

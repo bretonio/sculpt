@@ -23,7 +23,7 @@
 	$col_4_body = get_sub_field('textModule_col_4_body');
 ?>
 
-<section class="textModule container pad--sm<?php echo ' '.$color; ?>">
+<section class="rte textModule container pad--sm<?php echo ' '.$color; ?>">
 	<div class="row row--lg inline">
 
 	<?php if ($layout == 'twoUp_img' && $img_pos == 'textModule_img_left') { ?>
