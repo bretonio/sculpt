@@ -29,7 +29,7 @@ Image Returns
 	$subtitle = get_field('sculptron_subtitle');
 
 	$pic = get_field('sculptron_pic');
-	$pic_url = $pic[url];
+	$pic_url = $pic['url'];
 
 	$web = get_field('sculptron_website_url');
 	$twitter = get_field('sculptron_twitter_url');

@@ -5,16 +5,30 @@ show_admin_bar( false );
 add_editor_style( 'inc/editor.css' );
 
 add_action( 'after_setup_theme', function() {
-
   add_theme_support( 'title-tag' );
   add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
   add_image_size( 'src' );
   add_image_size( 'high_res', 2000 );
   add_image_size( 'two_up', 1000 );
   add_image_size( 'four_up', 600 );
-
 } );
 
+
+/*
+ * REWRITES
+ */
+function custom_rewrite_basic() {
+  global $wp_rewrite;
+  add_rewrite_rule('^work/(.[^/]*)/?', 'index.php?project=$matches[1]', 'top');
+  add_rewrite_rule('^about/(.[^/]*)/?', 'index.php?team=$matches[1]', 'top');
+  $wp_rewrite->flush_rules();
+}
+add_action('init', 'custom_rewrite_basic');
+
+
+/*
+ * SCRIPTS AND STYLES
+ */
 add_action( 'wp_enqueue_scripts', function() {
 
   $theme = wp_get_theme();
@@ -35,13 +49,16 @@ add_action( 'wp_enqueue_scripts', function() {
 
 } );
 
+
 require get_template_directory() . '/inc/jetpack.php';
 
-// MENU
+
+/*
+ * MENUS
+ */
 register_nav_menus( array(
   'primary' => __( 'Primary Menu', 'sculpt' ),
 ) );
-
 
 //Clean Menus
 function wp_nav_menu_attributes_filter($var) {
@@ -67,7 +84,7 @@ function create_posttype() {
       ),
       'public' => true,
       'has_archive' => false,
-      'rewrite' => array('slug' => 'work/projects', 'with_front' => false),
+      'rewrite' => array('slug' => 'work', 'with_front' => false),
       'supports' => array('title','author', 'custom-fields', 'post-format'),
       'taxonomies' => array('post_tag', 'category'),
       'menu_position' => 5
@@ -82,9 +99,11 @@ function create_posttype() {
       ),
       'public' => true,
       'has_archive' => false,
-      'rewrite' => array('slug' => 'about/team', 'with_front' => false),
+      'rewrite' => array('slug' => 'about', 'with_front' => false),
       'supports' => array('title','author','thumbnail', 'custom-fields', 'post-format'),
       'menu_position' => 5
     )
   );
 }
+
+

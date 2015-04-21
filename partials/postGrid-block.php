@@ -7,7 +7,7 @@
   $img = get_field('featured_img', false); ?>
 
 <div class="postGrid-block block s1 med_s12 xl_s14">
-  <a href="<?php the_permalink(); ?>" class="postGrid-block-img" style="background-image: url('<?php echo $img[sizes][four_up]; ?>');"></a>
+  <a href="<?php the_permalink(); ?>" class="postGrid-block-img" style="background-image: url('<?php echo $img['sizes']['four_up']; ?>');"></a>
   <div class="postGrid-block-caption">
     <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
     <span class="postGrid-block-tags">

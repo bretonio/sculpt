@@ -23,7 +23,7 @@
 	}
 ?>
 
-<section class="container hero<?php echo ' '.$hero_size; ?><?php echo ' '.$color; ?>" style="background-image: url('<?php echo $bg_img[sizes][high_res]; ?>');">
+<section class="container hero<?php echo ' '.$hero_size; ?><?php echo ' '.$color; ?>" style="background-image: url('<?php echo $bg_img['sizes']['high_res']; ?>');">
 	<div class="row row--lg">
 
 	  <?php if($content_enabled == true) { ?>

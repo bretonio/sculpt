@@ -23,17 +23,17 @@
 	<div class="row">
 
 		<?php if ($layout == 'single_full') { ?>
-			<div class="block photoModule-photo s1" style="background-image: url('<?php echo $photo[sizes][src] ?>');"></div>
+			<div class="block photoModule-photo s1" style="background-image: url('<?php echo $photo['sizes']['src'] ?>');"></div>
 		<?php } elseif ($layout == 'single_large' || $layout == 'single_small') { ?>
-			<div class="block photoModule-photo s1" style="background-image: url('<?php echo $photo[sizes][src]  ?>');"></div>
+			<div class="block photoModule-photo s1" style="background-image: url('<?php echo $photo['sizes']['src']  ?>');"></div>
 		<?php } elseif ($layout == 'twoUp_large' || $layout == 'twoUp_small') { ?>
-			<div class="block photoModule-photo s1 med_s12" style="background-image: url('<?php echo $photo12[sizes][two_up] ?>');"></div>
-			<div class="block photoModule-photo s1 med_s12" style="background-image: url('<?php echo $photo22[sizes][two_up] ?>');"></div>
+			<div class="block photoModule-photo s1 med_s12" style="background-image: url('<?php echo $photo12['sizes']['two_up'] ?>');"></div>
+			<div class="block photoModule-photo s1 med_s12" style="background-image: url('<?php echo $photo22['sizes']['two_up'] ?>');"></div>
 		<?php } elseif ($layout == 'fourUp') { ?>
-			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14" style="background-image: url('<?php echo $photo14[sizes][four_up] ?>');"></div>
-			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14" style="background-image: url('<?php echo $photo24[sizes][four_up] ?>');"></div>
-			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14" style="background-image: url('<?php echo $photo34[sizes][four_up] ?>');"></div>
-			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14" style="background-image: url('<?php echo $photo44[sizes][four_up] ?>');"></div>
+			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14" style="background-image: url('<?php echo $photo14['sizes']['four_up'] ?>');"></div>
+			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14" style="background-image: url('<?php echo $photo24['sizes']['four_up'] ?>');"></div>
+			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14" style="background-image: url('<?php echo $photo34['sizes']['four_up'] ?>');"></div>
+			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14" style="background-image: url('<?php echo $photo44['sizes']['four_up'] ?>');"></div>
 		<?php } ?>
 	</div>
 </section>

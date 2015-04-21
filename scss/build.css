@@ -3127,7 +3127,8 @@ body.nav--is-visible {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 100;
-  line-height: 2rem; }
+  line-height: 2rem;
+  color: #ff9254; }
 
 .teamGrid-block {
   overflow: hidden; }
@@ -3193,6 +3194,12 @@ body.nav--is-visible {
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2rem; }
+
+.project-tags {
+  display: block;
+  position: relative;
+  color: #ff9254;
+  margin-bottom: 1.2rem; }
 
 /* Naming Conventions
 *

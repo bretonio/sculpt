@@ -2,6 +2,9 @@
 /*
 Template Name: Project Template
 */
+
+  $postID = get_the_id();
+  $postCats = get_the_category($postID);
   
   $title = get_field('project_title');
   $lede = get_field('project_lede');
@@ -10,11 +13,29 @@ Template Name: Project Template
 ?>
 
 <!-- HERO SECTION -->
-<section class="workPage container hero u-h_s23">
+<section class="workPage container hero u-h_s12">
   <div class="row row--lg">
 
       <div class="hero-content block s1 xl_s34">
           <h1 class="hero-title"><?php echo $title; ?></h1>
+          <span class="project-tags">
+            <h4>
+              <?php 
+                $cats = array();
+                $i = 1;
+
+                foreach($postCats as $category) { 
+                  array_push($cats, $category->cat_name);
+
+                  if ($i++ == 6) break;
+                } 
+
+                $print = implode (', ', $cats); 
+
+                echo $print;
+              ?>
+            </h4>
+          </span>
           <p class="hero-body"><?php echo $lede; ?></p>
       </div>
 

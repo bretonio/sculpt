@@ -23,7 +23,7 @@
 	$img = get_field('featured_img', $post_id);
 ?>
 
-<section class="featPost container" style="<?php echo 'background-image: url('.$img[sizes][src].');' ?>">
+<section class="featPost container" style="<?php echo 'background-image: url('.$img['sizes']['src'].');' ?>">
 		<div class="featPost-footLink">
 			<div class="row row--lg">
 				<a class="footLink-link" href="<?php echo $link_url ?>"><?php echo $link; ?></a>
