@@ -16,7 +16,7 @@
 		float: left;
 		line-height: 4.5rem !important;
 		padding: .3rem 1.5rem;
-		transition: .3s background;
+		transition: .2s background;
 	}
 	.button-right {
 		@include blockRel;
@@ -29,7 +29,7 @@
 		line-height: 50px;
 		text-align: center;
 		width: 50px;
-		transition: .3s background;
+		transition: .2s background;
 	}
 
 	&:hover .button-left {
@@ -82,7 +82,7 @@ button, .button {
 	height: 35px;
 	line-height: 35px;
 	padding: .3rem 1.2rem;
-	transition: background .3s, border .3s;
+	transition: background .2s, border .2s;
 
 	.button--alt-icon {
 		font-size: 2rem;

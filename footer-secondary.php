@@ -35,12 +35,11 @@
 			</div>
 		</div>
 		<nav class="footer-nav row inline">
-			<li><a href="#0">home</a></li>
-			<li><a href="#0">about</a></li>
-			<li><a href="#0">work</a></li>
-			<li><a href="#0">startups</a></li>
-			<li><a href="#0">blog</a></li>
-			<li><a href="#0">contact</a></li>
+			<?php
+	          $menu = array( 'menu' => 'footer', 'container' => '', 'items_wrap' => '%3$s', 'depth' => -1);
+
+	          wp_nav_menu( $menu ); 
+	        ?>
 		</nav>
 		<div class="footer-colophon row">
 			<h6>Made with love in Iowa</h6>

@@ -38,7 +38,7 @@
     <script>try{Typekit.load();}catch(e){}</script>
     <![endif]-->
 
-  <title><?php wp_title('|','true','right'); ?><?php bloginfo('name'); ?></title>
+  <title><?php wp_title('|','true','right'); ?></title>
 
   <?php wp_head(); ?>
 
@@ -61,24 +61,11 @@
       </div>
 
       <nav class="mainNav">
-        <li>
-          <a href="#0">home</a>
-        </li>
-        <li>
-          <a href="#0">about</a>
-        </li>
-        <li>
-          <a href="#0">services</a>
-        </li>
-        <li>
-          <a href="#0">blog</a>
-        </li>
-        <li>
-          <a href="#0">startups</a>
-        </li>
-        <li>
-          <a href="#0">contact</a>
-        </li>
+        <?php
+          $menu = array( 'menu' => 'offcanvas', 'container' => '', 'items_wrap' => '%3$s');
+
+          wp_nav_menu( $menu ); 
+        ?>
       </nav>
     </div>
   </div>
@@ -153,7 +140,7 @@
         </div>
 
         <?php
-          $menu = array( 'theme_location' => 'primary', 'container' => '', 'items_wrap' => '%3$s', 'depth' => -1);
+          $menu = array( 'menu' => 'homepage-1', 'container' => '', 'items_wrap' => '%3$s', 'depth' => -1);
 
           wp_nav_menu( $menu ); 
         ?>

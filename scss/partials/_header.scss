@@ -37,7 +37,7 @@
 		display: none; // hide on mobile
 		font-weight: 500;
 		margin: 1rem 0 0 2rem;
-		transition: .2s color;
+		transition: .1s color;
 		vertical-align: middle;
 
 		@media screen and (min-width: $med) {
@@ -182,18 +182,18 @@
 
 	.nav--is-visible & {
 		transform: translateX(0);
-		transition-delay: .2s;
+		// transition-delay: .2s;
 	}
 	.nav--is-hiding & {
 		transform: translateX(100%);
-		transition-delay: 0s;
+		// transition-delay: 0s;
 	}
 }
 .navContainer-scroll {
 	@include blockRel;
 
 	float: right;
-	padding: 3rem;
+	padding: 3rem 2rem;
 	width: 100%;
 
 	.menuClose {
@@ -203,8 +203,9 @@
 		cursor: pointer;
 		font-size: 4rem;
 		opacity: .3;
+		padding-right: 2rem;
 		text-align: right;
-		transition: opacity .3s;
+		transition: opacity .1s;
 		width: 100%;
 		z-index: 100;
 
@@ -216,22 +217,39 @@
 .mainNav {
 	@include blockRel;
 
+	margin-top: 2rem;
+
 	li {
 		@include blockRel;
-		@include h0;
+		@include h1;
 
+		border-right: 3px solid transparent;
 		color: #FFFFFF;
-		margin: 0;
-		opacity: .7;
+		margin: 1rem 0;
+		opacity: .5;
 		text-align: right;
-		transition: opacity .3s;
+		transition: opacity .1s, border .1s;
 		width: 100%;
 
-		&:first-of-type {
-			margin-top: 20px;
+		&:hover {
+			opacity: 1;
 		}
 
+		ul {
+			margin: 0;
+
+			li {
+				@include h2;
+
+				margin: 0;
+			}
+		}
+	}
+	& > li {
+		padding-right: 1.5rem;
+
 		&:hover {
+			border-right: 3px solid $c1;
 			opacity: 1;
 		}
 	}

@@ -2,7 +2,9 @@
 	overflow: hidden;
 
 	&:nth-of-type(odd) {
-		background-color: $gray10;
+		@media screen and (min-width: $med){
+			background-color: $gray10;
+		}
 	}
 
 	@media screen and (min-width: $med){
@@ -48,7 +50,7 @@
 		padding: 3rem;
 		position: absolute;
 		transform: translateY(100%);
-		transition: transform .3s;
+		transition: transform .2s;
 	}
 
 	.divider {

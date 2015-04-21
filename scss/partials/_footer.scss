@@ -30,7 +30,7 @@
 
 			a {
 				color: $c1;
-				transition: color .3s;
+				transition: color .1s;
 
 				&:hover {
 					color: $c1l;
@@ -85,7 +85,7 @@
 		font-size: 3rem;
 		margin: 0 2rem 0 0;
 		opacity: .8;
-		transition: opacity .3s;
+		transition: opacity .1s;
 		vertical-align: middle;
 
 		&:hover {
@@ -106,7 +106,7 @@
 	}
 
 	@media screen and (min-width: $med) {
-		padding: 1rem 2.5% .6rem;
+		padding: 1.2rem 2.5% .6rem;
 
 		&::after {
 			display: inline-block !important;
@@ -115,13 +115,15 @@
 
 	li {
 		@include inlineRel;
-		@include h4;
+		@include h5;
 
 		color: $gray-a;
+		font-weight: 900;
 		height: 50px;
 		line-height: 50px;
 		padding: 0 5%;
-		transition: color .3s;
+		transition: color .1s;
+		text-transform: lowercase;
 		width: 100%;
 
 		&:hover {

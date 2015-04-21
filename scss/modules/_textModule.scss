@@ -1,11 +1,6 @@
 .textModule {
 	background-color: #FFFFFF;
 
-	// Override default 'top' for textModule, w/o !important
-	.row.inline .block {
-		vertical-align: middle;
-	}
-
 	/*
 	 * Color Schemes
 	 */
@@ -91,7 +86,7 @@
 			top: 0;
 			text-align: center;
 			width: 32px;
-			transition: .3s background;
+			transition: .1s background;
 		}
 	}
 }

@@ -1642,7 +1642,7 @@ button .button-left, .button .button-left {
   float: left;
   line-height: 4.5rem !important;
   padding: .3rem 1.5rem;
-  transition: .3s background; }
+  transition: .2s background; }
 @media screen and (min-width: 550px) {
   button .button-left, .button .button-left {
     font-size: 2.2rem;
@@ -1658,7 +1658,7 @@ button .button-right, .button .button-right {
   line-height: 50px;
   text-align: center;
   width: 50px;
-  transition: .3s background; }
+  transition: .2s background; }
 button:hover .button-left, .button:hover .button-left {
   background-color: #ff9254; }
 button.button--dark .button-left, .button.button--dark .button-left {
@@ -1691,7 +1691,7 @@ button.button--white:hover .button-left, .button.button--white:hover .button-lef
   height: 35px;
   line-height: 35px;
   padding: .3rem 1.2rem;
-  transition: background .3s, border .3s; }
+  transition: background .2s, border .2s; }
 .button--alt .button--alt-icon {
   font-size: 2rem;
   margin-right: .5rem;
@@ -2111,7 +2111,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .ledeModule .textModule-block:first-of-type {
   margin: 20px 0 10px; }
 .ledeModule .textModule-block:last-of-type {
-  margin: 10px 0 0; }
+  margin: 20px 0 0; }
 
 .photoModule-photo {
   background-size: cover;
@@ -2135,8 +2135,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   /*
    * Color Schemes
    */ }
-.textModule .row.inline .block {
-  vertical-align: middle; }
 .textModule.colorScheme--light {
   background-color: #f5f5f5; }
 .textModule.colorScheme--orange {
@@ -2200,7 +2198,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   top: 0;
   text-align: center;
   width: 32px;
-  transition: .3s background; }
+  transition: .1s background; }
 
 .textFeature {
   /*
@@ -2454,7 +2452,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   padding: 0 1.5rem;
   text-align: center;
   width: 60px;
-  transition: .3s background; }
+  transition: .1s background; }
 .signUp-submit:hover {
   background-color: #ffa26e; }
 @media screen and (min-width: 550px) {
@@ -2547,7 +2545,7 @@ div.mce_inline_error {
 .endModule .endModule-content a {
   color: #ff9254;
   font-weight: 900;
-  transition: color .2s; }
+  transition: color .1s; }
 .endModule .endModule-cta {
   margin-top: 1rem; }
 .endModule .endModule-links-heading {
@@ -2628,7 +2626,7 @@ div.mce_inline_error {
   top: 0;
   background-color: #2b2e33;
   opacity: .9;
-  transition: opacity .3s ease-in-out; }
+  transition: opacity .2s ease-in-out; }
 
 .featPost-footLink {
   display: block;
@@ -2673,7 +2671,7 @@ div.mce_inline_error {
   top: 0;
   text-align: center;
   width: 32px;
-  transition: .3s background;
+  transition: .1s background;
   transform: rotate(180deg); }
 
 .header {
@@ -2715,7 +2713,7 @@ div.mce_inline_error {
   display: none;
   font-weight: 500;
   margin: 1rem 0 0 2rem;
-  transition: .2s color;
+  transition: .1s color;
   vertical-align: middle;
   /*
    * Hamburger Icon
@@ -2814,17 +2812,15 @@ div.mce_inline_error {
   .navContainer {
     width: 40%; } }
 .nav--is-visible .navContainer {
-  transform: translateX(0);
-  transition-delay: .2s; }
+  transform: translateX(0); }
 .nav--is-hiding .navContainer {
-  transform: translateX(100%);
-  transition-delay: 0s; }
+  transform: translateX(100%); }
 
 .navContainer-scroll {
   display: block;
   position: relative;
   float: right;
-  padding: 3rem;
+  padding: 3rem 2rem;
   width: 100%; }
 .navContainer-scroll .menuClose {
   display: block;
@@ -2833,8 +2829,9 @@ div.mce_inline_error {
   cursor: pointer;
   font-size: 4rem;
   opacity: .3;
+  padding-right: 2rem;
   text-align: right;
-  transition: opacity .3s;
+  transition: opacity .1s;
   width: 100%;
   z-index: 100; }
 .navContainer-scroll .menuClose:hover {
@@ -2842,32 +2839,44 @@ div.mce_inline_error {
 
 .mainNav {
   display: block;
-  position: relative; }
+  position: relative;
+  margin-top: 2rem; }
 .mainNav li {
   display: block;
   position: relative;
   font-family: "museo-sans", Helvetica, arial, sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   font-weight: 900;
   line-height: 4rem;
-  margin-bottom: 0;
+  border-right: 3px solid transparent;
   color: #FFFFFF;
-  margin: 0;
-  opacity: .7;
+  margin: 1rem 0;
+  opacity: .5;
   text-align: right;
-  transition: opacity .3s;
+  transition: opacity .1s, border .1s;
   width: 100%; }
 @media screen and (min-width: 550px) {
   .mainNav li {
-    font-size: 6rem;
-    line-height: 5.5rem; } }
-@media screen and (min-width: 1024px) {
-  .mainNav li {
-    font-size: 4.5vw;
-    line-height: 5vw; } }
-.mainNav li:first-of-type {
-  margin-top: 20px; }
+    font-size: 4.5rem;
+    line-height: 4.7rem; } }
 .mainNav li:hover {
+  opacity: 1; }
+.mainNav li ul {
+  margin: 0; }
+.mainNav li ul li {
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 3.3rem;
+  margin: 0; }
+@media screen and (min-width: 550px) {
+  .mainNav li ul li {
+    font-size: 3rem;
+    line-height: 4rem; } }
+.mainNav > li {
+  padding-right: 1.5rem; }
+.mainNav > li:hover {
+  border-right: 3px solid #ff9254;
   opacity: 1; }
 
 .footer-row-one {
@@ -2894,7 +2903,7 @@ div.mce_inline_error {
   vertical-align: middle; }
 .footer-location.row .footer-location-right a {
   color: #ff9254;
-  transition: color .3s; }
+  transition: color .1s; }
 .footer-location.row .footer-location-right a:hover {
   color: #ffa26e; }
 @media screen and (min-width: 550px) {
@@ -2935,7 +2944,7 @@ div.mce_inline_error {
   font-size: 3rem;
   margin: 0 2rem 0 0;
   opacity: .8;
-  transition: opacity .3s;
+  transition: opacity .1s;
   vertical-align: middle; }
 .footer-social-links .footer-social-link:hover {
   opacity: 1; }
@@ -2950,21 +2959,23 @@ div.mce_inline_error {
   display: none !important; }
 @media screen and (min-width: 768px) {
   .footer-nav {
-    padding: 1rem 2.5% .6rem; }
+    padding: 1.2rem 2.5% .6rem; }
   .footer-nav::after {
     display: inline-block !important; } }
 .footer-nav li {
   display: inline-block;
   position: relative;
   font-family: "museo-sans", Helvetica, arial, sans-serif;
-  font-size: 1.8rem;
-  font-weight: 900;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2rem;
   color: #55555d;
+  font-weight: 900;
   height: 50px;
   line-height: 50px;
   padding: 0 5%;
-  transition: color .3s;
+  transition: color .1s;
+  text-transform: lowercase;
   width: 100%; }
 .footer-nav li:hover {
   color: #111f2d; }
@@ -3021,7 +3032,8 @@ body.nav--is-visible {
   display: block;
   position: relative;
   background-color: #ffffff;
-  width: 100%; }
+  width: 100%;
+  z-index: 0; }
 
 .bodyOverlay {
   display: block;
@@ -3111,7 +3123,7 @@ body.nav--is-visible {
     padding: 3rem;
     position: absolute;
     transform: translateY(100%);
-    transition: transform .3s; } }
+    transition: transform .2s; } }
 .postGrid-block-caption .divider {
   display: block;
   position: relative;
@@ -3128,12 +3140,17 @@ body.nav--is-visible {
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2rem;
-  color: #ff9254; }
+  display: block;
+  position: relative;
+  color: #ff9254;
+  font-weight: 900;
+  margin-top: .6rem; }
 
 .teamGrid-block {
   overflow: hidden; }
-.teamGrid-block:nth-of-type(odd) {
-  background-color: #f5f5f5; }
+@media screen and (min-width: 768px) {
+  .teamGrid-block:nth-of-type(odd) {
+    background-color: #f5f5f5; } }
 @media screen and (min-width: 768px) {
   .teamGrid-block {
     padding-top: 50%; } }
@@ -3177,7 +3194,7 @@ body.nav--is-visible {
     padding: 3rem;
     position: absolute;
     transform: translateY(100%);
-    transition: transform .3s; } }
+    transition: transform .2s; } }
 .teamGrid-block-caption .divider {
   display: block;
   position: relative;

@@ -485,7 +485,7 @@
                             "prefix": "",
                             "type": "text",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -614,7 +614,7 @@
                             "prefix": "",
                             "type": "text",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -743,7 +743,7 @@
                             "prefix": "",
                             "type": "text",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -851,7 +851,7 @@
                             "prefix": "",
                             "type": "text",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -2075,5 +2075,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1429578630
+    "modified": 1429588008
 }

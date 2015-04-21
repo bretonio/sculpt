@@ -38,7 +38,7 @@
 	bottom: 0; left: 0; right: 0; top: 0;
 	background-color: $c2;
 	opacity: .9;
-	transition: opacity .3s ease-in-out;
+	transition: opacity .2s ease-in-out;
 }
 .featPost-footLink {
 	@include blockAb;
@@ -71,7 +71,7 @@
 		top: 0;
 		text-align: center;
 		width: 32px;
-		transition: .3s background;
+		transition: .1s background;
 		transform: rotate(180deg);
 	}
 }
