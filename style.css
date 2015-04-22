@@ -336,7 +336,7 @@ html, html a {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
 
-ul, ol, li, a, nav, span, main, section, article, aside, header, footer, div, details, summary, form, fieldset, textarea, input[type="text"], input[type="tel"], input[type="url"], input[type="email"], input[type="search"], input[type="number"], input[type="password"], .border-box {
+ul, ol, li, a, nav, span, main, section, article, aside, header, footer, div, details, summary, form, fieldset, textarea, input, input[type="text"], input[type="tel"], input[type="url"], input[type="email"], input[type="search"], input[type="number"], input[type="password"], .border-box {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
@@ -2676,6 +2676,166 @@ div.mce_inline_error {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
 
+.contactForm-container {
+  background-color: #f5f5f5; }
+
+.contactForm {
+  display: block;
+  position: relative;
+  width: 100%;
+  /*
+   * Gravity Forms Reset
+   */ }
+.contactForm .contactForm-s1 {
+  width: 100%; }
+.contactForm .contactForm-s12 {
+  padding: 2rem;
+  width: 50%; }
+.contactForm input {
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 3rem;
+  background-color: #FFFFFF;
+  border: 0;
+  border-left: 3px solid transparent;
+  color: #2b2e33;
+  height: 50px;
+  outline: 0;
+  padding: 1rem 2rem;
+  transition: border .1s, color .1s;
+  width: 100%; }
+@media screen and (min-width: 550px) {
+  .contactForm input {
+    font-size: 2.2rem;
+    line-height: 3.3rem; } }
+.contactForm input:focus {
+  border-left: 3px solid #ff9254; }
+.contactForm input[type="submit"] {
+  background-color: #5a606a;
+  border: 0 !important;
+  color: #FFFFFF;
+  height: 50px;
+  line-height: 30px;
+  margin: 2rem 0 0 2rem;
+  transition: background .1s;
+  text-transform: lowercase;
+  width: auto; }
+.contactForm input[type="submit"]:hover {
+  background-color: #2b2e33; }
+.contactForm select {
+  display: block;
+  position: relative;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 3rem;
+  background-color: #FFFFFF;
+  border: 0;
+  border-left: 3px solid transparent;
+  border-radius: 0;
+  color: rgba(90, 96, 106, 0.6);
+  height: 50px;
+  padding: 0 2rem;
+  transition: border .1s, color .1s;
+  width: 100%;
+  -webkit-appearance: none; }
+@media screen and (min-width: 550px) {
+  .contactForm select {
+    font-size: 2.2rem;
+    line-height: 3.3rem; } }
+.contactForm select:focus {
+  border-left: 3px solid #ff9254;
+  outline: none; }
+.contactForm .contactForm-select::after {
+  display: block;
+  position: absolute;
+  display: inline-block;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e600';
+  color: rgba(90, 96, 106, 0.6);
+  font-size: 1.5rem;
+  pointer-events: none;
+  right: 4rem;
+  top: 3.8rem;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+.contactForm textarea {
+  display: block;
+  position: relative;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 3rem;
+  background-color: #FFFFFF;
+  border: 0;
+  border-left: 3px solid transparent;
+  font-weight: 300;
+  margin: 2rem;
+  max-width: calc(100% - 4rem);
+  padding: 2rem;
+  transition: border .1s, color .1s;
+  width: calc(100% - 4rem); }
+@media screen and (min-width: 550px) {
+  .contactForm textarea {
+    font-size: 2.2rem;
+    line-height: 3.3rem; } }
+.contactForm textarea:focus {
+  border-left: 3px solid #ff9254;
+  outline: none; }
+.contactForm .validation_error {
+  display: block;
+  position: relative;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 3rem;
+  background-color: #ff9254;
+  color: #FFFFFF;
+  font-weight: 900;
+  margin: 0 2rem 2rem;
+  padding: 2rem; }
+.contactForm .validation_message {
+  display: block;
+  position: absolute;
+  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.8rem;
+  color: #ff9254;
+  margin: .5rem 0; }
+.contactForm ul, .contactForm li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+.contactForm .gform_fields {
+  text-align: justify; }
+.contactForm .gfield, .contactForm .ginput_container {
+  display: inline-block;
+  position: relative; }
+.contactForm .ginput_container {
+  width: 100%; }
+.contactForm .gform_heading, .contactForm label {
+  display: none; }
+.contactForm ::-webkit-input-placeholder {
+  color: rgba(90, 96, 106, 0.6); }
+.contactForm :-moz-placeholder {
+  color: rgba(90, 96, 106, 0.6); }
+.contactForm ::-moz-placeholder {
+  color: rgba(90, 96, 106, 0.6); }
+.contactForm :-ms-input-placeholder {
+  color: rgba(90, 96, 106, 0.6); }
+
 .header {
   display: block;
   position: fixed;
@@ -3236,6 +3396,16 @@ body.nav--is-visible {
   position: relative;
   color: #ff9254;
   margin-bottom: 1.2rem; }
+
+.map {
+  padding-top: 33%; }
+.map .map-inner {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0; }
 
 /* Naming Conventions
 *

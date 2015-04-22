@@ -1,0 +1,9 @@
+.map {
+	padding-top: 33%;
+
+	.map-inner {
+		@include blockAb;
+
+		bottom: 0; left: 0; right: 0; top: 0;
+	}
+}
