@@ -1583,14 +1583,14 @@ p, .p {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 2.6rem;
   margin-bottom: .618rem; }
 
 .p0 {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 2.6rem;
   font-size: 1.2rem; }
 
 i {
@@ -1684,7 +1684,7 @@ button.button--white:hover .button-left, .button.button--white:hover .button-lef
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 2.6rem;
   background-color: rgba(90, 96, 106, 0.1);
   border-left: 3px solid transparent;
   color: #2b2e33;
@@ -2250,20 +2250,29 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   /*
    * Color Schemes
    */ }
+.rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte p, .rte ul, .rte ol, .rte li {
+  max-width: 700px; }
 .rte h1 {
   margin-bottom: 1.6rem;
   opacity: .8; }
 .rte h3, .rte h4 {
   opacity: .9; }
 .rte h2, .rte h3, .rte h4, .rte p {
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.8rem; }
+.rte a {
+  color: #ff9254;
+  font-weight: 900; }
+.rte a:hover {
+  color: #ffa26e; }
 .rte blockquote {
   border-left: 4px solid #ff9254;
-  margin: 20px 0;
+  margin: 4rem 0;
   padding: 0 0 0 1rem; }
 @media screen and (min-width: 768px) {
   .rte blockquote {
     padding: 0 0 0 3rem; } }
+.rte blockquote h1, .rte blockquote h2, .rte blockquote h3, .rte blockquote h4 {
+  max-width: 100%; }
 .rte ul, .rte ol {
   margin: 0 0 1.6rem;
   padding: 0 0 0 3rem; }
@@ -2271,12 +2280,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4; }
+  line-height: 2.6rem; }
 .rte pre {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 2.6rem;
   border-left: 4px solid #cccccc;
   background-color: #f5f5f5;
   font-family: Consolas , Monaco, monospace;
@@ -2286,8 +2295,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .rte figure {
   display: block;
   position: relative;
-  margin: 20px 0;
+  margin: 3rem 0 3rem;
   max-width: 100%; }
+@media screen and (min-width: 768px) {
+  .rte figure {
+    margin: 4rem 0 5rem; } }
 .rte figure img {
   display: block;
   position: relative;
@@ -2298,14 +2310,26 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2rem;
-  border-left: 2px solid #f5f5f5;
-  padding: 1rem 1.5rem; }
+  border-bottom: 2px solid #f5f5f5;
+  color: rgba(43, 46, 51, 0.6);
+  max-width: 500px;
+  padding: .5rem 0 1rem; }
+.rte hr {
+  display: inline-block;
+  position: relative;
+  background-color: #f5f5f5;
+  border: 0;
+  height: 2px;
+  width: 100px;
+  margin: 1rem 0 4rem; }
 .rte.colorScheme--light {
   background-color: #f5f5f5; }
 .rte.colorScheme--light pre {
   background-color: #FFFFFF; }
 .rte.colorScheme--light figure figcaption {
   border-left: 2px solid #cccccc; }
+.rte.colorScheme--light hr {
+  background-color: rgba(90, 96, 106, 0.6); }
 .rte.colorScheme--orange {
   background-color: #ff9254; }
 .rte.colorScheme--orange h1, .rte.colorScheme--orange h2, .rte.colorScheme--orange h3, .rte.colorScheme--orange h4, .rte.colorScheme--orange blockquote {
@@ -2316,12 +2340,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 2.6rem;
   border-left: 4px solid rgba(255, 255, 255, 0.6);
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF; }
 .rte.colorScheme--orange figure figcaption {
   border-left: 2px solid rgba(255, 255, 255, 0.6); }
+.rte.colorScheme--orange hr {
+  background-color: rgba(255, 255, 255, 0.6); }
 .rte.colorScheme--dark {
   background-color: #2b2e33; }
 .rte.colorScheme--dark h1, .rte.colorScheme--dark h2, .rte.colorScheme--dark h3, .rte.colorScheme--dark h4, .rte.colorScheme--dark h5, .rte.colorScheme--dark p, .rte.colorScheme--dark li, .rte.colorScheme--dark blockquote, .rte.colorScheme--dark figcaption {
@@ -2332,12 +2358,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 2.6rem;
   border-left: 4px solid rgba(255, 255, 255, 0.6);
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFFFFF; }
 .rte.colorScheme--dark figure figcaption {
   border-left: 2px solid rgba(255, 255, 255, 0.6); }
+.rte.colorScheme--dark hr {
+  background-color: rgba(255, 255, 255, 0.6); }
 
 .signUp {
   /*
@@ -2418,7 +2446,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 2.6rem;
   background-color: #f5f5f5;
   border: 0;
   border-left: 3px solid transparent;
@@ -2513,7 +2541,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4; }
+  line-height: 2.6rem; }
 .error-response--is-visible #mce-error-response {
   opacity: 1; }
 
@@ -2642,7 +2670,7 @@ div.mce_inline_error {
   font-family: "museo-sans", Helvetica, arial, sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 2.6rem;
   color: #FFFFFF;
   margin-bottom: 0; }
 .footLink-link:hover::before {
@@ -3385,6 +3413,24 @@ body.nav--is-visible {
   left: 0;
   right: 0;
   top: 0; }
+
+.blogPage {
+  padding: 45% 0 3rem; }
+@media screen and (min-width: 768px) {
+  .blogPage {
+    padding: 22% 0 3rem; } }
+@media screen and (min-width: 1280px) {
+  .blogPage {
+    padding: 14% 0 3rem; } }
+
+.blog-title {
+  color: #ff9254;
+  margin-bottom: 2rem; }
+
+.blog-date {
+  color: rgba(90, 96, 106, 0.6);
+  font-weight: 900;
+  margin-bottom: 2rem; }
 
 /* Naming Conventions
 *

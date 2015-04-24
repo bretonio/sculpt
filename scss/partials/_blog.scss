@@ -1,0 +1,19 @@
+.blogPage {
+	padding: 45% 0 3rem;
+
+	@media screen and (min-width: $med){
+		padding: 22% 0 3rem;
+	}
+	@media screen and (min-width: $xl){
+		padding: 14% 0 3rem;
+	}
+}
+.blog-title {
+	color: $c1;
+	margin-bottom: 2rem;
+}
+.blog-date {
+	color: rgba($c2l, .6);
+	font-weight: 900;
+	margin-bottom: 2rem;
+}

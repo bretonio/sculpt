@@ -1,4 +1,8 @@
 .rte {
+	// limit width of body copy
+	h1, h2, h3, h4, h5, p, ul, ol, li {
+		max-width: 700px;
+	}
 	h1 {
 		margin-bottom: 1.6rem;
 		opacity: .8;
@@ -7,15 +11,27 @@
 		opacity: .9;
 	}
 	h2, h3, h4, p {
-		margin-bottom: 1.2rem;
+		margin-bottom: 1.8rem;
+	}
+	a {
+		color: $c1;
+		font-weight: 900;
+
+		&:hover {
+			color: $c1l;
+		}
 	}
 	blockquote {
 		border-left: 4px solid $c1;
-		margin: 20px 0;
+		margin: 4rem 0;
 		padding: 0 0 0 1rem;
 
 		@media screen and (min-width: $med) {
 			padding: 0 0 0 3rem;
+		}
+
+		h1, h2, h3, h4 {
+			max-width: 100%;
 		}
 	}
 	ul, ol {
@@ -38,8 +54,12 @@
 	figure {
 		@include blockRel;
 
-		margin: 20px 0;
+		margin: 3rem 0 3rem;
 		max-width: 100%;
+
+		@media screen and (min-width: $med){
+			margin: 4rem 0 5rem;
+		}
 
 		img {
 			@include blockRel; 
@@ -51,9 +71,20 @@
 		figcaption {
 			@include h5;
 
-			border-left: 2px solid $gray10;
-			padding: 1rem 1.5rem;
+			border-bottom: 2px solid $gray10;
+			color: rgba($c2, .6);
+			max-width: 500px;
+			padding: .5rem 0 1rem;
 		}
+	}
+	hr {
+		@include inlineRel;
+
+		background-color: $gray10;
+		border: 0;
+		height: 2px;
+		width: 100px;
+		margin: 1rem 0 4rem;
 	}
 
 	/*
@@ -70,6 +101,9 @@
 			figcaption {
 				border-left: 2px solid $gray20;
 			}
+		}
+		hr {
+			background-color: rgba($c2l, .6);
 		}
 	}
 	&.colorScheme--orange {
@@ -97,6 +131,9 @@
 				border-left: 2px solid rgba(#FFFFFF, .6);
 			}
 		}
+		hr {
+			background-color: rgba(#FFFFFF, .6);
+		}
 	}
 	&.colorScheme--dark {
 		background-color: $c2;
@@ -122,6 +159,10 @@
 			figcaption {
 				border-left: 2px solid rgba(#FFFFFF, .6);
 			}
+		}
+
+		hr {
+			background-color: rgba(#FFFFFF, .6);
 		}
 	}
 }

@@ -3,8 +3,10 @@
 	$content = get_sub_field('rte_content');
 ?>
 
+
+
 <section class="rte container pad--med<?php echo ' '.$color; ?>">
-	<div class="row row--sm">
+	<div class="row row--med">
 		<?php echo apply_filters('the_content', $content); ?>
 	</div>
 </section>
