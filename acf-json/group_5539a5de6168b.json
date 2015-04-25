@@ -2754,11 +2754,11 @@
         },
         {
             "key": "field_553aebb46adf7",
-            "label": "Sculptron (author)",
+            "label": "Author",
             "name": "blog_author",
             "prefix": "",
             "type": "post_object",
-            "instructions": "",
+            "instructions": "Choose either a Sculptron or a guest author. All authors must have a user account associated with the site.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -2774,23 +2774,6 @@
             "multiple": 0,
             "return_format": "id",
             "ui": 1
-        },
-        {
-            "key": "field_553aec296adf8",
-            "label": "Guest Post?",
-            "name": "blog_guest_bool",
-            "prefix": "",
-            "type": "true_false",
-            "instructions": "Check this to ignore the Sculptron field and pull author data from the user profile of the author.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0
         }
     ],
     "location": [
@@ -2817,5 +2800,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1429925887
+    "modified": 1429993485
 }

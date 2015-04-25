@@ -40,7 +40,8 @@ while ( have_posts() ) { the_post();
 <section class="teamGrid container">
   <div class="row">
     <?php 
-      $team = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1 ) ); 
+      $guest = get_cat_ID( 'guest' );
+      $team = new WP_Query( array( 'post_type' => 'team', 'posts_per_page' => -1, 'category__not_in' => $guest ) ); 
       while ( $team->have_posts() ) : $team->the_post(); 
     ?>
 

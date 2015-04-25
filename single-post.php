@@ -142,7 +142,7 @@ while ( have_posts() ): the_post();
         <h5 class="post-byline"><?php echo '<strong>'.$date.'</strong> by '.$author; ?></h5>
       </div>
 
-  <?php endwhile; wp_reset_postdata(); ?>
+  <?php endwhile; wp_reset_query(); ?>
 
   </div>
 </section>

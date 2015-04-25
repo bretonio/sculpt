@@ -101,6 +101,7 @@ function create_posttype() {
       'has_archive' => false,
       'rewrite' => array('slug' => 'about', 'with_front' => false),
       'supports' => array('title','author','thumbnail', 'custom-fields', 'post-format'),
+      'taxonomies' => array('category'),
       'menu_position' => 5
     )
   );
