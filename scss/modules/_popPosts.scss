@@ -29,33 +29,12 @@
 	.post-title {
 		@include inlineRel;
 
+		transition: color .1s;
 		width: auto;
 
 		&:hover {
 			color: $c2l;
 		}
-
-		// &:hover::after {
-		// 	background-color: rgba($c1, 1);
-		// }
-
-		// &::after {
-		// 	@include blockAb;
-		// 	@include icon;
-
-		// 	background-color: rgba($c1l, .8); //same as textModule-title
-		// 	content: '\e600';
-		// 	color: #FFFFFF;
-		// 	font-size: 1.3rem;
-		// 	float: left;
-		// 	height: 25px;
-		// 	line-height: 25px;
-		// 	right: -40px;
-		// 	top: 3px;
-		// 	text-align: center;
-		// 	width: 25px;
-		// 	transition: .1s background;
-		// }
 	}
 	.post-desc {
 		margin-bottom: 1rem;

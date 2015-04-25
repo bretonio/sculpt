@@ -1,3 +1,60 @@
+/*
+ * Blog Listing Page
+ */
+.blogListing {
+	padding-bottom: 0 !important;
+
+	.post{
+		@include blockRel;
+
+		overflow: hidden;
+
+		&:nth-of-type(even){
+			background-color: $gray10;
+		}
+
+		&.has-feat_img {
+			&.is-visible {
+				.post-img {
+					opacity: 1;
+					transition-delay: .6s;
+				}
+				.post-overlay {
+					opacity: .2;
+					transition-delay: .6s;
+				}
+				.blog-date, .blog-lede {
+					opacity: 0;
+					transition-delay: .6s;
+				}
+				.blog-title {
+					color: #FFFFFF;
+					transition-delay: .6s;
+				}
+			}
+		}
+	}
+	.post-img {
+		@include blockAb;
+		
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		bottom: 0; left: 0; right: 0; top: 0;
+		opacity: 0;
+		transition: opacity .6s ease-in-out;
+	}
+	.post-overlay {
+		@include blockAb;
+		
+		background-color: $black;
+		bottom: 0; left: 0; right: 0; top: 0;
+		opacity: 0;
+		transition: opacity .6s ease-in-out;
+	}
+}
+
+
 .blogPage {
 	padding: 45% 0 3rem;
 
@@ -11,13 +68,17 @@
 .blog-title {
 	color: $c1;
 	margin-bottom: 2rem;
+	transition: color .6s ease-in-out;
 }
 .blog-date {
 	color: rgba($c2l, .6);
 	font-weight: 900;
 	margin-bottom: 2rem;
+	transition: opacity .6s ease-in-out;
 }
-
+.blog-lede {
+	transition: opacity .6s ease-in-out;
+}
 .blogAuthor {
 	@media screen and (min-width: $med) {
 		margin-bottom: 2rem;

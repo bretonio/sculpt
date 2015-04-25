@@ -2788,6 +2788,15 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "553bfdde8fd5d",
+                    "name": "popPosts",
+                    "label": "Popular Blog Posts",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -2838,5 +2847,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1429667378
+    "modified": 1429995059
 }

@@ -25,7 +25,7 @@ Template Name: Project Template
 
 <!-- HERO SECTION -->
 <section class="blogPage container">
-  <div class="row row--med">
+  <div class="row row--med pad--lg">
 
       <div class="block s1">
           <h5 class="blog-date">Posted <?php echo $date.' by '.$author; ?></h5>
@@ -104,7 +104,7 @@ while ( have_posts() ): the_post();
         <?php previous_post_link('%link', '<span class="icon-arrow"></span>'); ?>
       </div>
       <div class="allPosts block s12 med_s13">
-        <a href="<?php echo site_url().'/contact'; ?>">back to all posts</a>
+        <a href="<?php echo site_url().'/blog'; ?>">back to all posts</a>
       </div>
       <div class="nextPost block s14 med_s13">
         <?php next_post_link('%link', '<span class="icon-arrow"></span>'); ?>
@@ -127,12 +127,9 @@ while ( have_posts() ): the_post();
 
     while ( $popPost->have_posts() ): $popPost->the_post(); 
 
-      $postID = get_the_id();
-      $authorID = get_post_field( 'post_author', $postID );
-      $author = get_the_author_meta( 'display_name', $authorID );
-      $date = get_the_date( __('m.d.Y'), $postID );
+      $excerpt = get_the_excerpt();
 
-      $excerpt = get_the_excerpt(); 
+      if($post->ID != $postID): 
     ?>
 
       <!-- post block -->
@@ -142,7 +139,7 @@ while ( have_posts() ): the_post();
         <h5 class="post-byline"><?php echo '<strong>'.$date.'</strong> by '.$author; ?></h5>
       </div>
 
-  <?php endwhile; wp_reset_query(); ?>
+  <?php endif; endwhile; wp_reset_query(); ?>
 
   </div>
 </section>

@@ -7,6 +7,7 @@ jQuery(function($){
 			this.headerOffset();
 			this.offCanvas();
 			if ($('#mc-embedded-subscribe-form').length){ this.mcValidate(); }
+			if ($('.blogListing').length){ this.blogListing(); }
 		},
 
 		headerOffset: function(){
@@ -41,6 +42,16 @@ jQuery(function($){
 					$body.addClass('nav--is-visible');
 				}
 			}); 
+		},
+
+		blogListing: function(){
+			var $post_title = $('.blogListing .post .blog-title');
+
+			$post_title.hover(function(){
+				$(this).closest('.post').addClass('is-visible');
+			}, function(){
+				$(this).closest('.post').removeClass('is-visible');
+			});
 		},
 
 		mcValidate: function(){

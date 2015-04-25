@@ -2886,6 +2886,7 @@ div.mce_inline_error {
 .popularPosts .post-title {
   display: inline-block;
   position: relative;
+  transition: color .1s;
   width: auto; }
 .popularPosts .post-title:hover {
   color: #5a606a; }
@@ -3465,6 +3466,52 @@ body.nav--is-visible {
   right: 0;
   top: 0; }
 
+/*
+ * Blog Listing Page
+ */
+.blogListing {
+  padding-bottom: 0 !important; }
+.blogListing .post {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+.blogListing .post:nth-of-type(even) {
+  background-color: #f5f5f5; }
+.blogListing .post.has-feat_img.is-visible .post-img {
+  opacity: 1;
+  transition-delay: .6s; }
+.blogListing .post.has-feat_img.is-visible .post-overlay {
+  opacity: .2;
+  transition-delay: .6s; }
+.blogListing .post.has-feat_img.is-visible .blog-date, .blogListing .post.has-feat_img.is-visible .blog-lede {
+  opacity: 0;
+  transition-delay: .6s; }
+.blogListing .post.has-feat_img.is-visible .blog-title {
+  color: #FFFFFF;
+  transition-delay: .6s; }
+.blogListing .post-img {
+  display: block;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .6s ease-in-out; }
+.blogListing .post-overlay {
+  display: block;
+  position: absolute;
+  background-color: #111f2d;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .6s ease-in-out; }
+
 .blogPage {
   padding: 45% 0 3rem; }
 @media screen and (min-width: 768px) {
@@ -3476,12 +3523,17 @@ body.nav--is-visible {
 
 .blog-title {
   color: #ff9254;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  transition: color .6s ease-in-out; }
 
 .blog-date {
   color: rgba(90, 96, 106, 0.6);
   font-weight: 900;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  transition: opacity .6s ease-in-out; }
+
+.blog-lede {
+  transition: opacity .6s ease-in-out; }
 
 @media screen and (min-width: 768px) {
   .blogAuthor {
