@@ -42,7 +42,7 @@
 	        ?>
 		</nav>
 		<div class="footer-colophon row">
-			<h6>Made with love in Iowa</h6>
+			<h6>Made in Iowa</h6>
 		</div>
 	</footer>
 

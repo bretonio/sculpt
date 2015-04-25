@@ -17,3 +17,133 @@
 	font-weight: 900;
 	margin-bottom: 2rem;
 }
+
+.blogAuthor {
+	@media screen and (min-width: $med) {
+		margin-bottom: 2rem;
+	}
+
+	.divider {
+		@include blockRel;
+
+		background-color: $gray10;
+		height: 2px;
+		margin: 0 0 3rem;
+		width: 100px;
+
+		@media screen and (min-width: $med){
+			max-width: 500px;
+			width: 100%;
+		}
+	}
+}
+.blogAuthor-img {
+	.avatar {
+		@include blockRel;
+
+		border-radius: 100%;
+		height: auto !important;
+		width: 100px;
+	}
+}
+.blogAuthor-info {
+	margin: 1rem 0;
+
+	@media screen and (min-width: $med){
+		margin: 0;
+		padding-left: 2rem;
+	}
+
+	.author-name {
+		@include inlineRel;
+
+		margin-bottom: 0;
+		width: auto;
+	}
+	a.author-name {
+		&:hover::after {
+			background-color: rgba($c1, 1);
+		}
+
+		&::after {
+			@include blockAb;
+			@include icon;
+
+			background-color: rgba($c1l, .8); //same as textModule-title
+			content: '\e600';
+			color: #FFFFFF;
+			font-size: 1.3rem;
+			float: left;
+			height: 25px;
+			line-height: 25px;
+			right: -40px;
+			top: 3px;
+			text-align: center;
+			width: 25px;
+			transition: .1s background;
+		}
+
+		h3 {
+			margin-bottom: 0;
+		}
+	}	
+	.author-desc {
+		margin-bottom: 1rem;
+		max-width: 500px;
+	}
+	[class^="icon-"]{
+		color: $c1;
+		margin-right: 1rem;
+		transition: color .1s;
+
+		&:hover {
+			color: $c1l;
+		}
+	}
+}
+
+/*
+ * Post Nav
+ */
+.postNav {
+	background-color: $c3;
+
+	.prevPost, .nextPost, .allPosts {
+		@include p;
+
+		height: 50px;
+		line-height: 50px;
+
+		a {
+			@include inlineRel;
+
+			background-color: rgba($c2, 0);
+			height: 100%;
+			transition: background .1s;
+			text-align: center;
+			width: 100%;
+
+			&:hover {
+				background-color: rgba($c2, .05);
+			}
+		}
+		p {
+			line-height: 50px;
+		}
+	}
+	.prevPost {
+		.icon-arrow {
+			transform: rotate(180deg);
+		}
+	}
+	.allPosts a {
+		background-color: $c3d;
+		color: #FFFFFF;
+		font-weight: 900;
+		text-align: center;
+	}
+	.icon-arrow {
+		color: #FFFFFF;
+		line-height: 50px;
+	}
+}

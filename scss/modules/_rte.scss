@@ -78,7 +78,7 @@
 		}
 	}
 	hr {
-		@include inlineRel;
+		@include blockRel;
 
 		background-color: $gray10;
 		border: 0;

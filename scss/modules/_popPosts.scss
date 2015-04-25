@@ -1,0 +1,66 @@
+.popularPosts {
+	background-color: $gray10;
+
+	@media screen and (min-width: $lg){
+		padding: 4rem 0 6rem;
+	}
+
+	.block {
+		@media screen and (max-width: $lg){
+			margin: 1rem 0;
+		}
+	}
+
+	.popularPosts-title {
+		color: rgba($c2, .1);
+		margin-bottom: 1rem;
+
+		&::after {
+			@include blockRel;
+
+			background-color: rgba($c2, .05);
+			content: '';
+			height: 4px;
+			margin-top: 10px;
+			width: 100px;
+		}
+	}
+
+	.post-title {
+		@include inlineRel;
+
+		width: auto;
+
+		&:hover {
+			color: $c2l;
+		}
+
+		// &:hover::after {
+		// 	background-color: rgba($c1, 1);
+		// }
+
+		// &::after {
+		// 	@include blockAb;
+		// 	@include icon;
+
+		// 	background-color: rgba($c1l, .8); //same as textModule-title
+		// 	content: '\e600';
+		// 	color: #FFFFFF;
+		// 	font-size: 1.3rem;
+		// 	float: left;
+		// 	height: 25px;
+		// 	line-height: 25px;
+		// 	right: -40px;
+		// 	top: 3px;
+		// 	text-align: center;
+		// 	width: 25px;
+		// 	transition: .1s background;
+		// }
+	}
+	.post-desc {
+		margin-bottom: 1rem;
+	}
+	.post-byline {
+		color: rgba($c2, .6);
+	}
+}
