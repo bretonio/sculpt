@@ -13,23 +13,25 @@
 			background-color: $gray10;
 		}
 
-		&.has-feat_img {
-			&.is-visible {
-				.post-img {
-					opacity: 1;
-					transition-delay: .6s;
-				}
-				.post-overlay {
-					opacity: .2;
-					transition-delay: .6s;
-				}
-				.blog-date, .blog-lede {
-					opacity: 0;
-					transition-delay: .6s;
-				}
-				.blog-title {
-					color: #FFFFFF;
-					transition-delay: .6s;
+		@media screen and (min-width: $lg){
+			&.has-feat_img {
+				&.is-visible {
+					.post-img {
+						opacity: 1;
+						transition-delay: .6s;
+					}
+					.post-overlay {
+						opacity: .2;
+						transition-delay: .6s;
+					}
+					.blog-date, .blog-lede {
+						opacity: 0;
+						transition-delay: .6s;
+					}
+					.blog-title {
+						color: #FFFFFF;
+						transition-delay: .6s;
+					}
 				}
 			}
 		}

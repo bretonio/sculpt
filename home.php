@@ -9,30 +9,32 @@ Template Name: Blog Template
 <!-- HERO SECTION -->
 <section class="blogListing blogPage container">
 
-    <?php 
-      $posts = new WP_Query( array( 'posts_per_page' => 5, 'post_type' => 'post' ));
+  <?php 
+    $posts = new WP_Query( array( 'posts_per_page' => 5, 'post_type' => 'post' ));
 
-      while ( $posts->have_posts()): $posts->the_post();
+    while ( $posts->have_posts()): $posts->the_post();
 
-        $author = get_the_author_meta( 'display_name' );
-        $date = get_the_date( __('m.d.Y'));
-        $excerpt = get_the_excerpt(); 
-        $feat_img = get_field('blog_feat_img');
-        $img = 'style="background-image: url(\''.$feat_img['sizes']['high_res'].'\')"'; ?>
+      $author = get_the_author_meta( 'display_name' );
+      $date = get_the_date( __('m.d.Y'));
+      $excerpt = get_the_excerpt(); 
+      $feat_img = get_field('blog_feat_img');
+      $img = 'style="background-image: url(\''.$feat_img['sizes']['high_res'].'\')"'; ?>
 
-        <div class="post pad--lg<?php echo $feat_img !== null ? ' has-feat_img': ''; ?>">
-          <div class="post-img" <?php echo $feat_img !== null ? $img : ''; ?>></div>
-          <div class="post-overlay"></div>
-          <div class="row row--med">
-            <div class="block s1">
-                <h5 class="blog-date">Posted <?php echo $date.' by '.$author; ?></h5>
-                <a href="<?php the_permalink(); ?>"><h1 class="h0 blog-title"><?php the_title(); ?></h1></a>
-                <h2 class="blog-lede"><?php echo strip_tags($excerpt); ?></h2>
-            </div>
+      <div class="post pad--lg<?php echo $feat_img !== null ? ' has-feat_img': ''; ?>">
+        <div class="post-img" <?php echo $feat_img !== null ? $img : ''; ?>></div>
+        <div class="post-overlay"></div>
+        <div class="row row--med">
+          <div class="block s1">
+              <h5 class="blog-date">Posted <?php echo $date.' by '.$author; ?></h5>
+              <a href="<?php the_permalink(); ?>"><h1 class="h0 blog-title"><?php the_title(); ?></h1></a>
+              <h2 class="blog-lede"><?php echo strip_tags($excerpt); ?></h2>
           </div>
         </div>
+      </div>
 
-<?php endwhile; wp_reset_query();?>
+  <?php endwhile; wp_reset_query();?>
+</section>
+<!-- end blog listing -->
 
 <?php if (previous_posts_link() !== null || next_posts_link() !== null): ?>
   <section class="postNav container">
@@ -72,8 +74,6 @@ Template Name: Blog Template
   <?php endwhile; wp_reset_query(); ?>
 
   </div>
-</section>
-
 </section>
 
 <?php get_footer('secondary'); ?>
