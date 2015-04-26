@@ -30,7 +30,7 @@ Template Name: Work Template
 
       <?php include( locate_template('partials/postGrid-block.php') ); ?>
 
-    <?php endwhile; wp_reset_query();?>
+    <?php endwhile; wp_reset_postdata();?>
   </div>
 </section>
 
