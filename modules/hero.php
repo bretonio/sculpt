@@ -10,6 +10,7 @@
 	$cta_enabled = get_sub_field('hero_cta_enabled');
 	$cta = get_sub_field('hero_cta');
 	$cta_url = get_sub_field('hero_cta_url');
+	$cta_ext = get_sub_field('cta_is_external');
 
 	/*
 	 * The hero type and size
@@ -37,7 +38,7 @@
 		    <?php } ?>
 
 		    <?php if ($cta_enabled == true) { ?>
-				<a href="<?php echo $cta_url; ?>" class="button hero-cta">
+				<a href="<?php echo $cta_url; ?>" class="button hero-cta"<?php echo $cta_ext ? ' target="_blank"' : '' ; ?>>
 					<span class="button-left"><?php echo $cta; ?></span>
 					<span class="button-right icon-arrow"></span>
 				</a>

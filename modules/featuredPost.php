@@ -34,7 +34,7 @@
 				<div class="featPost-overlay"></div>
 				<div class="row row--lg">
 					<h4><?php echo $title ?></h4>
-					<h1><?php the_title(); ?></h1>
+					<h1 class="featPost-title"><?php the_title(); ?></h1>
 				</div>
 			</div>
 		</a>

@@ -7,6 +7,7 @@
 
 	$cta = get_sub_field('endModule_cta');
 	$cta_url = get_sub_field('endModule_cta_url');
+	$cta_ext = get_sub_field('cta_is_external');
 
 	$links = get_sub_field('endModule_links');
 	$links_head = get_sub_field('endModule_links_heading');
@@ -27,7 +28,7 @@
 		</span>
 
 		<?php if ($extra[0] == 'cta') { ?>
-			<a href="<?php echo $cta_url; ?>" class="endModule-cta button">
+			<a href="<?php echo $cta_url; ?>" class="endModule-cta button" <?php echo $cta_ext ? ' target="_blank"' : '' ; ?>>
 				<span class="button-left"><?php echo $cta; ?></span>
 				<span class="button-right icon-arrow"></span>
 			</a>

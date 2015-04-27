@@ -2,11 +2,8 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-color: $c2;
 	padding-top: 75%;
-
-	&:hover .featPost-overlay {
-		opacity: 0;
-	}
 
 	@media screen and (min-width: $sm){
 		padding-top: 66%;
@@ -15,10 +12,10 @@
 		padding-top: 50%;
 	}
 	@media screen and (min-width: $lg){
-		padding-top: 40%;
+		padding-top: 36%;
 	}
 	@media screen and (min-width: $xl){
-		padding-top: 33%;
+		padding-top: 25%;
 	}
 }
 .featPost-inner {
@@ -31,6 +28,12 @@
 	h4 {
 		font-weight: 100;
 	}
+
+	.featPost-title {
+		@include inlineRel;
+
+		width: auto;
+	}
 }
 .featPost-overlay {
 	@include blockAb;
@@ -38,7 +41,17 @@
 	bottom: 0; left: 0; right: 0; top: 0;
 	background-color: $c2;
 	opacity: .9;
-	transition: opacity .2s ease-in-out;
+	transition: opacity .6s ease-in-out;
+	transition-delay: 0s;
+
+	@media screen and (min-width: $med){
+		opacity: 1;
+	}
+
+	.is-visible & {
+		opacity: .2;
+		transition-delay: .5s;
+	}
 }
 .featPost-footLink {
 	@include blockAb;

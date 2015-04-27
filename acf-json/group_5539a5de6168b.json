@@ -25,54 +25,6 @@
             "disabled": 0
         },
         {
-            "key": "field_553aebb46adf7",
-            "label": "Author",
-            "name": "blog_author",
-            "prefix": "",
-            "type": "post_object",
-            "instructions": "Choose either a Sculptron or a guest author. All authors must have a user account associated with the site.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": 50,
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "team"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "id",
-            "ui": 1
-        },
-        {
-            "key": "field_553c0ee19541c",
-            "label": "Featured Image",
-            "name": "blog_feat_img",
-            "prefix": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": 50,
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
             "key": "field_5539a5de70518",
             "label": "Modules",
             "name": "modules",
@@ -335,6 +287,23 @@
                             "maxlength": "",
                             "readonly": 0,
                             "disabled": 0
+                        },
+                        {
+                            "key": "field_553d5548d3098",
+                            "label": "Link to External URL",
+                            "name": "cta_is_external",
+                            "prefix": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
                         }
                     ],
                     "min": "",
@@ -578,6 +547,23 @@
                             "maxlength": "",
                             "readonly": 0,
                             "disabled": 0
+                        },
+                        {
+                            "key": "field_553d55830597f",
+                            "label": "Link to External URL",
+                            "name": "cta_is_external",
+                            "prefix": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
                         },
                         {
                             "key": "field_5539a5de76d04",
@@ -929,7 +915,7 @@
                                 ],
                                 [
                                     {
-                                        "field": "field_5539a5de76c8d",
+                                        "field": "field_5539a5de76c9e",
                                         "operator": "==",
                                         "value": "lede_fourUp"
                                     }
@@ -2699,6 +2685,23 @@
                                     "disabled": 0
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_553d55fc05980",
+                            "label": "Link CTA to External URL",
+                            "name": "cta_is_external",
+                            "prefix": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
                         }
                     ],
                     "min": "",
@@ -2799,6 +2802,55 @@
                     "max": ""
                 }
             ]
+        },
+        {
+            "key": "field_553c0ee19541c",
+            "label": "Featured Image",
+            "name": "featured_img",
+            "prefix": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_553aebb46adf7",
+            "label": "Author",
+            "name": "blog_author",
+            "prefix": "",
+            "type": "post_object",
+            "instructions": "Choose either a Sculptron or a guest author. All authors must have a user account associated with the site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "team",
+                "guest"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
         }
     ],
     "location": [
@@ -2825,5 +2877,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1430003467
+    "modified": 1430104227
 }

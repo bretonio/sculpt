@@ -30,22 +30,101 @@
 	/*
 	 * Menu Items within .header-desktop-inner
 	 */
-	li {
+	& > li {
 		@include inlineRel;
 		@include h5;
 
 		display: none; // hide on mobile
 		font-weight: 500;
-		margin: 1rem 0 0 2rem;
+		height: 40px;
+		margin-right: 2rem;
 		transition: .1s color;
 		vertical-align: middle;
 
 		@media screen and (min-width: $med) {
 			display: inline-block;
-			margin: 1rem 0 0 2rem;
+			margin-right: 2rem;
 		}
-		@media screen and (min-width: $xl) {
-			margin: 1rem 0 0 4rem;
+
+		&.has-sub-menu {
+			border-radius: 3px 3px 0 0;
+			transition: background .1s;
+			&:hover {
+				background-color: $c2;
+				color: #FFFFFF !important;
+
+				.sub-menu {
+					background-color: $c2;
+					max-height: 200px;
+					opacity: 1;
+					overflow: visible;
+				}
+			}
+		}
+
+		/*
+		 * Sub Nav
+		 */
+		.sub-menu {
+			@include blockAb;
+
+			border-radius: 3px 0 3px 3px;
+			max-height: 0;
+			margin: 0;
+			min-width: 140px;
+			overflow: hidden;
+			opacity: 0;
+			padding: 0;
+			right: 0; top: 100%;
+			transition: opacity .1s, max-height .1s;
+
+			& > li {
+				@include blockRel;
+
+				color: #FFFFFF;
+				width: 100%;
+				transition: background .1s;
+
+				&:hover {
+					color: #FFFFFF;
+					background: rgba(#FFFFFF, .1);
+
+					.sub-menu {
+						max-width: 200px;
+						opacity: 1 !important;
+						overflow: visible;
+					}
+				}
+			}
+
+			// Sub-sub menu
+			.sub-menu {
+				background-color: $c2l !important;
+				max-width: 0;
+				opacity: 0 !important;
+				right: 100%; top: 0;
+				transition: opacity .1s, max-width .1s;
+
+				& > li {
+					transition: background .1s;
+
+					&:hover {
+						background: rgba(#FFFFFF, .1)
+					}
+				}
+			}
+		}
+
+		/*
+		 * Links within li elements of the navs
+		 */
+		a {
+			@include blockRel;
+
+			height: 100%;
+			line-height: 40px;
+			padding: 0 2rem;
+			width: 100%;
 		}
 
 		/*
@@ -58,6 +137,7 @@
 			top: 5px;
 			.icon-menu {
 				font-size: 4rem;
+				line-height: 35px;
 			}
 
 			@media screen and (min-width: $med){
@@ -69,7 +149,7 @@
 			}
 
 			@media screen and (min-width: $xl) {
-				margin-left: 5rem;
+				margin-left: 4rem;
 			}
 		}
 

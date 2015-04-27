@@ -47,6 +47,12 @@ add_action( 'wp_enqueue_scripts', function() {
     true
   );
 
+  // wp_enqueue_script( 'mc-validate',
+  //   get_template_directory_uri().'/js/inc/mc-validate.js',
+  //   array( 'jquery' ),
+  //   $theme_ver
+  // );
+
 } );
 
 
@@ -57,7 +63,21 @@ require get_template_directory() . '/inc/jetpack.php';
  * MENUS
  */
 register_nav_menus( array(
-  'primary' => __( 'Primary Menu', 'sculpt' ),
+  'default' => __( 'Default', 'sculpt' ),
+  'homepage' => __( 'Homepage Menu', 'sculpt' ),
+  'about' => __( 'About Page Menu', 'sculpt' ),
+  'about_sub' => __( 'About Sub Page Menu', 'sculpt' ),
+  'team' => __( 'Team Pages Menu', 'sculpt' ),
+  'services' => __( 'Services Menu', 'sculpt' ),
+  'services_sub' => __( 'Services Sub Page Menu', 'sculpt' ),
+  'work' => __( 'Work Page Menu', 'sculpt' ),
+  'project' => __( 'Project Page Menu', 'sculpt' ),
+  'blog' => __( 'Blog Page Menu', 'sculpt' ),
+  'post' => __( 'Blog Post Menu', 'sculpt' ),
+  'contact' => __( 'Contact Page Menu', 'sculpt' ),
+  'utility_1' => __( 'Utility 1', 'sculpt' ),
+  'utility_2' => __( 'Utility 2', 'sculpt' ),
+  'utility_3' => __( 'Utility 3', 'sculpt' )
 ) );
 
 //Clean Menus
@@ -100,6 +120,21 @@ function create_posttype() {
       'public' => true,
       'has_archive' => false,
       'rewrite' => array('slug' => 'about', 'with_front' => false),
+      'supports' => array('title','author','thumbnail', 'custom-fields', 'post-format'),
+      'taxonomies' => array('category'),
+      'menu_position' => 5
+    )
+  );
+
+  register_post_type( 'guest',
+    array(
+      'labels' => array(
+        'name' => __( 'Collaborators' ),
+        'singular_name' => __( 'Collaborator' )
+      ),
+      'public' => true,
+      'has_archive' => false,
+      'rewrite' => array('slug' => 'about/collaborator', 'with_front' => false),
       'supports' => array('title','author','thumbnail', 'custom-fields', 'post-format'),
       'taxonomies' => array('category'),
       'menu_position' => 5

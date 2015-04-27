@@ -18,19 +18,19 @@
 				&.is-visible {
 					.post-img {
 						opacity: 1;
-						transition-delay: .6s;
+						transition-delay: .5s;
 					}
 					.post-overlay {
 						opacity: .2;
-						transition-delay: .6s;
+						transition-delay: .5s;
 					}
 					.blog-date, .blog-lede {
 						opacity: 0;
-						transition-delay: .6s;
+						transition-delay: .5s;
 					}
 					.blog-title {
 						color: #FFFFFF;
-						transition-delay: .6s;
+						transition-delay: .5s;
 					}
 				}
 			}
@@ -65,6 +65,12 @@
 	}
 	@media screen and (min-width: $xl){
 		padding: 14% 0 3rem;
+	}
+
+	.single-post & {
+		.row.pad--lg {
+			padding-bottom: 0;
+		}
 	}
 }
 .blog-title {

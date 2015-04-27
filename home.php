@@ -60,11 +60,11 @@ Template Name: Blog Template
 <!-- popular posts module -->
 <section class="popularPosts container pad--sm">
   <div class="row row--lg inline">
-    <h3 class="popularPosts-title">popular posts</h3>
+    <h3 class="popularPosts-title">new on the blog</h3>
   </div>
   <div class="row row--lg inline">
 
-  <?php 
+  <?php /*
     $popPost = new WP_Query( array( 'posts_per_page' => 2, 'meta_key' => 'post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
 
     while ( $popPost->have_posts() ): $popPost->the_post(); 
@@ -79,7 +79,20 @@ Template Name: Blog Template
         <h5 class="post-byline"><?php echo '<strong>'.$date.'</strong> by '.$author; ?></h5>
       </div>
 
-  <?php endwhile; wp_reset_postdata(); ?>
+  <?php endwhile; wp_reset_postdata(); */ ?>
+
+  <?php 
+    $recent_posts = wp_get_recent_posts('numberposts=2');
+
+    foreach ($recent_posts as $post) { ?>
+
+      <div class="block s1 lg_s12">
+        <a href="<?php echo get_permalink($post['ID']); ?>"><h3 class="post-title"><?php echo $post['post_title']; ?></h3></a>
+        <p class="post-desc"><?php echo $post['post_excerpt']; ?></p>
+        <h5 class="post-byline"><?php echo '<strong>'.get_the_date( __('m.d.Y'), $post['ID']).'</strong> by '.get_the_author_meta('display_name', $post['post_author']); ?></h5>
+      </div>
+
+  <?php } ?>
 
   </div>
 </section>

@@ -1,5 +1,17 @@
 .map {
-	padding-top: 33%;
+	padding-top: 100%;
+
+	@media screen and (min-width: $sm) {
+		padding-top: 66%;
+	}
+
+	@media screen and (min-width: $med) {
+		padding-top: 50%;
+	}
+
+	@media screen and (min-width: $xl) {
+		padding-top: 33%;
+	}
 
 	.map-inner {
 		@include blockAb;

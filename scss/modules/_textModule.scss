@@ -24,6 +24,16 @@
 				background-color: rgba(#FFFFFF, .8); //same as textModule-title
 			}
 		}
+
+		a {
+			color: #FFFFFF;
+			font-weight: 900;
+			transition: color .1s;
+
+			&:hover {
+				color: rgba(#FFFFFF, .8);
+			}
+		}
 	}
 	&.colorScheme--dark {
 		background-color: $c2;
@@ -44,6 +54,16 @@
 		p {
 			color: white;
 		}
+
+		a {
+			color: #FFFFFF;
+			font-weight: 900;
+			transition: color .1s;
+
+			&:hover {
+				color: rgba(#FFFFFF, .8);
+			}
+		}
 	}
 }
 .textModule-block {
@@ -51,6 +71,10 @@
 
 	@media screen and (min-width: $med) {
 		margin: 20px 0;
+	}
+
+	.has-image & {
+		vertical-align: middle !important;
 	}
 
 	.textModule-img {

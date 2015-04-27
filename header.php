@@ -50,6 +50,7 @@
     include_once("assets/sculpt_logo.svg"); 
     $logo = get_field('logo_params');
     $menu_color = get_field('menu_color');
+    $menu_slug = get_field('menu_slug');
   ?>
 
   <div class="bodyOverlay"></div>
@@ -139,10 +140,29 @@
           </h1>
         </div>
 
-        <?php
-          $menu = array( 'menu' => 'homepage-1', 'container' => '', 'items_wrap' => '%3$s', 'depth' => -1);
-
-          wp_nav_menu( $menu ); 
+        <?php 
+          if (is_page_template( 'template-about.php' )) {
+            $menu = array( 'theme_location' => 'about', 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
+              wp_nav_menu( $menu ); 
+          } elseif (is_page_template( 'template-work.php' )) {
+            $menu = array( 'theme_location' => 'work', 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
+              wp_nav_menu( $menu ); 
+          } elseif (is_page_template( 'template-contact.php' )) {
+            $menu = array( 'theme_location' => 'contact', 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
+              wp_nav_menu( $menu ); 
+          } elseif (is_page_template( 'single-post.php' )) {
+            $menu = array( 'theme_location' => 'post', 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
+              wp_nav_menu( $menu ); 
+          } elseif (is_page_template( 'single-project.php' )) {
+            $menu = array( 'theme_location' => 'project', 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
+              wp_nav_menu( $menu ); 
+          } elseif (is_page_template( 'single-team.php' )) {
+            $menu = array( 'theme_location' => 'team', 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
+              wp_nav_menu( $menu ); 
+          } else {
+            $menu = array( 'menu' => $menu_slug, 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
+              wp_nav_menu( $menu ); 
+          }
         ?>
 
         <li class="js-menuToggle menuToggle">

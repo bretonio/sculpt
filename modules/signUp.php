@@ -42,7 +42,9 @@
 			<form class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 				<div class="inputGroup mc-field-group">
 					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="youremail@email.com">
-					<button type="submit" class="signUp-submit" name="subscribe" id="mc-embedded-subscribe"><?php echo $cta; ?></button>
+					<button type="submit" class="signUp-submit" name="subscribe" id="mc-embedded-subscribe">
+						<?php echo $cta; ?>
+					</button>
 				</div>
 
 				<!-- real people should not fill this in and expect good things -->
@@ -57,3 +59,13 @@
 		</div>
 	</section>
 <?php } ?>
+<script src="<?php bloginfo('template_url'); ?>/js/inc/mc-validate.js"></script>
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+<!-- 
+<script type="text/javascript">
+    var __ss_noform = __ss_noform || [];
+    __ss_noform.push(['baseURI', 'https://app-1B4AH0I.sharpspring.com/webforms/receivePostback/MzI2MAcA/']);
+    __ss_noform.push(['endpoint', '90e60f21-bf5d-4ad5-ac43-415c433af061']);
+</script>
+<script type="text/javascript" src="https://koi-1B4AH0I.sharpspring.com/client/noform.js?ver=1.0" ></script> -->
