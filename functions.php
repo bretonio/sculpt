@@ -64,6 +64,7 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 register_nav_menus( array(
   'default' => __( 'Default', 'sculpt' ),
+  'offCanvas' => __( 'Off Canvas (Main/Mobile Nav)', 'sculpt' ),
   'homepage' => __( 'Homepage Menu', 'sculpt' ),
   'about' => __( 'About Page Menu', 'sculpt' ),
   'about_sub' => __( 'About Sub Page Menu', 'sculpt' ),

@@ -140,8 +140,11 @@
           </h1>
         </div>
 
-        <?php 
-          if (is_page_template( 'template-about.php' )) {
+        <?php
+          if (is_front_page()) {
+            $menu = array( 'theme_location' => 'homepage', 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
+              wp_nav_menu( $menu ); 
+          } elseif (is_page_template( 'template-about.php' )) {
             $menu = array( 'theme_location' => 'about', 'container' => '', 'items_wrap' => '%3$s', 'depth' => 0);
               wp_nav_menu( $menu ); 
           } elseif (is_page_template( 'template-work.php' )) {

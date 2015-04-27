@@ -2999,13 +2999,13 @@ div.mce_inline_error {
   border-radius: 3px 0 3px 3px;
   max-height: 0;
   margin: 0;
-  min-width: 140px;
   overflow: hidden;
   opacity: 0;
   padding: 0;
   right: 0;
   top: 100%;
-  transition: opacity .1s, max-height .1s; }
+  transition: opacity .1s, max-height .1s;
+  width: 240px; }
 .header-desktop-inner > li .sub-menu > li {
   display: block;
   position: relative;
@@ -3061,14 +3061,20 @@ div.mce_inline_error {
   color: #2b2e33; }
 .header-desktop-inner.menu-items--dark li:hover {
   color: #5a606a; }
+.header-desktop-inner.menu-items--dark li.current-menu-item {
+  color: #ff9254; }
 .header-desktop-inner.menu-items--white li {
   color: #FFFFFF; }
 .header-desktop-inner.menu-items--white li:hover {
   color: rgba(255, 255, 255, 0.6); }
+.header-desktop-inner.menu-items--white li.current-menu-item {
+  color: #2b2e33; }
 .header-desktop-inner.menu-items--orange li {
   color: #ff9254; }
 .header-desktop-inner.menu-items--orange li:hover {
   color: #141517; }
+.header-desktop-inner.menu-items--orange li.current-menu-item {
+  color: #2b2e33; }
 
 .mainLogo {
   float: left;
