@@ -10,6 +10,9 @@ jQuery(function($){
 		},
 
 		general: function(){
+			// Fast click
+		    FastClick.attach(document.body);
+
 			/*
 			 * Header
 			 */

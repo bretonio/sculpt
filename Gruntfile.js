@@ -2,11 +2,15 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-    concat: {
-      build: {
-        src: ['js/inc/*.js', 'js/sculpt.js', '!js/inc/mc-validate.js'],
-        dest: 'js/scripts.js',
-      }
+    uglify: {
+        options: {
+            compress: true,
+            sourceMap: true
+        },
+        target: {
+            src: ['js/inc/*.js', 'js/sculpt.js', '!js/inc/mc-validate.js'],
+            dest: 'js/scripts.js'
+        }
     },
 
     sass: {
@@ -67,7 +71,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['js/sculpt.js', 'js/inc/*.js', '!js/inc/mc-validate.js'],
-        tasks: ['newer:concat']
+        tasks: ['newer:uglify']
       },
       php: {
         files: '**/*.php',
@@ -80,7 +84,7 @@ module.exports = function(grunt) {
 
   // Load the plugins
   grunt.loadNpmTasks('grunt-newer');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
