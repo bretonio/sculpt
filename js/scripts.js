@@ -15,6 +15,7 @@ jQuery(function($){
 			 * Header
 			 */
 			$('.sub-menu').closest('li').addClass('has-sub-menu');
+			$('.has-sub-menu .sub-menu .current-menu-item').closest('.has-sub-menu').addClass('current-menu-item');
 
 			/*
 			 * Blog Listing hovers

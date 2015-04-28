@@ -1,7 +1,8 @@
 <?php
 	$layout = get_sub_field('hero_layout');
 	$color = get_sub_field('hero_color');
-	$bg_img = get_sub_field('hero_bg_img');
+	$img = get_sub_field('hero_bg_img');
+	$bg_img = $img ? 'background-image: url('.$img['sizes']['high_res'].');' : '';
 	
 	$content_enabled = get_sub_field('hero_content_enabled');
 	$title = get_sub_field('hero_title');
@@ -24,7 +25,7 @@
 	}
 ?>
 
-<section class="container hero<?php echo ' '.$hero_size; ?><?php echo ' '.$color; ?>" style="background-image: url('<?php echo $bg_img['sizes']['high_res']; ?>');">
+<section class="container hero<?php echo ' '.$hero_size; ?><?php echo ' '.$color; ?>" style="<?php echo $bg_img; ?>">
 	<div class="row row--lg">
 
 	  <?php if($content_enabled == true) { ?>

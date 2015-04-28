@@ -9,6 +9,12 @@ body {
 	&.nav--is-visible {
 		overflow: hidden;
 	}
+
+	&.error404 {
+		height: 100%;
+		overflow: hidden;
+		padding: 0;
+	}
 }
 .body-wrapper {
 	@include blockRel;

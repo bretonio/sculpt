@@ -2213,6 +2213,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   text-align: center;
   width: 32px;
   transition: .1s background; }
+.textModule-block p:last-of-type {
+  margin-bottom: 0; }
 
 .textFeature {
   /*
@@ -2997,6 +2999,8 @@ div.mce_inline_error {
   max-height: 200px;
   opacity: 1;
   overflow: visible; }
+.header-desktop-inner > li.current-menu-item {
+  color: #ff9254; }
 .header-desktop-inner > li .sub-menu {
   display: block;
   position: absolute;
@@ -3203,9 +3207,14 @@ div.mce_inline_error {
   .mainNav li ul li {
     font-size: 3rem;
     line-height: 4rem; } }
+.mainNav li ul li.current-menu-item {
+  opacity: 1; }
 .mainNav > li {
   padding-right: 1.5rem; }
 .mainNav > li:hover {
+  border-right: 3px solid #ff9254;
+  opacity: 1; }
+.mainNav > li.current-menu-item {
   border-right: 3px solid #ff9254;
   opacity: 1; }
 
@@ -3357,6 +3366,10 @@ body {
     padding: 1.5rem; } }
 body.nav--is-visible {
   overflow: hidden; }
+body.error404 {
+  height: 100%;
+  overflow: hidden;
+  padding: 0; }
 
 .body-wrapper {
   display: block;
@@ -3758,6 +3771,30 @@ body.nav--is-visible {
 .postNav .icon-arrow {
   color: #FFFFFF;
   line-height: 50px; }
+
+.fourOhFour {
+  background-image: url("assets/images/shia.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  height: 100vh;
+  text-align: center; }
+.fourOhFour::after {
+  display: inline-block;
+  position: relative;
+  content: '';
+  height: 100%;
+  vertical-align: middle; }
+
+.fourOhFour-inner {
+  display: inline-block;
+  position: relative;
+  color: #FFFFFF;
+  text-align: left;
+  vertical-align: middle; }
+.fourOhFour-inner .button {
+  margin-top: 1rem; }
 
 /* Naming Conventions
 *
