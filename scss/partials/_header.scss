@@ -141,7 +141,7 @@
 			top: 5px;
 			.icon-menu {
 				font-size: 4rem;
-				line-height: 35px;
+				line-height: 60px;
 			}
 
 			@media screen and (min-width: $med){
@@ -149,6 +149,7 @@
 
 				.icon-menu {
 					font-size: 2rem;
+					line-height: 35px;
 				}
 			}
 
@@ -162,6 +163,12 @@
 
 			&:hover {
 				color: $c2l !important;
+			}
+
+			&.has-sub-menu {
+				&:hover {
+					color: #FFFFFF !important;
+				}
 			}
 		}
 	}
@@ -206,12 +213,18 @@
 
 .mainLogo {
 	float: left;
+	height: 65px;
 	width: 65px;
 
 	h1 {
 		font-size: 0;
 		line-height: 0;
 		margin-bottom: 0;
+		height: 43px;
+
+		a {
+			max-height: 43px;
+		}
 	}
 
 	.sculptLogo {
@@ -222,10 +235,12 @@
 	}
 
 	@media screen and (min-width: $med) {
+		height: 43px;
 		width: 130px;
 
 		.sculptLogo {
 			display: block;
+			height: 43px;
 		}
 		.has-scrolled & {
 			.sculptLogo {

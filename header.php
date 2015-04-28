@@ -32,11 +32,15 @@
 
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+  <!--[if lte IE 9]>
+  <script src="<?php bloginfo('template_url'); ?>/inc/placeholder/placeholder.js"></script>
+  <script>jQuery(function($){$('input, textarea').placeholder();});</script>
+  <![endif]-->
+
+
       <!--    Fonts from TypeKit-->
-  <script src="//use.typekit.net/hxi4ugl.js" onload="try{Typekit.load();}catch(e){}" async></script>
-    <!--[if IE 9]>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <![endif]-->
+  <script src="//use.typekit.net/hxi4ugl.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 
   <title><?php wp_title('|','true','right'); ?></title>
 
@@ -45,6 +49,14 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+  <!--[if lte IE 9]>
+  <div class="container">
+    <div class="row row--lg">
+      <p>We noticed you’re using an outdated browser. You might like to <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    </div>
+  </div>
+  <![endif]-->
 
   <?php 
     include_once("assets/sculpt_logo.svg"); 
@@ -63,7 +75,7 @@
 
       <nav class="mainNav">
         <?php
-          $menu = array( 'menu' => 'offcanvas', 'container' => '', 'items_wrap' => '%3$s');
+          $menu = array( 'theme_location' => 'offCanvas', 'container' => '', 'items_wrap' => '%3$s');
 
           wp_nav_menu( $menu ); 
         ?>

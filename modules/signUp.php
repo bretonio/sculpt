@@ -17,7 +17,8 @@
 
 			<form class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 				<div class="inputGroup mc-field-group">
-					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="youremail@email.com">
+					<!-- <label for="mce-EMAIL">your email</label> -->
+					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="your email">
 					<button type="submit" class="signUp-submit icon-arrow" name="subscribe" id="mc-embedded-subscribe"></button>
 				</div>
 				
@@ -41,7 +42,8 @@
 
 			<form class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 				<div class="inputGroup mc-field-group">
-					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="youremail@email.com">
+					<!-- <label for="mce-EMAIL">your email</label> -->
+					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="your email">
 					<button type="submit" class="signUp-submit" name="subscribe" id="mc-embedded-subscribe">
 						<?php echo $cta; ?>
 					</button>

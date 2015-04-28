@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             sourceMap: true
         },
         target: {
-            src: ['js/inc/*.js', 'js/sculpt.js', '!js/inc/mc-validate.js'],
+            src: ['js/inc/*.js', 'js/sculpt.js', '!js/inc/mc-validate.js', '!js/static'],
             dest: 'js/scripts.js'
         }
     },
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
         tasks: ['sass', 'autoprefixer']
       },
       js: {
-        files: ['js/sculpt.js', 'js/inc/*.js', '!js/inc/mc-validate.js'],
+        files: ['js/sculpt.js', 'js/inc/*.js', '!js/inc/mc-validate.js', '!js/static'],
         tasks: ['newer:uglify']
       },
       php: {
