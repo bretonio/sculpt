@@ -13,6 +13,10 @@ jQuery(function($){
 			// Fast click
 		    FastClick.attach(document.body);
 
+		    $(".js-lazy").lazyload({
+		    	effect: "fadeIn"
+		    });
+
 			/*
 			 * Header
 			 */

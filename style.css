@@ -1708,47 +1708,8 @@ button.button--white:hover .button-left, .button.button--white:hover .button-lef
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
 
-.bg-cover {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-/* Add HTML markup and these styles will fill the parent element with a full background.
-NOTE: must specify z-index values for siblings.*/
-.bg {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 0; }
-
-.bg-image {
-  background-color: #e1e1e1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 0; }
-
-.bg-overlay {
-  background-color: transparent;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 1; }
+.photoModule-photo.js-lazy {
+  background-color: #33333d; }
 
 a {
   color: inherit;
