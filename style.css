@@ -1703,6 +1703,11 @@ button.button--white:hover .button-left, .button.button--white:hover .button-lef
   background-color: rgba(90, 96, 106, 0.2);
   border-left: 3px solid #ff9254; }
 
+.backArrow.icon-arrow {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
 .bg-cover {
   background-repeat: no-repeat;
   background-position: center;

@@ -99,3 +99,7 @@ button, .button {
 		border-left: 3px solid $c1;
 	}
 }
+
+.backArrow.icon-arrow {
+	transform: rotate(180deg);
+}
