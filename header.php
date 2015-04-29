@@ -23,6 +23,7 @@
     $img = get_field('featured_img', get_the_id($post));
     $og_img = $img['sizes']['two_up'];
   ?>
+  
   <meta name="description" content="<?php echo $og_desc; ?>" />
   <meta property="og:description" content="<?php echo $og_desc; ?>"/>
   <meta property="og:type" content="<?php echo $og_type; ?>"/>

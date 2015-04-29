@@ -2608,7 +2608,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": 4,
-            "new_lines": "wpautop",
+            "new_lines": "",
             "readonly": 0,
             "disabled": 0
         }
@@ -2642,5 +2642,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1430276111
+    "modified": 1430316279
 }

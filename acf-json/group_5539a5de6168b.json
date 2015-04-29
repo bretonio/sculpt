@@ -2851,6 +2851,28 @@
             "multiple": 0,
             "return_format": "id",
             "ui": 1
+        },
+        {
+            "key": "field_5540e3c0059cd",
+            "label": "Meta Description",
+            "name": "meta_description",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
         }
     ],
     "location": [
@@ -2877,5 +2899,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1430104227
+    "modified": 1430315997
 }

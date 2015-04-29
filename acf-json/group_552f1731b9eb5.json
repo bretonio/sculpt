@@ -2045,6 +2045,53 @@
                     "max": ""
                 }
             ]
+        },
+        {
+            "key": "field_5540e4c16c066",
+            "label": "Featured Image",
+            "name": "featured_img",
+            "prefix": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5540e4d36c067",
+            "label": "Meta Description",
+            "name": "meta_description",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
         }
     ],
     "location": [
@@ -2073,5 +2120,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1430104331
+    "modified": 1430316259
 }
