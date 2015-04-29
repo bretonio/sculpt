@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <link rel="icon" type="image/ico" href="assets/favicon.ico"/>
+  <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/assets/images/favicon.png"/>
 
   <meta charset="UTF-8"/>
 
@@ -8,27 +8,36 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <meta name="author" content="Eric Bailey">
+  <meta name="author" content="Sculpt, LLC">
 	<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<meta name="keywords" content="SASS, project template, SUIT CSS"/>
-	<meta name="description" content="Basic starter templates SASS projects."/>
+	<meta name="keywords" content="social media, social, digital marketing, digital media, digital, media, creative services, design, graphic design, photography, videography, video, photo, photo/video, marketing, advertising"/>
 
-        <!-- Open Graph data -->
-	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Basic starter templates SASS projects."/>
-	<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="SVBSTRATE"/>
-  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="SVBSTRATE" />
-  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://svbstrate.io/resources/images/ogImg.png" />
-  <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://svbstrate.io/" />
+  <?php 
+    global $post;
+    $post_type = get_post_type_object( get_post_type($post) );
+    $label = @$post_type->label;
+    $og_type = is_single() ? 'article' : 'website';
+    $og_desc = get_field('meta_description', get_the_id($post));
+    $img = get_field('featured_img', get_the_id($post));
+    $og_img = $img['sizes']['two_up'];
+  ?>
+  <meta name="description" content="<?php echo $og_desc; ?>" />
+  <meta property="og:description" content="<?php echo $og_desc; ?>"/>
+  <meta property="og:type" content="<?php echo $og_type; ?>"/>
+  <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
+  <meta property="og:title" content="<?php wp_title('|','true','right'); ?>"/>
+  <meta property="og:image" content="<?php echo $og_img; ?>" />
+  <meta property="og:url" content="<?php echo site_url(); ?>" />
 
       <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="http://svbstrate.io">
-  <meta name="twitter:title" content="SVBSTRATE">
-  <meta name="twitter:description" content="Basic starter templates SASS projects.">
-  <meta name="twitter:creator" content="@estrattonbailey">
-  <meta name="twitter:image:src" content="http://svbstrate.io/resources/images/ogImg.png">
+  <meta name="twitter:site" content="<?php echo site_url(); ?>">
+  <meta name="twitter:title" content="<?php wp_title('|','true','right'); ?>">
+  <meta name="twitter:description" content="<?php echo $og_desc; ?>">
+  <meta name="twitter:creator" content="@wearesculpt">
+  <meta name="twitter:image:src" content="<?php echo $og_img; ?>">
 
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
