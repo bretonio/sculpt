@@ -1,9 +1,9 @@
 	<section class="footContact container pad--sm">
 		<div class="row row--lg">
-			<h2 class="footContact-title">Do you like us? We like you. A lot.</h2>
+			<h2 class="footContact-title">That’s us. Now, who are you?</h2>
 
 			<a href="<?php echo site_url().'/contact'; ?>" class="button button--dark footContact-cta">
-				<span class="button-left">contact us!</span>
+				<span class="button-left">get in touch</span>
 				<span class="button-right icon-arrow"></span>
 			</a>
 

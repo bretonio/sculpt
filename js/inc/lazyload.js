@@ -111,7 +111,9 @@
                                 $self.attr("src", original);
                             } else {
                                 $self.css("background-image", "url('" + original + "')");
-                                $self.find('.loader').fadeOut(500);
+                                setTimeout(function(){
+                                    $self.find('.loader').fadeOut(500);
+                                }, 300);
                             }
                             $self[settings.effect](settings.effect_speed);
 
