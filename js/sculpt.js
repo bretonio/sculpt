@@ -13,9 +13,11 @@ jQuery(function($){
 			// Fast click
 		    FastClick.attach(document.body);
 
-		    $(".js-lazy").lazyload({
-		    	effect: "fadeIn"
-		    });
+	    	$('.js-lazy').append('<span class="loader"></div>');
+
+	    	$('.js-lazy').lazyload({
+	    		effect: "fadeIn"
+	    	});
 
 			/*
 			 * Header
@@ -32,17 +34,6 @@ jQuery(function($){
 				$(this).closest('.post').addClass('is-visible');
 			}, function(){
 				$(this).closest('.post').removeClass('is-visible');
-			});
-
-			/*
-			 * Featured Post hovers
-			 */
-		 	var $post_title = $('.featPost-title');
-
-			$post_title.hover(function(){
-				$(this).closest('.featPost-inner').addClass('is-visible');
-			}, function(){
-				$(this).closest('.featPost-inner').removeClass('is-visible');
 			});
 		},
 

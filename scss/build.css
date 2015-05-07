@@ -1707,8 +1707,47 @@ button.button--white:hover .button-left, .button.button--white:hover .button-lef
   transform: rotate(180deg); }
 
 .photoModule-photo.js-lazy {
-  background-color: #33333d; }
+  background-color: #f5f5f5; }
 
+/*
+ * Loader
+ * Thanks to @lukehass for this loader: http://projects.lukehaas.me/css-loaders/
+ */
+.loader {
+  display: block;
+  position: absolute;
+  border-top: 1.1em solid #FFFFFF;
+  border-right: 1.1em solid #FFFFFF;
+  border-bottom: 1.1em solid #FFFFFF;
+  border-left: 1.1em solid #ff9254;
+  font-size: 10px;
+  left: calc(50% - 3rem);
+  top: calc(50% - 3rem);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  animation: loader 1s infinite linear;
+  -webkit-animation: loader 1s infinite linear; }
+
+.loader, .loader:after {
+  border-radius: 50%;
+  width: 6em;
+  height: 6em; }
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 a {
   color: inherit;
   text-decoration: none; }
@@ -2631,6 +2670,8 @@ div.mce_inline_error {
   top: 0;
   color: #FFFFFF;
   padding: 3rem 0; }
+.featPost-inner:hover .featPost-overlay {
+  opacity: 0; }
 .featPost-inner h4 {
   font-weight: 100; }
 .featPost-inner .featPost-title {
@@ -2652,9 +2693,6 @@ div.mce_inline_error {
 @media screen and (min-width: 768px) {
   .featPost-overlay {
     opacity: 1; } }
-.is-visible .featPost-overlay {
-  opacity: .2;
-  transition-delay: .5s; }
 
 .featPost-footLink {
   display: block;
@@ -3565,17 +3603,13 @@ body.error404 {
   background-color: #f5f5f5; }
 @media screen and (min-width: 1024px) {
   .blogListing .post.has-feat_img.is-visible .post-img {
-    opacity: 1;
-    transition-delay: .5s; }
+    opacity: 1; }
   .blogListing .post.has-feat_img.is-visible .post-overlay {
-    opacity: .2;
-    transition-delay: .5s; }
+    opacity: .2; }
   .blogListing .post.has-feat_img.is-visible .blog-date, .blogListing .post.has-feat_img.is-visible .blog-lede {
-    opacity: 0;
-    transition-delay: .5s; }
+    opacity: 0; }
   .blogListing .post.has-feat_img.is-visible .blog-title {
-    color: #FFFFFF;
-    transition-delay: .5s; } }
+    color: #FFFFFF; } }
 .blogListing .post-img {
   display: block;
   position: absolute;
@@ -3609,6 +3643,8 @@ body.error404 {
     padding: 14% 0 3rem; } }
 .single-post .blogPage .row.pad--lg {
   padding-bottom: 0; }
+.blogPage + .rte {
+  padding-top: 0; }
 
 .blog-title {
   color: #ff9254;

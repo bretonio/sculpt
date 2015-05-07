@@ -83,8 +83,8 @@
         }
 
         this.each(function() {
-            var self = this;
-            var $self = $(self);
+            var self = this,
+                $self = $(self);
 
             self.loaded = false;
 
@@ -111,6 +111,7 @@
                                 $self.attr("src", original);
                             } else {
                                 $self.css("background-image", "url('" + original + "')");
+                                $self.find('.loader').fadeOut(500);
                             }
                             $self[settings.effect](settings.effect_speed);
 

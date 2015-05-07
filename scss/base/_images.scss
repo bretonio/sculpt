@@ -1,6 +1,50 @@
 .photoModule-photo.js-lazy {
-    // background-image: url('http://ericbailey.co/archive/one/css/diagonals.svg');
-    // background-repeat: repeat;
-    // background-size: 20px;
-    background-color: $gray;
+    background-color: $gray10;
+}
+
+/*
+ * Loader
+ * Thanks to @lukehass for this loader: http://projects.lukehaas.me/css-loaders/
+ */
+.loader {
+	@include blockAb;
+
+	border-top: 1.1em solid #FFFFFF;
+	border-right: 1.1em solid #FFFFFF;
+	border-bottom: 1.1em solid #FFFFFF;
+	border-left: 1.1em solid $c1;
+	font-size: 10px;
+	left: calc(50% - 3rem);
+	top: calc(50% - 3rem);
+	transform: translateZ(0);
+		-webkit-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+	animation: loader 1s infinite linear;
+	    -webkit-animation: loader 1s infinite linear;
+}
+.loader,
+.loader:after {
+	border-radius: 50%;
+	width: 6em;
+	height: 6em;
+}
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

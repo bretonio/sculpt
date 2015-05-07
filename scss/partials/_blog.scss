@@ -18,19 +18,19 @@
 				&.is-visible {
 					.post-img {
 						opacity: 1;
-						transition-delay: .5s;
+						// transition-delay: .5s;
 					}
 					.post-overlay {
 						opacity: .2;
-						transition-delay: .5s;
+						// transition-delay: .5s;
 					}
 					.blog-date, .blog-lede {
 						opacity: 0;
-						transition-delay: .5s;
+						// transition-delay: .5s;
 					}
 					.blog-title {
 						color: #FFFFFF;
-						transition-delay: .5s;
+						// transition-delay: .5s;
 					}
 				}
 			}
@@ -71,6 +71,11 @@
 		.row.pad--lg {
 			padding-bottom: 0;
 		}
+	}
+
+	// if adjacent module is a text module
+	& + .rte {
+		padding-top: 0;
 	}
 }
 .blog-title {

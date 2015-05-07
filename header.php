@@ -24,21 +24,20 @@
     $og_img = $img['sizes']['two_up'];
   ?>
   
-  <meta name="description" content="<?php echo $og_desc; ?>" />
+  <!-- <meta name="description" content="<?php echo $og_desc; ?>" />
   <meta property="og:description" content="<?php echo $og_desc; ?>"/>
   <meta property="og:type" content="<?php echo $og_type; ?>"/>
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
-  <meta property="og:title" content="<?php wp_title('|','true','right'); ?>"/>
+  <meta property="og:title" content="<?php wp_title('|','true','right'); ?>"/> -->
   <meta property="og:image" content="<?php echo $og_img; ?>" />
-  <meta property="og:url" content="<?php echo site_url(); ?>" />
+  <!-- <meta property="og:url" content="<?php echo site_url(); ?>" />
 
-      <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="<?php echo site_url(); ?>">
   <meta name="twitter:title" content="<?php wp_title('|','true','right'); ?>">
   <meta name="twitter:description" content="<?php echo $og_desc; ?>">
   <meta name="twitter:creator" content="@wearesculpt">
-  <meta name="twitter:image:src" content="<?php echo $og_img; ?>">
+  <meta name="twitter:image:src" content="<?php echo $og_img; ?>"> -->
 
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -53,6 +52,7 @@
   <script>try{Typekit.load();}catch(e){}</script>
 
   <title><?php wp_title('|','true','right'); ?></title>
+  <!-- <title><?php bloginfo( 'name' ); is_front_page() ? '' : wp_title( '|', true, 'left' ); ?></title> -->
 
   <?php wp_head(); ?>
 
