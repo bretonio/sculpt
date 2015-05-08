@@ -3,7 +3,7 @@
 			<h2 class="footContact-title">That’s us. Now, who are you?</h2>
 
 			<a href="<?php echo site_url().'/contact'; ?>" class="button button--dark footContact-cta">
-				<span class="button-left">get in touch</span>
+				<span class="button-left">let's get in touch</span>
 				<span class="button-right icon-arrow"></span>
 			</a>
 

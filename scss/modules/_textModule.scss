@@ -22,6 +22,7 @@
 			}
 			&::after {
 				background-color: rgba(#FFFFFF, .8); //same as textModule-title
+				color: $c1;
 			}
 		}
 
@@ -91,26 +92,38 @@
 	.textModule-block-link {
 		@include inlineRel;
 
-		&:hover::after {
+		max-width: calc(100% - 70px);
+		width: 100%;
+
+		@media screen and (min-width: $sm){
+			max-width: 100%;
+			width: auto;
+		}
+
+		&:hover .textModule-title::after {
 			background-color: rgba($c2, 1);
 		}
 
-		&::after {
-			@include blockAb;
-			@include icon;
+		.textModule-title {
+			width: 100%;
 
-			background-color: rgba($c2, .8); //same as textModule-title
-			content: '\e600';
-			color: #FFFFFF;
-			font-size: 1.3rem;
-			float: left;
-			height: 32px;
-			line-height: 32px;
-			right: -50px;
-			top: 0;
-			text-align: center;
-			width: 32px;
-			transition: .1s background;
+			&::after {
+				@include blockAb;
+				@include icon;
+
+				background-color: rgba($c2, .8); //same as textModule-title
+				content: '\e600';
+				color: #FFFFFF;
+				font-size: 1.3rem;
+				float: left;
+				height: 32px;
+				line-height: 32px;
+				right: -48px;
+				top: 0;
+				text-align: center;
+				width: 32px;
+				transition: .1s background;
+			}
 		}
 	}
 

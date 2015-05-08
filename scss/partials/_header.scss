@@ -165,6 +165,10 @@
 				color: $c2l !important;
 			}
 
+			&.current-menu-item {
+				color: $c1 !important;
+			}
+
 			&.has-sub-menu {
 				&:hover {
 					color: #FFFFFF !important;
