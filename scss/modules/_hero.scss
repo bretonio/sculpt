@@ -21,6 +21,10 @@
 	// &.colorScheme--white // Default
 	&.colorScheme--light {
 		background-color: $gray10;
+
+		.hero-title {
+			color: $c1;
+		}
 	}
 	&.colorScheme--orange {
 		background-color: $c1;
@@ -91,7 +95,7 @@
 	}
 }
 .hero-title {
-
+	color: $c1;
 }
 .hero-body {
 	margin-top: .8rem;

@@ -1,0 +1,142 @@
+{
+    "key": "group_554fd99706f67",
+    "title": "Options \u2013 Footer",
+    "fields": [
+        {
+            "key": "field_554fd9a26ac4d",
+            "label": "Address",
+            "name": "footer_address",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<strong>Sculpt<\/strong><br\/>\r\n316 East Court Street, Ste. 2<br\/>\r\nIowa City, IA 52240",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_554fda106ac4e",
+            "label": "Phone and Email",
+            "name": "footer_contact_info",
+            "prefix": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<a href=\"tel:7077285780\"><p><strong>707.728.5780<\/strong><\/p><\/a>\r\n<a href=\"mailto:social@wearesculpt.com\"><p><strong>social@wearesculpt.com<\/strong><\/p><\/a>",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_554fdab16ac4f",
+            "label": "Social Links",
+            "name": "footer_social_links",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Social Link",
+            "sub_fields": [
+                {
+                    "key": "field_554fdacc6ac50",
+                    "label": "Social Network",
+                    "name": "social_network",
+                    "prefix": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33%",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "facebook": "Facebook",
+                        "twitter": "Twitter",
+                        "instagram": "Instagram",
+                        "linkedin": "LinkedIn",
+                        "foursquare": "Foursquare",
+                        "pinterest": "Pinterest",
+                        "flickr": "Flickr",
+                        "google_plus": "Google Plus",
+                        "tumblr": "Tumblr",
+                        "dribbble": "Dribbble",
+                        "github": "GitHub",
+                        "website": "Website"
+                    },
+                    "default_value": {
+                        "": ""
+                    },
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_554fdb996ac51",
+                    "label": "URL",
+                    "name": "social_url",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Paste the URL of the social network here.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 66,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-footer-content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1431298924
+}

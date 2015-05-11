@@ -13,10 +13,14 @@ jQuery(function($){
 			// Fast click
 		    FastClick.attach(document.body);
 
-	    	$('.js-lazy').append('<span class="loader"></div>');
+	    	// $('.js-lazy').append('<span class="loader"></div>');
 
 	    	$('.js-lazy').lazyload({
 	    		effect: "fadeIn"
+	    	});
+
+	    	$('.js-video-play').on('click', function(){
+	    		Sculpt.video.play($(this));
 	    	});
 
 			/*
@@ -69,6 +73,41 @@ jQuery(function($){
 					$body.addClass('nav--is-visible');
 				}
 			}); 
+		},
+
+		video: {
+			play: function(el){
+				var $play = $(el),
+					$player = $play.siblings('.js-video-player'),
+					$container = $play.parent('.js-videoEmbed'),
+					$placeholder = $container.css('background-image'),
+					ID = $player.attr('data-src'),
+					playerID = 'wistia_' + ID;
+
+				$container.css('background-image', 'none').append('<div class="loader"></div>');
+				$play.fadeOut(300);
+
+				playerID = Wistia.embed(ID, {
+				  container: playerID,
+				  videoFoam: true,
+				  playerColor: 'ff9254'
+				});
+
+				playerID.ready(function(){
+					$player.css({'opacity': 1, 'bottom' : 0});
+					setTimeout(function(){
+						$player.siblings('.loader').fadeOut(300);
+					}, 300);
+					playerID.play();
+				});
+
+				playerID.bind('end', function(){
+					$play.fadeIn(300);
+					$player.css({'opacity': 0, 'bottom' : '100%'});
+					$container.css('background-image', $placeholder);
+				});
+				// playerID.unbind('end');
+			}
 		}
 	};
 

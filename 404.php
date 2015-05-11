@@ -8,6 +8,7 @@
 get_header('404'); ?>
 
 <section class="fourOhFour container">
+	<div class="fourOhFour-gif"></div>
 	<div class="fourOhFour-inner row row--lg">
 		<h1>Congrats! You've reached the end of the internet!</h1>
 		<h2>Oh snap, Shia LeBouf is here too!</h2>

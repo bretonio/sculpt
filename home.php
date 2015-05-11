@@ -19,8 +19,8 @@ Template Name: Blog Template
       $date = get_the_date( __('m.d.Y'));
       $excerpt = get_the_excerpt(); 
 
-      if (get_field('blog_feat_img')){
-        $img = get_field('blog_feat_img');
+      if (get_field('featured_img')){
+        $img = get_field('featured_img');
         $img_url = 'style="background-image: url(\''.$img['sizes']['high_res'].'\')"';
       } else {
         $img = false;
@@ -64,25 +64,8 @@ Template Name: Blog Template
   </div>
   <div class="row row--lg inline">
 
-  <?php /*
-    $popPost = new WP_Query( array( 'posts_per_page' => 2, 'meta_key' => 'post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
-
-    while ( $popPost->have_posts() ): $popPost->the_post(); 
-
-      $excerpt = get_the_excerpt();
-    ?>
-
-      <!-- post block -->
-      <div class="block s1 lg_s12">
-        <a href="<?php the_permalink(); ?>"><h3 class="post-title"><?php the_title(); ?></h3></a>
-        <p class="post-desc"><?php echo strip_tags($excerpt); ?></p>
-        <h5 class="post-byline"><?php echo '<strong>'.$date.'</strong> by '.$author; ?></h5>
-      </div>
-
-  <?php endwhile; wp_reset_postdata(); */ ?>
-
   <?php 
-    $recent_posts = wp_get_recent_posts('numberposts=2');
+    $recent_posts = wp_get_recent_posts(array('numberposts' => 2, 'post_status', 'publish'));
 
     foreach ($recent_posts as $post) { ?>
 
@@ -92,7 +75,7 @@ Template Name: Blog Template
         <h5 class="post-byline"><?php echo '<strong>'.get_the_date( __('m.d.Y'), $post['ID']).'</strong> by '.get_the_author_meta('display_name', $post['post_author']); ?></h5>
       </div>
 
-  <?php } ?>
+  <?php } wp_reset_postdata(); ?>
 
   </div>
 </section>

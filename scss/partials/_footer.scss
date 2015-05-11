@@ -68,6 +68,7 @@
 	}
 	@media screen and (min-width: $lg) {
 		height: 160px;
+		text-align: center;
 
 		&::before {
 			@include inlineRel;

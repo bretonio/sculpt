@@ -1,6 +1,6 @@
 {
     "key": "group_552f1731b9eb5",
-    "title": "Sculptrons",
+    "title": "Post Type - Sculptron",
     "fields": [
         {
             "key": "field_552f26c4a2dac",
@@ -68,6 +68,28 @@
             "prepend": "",
             "append": "",
             "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_554ff9f3711d9",
+            "label": "Bio",
+            "name": "sculptron_bio",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br",
             "readonly": 0,
             "disabled": 0
         },
@@ -2113,5 +2135,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1431048253
+    "modified": 1431307736
 }

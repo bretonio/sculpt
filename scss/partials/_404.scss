@@ -1,5 +1,5 @@
 .fourOhFour {
-	background-image: url('assets/images/shia.gif');
+	background-image: url('assets/images/shia.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -14,6 +14,15 @@
 		height: 100%;
 		vertical-align: middle;
 	}
+}
+.fourOhFour-gif {
+	@include blockAb;
+
+	bottom: 0; left: 0; right: 0; top: 0;
+	background-image: url('assets/images/shia.gif');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .fourOhFour-inner {
 	@include inlineRel;

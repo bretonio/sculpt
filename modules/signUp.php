@@ -15,7 +15,7 @@
 		<div class="row row--lg">
 			<h3 class="signUp-title"><?php echo $title; ?></h3>
 
-			<form class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+			<form data-success="<?php the_field('newsletter_success', 'option'); ?>" data-error="<?php the_field('newsletter_error', 'option'); ?>" class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 				<div class="inputGroup mc-field-group">
 					<!-- <label for="mce-EMAIL">your email</label> -->
 					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="your email">
@@ -40,7 +40,7 @@
 			<h1 class="signUp-title"><?php echo $title; ?></h1>
 			<h2 class="signUp-body"><?php echo $body; ?></h2>
 
-			<form class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+			<form data-success="<?php the_field('newsletter_success', 'option'); ?>" data-error="<?php the_field('newsletter_error', 'option'); ?>" class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 				<div class="inputGroup mc-field-group">
 					<!-- <label for="mce-EMAIL">your email</label> -->
 					<input type="email" value="" name="EMAIL" class="signUp-input required email" id="mce-EMAIL" placeholder="your email">

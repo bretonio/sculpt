@@ -158,34 +158,10 @@
     // Expose extra mc form methods in global var
     window.mc = {
 
-        /**
-         *  Open the evil popup     
-         */
-        openPopup: function() {
-            $('#mc_embed_signup a.mc_embed_close').show();
-            setTimeout( function(){ $('#mc_embed_signup').fadeIn(); } , mc.delayPopup);
-        },
-        /**
-         *  Close the evil popup
-         */
-        closePopup: function() {
-            $('#mc_embed_signup').hide();
-            var now = new Date();
-            var expires_date = new Date( now.getTime() + 31536000000 );
-            document.cookie = 'MCEvilPopupClosed=yes;expires=' + expires_date.toGMTString()+';path=/';
-        },
-        /**
-         *  Figure out if we should show the evil popup (if they've closed it before, don't show it.)
-         */
-        evalPopup: function() {
-            $('#mc_embed_signup').hide();
-            cks = document.cookie.split(';');
-            for(i=0; i<cks.length; i++){
-                parts = cks[i].split('=');
-                if (parts[0].indexOf('MCEvilPopupClosed') != -1) mc.showPopup = false;
-            }
-            if (mc.showPopup) mc.openPopup();
-        },
+    	getResponses: function(){
+
+    	},
+
         /**
          *  Grab the list subscribe url from the form action and make it work for an ajax post.
          */
@@ -195,6 +171,7 @@
             url += "&c=?";
             return url;
         },
+
         /**
          *  Classify text inputs in the same field group as group for validation purposes.
          *  All this does is tell jQueryValidation to create one error div for the group, rather
@@ -218,15 +195,7 @@
             });
             return groups;
         },
-        /**
-         *  Chick if a field is part of a multipart field
-         *  (e.g., A date merge field is composed of individual inputs for month, day and year)
-         *  Used in jQuery validation onkeyup method to ensure that we don't evaluate a field
-         *  if a user hasn't reached the last input in a multipart field yet.
-         */
-        isMultiPartField: function(element) {
-            return ($('input:not(:hidden)' , $(element).closest(".mc-field-group")).length > 1);
-        },
+
         /**
          *  Checks if the element is the last input in its fieldgroup. 
          *  If the field is not the last in a set of inputs we don't want to validate it on certain events (onfocusout, onblur)
@@ -236,12 +205,16 @@
             var fields = $('input:not(:hidden)' , $(element).closest(".mc-field-group"));
             return ($(fields).eq(-1).attr('id') != $(element).attr('id'));
         },
+
         /**
          *  Handle the error/success message after successful form submission.
          *  Success messages are appended to #mce-success-response
          *  Error messages are displayed with the invalid input when possible, or appended to #mce-error-response
          */
         mce_success_cb: function(resp){
+        	var $form = $("form#mc-embedded-subscribe-form"),
+    			success_resp = $form.attr("data-success"),
+    			error_resp = $form.attr("data-error");
 
             $('#mce-success-response').hide();
             $('#mce-error-response').hide();
@@ -251,7 +224,7 @@
             // On successful form submission, display a success message and reset the form
             if (resp.result == "success"){
                 $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html('Thanks, friend!');
+                $('#mce-'+resp.result+'-response').html(success_resp);
                 $('#mc-embedded-subscribe-form').each(function(){
                     this.reset();
                 });
@@ -295,7 +268,7 @@
                     // Just lump the error message into the generic response div.
                     if (index == -1){
                         $('#mce-'+resp.result+'-response').show();
-                        $('#mce-'+resp.result+'-response').html('Hmmm, something went wrong. Try again?'); 
+                        $('#mce-'+resp.result+'-response').html(error_resp); 
 
                         $('.signUp-form').addClass('error-response--is-visible');     
 
@@ -307,7 +280,7 @@
                     }
                 } catch(e){
                     $('#mce-'+resp.result+'-response').show();
-                    $('#mce-'+resp.result+'-response').html('Hmmm, something went wrong. Try again?');
+                    $('#mce-'+resp.result+'-response').html(error_resp);
 
                     $('.signUp-form').addClass('error-response--is-visible');
                 }
@@ -360,19 +333,5 @@
         contentType: "application/json; charset=utf-8",
         success: mc.mce_success_cb
     };
-
-    // Custom validation methods for fields with certain css classes
-    $.validator.addClassRules("birthday", { digits: true, mc_birthday: ".datefield" });
-    $.validator.addClassRules("datepart", { digits: true, mc_date: ".datefield" });
-    $.validator.addClassRules("phonepart", { digits: true, mc_phone: ".phonefield" });
-
-    // Evil Popup
-    $('#mc_embed_signup a.mc_embed_close').click(function(){ 
-        mc.closePopup(); 
-    });
-    $(document).keydown(function(e){
-        keycode = (e == null) ? event.keyCode : e.which;
-        if (keycode == 27 && typeof mc.showPopup != 'undefined') mc.closePopup();
-    });
 
 }(jQuery));

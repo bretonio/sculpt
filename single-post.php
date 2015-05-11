@@ -11,6 +11,9 @@ Template Name: Project Template
     $guest = true;
   }
   
+  $sculptron_name = get_field('sculptron_name', $sculptron_id);
+  $sculptron_pic = get_field('sculptron_pic', $sculptron_id);
+  $sculptron_bio = get_field('sculptron_bio', $sculptron_id);
 
   $web = get_field('sculptron_website_url', $sculptron_id);
   $twitter = get_field('sculptron_twitter_url', $sculptron_id);
@@ -44,9 +47,6 @@ Template Name: Project Template
 <?php
 while ( have_posts() ): the_post();
 
-  //increment post views
-  setPostViews(get_the_ID());
-
   // Check if ACF is enabled and the modules field exists
   if ( function_exists('get_field') && get_field('modules') !== null ) {
 
@@ -75,25 +75,28 @@ while ( have_posts() ): the_post();
       <span class="divider"></span>
       <div class="blogAuthor-img block">
         <div class="avatar">
-          <?php echo get_avatar( $authorID, 200) ?>
+          <img src="<?php echo $sculptron_pic['sizes']['large']; ?>"/>
         </div>
       </div>
       <div class="blogAuthor-info block s1 med_s23">
         <?php if ($guest == true){ ?>
-          <h3 class="author-name"><?php the_author(); ?></h3>
+          <h3 class="author-name"><?php echo $sculptron_name; ?></h3>
         <?php } else { ?>
-          <a class="author-name" href="<?php echo $sculptron_url; ?>"><h3><?php the_author(); ?></h3></a>
+          <a class="author-name" href="<?php echo $sculptron_url; ?>"><h3><?php echo $sculptron_name; ?></h3></a>
         <?php } ?>
-        <h5 class="author-desc"><?php the_author_meta('description'); ?><br/><br/>
-        <strong>Follow <?php the_author_meta('first_name'); ?>:</strong></h5>
-        <p>
-          <?php echo $web != '' ? '<a class="icon-web" href="'.$web.'" target="_blank"></a>' : '';?>
-          <?php echo $twitter != '' ? '<a class="icon-twitter" href="'.$twitter.'" target="_blank"></a>' : '';?>
-          <?php echo $facebook != '' ? '<a class="icon-facebook" href="'.$facebook.'" target="_blank"></a>' : '';?>
-          <?php echo $instagram != '' ? '<a class="icon-instagram" href="'.$instagram.'" target="_blank"></a>' : '';?>
-          <?php echo $pinterest != '' ? '<a class="icon-pinterest" href="'.$pinterest.'" target="_blank"></a>' : '';?>
-          <?php echo $tumblr != '' ? '<a class="icon-tumblr" href="'.$tumblr.'" target="_blank"></a>' : '';?>
-        </p>
+        <h5 class="author-desc"><?php echo $sculptron_bio; ?><br/><br/>
+
+        <?php if (($web || $twitter || $facebook || $instagram || $pinterest || $tumblr) != '') { ?>
+          <strong>Follow <?php the_author_meta('first_name'); ?>:</strong></h5>
+          <p>
+            <?php echo $web != '' ? '<a class="icon-web" href="'.$web.'" target="_blank"></a>' : '';?>
+            <?php echo $twitter != '' ? '<a class="icon-twitter" href="'.$twitter.'" target="_blank"></a>' : '';?>
+            <?php echo $facebook != '' ? '<a class="icon-facebook" href="'.$facebook.'" target="_blank"></a>' : '';?>
+            <?php echo $instagram != '' ? '<a class="icon-instagram" href="'.$instagram.'" target="_blank"></a>' : '';?>
+            <?php echo $pinterest != '' ? '<a class="icon-pinterest" href="'.$pinterest.'" target="_blank"></a>' : '';?>
+            <?php echo $tumblr != '' ? '<a class="icon-tumblr" href="'.$tumblr.'" target="_blank"></a>' : '';?>
+          </p>
+        <?php } ?>
     </div>
   </section>
 
@@ -126,27 +129,8 @@ while ( have_posts() ): the_post();
   </div>
   <div class="row row--lg inline">
 
-  <?php /*
-    $popPost = new WP_Query( array( 'posts_per_page' => 2, 'meta_key' => 'post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
-
-    while ( $popPost->have_posts() ): $popPost->the_post(); 
-
-      $excerpt = get_the_excerpt();
-
-      if($post->ID != $postID): 
-    ?>
-
-      <!-- post block -->
-      <div class="block s1 lg_s12">
-        <a href="<?php the_permalink(); ?>"><h3 class="post-title"><?php the_title(); ?></h3></a>
-        <p class="post-desc"><?php echo strip_tags($excerpt); ?></p>
-        <h5 class="post-byline"><?php echo '<strong>'.$date.'</strong> by '.$author; ?></h5>
-      </div>
-
-  <?php endif; endwhile; wp_reset_postdata(); */ ?>
-
   <?php 
-    $recent_posts = wp_get_recent_posts('numberposts=2');
+    $recent_posts = wp_get_recent_posts(array('numberposts' => 2, 'post_status', 'publish'));
 
     foreach ($recent_posts as $post) { ?>
 

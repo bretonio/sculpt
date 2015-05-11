@@ -1,29 +1,36 @@
 <?php
 
+// Hide Admin Bar - Comment this out if need be
 show_admin_bar( false );
 
+// Style Editor
 add_editor_style( 'inc/editor.css' );
 
 add_action( 'after_setup_theme', function() {
   add_theme_support( 'title-tag' );
   add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
+
+  /* Create Custom Image Sizing */
   add_image_size( 'src' );
   add_image_size( 'high_res', 2000 );
   add_image_size( 'two_up', 1000 );
   add_image_size( 'four_up', 600 );
 } );
 
+// /blog/%postname%/
 
 /*
  * REWRITES
  */
-function custom_rewrite_basic() {
+function custom_rewrite() {
   global $wp_rewrite;
   add_rewrite_rule('^work/(.[^/]*)/?', 'index.php?project=$matches[1]', 'top');
+  // add_rewrite_rule('^team/(.[^/]*)/?', 'index.php?pagename=about&team=$matches[1]', 'top');
   add_rewrite_rule('^about/(.[^/]*)/?', 'index.php?team=$matches[1]', 'top');
+  // add_rewrite_rule('^about/(.[^/]*)/?', 'index.php?guest=$matches[1]', 'top');
   $wp_rewrite->flush_rules();
 }
-add_action('init', 'custom_rewrite_basic');
+add_action('init', 'custom_rewrite');
 
 
 /*
@@ -47,17 +54,7 @@ add_action( 'wp_enqueue_scripts', function() {
     true
   );
 
-  // wp_enqueue_script( 'mc-validate',
-  //   get_template_directory_uri().'/js/inc/mc-validate.js',
-  //   array( 'jquery' ),
-  //   $theme_ver
-  // );
-
 } );
-
-
-require get_template_directory() . '/inc/jetpack.php';
-
 
 /*
  * MENUS
@@ -88,7 +85,6 @@ function wp_nav_menu_attributes_filter($var) {
 add_filter('nav_menu_css_class', 'wp_nav_menu_attributes_filter', 100, 1);
 add_filter('nav_menu_item_id', 'wp_nav_menu_attributes_filter', 100, 1);
 add_filter('page_css_class', 'wp_nav_menu_attributes_filter', 100, 1);
-
 
 /*
  * Custom Post Types
@@ -122,7 +118,6 @@ function create_posttype() {
       'has_archive' => false,
       'rewrite' => array('slug' => 'about', 'with_front' => false),
       'supports' => array('title','author','thumbnail', 'custom-fields', 'post-format'),
-      'taxonomies' => array('category'),
       'menu_position' => 5
     )
   );
@@ -137,38 +132,27 @@ function create_posttype() {
       'has_archive' => false,
       'rewrite' => array('slug' => 'about/collaborator', 'with_front' => false),
       'supports' => array('title','author','thumbnail', 'custom-fields', 'post-format'),
-      'taxonomies' => array('category'),
       'menu_position' => 5
     )
   );
 }
 
-
 /*
- * Popular Posts
+ * Options Page ACF
  */
-function getPostViews($postID){
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-        return "0 View";
-    }
-    return $count.' Views';
-}
-function setPostViews($postID) {
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        $count = 0;
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-    }else{
-        $count++;
-        update_post_meta($postID, $count_key, $count);
-    }
+if ( function_exists('acf_add_options_page')){
+  acf_add_options_page(array(
+    'page_title'  => 'Theme Settings',
+    'menu_title'  => 'Theme Settings',
+    'menu_slug'   => 'theme-settings',
+    'capability'  => 'edit_posts',
+    'redirect'    => false
+  ));
+  
+  acf_add_options_sub_page(array(
+    'page_title'  => 'Footer Content',
+    'menu_title'  => 'Footer Content',
+    'parent_slug' => 'theme-settings',
+  ));
 }
 
-// Remove issues with prefetching adding extra views
-remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0); 

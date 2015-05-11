@@ -1,6 +1,6 @@
 {
     "key": "group_553d5c1e82414",
-    "title": "Collaborators",
+    "title": "Post Type \u2013 Collaborator",
     "fields": [
         {
             "key": "field_553d5c1e8d3cf",
@@ -68,6 +68,28 @@
             "prepend": "",
             "append": "",
             "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_554ff5c8c71c7",
+            "label": "Bio",
+            "name": "sculptron_bio",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br",
             "readonly": 0,
             "disabled": 0
         },
@@ -230,5 +252,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1430084672
+    "modified": 1431305203
 }

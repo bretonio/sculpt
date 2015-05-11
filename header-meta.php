@@ -16,10 +16,28 @@
 
   <?php 
     global $post;
+    $post_type = get_post_type_object( get_post_type($post) );
+    $label = @$post_type->label;
+    $og_type = is_single() ? 'article' : 'website';
+    $og_desc = get_field('meta_description', get_the_id($post));
     $img = get_field('featured_img', get_the_id($post));
     $og_img = $img['sizes']['two_up'];
   ?>
+  
+  <!-- <meta name="description" content="<?php echo $og_desc; ?>" />
+  <meta property="og:description" content="<?php echo $og_desc; ?>"/>
+  <meta property="og:type" content="<?php echo $og_type; ?>"/>
+  <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
+  <meta property="og:title" content="<?php wp_title('|','true','right'); ?>"/> -->
   <meta property="og:image" content="<?php echo $og_img; ?>" />
+  <!-- <meta property="og:url" content="<?php echo site_url(); ?>" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="<?php echo site_url(); ?>">
+  <meta name="twitter:title" content="<?php wp_title('|','true','right'); ?>">
+  <meta name="twitter:description" content="<?php echo $og_desc; ?>">
+  <meta name="twitter:creator" content="@wearesculpt">
+  <meta name="twitter:image:src" content="<?php echo $og_img; ?>"> -->
 
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -28,50 +46,13 @@
   <script>jQuery(function($){$('input, textarea').placeholder();});</script>
   <![endif]-->
 
-  <!--    Fonts from TypeKit-->
+
+      <!--    Fonts from TypeKit-->
   <script src="//use.typekit.net/hxi4ugl.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
-  <script type="text/javascript">(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-      var fbds = document.createElement('script');
-      fbds.async = true;
-      fbds.src = '//connect.facebook.net/en_US/fbds.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(fbds, s);
-      _fbq.loaded = true;
-    }
-    _fbq.push(['addPixelId', '446026215541124']);
-    })();
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', 'PixelInitialized', {}]);
-  </script>
-  <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=446026215541124&amp;ev=PixelInitialized" /></noscript>
-
-  <script type="text/javascript">
-    var _ss = _ss || [];
-    _ss.push(['_setDomain', 'https://koi-1B4AH0I.sharpspring.com/net']);
-    _ss.push(['_setAccount', 'KOI-1LYC7MY']);
-    _ss.push(['_trackPageView']);
-    (function() {
-        var ss = document.createElement('script');
-        ss.type = 'text/javascript'; ss.async = true;
-        ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-1B4AH0I.sharpspring.com/client/ss.js?ver=1.1.1';
-        var scr = document.getElementsByTagName('script')[0];
-        scr.parentNode.insertBefore(ss, scr);
-    })();
-  </script>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-29264598-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  <title><?php wp_title('|','true','right'); ?></title>
+  <!-- <title><?php bloginfo( 'name' ); is_front_page() ? '' : wp_title( '|', true, 'left' ); ?></title> -->
 
   <?php wp_head(); ?>
 

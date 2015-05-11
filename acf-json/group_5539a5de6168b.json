@@ -1,6 +1,6 @@
 {
     "key": "group_5539a5de6168b",
-    "title": "Blogs",
+    "title": "Post Type \u2013 Post",
     "fields": [
         {
             "key": "field_5539a5fca3b48",
@@ -2625,5 +2625,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1431048147
+    "modified": 1431308278
 }

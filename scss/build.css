@@ -1690,7 +1690,7 @@ button.button--white:hover .button-left, .button.button--white:hover .button-lef
   color: #2b2e33;
   height: 35px;
   line-height: 35px;
-  padding: .3rem 1.2rem;
+  padding: 0 1.2rem;
   transition: background .2s, border .2s; }
 .button--alt .button--alt-icon {
   font-size: 2rem;
@@ -2019,6 +2019,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   height: 100%; }
 .hero.colorScheme--light {
   background-color: #f5f5f5; }
+.hero.colorScheme--light .hero-title {
+  color: #ff9254; }
 .hero.colorScheme--orange {
   background-color: #ff9254; }
 .hero.colorScheme--orange .hero-title {
@@ -2052,6 +2054,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 @media screen and (min-width: 1280px) {
   .hero-content {
     padding-bottom: 3rem; } }
+
+.hero-title {
+  color: #ff9254; }
 
 .hero-body {
   margin-top: .8rem; }
@@ -2132,6 +2137,53 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 @media screen and (max-width: 768px) {
   .photoModule-photo.photoModule-fourUp {
     padding-top: 50%; } }
+
+.videoEmbed {
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+.videoEmbed.s1 {
+  padding-top: 56%; }
+@media (min-width: 768px) {
+  .videoEmbed.med_s12 {
+    padding-top: 28.2%; } }
+@media (min-width: 1024px) {
+  .videoEmbed.lg_s13 {
+    padding-top: 18.7%; } }
+@media (min-width: 1280px) {
+  .videoEmbed.xl_s14 {
+    padding-top: 14.1%; } }
+
+.video-player {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity .3s; }
+
+.video-play {
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 146, 84, 0.9);
+  border-radius: 3px;
+  height: 60px;
+  line-height: 60px;
+  left: calc(50% - 50px);
+  top: calc(50% - 30px);
+  text-align: center;
+  width: 100px; }
+.video-play::after {
+  display: inline-block;
+  position: relative;
+  border-left: 30px solid #FFFFFF;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  content: '';
+  margin-top: 1.4rem; }
 
 .textModule {
   background-color: #FFFFFF;
@@ -3290,7 +3342,8 @@ div.mce_inline_error {
     width: 100%; } }
 @media screen and (min-width: 1024px) {
   .footer-social-links {
-    height: 160px; }
+    height: 160px;
+    text-align: center; }
   .footer-social-links::before {
     display: inline-block;
     position: relative;
@@ -3689,9 +3742,15 @@ body.error404 {
 .blogAuthor-img .avatar {
   display: block;
   position: relative;
+  background-color: #f5f5f5;
   border-radius: 100%;
   height: auto !important;
+  overflow: hidden;
   width: 100px; }
+.blogAuthor-img .avatar img {
+  border-radius: 100%;
+  max-width: 100%;
+  width: 100%; }
 
 .blogAuthor-info {
   margin: 1rem 0; }
@@ -3780,7 +3839,7 @@ body.error404 {
   line-height: 50px; }
 
 .fourOhFour {
-  background-image: url("assets/images/shia.gif");
+  background-image: url("assets/images/shia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3793,6 +3852,18 @@ body.error404 {
   content: '';
   height: 100%;
   vertical-align: middle; }
+
+.fourOhFour-gif {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-image: url("assets/images/shia.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .fourOhFour-inner {
   display: inline-block;
