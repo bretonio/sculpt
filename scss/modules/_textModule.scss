@@ -86,44 +86,44 @@
 	}
 
 	.textModule-title {
+		margin-bottom: 1rem;
 		opacity: .9;
 	}
 
 	.textModule-block-link {
 		@include inlineRel;
 
-		max-width: calc(100% - 70px);
 		width: 100%;
 
-		@media screen and (min-width: $sm){
-			max-width: 100%;
-			width: auto;
-		}
+		// @media screen and (min-width: $sm){
+		// 	max-width: 100%;
+		// 	width: auto;
+		// }
 
-		&:hover .textModule-title::after {
-			background-color: rgba($c2, 1);
-		}
+		// &:hover .textModule-title::after {
+		// 	background-color: rgba($c2, 1);
+		// }
 
 		.textModule-title {
 			width: 100%;
 
-			&::after {
-				@include blockAb;
-				@include icon;
+			// &::after {
+			// 	@include blockAb;
+			// 	@include icon;
 
-				background-color: rgba($c2, .8); //same as textModule-title
-				content: '\e600';
-				color: #FFFFFF;
-				font-size: 1.3rem;
-				float: left;
-				height: 32px;
-				line-height: 32px;
-				right: -48px;
-				top: 0;
-				text-align: center;
-				width: 32px;
-				transition: .1s background;
-			}
+			// 	background-color: rgba($c2, .8); //same as textModule-title
+			// 	content: '\e600';
+			// 	color: #FFFFFF;
+			// 	font-size: 1.3rem;
+			// 	float: left;
+			// 	height: 32px;
+			// 	line-height: 32px;
+			// 	right: -48px;
+			// 	top: 0;
+			// 	text-align: center;
+			// 	width: 32px;
+			// 	transition: .1s background;
+			// }
 		}
 	}
 

@@ -2237,46 +2237,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   max-width: 80%;
   margin: 0 auto; }
 .textModule-block .textModule-title {
+  margin-bottom: 1rem;
   opacity: .9; }
 .textModule-block .textModule-block-link {
   display: inline-block;
   position: relative;
-  max-width: calc(100% - 70px);
   width: 100%; }
-@media screen and (min-width: 550px) {
-  .textModule-block .textModule-block-link {
-    max-width: 100%;
-    width: auto; } }
-.textModule-block .textModule-block-link:hover .textModule-title::after {
-  background-color: #2b2e33; }
 .textModule-block .textModule-block-link .textModule-title {
   width: 100%; }
-.textModule-block .textModule-block-link .textModule-title::after {
-  display: block;
-  position: absolute;
-  display: inline-block;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(43, 46, 51, 0.8);
-  content: '\e600';
-  color: #FFFFFF;
-  font-size: 1.3rem;
-  float: left;
-  height: 32px;
-  line-height: 32px;
-  right: -48px;
-  top: 0;
-  text-align: center;
-  width: 32px;
-  transition: .1s background; }
 .textModule-block p:last-of-type {
   margin-bottom: 0; }
 

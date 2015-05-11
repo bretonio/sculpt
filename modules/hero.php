@@ -35,7 +35,7 @@
 		    	<h2 class="hero-body"><?php echo $body; ?></h2>
 		    <?php } elseif ($layout == 'hero_tertiary') { ?>
 		    	<h1 class="hero-title"><?php echo $title; ?></h1>
-		    	<h4 class="hero-body"><?php echo $body; ?></h4>
+		    	<h2 class="hero-body"><?php echo $body; ?></h2>
 		    <?php } ?>
 
 		    <?php if ($cta_enabled == true) { ?>

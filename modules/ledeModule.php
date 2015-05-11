@@ -29,7 +29,9 @@
 	<div class="row row--lg inline">
 		<div class="block s1">
 
-			<h3 class="ledeModule-title"><?php echo $title; ?></h3>
+			<?php if ($title != '') { ?>
+				<h3 class="ledeModule-title"><?php echo $title; ?></h3>
+			<?php } ?>
 
 			<h2 class="ledeModule-lede"><?php echo $lede; ?></h2>
 

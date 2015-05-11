@@ -93,7 +93,7 @@
 			<?php } ?>
 			<?php echo apply_filters('the_content', $col_2_body); ?>
 		</div>
-	<?php } else { ?>
+	<?php } elseif ($col_2_body) { ?>
 		<div class="textModule-block block s1 med_s12">
 			<?php if ($col_2_url) { ?>
 				<a href="<?php echo $col_2_url; ?>" class="textModule-block-link">
@@ -101,8 +101,9 @@
 				</a>
 			<?php } elseif ($col_2_title) { ?>
 				<h3 class="textModule-title"><?php echo $col_2_title; ?></h3>
+			<?php } elseif ($col_2_body) { ?>
+				<?php echo apply_filters('the_content', $col_2_body); ?>
 			<?php } ?>
-			<?php echo apply_filters('the_content', $col_2_body); ?>
 		</div>
 	<?php } ?>
 

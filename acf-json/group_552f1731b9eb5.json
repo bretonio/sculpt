@@ -1732,7 +1732,7 @@
                             "prefix": "",
                             "type": "wysiwyg",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -2135,5 +2135,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1431307736
+    "modified": 1431314021
 }

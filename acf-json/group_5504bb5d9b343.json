@@ -1878,7 +1878,7 @@
                             "prefix": "",
                             "type": "wysiwyg",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -3298,5 +3298,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1431305142
+    "modified": 1431313959
 }

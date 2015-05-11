@@ -1,12 +1,24 @@
 	<section class="footContact container pad--sm">
-		<div class="row row--lg">
-			<h2 class="footContact-title">That’s us. Now, who are you?</h2>
+		<div class="footer-row-one row">
+			<div class="block s1 lg_s23">
+				<div class="footer-location row inline">
+					<div class="footer-location-left block s1 sm_s12">
+						<?php the_field('footer_address', 'option'); ?>
+					</div>
+					<div class="footer-location-right block s1 sm_s12">
+						<?php the_field('footer_contact_info', 'option'); ?>
+					</div>
+				</div>
+			</div>
+			<div class="footer-social-links block s1 lg_s13">
+				<?php if (have_rows('footer_social_links', 'options')):
+					while (have_rows('footer_social_links', 'options')): the_row(); ?>
 
-			<a href="<?php echo site_url().'/contact'; ?>" class="button button--dark footContact-cta">
-				<span class="button-left">let's get in touch</span>
-				<span class="button-right icon-arrow"></span>
-			</a>
+						<a class="icon-<?php the_sub_field('social_network'); ?> footer-social-link" href="<?php the_sub_field('social_url'); ?>"></a>
 
+					<?php endwhile; 
+				endif; ?>
+			</div>
 		</div>
 	</section>
 

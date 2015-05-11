@@ -81,7 +81,7 @@
                         "foursquare": "Foursquare",
                         "pinterest": "Pinterest",
                         "flickr": "Flickr",
-                        "google_plus": "Google Plus",
+                        "googleplus": "Google Plus",
                         "tumblr": "Tumblr",
                         "dribbble": "Dribbble",
                         "github": "GitHub",
@@ -138,5 +138,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1431298924
+    "modified": 1431317102
 }
