@@ -2118,6 +2118,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: rgba(255, 255, 255, 0.6); }
 .ledeModule.colorScheme--orange .ledeModule-title::after {
   background-color: rgba(255, 255, 255, 0.6); }
+.ledeModule.colorScheme--orange .button:hover .button-left {
+  background-color: white; }
+.ledeModule.colorScheme--orange .button .button-left {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2b2e33; }
+.ledeModule.colorScheme--orange .button .button-right {
+  background-color: #FFFFFF;
+  color: #ff9254; }
 .ledeModule.colorScheme--dark {
   background-color: #2b2e33; }
 .ledeModule.colorScheme--dark .ledeModule-title {
@@ -2680,6 +2688,14 @@ div.mce_inline_error {
   color: #2b2e33; }
 .endModule.colorScheme--orange .endModule-content a:hover {
   color: #5a606a; }
+.endModule.colorScheme--orange .button:hover .button-left {
+  background-color: white; }
+.endModule.colorScheme--orange .button .button-left {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #2b2e33; }
+.endModule.colorScheme--orange .button .button-right {
+  background-color: #FFFFFF;
+  color: #ff9254; }
 .endModule.colorScheme--orange .button--alt {
   background-color: rgba(255, 255, 255, 0.4); }
 .endModule.colorScheme--orange .button--alt:hover {

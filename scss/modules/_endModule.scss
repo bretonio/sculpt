@@ -51,6 +51,23 @@
 			}
 		}
 
+		.button {
+			&:hover {
+				.button-left {
+					background-color: rgba(#FFFFFF, 1);
+				}
+			}
+
+			.button-left {
+				background-color: rgba(#FFFFFF, .8);
+				color: $c2;
+			}
+			.button-right {
+				background-color: #FFFFFF;
+				color: $c1;
+			}
+		}
+
 		.button--alt {
 			background-color: rgba(#FFFFFF, .4);
 

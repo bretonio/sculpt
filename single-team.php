@@ -88,7 +88,7 @@ while ( have_posts() ): the_post();
 endwhile;
 
 // "View All" Link
-$viewAll = get_field('viewAll_services', 'option');
+$viewAll = get_field('viewAll_team', 'option');
 // $viewAll_classes = ''; // string of optional classnames
 include( locate_template( "/partials/viewAll.php" ) );
 
