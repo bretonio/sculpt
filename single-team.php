@@ -31,15 +31,6 @@ Image Returns
 	$pic = get_field('sculptron_pic');
 	$pic_url = $pic['url'];
 
-	$web = get_field('sculptron_website_url');
-	$twitter = get_field('sculptron_twitter_url');
-	$facebook = get_field('sculptron_facebook_url');
-	$instagram = get_field('sculptron_instagram_url');
-	$pinterest = get_field('sculptron_pinterest_url');
-	$tumblr = get_field('sculptron_tumblr_url');
-
-
-
 get_header();
 
 ?>
@@ -52,12 +43,16 @@ get_header();
 	    	<h2 class="hero-body"><?php echo $subtitle; ?></h2>
 	    	<div class="teamPage-social">
 		    	<h3>Follow <?php the_title(); ?>:</h3>
-	    		<?php echo $web != '' ? '<a class="icon-web" href="'.$web.'" target="_blank"></a>' : '';?>
-	    		<?php echo $twitter != '' ? '<a class="icon-twitter" href="'.$twitter.'" target="_blank"></a>' : '';?>
-	    		<?php echo $facebook != '' ? '<a class="icon-facebook" href="'.$facebook.'" target="_blank"></a>' : '';?>
-	    		<?php echo $instagram != '' ? '<a class="icon-instagram" href="'.$instagram.'" target="_blank"></a>' : '';?>
-	    		<?php echo $pinterest != '' ? '<a class="icon-pinterest" href="'.$pinterest.'" target="_blank"></a>' : '';?>
-	    		<?php echo $tumblr != '' ? '<a class="icon-tumblr" href="'.$tumblr.'" target="_blank"></a>' : '';?>
+	    		
+
+	    		<?php if (have_rows('sculptron_links')):
+						while (have_rows('sculptron_links')): the_row(); ?>
+
+							<a class="icon-<?php the_sub_field('icon'); ?>" href="<?php the_sub_field('url'); ?>" target="_blank"></a>
+
+						<?php endwhile; 
+					endif; ?>
+
 		    </div>
 	  	</div>
 
@@ -98,7 +93,7 @@ endwhile; ?>
 		<div class="block s1">
 			<a href="/about/#team" class="viewAll-button button">
 				<span class="backArrow button-right icon-boxes"></span>
-				<span class="button-left">see the whole team</span>
+				<span class="button-left"><?php the_field('viewAll_team', 'option'); ?></span>
 			</a>
 		</div>
 	</div>

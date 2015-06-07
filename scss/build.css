@@ -2097,11 +2097,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   width: 100px; }
 .ledeModule .ledeModule-lede {
   margin-bottom: 12px; }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 768px) {
   .ledeModule .ledeModule-lede {
     max-width: 75%; } }
 .ledeModule .ledeModule-body {
-  max-width: 60%; }
+  max-width: 100%; }
+@media screen and (min-width: 550px) {
+  .ledeModule .ledeModule-body {
+    max-width: 80%; } }
 @media screen and (min-width: 1024px) {
   .ledeModule .ledeModule-body {
     max-width: 50%; } }

@@ -114,7 +114,7 @@
 
   <div class="body-wrapper">
 
-    <div class="mainLogo-mobile">
+    <a href="/" class="mainLogo-mobile">
       <?php if ($logo == 'sculptLogo--light' || $logo == 'sculptLogo--white') { ?>
         <svg class="sculptMark" viewBox="0 0 100 100">
           <use xlink:href="#sculptMark--white"></use>
@@ -128,7 +128,7 @@
           <use xlink:href="#sculptMark--orange"></use>
         </svg>
       <?php } ?>
-    </div>
+    </a>
 
     <header class="header container">
 

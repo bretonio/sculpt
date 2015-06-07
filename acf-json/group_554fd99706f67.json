@@ -3,6 +3,72 @@
     "title": "Options \u2013 Footer",
     "fields": [
         {
+            "key": "field_5574af5211121",
+            "label": "Secondary Footer - Copy",
+            "name": "footer_secondary_copy",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "That\u2019s us. Now, who are you?",
+            "placeholder": "That\u2019s us. Now, who are you?",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5574af7c11122",
+            "label": "Secondary Footer \u2013 CTA",
+            "name": "footer_secondary_cta",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "let's get in touch",
+            "placeholder": "let's get in touch",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5574af9a11123",
+            "label": "Secondary Footer \u2013 URL",
+            "name": "footer_secondary_url",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "\/contact",
+            "placeholder": "\/contact",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
             "key": "field_554fd9a26ac4d",
             "label": "Address",
             "name": "footer_address",
@@ -78,6 +144,7 @@
                         "twitter": "Twitter",
                         "instagram": "Instagram",
                         "linkedin": "LinkedIn",
+                        "youtube": "YouTube",
                         "foursquare": "Foursquare",
                         "pinterest": "Pinterest",
                         "flickr": "Flickr",
@@ -104,7 +171,7 @@
                     "name": "social_url",
                     "prefix": "",
                     "type": "text",
-                    "instructions": "Paste the URL of the social network here.",
+                    "instructions": "Paste the URL of the social network here. Don't include \"http:\/\/\" for these.",
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -113,8 +180,8 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
+                    "placeholder": "facebook.com\/wearesculpt",
+                    "prepend": "http:\/\/",
                     "append": "",
                     "maxlength": "",
                     "readonly": 0,
@@ -138,5 +205,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1431317102
+    "modified": 1433712162
 }

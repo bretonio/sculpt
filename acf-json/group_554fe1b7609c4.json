@@ -45,6 +45,50 @@
             "maxlength": "",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_5574afd4e89ab",
+            "label": "View All Team Copy",
+            "name": "viewAll_team",
+            "prefix": "",
+            "type": "text",
+            "instructions": "This appears at the bottom of individual Sculptron pages, linking to the full team grid on the about page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "view all team members",
+            "placeholder": "view all team members",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5574b034e89ac",
+            "label": "View All Services Copy",
+            "name": "viewAll_services",
+            "prefix": "",
+            "type": "text",
+            "instructions": "This appears at the bottom of all child pages of the root \/services page, linking back to the \/services page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "view all services",
+            "placeholder": "view all services",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
         }
     ],
     "location": [
@@ -62,5 +106,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1431298934
+    "modified": 1433710697
 }

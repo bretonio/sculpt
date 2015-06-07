@@ -257,6 +257,11 @@
                                         "field": "field_5536fdc32243d",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_5536fdc322499",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -264,6 +269,11 @@
                                         "field": "field_5536fdc32243d",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_5536fdc322499",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -294,6 +304,11 @@
                                         "field": "field_5536fdc32243d",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_5536fdc322499",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -301,6 +316,11 @@
                                         "field": "field_5536fdc32243d",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_5536fdc322499",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -331,6 +351,11 @@
                                         "field": "field_5536fdc32243d",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_5536fdc322499",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -338,6 +363,11 @@
                                         "field": "field_5536fdc32243d",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_5536fdc322499",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -2174,5 +2204,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1433708283
+    "modified": 1433709991
 }

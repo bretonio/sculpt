@@ -582,6 +582,11 @@
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -589,6 +594,11 @@
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -619,6 +629,11 @@
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -626,6 +641,11 @@
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -656,6 +676,11 @@
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -663,6 +688,11 @@
                                         "field": "field_5521d0ec2105f",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_5521f2ac9b075",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -2671,6 +2701,31 @@
                             "disabled": 0
                         },
                         {
+                            "key": "field_553d56a2dc567",
+                            "label": "Link CTA to External URL",
+                            "name": "cta_is_external",
+                            "prefix": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_55306a30d4d44",
+                                        "operator": "==",
+                                        "value": "cta"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0
+                        },
+                        {
                             "key": "field_5530742a302f7",
                             "label": "Links Heading",
                             "name": "endModule_links_heading",
@@ -2732,8 +2787,8 @@
                                     "label": "Icon",
                                     "name": "endModule_link_icon",
                                     "prefix": "",
-                                    "type": "text",
-                                    "instructions": "Head to <a href=\"http:\/\/fortawesome.github.io\/Font-Awesome\/icons\/\" target=\"_blank\">Font Awesome<\/a> and find your icon. Type the name in this box.",
+                                    "type": "select",
+                                    "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -2741,13 +2796,31 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "caret-square-o-down",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
+                                    "choices": {
+                                        "facebook": "Facebook",
+                                        "twitter": "Twitter",
+                                        "instagram": "Instagram",
+                                        "linkedin": "LinkedIn",
+                                        "youtube": "YouTube",
+                                        "foursquare": "Foursquare",
+                                        "pinterest": "Pinterest",
+                                        "flickr": "Flickr",
+                                        "googleplus": "Google Plus",
+                                        "tumblr": "Tumblr",
+                                        "dribbble": "Dribbble",
+                                        "github": "GitHub",
+                                        "website": "Website"
+                                    },
+                                    "default_value": {
+                                        "": ""
+                                    },
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "disabled": 0,
+                                    "readonly": 0
                                 },
                                 {
                                     "key": "field_55306ec4d4d49",
@@ -2777,7 +2850,7 @@
                                     "name": "endModule_link_url",
                                     "prefix": "",
                                     "type": "text",
-                                    "instructions": "",
+                                    "instructions": "Don't include \"http:\/\/\" on these.",
                                     "required": 1,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -2786,31 +2859,14 @@
                                         "id": ""
                                     },
                                     "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
+                                    "placeholder": "facebook.com\/wearesculpt",
+                                    "prepend": "http:\/\/",
                                     "append": "",
                                     "maxlength": "",
                                     "readonly": 0,
                                     "disabled": 0
                                 }
                             ]
-                        },
-                        {
-                            "key": "field_553d56a2dc567",
-                            "label": "Link CTA to External URL",
-                            "name": "cta_is_external",
-                            "prefix": "",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0
                         }
                     ],
                     "min": "",
@@ -3312,5 +3368,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1433708083
+    "modified": 1433712656
 }

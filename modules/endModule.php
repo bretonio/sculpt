@@ -15,10 +15,6 @@
 	$link = get_sub_field('endModule_link_url');
 	$link_text = get_sub_field('endModule_link_text');
 	$link_icon = get_sub_field('endModule_link_icon');
-
-	if ($extra[0] == 'links' || $extra[1] == 'links') {
-		print '<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">';
-	}
 ?>
 
 <section class="endModule container<?php echo $size == 'endModule--large' ? ' pad--xl' : ' pad--lg'; echo ' '.$color; ?>">
@@ -43,7 +39,7 @@
 				<?php while ( have_rows('endModule_links') ): the_row(); ?>
 
 					<a class="button--alt" href="<?php the_sub_field('endModule_link_url'); ?>" target="_blank">
-						<span class="button--alt-icon fa fa-<?php the_sub_field('endModule_link_icon'); ?>"></span>
+						<span class="button--alt-icon icon-<?php the_sub_field('endModule_link_icon'); ?>"></span>
 						<span class="button--alt-text">
 							<?php the_sub_field('endModule_link_text'); ?>
 						</span>

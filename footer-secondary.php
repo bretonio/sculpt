@@ -1,9 +1,9 @@
 	<section class="footContact container pad--sm">
 		<div class="row row--lg">
-			<h2 class="footContact-title">That’s us. Now, who are you?</h2>
+			<h2 class="footContact-title"><?php the_field('footer_secondary_copy', 'option'); ?></h2>
 
-			<a href="<?php echo site_url().'/contact'; ?>" class="button button--dark footContact-cta">
-				<span class="button-left">let's get in touch</span>
+			<a href="<?php echo site_url().the_field('footer_secondary_copy', 'option'); ?>" class="button button--dark footContact-cta">
+				<span class="button-left"><?php the_field('footer_secondary_cta', 'option'); ?></span>
 				<span class="button-right icon-arrow"></span>
 			</a>
 
@@ -23,8 +23,8 @@
 				</div>
 			</div>
 			<div class="footer-social-links block s1 lg_s13">
-				<?php if (have_rows('footer_social_links', 'options')):
-					while (have_rows('footer_social_links', 'options')): the_row(); ?>
+				<?php if (have_rows('footer_social_links', 'option')):
+					while (have_rows('footer_social_links', 'option')): the_row(); ?>
 
 						<a class="icon-<?php the_sub_field('social_network'); ?> footer-social-link" href="<?php the_sub_field('social_url'); ?>" target="_blank"></a>
 

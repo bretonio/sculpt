@@ -94,136 +94,87 @@
             "disabled": 0
         },
         {
-            "key": "field_552f18797e567",
-            "label": "Website URL",
-            "name": "sculptron_website_url",
+            "key": "field_5574b4231409a",
+            "label": "Links",
+            "name": "sculptron_links",
             "prefix": "",
-            "type": "text",
-            "instructions": "",
+            "type": "repeater",
+            "instructions": "This populates any and all links needed for this team member.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": 50,
+                "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_552f184e7e564",
-            "label": "Twitter URL",
-            "name": "sculptron_twitter_url",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": 50,
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_552f18697e565",
-            "label": "Facebook Url",
-            "name": "sculptron_facebook_url",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": 50,
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_552f18707e566",
-            "label": "Instagram URL",
-            "name": "sculptron_instagram_url",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": 50,
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_552f189bd36e7",
-            "label": "Pinterest URL",
-            "name": "sculptron_pinterest_url",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": 50,
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
-            "key": "field_552f18a4d36e8",
-            "label": "Tumblr URL",
-            "name": "sculptron_tumblr_url",
-            "prefix": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": 50,
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Link",
+            "sub_fields": [
+                {
+                    "key": "field_5574b4471409b",
+                    "label": "Icon",
+                    "name": "icon",
+                    "prefix": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 33,
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "facebook": "Facebook",
+                        "twitter": "Twitter",
+                        "instagram": "Instagram",
+                        "linkedin": "LinkedIn",
+                        "youtube": "YouTube",
+                        "foursquare": "Foursquare",
+                        "pinterest": "Pinterest",
+                        "flickr": "Flickr",
+                        "googleplus": "Google Plus",
+                        "tumblr": "Tumblr",
+                        "dribbble": "Dribbble",
+                        "github": "GitHub",
+                        "website": "Website"
+                    },
+                    "default_value": {
+                        "": ""
+                    },
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_5574b4571409c",
+                    "label": "URL",
+                    "name": "url",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "Don't include \"http:\/\/\" for these.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 66,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "facebook.com\/wearesculpt",
+                    "prepend": "http:\/\/",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
         },
         {
             "key": "field_552f1731c8fca",
@@ -436,6 +387,11 @@
                                         "field": "field_552f1731cf180",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_552f1731cf1bd",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -443,6 +399,11 @@
                                         "field": "field_552f1731cf180",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_552f1731cf1bd",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -473,6 +434,11 @@
                                         "field": "field_552f1731cf180",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_552f1731cf1bd",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -480,6 +446,11 @@
                                         "field": "field_552f1731cf180",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_552f1731cf1bd",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -510,6 +481,11 @@
                                         "field": "field_552f1731cf180",
                                         "operator": "==",
                                         "value": "lede"
+                                    },
+                                    {
+                                        "field": "field_552f1731cf1bd",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ],
                                 [
@@ -517,6 +493,11 @@
                                         "field": "field_552f1731cf180",
                                         "operator": "==",
                                         "value": "lede_body"
+                                    },
+                                    {
+                                        "field": "field_552f1731cf1bd",
+                                        "operator": "==",
+                                        "value": "1"
                                     }
                                 ]
                             ],
@@ -2149,5 +2130,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1433708488
+    "modified": 1433712179
 }

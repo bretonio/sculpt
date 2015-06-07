@@ -40,7 +40,7 @@ get_header();
       <div class="block s1">
         <a href="/services" class="viewAll-button button">
           <span class="backArrow button-right icon-boxes"></span>
-          <span class="button-left">view all services</span>
+          <span class="button-left"><?php the_field('viewAll_services', 'option'); ?></span>
         </a>
       </div>
     </div>

@@ -19,13 +19,17 @@
 	.ledeModule-lede {
 		margin-bottom: 12px;
 
-		@media screen and (min-width: $sm) {
+		@media screen and (min-width: $med) {
 			max-width: 75%;
 		}
 	}
 
 	.ledeModule-body {
-		max-width: 60%;
+		max-width: 100%;
+
+		@media screen and (min-width: $sm) {
+			max-width: 80%;
+		}
 
 		@media screen and (min-width: $lg) {
 			max-width: 50%;
