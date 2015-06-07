@@ -41,7 +41,7 @@
 				</div>
 		 	<?php } ?>
 
-			<?php if ($cta == true) { ?>
+			<?php if ($cta == true && ($layout == 'lede' || $layout == 'lede_body')) { ?>
 				<a href="<?php echo $cta_url; ?>" class="button"<?php echo $cta_ext ? ' target="_blank"' : '' ; ?>>
 					<span class="button-left"><?php echo $cta_text; ?></span>
 					<span class="button-right icon-arrow"></span>

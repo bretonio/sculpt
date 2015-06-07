@@ -67,30 +67,41 @@ get_header();
 
 
 <?php
-while ( have_posts() ) { the_post();
+while ( have_posts() ): the_post();
 
   // Check if ACF is enabled and the modules field exists
-  if ( function_exists('get_field') && get_field('modules') !== null ) {
+  if ( function_exists('get_field') && get_field('modules') !== null ):
 
     // Loop through rows of flexible content field
-    while( the_flexible_field('modules') ) {
+    while( the_flexible_field('modules') ):
 
       // Render module template based on the row layout's name
       $module_name = str_replace('_', '-', get_row_layout());
       // Use "include(locate_template(...))" instead of "get_template_part" to retain scope
       include( locate_template( "/modules/$module_name.php" ) );
 
-    }
+    endwhile;
 
-  } else {
+  else:
 
     // Standard post content
     the_title('<h1>', '</h1>');
     the_content();
 
-  }
+  endif; 
 
-}
-?>
+endwhile; ?>
+
+<!-- View All Team Members -->
+<section class="viewAll pad-med">
+	<div class="row row--lg">
+		<div class="block s1">
+			<a href="/about/#team" class="viewAll-button button">
+				<span class="backArrow button-right icon-boxes"></span>
+				<span class="button-left">see the whole team</span>
+			</a>
+		</div>
+	</div>
+</section>
 
 <?php get_footer('secondary'); ?>

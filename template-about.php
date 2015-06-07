@@ -37,7 +37,7 @@ while ( have_posts() ) { the_post();
 ?>
 
 <!-- POSTS LOOP -->
-<section class="teamGrid container">
+<section id="team" class="teamGrid container">
   <div class="row">
     <?php 
       $guest = get_cat_ID( 'guest' );

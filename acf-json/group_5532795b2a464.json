@@ -254,9 +254,16 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5532795b4105e",
+                                        "field": "field_5532795b41020",
                                         "operator": "==",
-                                        "value": "1"
+                                        "value": "lede"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5532795b41020",
+                                        "operator": "==",
+                                        "value": "lede_body"
                                     }
                                 ]
                             ],
@@ -284,9 +291,16 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5532795b4105e",
+                                        "field": "field_5532795b41020",
                                         "operator": "==",
-                                        "value": "1"
+                                        "value": "lede"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5532795b41020",
+                                        "operator": "==",
+                                        "value": "lede_body"
                                     }
                                 ]
                             ],
@@ -2635,5 +2649,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1431305188
+    "modified": 1433708438
 }

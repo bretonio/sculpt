@@ -16,7 +16,7 @@
 		float: left;
 		line-height: 4.5rem !important;
 		padding: .3rem 1.5rem;
-		transition: .2s background;
+		transition: .2s background, .2s color;
 	}
 	.button-right {
 		@include blockRel;
@@ -29,7 +29,7 @@
 		line-height: 50px;
 		text-align: center;
 		width: 50px;
-		transition: .2s background;
+		transition: .2s background, .2s color;
 	}
 
 	&:hover .button-left {

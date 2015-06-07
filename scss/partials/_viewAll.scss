@@ -1,0 +1,31 @@
+.viewAll {
+	background-color: $gray10;
+
+	&.services {
+		background-color: $gray20;
+
+		.button-right {
+			background-color: $gray40;
+		}
+	}
+}
+.viewAll-button {
+	&:hover {
+		.button-right {
+			background-color: $gray60;
+		}
+		.button-left {
+			background-color: #FFFFFF;
+			color: $black;
+		}
+	}
+
+	.button-left {
+		background-color: #FFFFFF;
+		color: $gray60;
+	}
+	.button-right {
+		background-color: $gray20;
+		color: #FFFFFF;
+	}
+}

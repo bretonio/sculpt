@@ -1642,7 +1642,7 @@ button .button-left, .button .button-left {
   float: left;
   line-height: 4.5rem !important;
   padding: .3rem 1.5rem;
-  transition: .2s background; }
+  transition: .2s background, .2s color; }
 @media screen and (min-width: 550px) {
   button .button-left, .button .button-left {
     font-size: 2.2rem;
@@ -1658,7 +1658,7 @@ button .button-right, .button .button-right {
   line-height: 50px;
   text-align: center;
   width: 50px;
-  transition: .2s background; }
+  transition: .2s background, .2s color; }
 button:hover .button-left, .button:hover .button-left {
   background-color: #ff9254; }
 button.button--dark .button-left, .button.button--dark .button-left {
@@ -1869,8 +1869,8 @@ a.u {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("./assets/icons/icomoon.eot?-aos216");
-  src: url("./assets/icons/icomoon.eot?#iefix-aos216") format("embedded-opentype"), url("./assets/icons/icomoon.woff?-aos216") format("woff"), url("./assets/icons/icomoon.ttf?-aos216") format("truetype"), url("./assets/icons/icomoon.svg?-aos216#icomoon") format("svg");
+  src: url("./assets/icons/icomoon.eot?x0ol5m");
+  src: url("./assets/icons/icomoon.eot?#iefixx0ol5m") format("embedded-opentype"), url("./assets/icons/icomoon.ttf?x0ol5m") format("truetype"), url("./assets/icons/icomoon.woff?x0ol5m") format("woff"), url("./assets/icons/icomoon.svg?x0ol5m#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"], [class*=" icon-"] {
@@ -1892,41 +1892,50 @@ a.u {
 .icon-close:before {
   content: "\e601"; }
 
-.icon-facebook:before {
+.icon-boxes:before {
   content: "\e602"; }
 
-.icon-flickr:before {
+.icon-facebook:before {
   content: "\e603"; }
 
-.icon-foursquare:before {
+.icon-flickr:before {
   content: "\e604"; }
+
+.icon-foursquare:before {
+  content: "\e606"; }
 
 .icon-instagram:before {
   content: "\e605"; }
 
 .icon-linkedin:before {
-  content: "\e606"; }
-
-.icon-logo:before {
   content: "\e607"; }
 
-.icon-menu:before {
+.icon-logo:before {
   content: "\e608"; }
 
-.icon-pinterest:before {
+.icon-menu:before {
   content: "\e609"; }
 
-.icon-quotation:before {
+.icon-pinterest:before {
   content: "\e60a"; }
 
-.icon-twitter:before {
+.icon-quotation:before {
   content: "\e60b"; }
+
+.icon-twitter:before {
+  content: "\e60c"; }
+
+.icon-map:before {
+  content: "\e94b"; }
 
 .icon-web:before {
   content: "\e9c9"; }
 
 .icon-googleplus:before {
   content: "\ea88"; }
+
+.icon-youtube:before {
+  content: "\ea98"; }
 
 .icon-dribbble:before {
   content: "\eaa6"; }
@@ -3343,13 +3352,7 @@ div.mce_inline_error {
 @media screen and (min-width: 1024px) {
   .footer-social-links {
     height: 160px;
-    text-align: center; }
-  .footer-social-links::before {
-    display: inline-block;
-    position: relative;
-    content: '';
-    height: 100%;
-    vertical-align: middle; } }
+    text-align: justify; } }
 .footer-social-links .footer-social-link {
   display: inline-block;
   position: relative;
@@ -3364,7 +3367,10 @@ div.mce_inline_error {
 @media screen and (min-width: 768px) {
   .footer-social-links .footer-social-link {
     font-size: 2.4rem;
-    margin: 0 1.5rem; } }
+    margin: 0; } }
+@media (min-width: 1024px) {
+  .footer-social-links .footer-social-link {
+    line-height: 100px; } }
 
 .footer-nav {
   background-color: #FFFFFF; }
@@ -3638,6 +3644,25 @@ body.error404 {
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2rem; }
+
+.viewAll {
+  background-color: #f5f5f5; }
+.viewAll.services {
+  background-color: #cccccc; }
+.viewAll.services .button-right {
+  background-color: #999999; }
+
+.viewAll-button:hover .button-right {
+  background-color: #666666; }
+.viewAll-button:hover .button-left {
+  background-color: #FFFFFF;
+  color: #171f26; }
+.viewAll-button .button-left {
+  background-color: #FFFFFF;
+  color: #666666; }
+.viewAll-button .button-right {
+  background-color: #cccccc;
+  color: #FFFFFF; }
 
 .project-tags {
   display: block;

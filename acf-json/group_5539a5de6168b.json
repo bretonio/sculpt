@@ -232,9 +232,16 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5539a5de76cd2",
+                                        "field": "field_5539a5de76c9e",
                                         "operator": "==",
-                                        "value": "1"
+                                        "value": "lede"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5539a5de76c9e",
+                                        "operator": "==",
+                                        "value": "lede_body"
                                     }
                                 ]
                             ],
@@ -262,9 +269,16 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5539a5de76cd2",
+                                        "field": "field_5539a5de76c9e",
                                         "operator": "==",
-                                        "value": "1"
+                                        "value": "lede"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5539a5de76c9e",
+                                        "operator": "==",
+                                        "value": "lede_body"
                                     }
                                 ]
                             ],
@@ -2625,5 +2639,5 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1431314041
+    "modified": 1433708558
 }
