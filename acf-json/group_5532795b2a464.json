@@ -2484,7 +2484,8 @@
                                         "tumblr": "Tumblr",
                                         "dribbble": "Dribbble",
                                         "github": "GitHub",
-                                        "website": "Website"
+                                        "website": "Website",
+                                        "map: Map Icon": "map: Map Icon"
                                     },
                                     "default_value": {
                                         "": ""
@@ -2705,5 +2706,5 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1433712502
+    "modified": 1433716192
 }

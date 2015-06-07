@@ -152,7 +152,8 @@
                         "tumblr": "Tumblr",
                         "dribbble": "Dribbble",
                         "github": "GitHub",
-                        "website": "Website"
+                        "website": "Website",
+                        "map: Map Icon": "map: Map Icon"
                     },
                     "default_value": {
                         "": ""
@@ -205,5 +206,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1433712162
+    "modified": 1433716089
 }

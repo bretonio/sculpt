@@ -1,0 +1,138 @@
+{
+    "key": "group_5574bfb147e89",
+    "title": "Options - 404",
+    "fields": [
+        {
+            "key": "field_5574bfb97a345",
+            "label": "Title",
+            "name": "404_title",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5574bfd47a346",
+            "label": "Copy",
+            "name": "404_copy",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5574bfe07a347",
+            "label": "CTA",
+            "name": "404_cta",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5574bfec7a348",
+            "label": "Background",
+            "name": "404_background",
+            "prefix": "",
+            "type": "image",
+            "instructions": "This can be a JPG or a GIF. If it's a GIF, you **must** upload a placeholder \"snapshot\" of the first frame of the GIF. The GIF may take a few seconds to load and we don't want users to see a weird flash of the GIF suddenly popping in. \r\n\r\nA GIF should be no more than ~5MB max, and any other image (including GIF placeholder) should under 200-300kb.\r\n\r\nAll static images should be JPGs.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5574c0c47a349",
+            "label": "Background Placeholder",
+            "name": "404_background_placeholder",
+            "prefix": "",
+            "type": "image",
+            "instructions": "You only need this if you want to use a GIF. ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-404-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1433715554
+}

@@ -38,7 +38,7 @@
 
 				<?php while ( have_rows('endModule_links') ): the_row(); ?>
 
-					<a class="button--alt" href="<?php the_sub_field('endModule_link_url'); ?>" target="_blank">
+					<a class="button--alt" href="http://<?php the_sub_field('endModule_link_url'); ?>" target="_blank">
 						<span class="button--alt-icon icon-<?php the_sub_field('endModule_link_icon'); ?>"></span>
 						<span class="button--alt-text">
 							<?php the_sub_field('endModule_link_text'); ?>
