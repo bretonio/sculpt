@@ -85,18 +85,11 @@ while ( have_posts() ): the_post();
 
   endif; 
 
-endwhile; ?>
+endwhile;
 
-<!-- View All Team Members -->
-<section class="viewAll pad-med">
-	<div class="row row--lg">
-		<div class="block s1">
-			<a href="/about/#team" class="viewAll-button button">
-				<span class="backArrow button-right icon-boxes"></span>
-				<span class="button-left"><?php the_field('viewAll_team', 'option'); ?></span>
-			</a>
-		</div>
-	</div>
-</section>
+// "View All" Link
+$viewAll = get_field('viewAll_services', 'option');
+// $viewAll_classes = ''; // string of optional classnames
+include( locate_template( "/partials/viewAll.php" ) );
 
-<?php get_footer('secondary'); ?>
+get_footer('secondary'); ?>
