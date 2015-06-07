@@ -77,6 +77,7 @@ jQuery(function($){
 
 		wistia: {
 			video: {},
+			embed: {},
 			init: function(){
 				video = this.video;
 
@@ -100,37 +101,47 @@ jQuery(function($){
 						play_button: $play
 					}
 
-					if (!$player.hasClass('is-loaded')){
+					if ($outer_container.hasClass('is-loaded')){
+						Sculpt.wistia.play(embed[video['ID'].id], video['ID']);
+					} else if (!$outer_container.hasClass('is-loaded')) {
 						Sculpt.wistia.load(video['ID']);
-					} else {
-						Sculpt.wistia.play(video['ID']);
 					}
 		    	});
 			},
 			load: function(player){
-				player.ID = Wistia.embed(player.id, {
+				embed = this.embed;
+
+				player.play_button.fadeOut(300);
+				player.outer_container.css('background-image', '').append('<div class="loader"></div>');
+
+				embed[player.id] = Wistia.embed(player.id, {
 				  container: player.ID,
 				  videoFoam: true,
+				  endVideoBehavior: 'reset',
 				  playerColor: 'ff9254' // sculpt orange
 				});
 
-				player.ID.ready(function(){
-					player.player.addClass('is-loaded');
-					Sculpt.wistia.play(player);
+				embed[player.id].ready(function(){
+					player.outer_container.addClass('is-loaded');
+					Sculpt.wistia.play(embed[player.id], player);
 				});
 			},
-			play: function(player){
+			play: function(embed, player){
+				console.log(player);
+
+				player.outer_container.css('background-image', '');
 				player.player_container.css({'bottom' : 0}).siblings('.loader').fadeOut(300);
 
 				setTimeout(function(){
-					player.outer_container.css('background-image', '');
 					player.player_container.css({'opacity' : 1});
-					player.ID.play();
-				}, 600);
+					embed.play();
 
-				player.ID.bind('end', function(){
-					Sculpt.wistia.hide(player);
-				});
+					embed.bind('end', function(){
+						Sculpt.wistia.hide(player);
+
+						return this.unbind;
+					});
+				}, 600);
 			},
 			hide: function(player){
 				player.play_button.fadeIn(300);

@@ -2165,6 +2165,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   right: 0;
   top: 0;
   opacity: 0;
+  overflow: hidden;
   text-align: center;
   transition: opacity .3s; }
 .videoEmbed-inner::after {
@@ -2186,12 +2187,16 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   position: absolute;
   background-color: rgba(255, 146, 84, 0.9);
   border-radius: 3px;
+  cursor: pointer;
   height: 60px;
   line-height: 60px;
   left: calc(50% - 50px);
   top: calc(50% - 30px);
   text-align: center;
+  transition: .2s background-color;
   width: 100px; }
+.video-play:hover {
+  background-color: #ff9254; }
 .video-play::after {
   display: inline-block;
   position: relative;

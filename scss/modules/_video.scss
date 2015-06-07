@@ -28,6 +28,7 @@
 
 	bottom: 100%; left: 0; right: 0; top: 0;
 	opacity: 0;
+	overflow: hidden;
 	text-align: center;
 	transition: opacity .3s;
 
@@ -51,18 +52,23 @@
 
 	background-color: rgba($c1, .9);
 	border-radius: 3px;
+	cursor: pointer;
 	height: 60px;
 	line-height: 60px;
 	left: calc(50% - 50px);
 	top: calc(50% - 30px);
 	text-align: center;
+	transition: .2s background-color;
 	width: 100px;
+
+	&:hover {
+		background-color: rgba($c1, 1);
+	}
 
 	&::after {
 		@include inlineRel;
 
 		border-left: 30px solid #FFFFFF;
-		// border-right: 30px solid transparent;
 		border-top: 15px solid transparent;
 		border-bottom: 15px solid transparent;
 		content: '';
