@@ -42,8 +42,8 @@
 
 			<div class="js-videoEmbed videoEmbed block s1" style="background-image: url('<?php echo $video_1_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_1_id; ?>" data-src="<?php echo $video_1_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_1_id; ?>" data-src="<?php echo $video_1_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
@@ -51,15 +51,15 @@
 
 			<div class="js-videoEmbed videoEmbed block s1 med_s12" style="background-image: url('<?php echo $video_1_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_1_id; ?>" data-src="<?php echo $video_1_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_1_id; ?>" data-src="<?php echo $video_1_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
 			<div class="js-videoEmbed videoEmbed block s1 med_s12" style="background-image: url('<?php echo $video_2_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_2_id; ?>" data-src="<?php echo $video_2_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_2_id; ?>" data-src="<?php echo $video_2_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
@@ -67,22 +67,22 @@
 
 			<div class="js-videoEmbed videoEmbed block s1 lg_s13" style="background-image: url('<?php echo $video_1_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_1_id; ?>" data-src="<?php echo $video_1_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_1_id; ?>" data-src="<?php echo $video_1_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
 			<div class="js-videoEmbed videoEmbed block s1 lg_s13" style="background-image: url('<?php echo $video_2_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_2_id; ?>" data-src="<?php echo $video_2_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_2_id; ?>" data-src="<?php echo $video_2_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
 			<div class="js-videoEmbed videoEmbed block s1 lg_s13" style="background-image: url('<?php echo $video_3_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_3_id; ?>" data-src="<?php echo $video_3_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_3_id; ?>" data-src="<?php echo $video_3_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
@@ -90,29 +90,29 @@
 
 			<div class="js-videoEmbed videoEmbed block s1 med_s12 xl_s14" style="background-image: url('<?php echo $video_1_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_1_id; ?>" data-src="<?php echo $video_1_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_1_id; ?>" data-src="<?php echo $video_1_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
 			<div class="js-videoEmbed videoEmbed block s1 med_s12 xl_s14" style="background-image: url('<?php echo $video_2_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_2_id; ?>" data-src="<?php echo $video_2_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_2_id; ?>" data-src="<?php echo $video_2_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
 			<div class="js-videoEmbed videoEmbed block s1 med_s12 xl_s14" style="background-image: url('<?php echo $video_3_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_3_id; ?>" data-src="<?php echo $video_3_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_3_id; ?>" data-src="<?php echo $video_3_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
 			<div class="js-videoEmbed videoEmbed block s1 med_s12 xl_s14" style="background-image: url('<?php echo $video_4_img; ?>');">
 				<div class="js-video-play video-play"></div>
-				<div class="js-videoEmbed-inner videoEmbed-inner">
-					<div id="wistia_<?php echo $video_4_id; ?>" data-src="<?php echo $video_4_id; ?>" class="js-video-player video-player"></div>
+				<div class="js-player-container videoEmbed-inner">
+					<div id="wistia_<?php echo $video_4_id; ?>" data-src="<?php echo $video_4_id; ?>" class="js-player video-player"></div>
 				</div>
 			</div>
 
