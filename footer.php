@@ -14,7 +14,7 @@
 				<?php if (have_rows('footer_social_links', 'options')):
 					while (have_rows('footer_social_links', 'options')): the_row(); ?>
 
-						<a class="icon-<?php the_sub_field('social_network'); ?> footer-social-link" href="<?php the_sub_field('social_url'); ?>"></a>
+						<a class="icon-<?php the_sub_field('social_network'); ?> footer-social-link" href="<?php the_sub_field('social_url'); ?>" target="_blank"></a>
 
 					<?php endwhile; 
 				endif; ?>

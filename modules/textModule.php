@@ -101,9 +101,8 @@
 				</a>
 			<?php } elseif ($col_2_title) { ?>
 				<h3 class="textModule-title"><?php echo $col_2_title; ?></h3>
-			<?php } elseif ($col_2_body) { ?>
-				<?php echo apply_filters('the_content', $col_2_body); ?>
 			<?php } ?>
+			<?php echo apply_filters('the_content', $col_2_body); ?>
 		</div>
 	<?php } ?>
 

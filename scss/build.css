@@ -1502,7 +1502,7 @@ ul, ol, li, a, nav, span, main, section, article, aside, header, footer, div, de
     margin-right: 83.333333%; } }
 html, body {
   font-size: 62.5%;
-  color: #111f2d; }
+  color: #171f26; }
 
 .f1 {
   font-family: "museo-sans", Helvetica, arial, sans-serif; }
@@ -2139,7 +2139,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     padding-top: 50%; } }
 
 .videoEmbed {
-  background-color: #f5f5f5;
+  background-color: #171f26;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -2155,7 +2155,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   .videoEmbed.xl_s14 {
     padding-top: 14.1%; } }
 
-.video-player {
+.videoEmbed-inner {
   display: block;
   position: absolute;
   bottom: 100%;
@@ -2163,7 +2163,21 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   right: 0;
   top: 0;
   opacity: 0;
+  text-align: center;
   transition: opacity .3s; }
+.videoEmbed-inner::after {
+  display: inline-block;
+  position: relative;
+  content: '';
+  height: 100%;
+  vertical-align: middle; }
+
+.video-player {
+  display: inline-block;
+  position: relative;
+  max-height: 90%;
+  width: 90% !important;
+  vertical-align: middle; }
 
 .video-play {
   display: block;
@@ -3359,7 +3373,7 @@ div.mce_inline_error {
   text-transform: lowercase;
   width: 100%; }
 .footer-nav li:hover {
-  color: #111f2d; }
+  color: #171f26; }
 .footer-nav li:nth-of-type(even) {
   background-color: #f5f5f5; }
 @media screen and (min-width: 399px) {
@@ -3423,7 +3437,7 @@ body.error404 {
 .bodyOverlay {
   display: block;
   position: fixed;
-  background-color: rgba(17, 31, 45, 0);
+  background-color: rgba(23, 31, 38, 0);
   bottom: 0;
   left: 100%;
   right: 0;
@@ -3431,7 +3445,7 @@ body.error404 {
   transition: background .3s, opacity .3s;
   z-index: 100; }
 .nav--is-visible .bodyOverlay {
-  background-color: rgba(17, 31, 45, 0.95);
+  background-color: rgba(23, 31, 38, 0.95);
   left: 0; }
 .nav--is-hiding .bodyOverlay {
   opacity: 0; }
@@ -3657,7 +3671,7 @@ body.error404 {
 .blogListing .post-overlay {
   display: block;
   position: absolute;
-  background-color: #111f2d;
+  background-color: #171f26;
   bottom: 0;
   left: 0;
   right: 0;

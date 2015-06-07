@@ -1,5 +1,5 @@
 .videoEmbed {
-	background-color: $gray10; 
+	background-color: $black; 
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -23,12 +23,28 @@
 		}
 	}
 }
-.video-player {
+.videoEmbed-inner {
 	@include blockAb;
 
 	bottom: 100%; left: 0; right: 0; top: 0;
 	opacity: 0;
+	text-align: center;
 	transition: opacity .3s;
+
+	&::after {
+		@include inlineRel;
+
+		content:'';
+		height: 100%;
+		vertical-align: middle;
+	}
+}
+.video-player {
+	@include inlineRel;
+
+	max-height: 90%;
+	width: 90% !important;
+	vertical-align: middle;
 }
 .video-play {
 	@include blockAb;

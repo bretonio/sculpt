@@ -7,6 +7,10 @@ jQuery(function($){
 			this.general();
 			this.headerOffset();
 			this.offCanvas();
+
+			if ($('.js-video-play').length) {
+				this.wistia.bind();
+			}
 		},
 
 		general: function(){
@@ -17,10 +21,6 @@ jQuery(function($){
 
 	    	$('.js-lazy').lazyload({
 	    		effect: "fadeIn"
-	    	});
-
-	    	$('.js-video-play').on('click', function(){
-	    		Sculpt.video.play($(this));
 	    	});
 
 			/*
@@ -75,38 +75,75 @@ jQuery(function($){
 			}); 
 		},
 
-		video: {
-			play: function(el){
-				var $play = $(el),
-					$player = $play.siblings('.js-video-player'),
-					$container = $play.parent('.js-videoEmbed'),
-					$placeholder = $container.css('background-image'),
+		wistia: {
+			videos: [],
+			video: {},
+			bind: function(){
+				$('.js-video-play').on('click', function(){
+					var $player = $(this).siblings('.js-videoEmbed-inner').find('.js-video-player');
+
+					if (!$player.hasClass('is-loaded')){
+						Sculpt.video.init($(this));
+					} else {
+						Sculpt.video.play($(this));
+					}
+		    	});
+			},
+			init: function(play){
+				var $play = $(play), // play button
+					$videoEmbed = $play.parent('.js-videoEmbed'), // outer container
+					$placeholder = $videoEmbed.css('background-image'), // store original background image
+
+					$player_container = $play.siblings('.js-videoEmbed-inner'), // player wrapper
+					$player = $player_container.find('.js-video-player'), // player
 					ID = $player.attr('data-src'),
 					playerID = 'wistia_' + ID;
 
-				$container.css('background-image', 'none').append('<div class="loader"></div>');
+				$videoEmbed.css('background-image', 'none').append('<div class="loader"></div>');
 				$play.fadeOut(300);
 
 				playerID = Wistia.embed(ID, {
 				  container: playerID,
 				  videoFoam: true,
-				  playerColor: 'ff9254'
+				  playerColor: 'ff9254' // sculpt orange
 				});
 
 				playerID.ready(function(){
-					$player.css({'opacity': 1, 'bottom' : 0});
-					setTimeout(function(){
-						$player.siblings('.loader').fadeOut(300);
-					}, 300);
-					playerID.play();
+					$player.addClass('is-loaded');
+					Sculpt.video.play($play);
 				});
 
 				playerID.bind('end', function(){
-					$play.fadeIn(300);
-					$player.css({'opacity': 0, 'bottom' : '100%'});
-					$container.css('background-image', $placeholder);
+					Sculpt.video.hide($play);
 				});
-				// playerID.unbind('end');
+			},
+			play: function(play){
+				var $play = $(play), // play button
+
+					$player_container = $play.siblings('.js-videoEmbed-inner'), // player wrapper
+					$player = $player_container.find('.js-video-player'), // player
+					ID = $player.attr('data-src'),
+					playerID = 'wistia_' + ID;
+
+				$player_container.css({'bottom' : 0});
+
+				$player_container.siblings('.loader').fadeOut(300);
+
+				setTimeout(function(){
+					$player_container.css({'opacity' : 1});
+					playerID.play();
+				}, 600);
+			},
+			hide: function(play){
+				var $play = $(play), // play button
+					$videoEmbed = $play.parent('.js-videoEmbed'), // outer container
+					$placeholder = $videoEmbed.css('background-image'), // store original background image
+
+					$player_container = $play.siblings('.js-videoEmbed-inner'); // player wrapper
+
+				$play.fadeIn(300);
+				$player_container.css({'opacity': 0, 'bottom' : '100%'});
+				$videoEmbed.css('background-image', $placeholder);
 			}
 		}
 	};
