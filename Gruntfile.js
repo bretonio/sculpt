@@ -85,7 +85,8 @@ module.exports = function(grunt) {
   // Load the plugins
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  // grunt.loadNpmTasks('grunt-contrib-sass'); // Ruby Sass
+  grunt.loadNpmTasks('grunt-sass'); // LibSASS
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-svgstore');

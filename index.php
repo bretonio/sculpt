@@ -34,6 +34,7 @@ get_header();
 
     // "View All" Link
     $viewAll = get_field('viewAll_services', 'option');
+    $viewAll_url = '/services';
     $viewAll_classes = 'services'; // string of optional classnames
     include( locate_template( "/partials/viewAll.php" ) );
 

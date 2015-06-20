@@ -2,7 +2,7 @@
 		<div class="row row--lg">
 			<h2 class="footContact-title"><?php the_field('footer_secondary_copy', 'option'); ?></h2>
 
-			<a href="<?php echo site_url().the_field('footer_secondary_copy', 'option'); ?>" class="button button--dark footContact-cta">
+			<a href="<?php the_field('footer_secondary_url', 'option'); ?>" class="button button--dark footContact-cta">
 				<span class="button-left"><?php the_field('footer_secondary_cta', 'option'); ?></span>
 				<span class="button-right icon-arrow"></span>
 			</a>

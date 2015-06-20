@@ -2619,6 +2619,325 @@
                     "sub_fields": [],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "554e59457db83",
+                    "name": "video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_554e595d7db84",
+                            "label": "Layout",
+                            "name": "video_layout",
+                            "prefix": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "video_full": "One Video",
+                                "video_two_up": "Two Up - Two Videos",
+                                "video_three_up": "Three Up - Three Videos",
+                                "video_four_up": "Four Up - Four Videos"
+                            },
+                            "default_value": {
+                                "video_full": "video_full"
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "disabled": 0,
+                            "readonly": 0
+                        },
+                        {
+                            "key": "field_554e72c759eac",
+                            "label": "Video One Hash ID",
+                            "name": "video_1_id",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "The Hash ID for the video e.g. '2vytsftfdx'.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "2vytsftfdx",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_554e731b59ead",
+                            "label": "Video One Image Placeholder",
+                            "name": "video_1_img",
+                            "prefix": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ".jpg"
+                        },
+                        {
+                            "key": "field_554e735a59eaf",
+                            "label": "Video Two Hash ID",
+                            "name": "video_2_id",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_two_up"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_three_up"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_four_up"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "2vytsftfdx",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_554e73b259eb5",
+                            "label": "Video Two Image Placeholder",
+                            "name": "video_2_img",
+                            "prefix": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_two_up"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_three_up"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_four_up"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ".jpg"
+                        },
+                        {
+                            "key": "field_554e737859eb0",
+                            "label": "Video Three Hash ID",
+                            "name": "video_3_id",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_three_up"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_four_up"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "2vytsftfdx",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_554e73cb59eb8",
+                            "label": "Video Three Image Placeholder",
+                            "name": "video_3_img",
+                            "prefix": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_three_up"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_four_up"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ".jpg"
+                        },
+                        {
+                            "key": "field_554e73a159eb4",
+                            "label": "Video Four Hash ID",
+                            "name": "video_4_id",
+                            "prefix": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_four_up"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "2vytsftfdx",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_554e73e359eb9",
+                            "label": "Video Four Image Placeholder",
+                            "name": "video_4_img",
+                            "prefix": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_554e595d7db84",
+                                        "operator": "==",
+                                        "value": "video_four_up"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ".jpg"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         },
@@ -2696,5 +3015,6 @@
         "format",
         "send-trackbacks"
     ],
-    "modified": 1433716223
+    "modified": 1434839500,
+    "local": "json"
 }
