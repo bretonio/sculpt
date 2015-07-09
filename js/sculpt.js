@@ -169,11 +169,11 @@ jQuery(function($){
 						$comments_inner.css({'opacity': 1});
 					}, 300);
 				} else {
-					$comments_inner.css({'opacity': 0});
+					$comments.css({'height': 0});
 					$(this).find('.button--alt-icon').css({'transform': 'rotate(45deg)'});
 					$(this).find('.button--alt-text').html('view comments');
 					setTimeout(function(){
-						$comments.css({'height': 0});
+						$comments_inner.css({'opacity': 0});
 					}, 300);
 				}
 			});
