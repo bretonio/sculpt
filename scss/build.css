@@ -3093,10 +3093,13 @@ div.mce_inline_error {
   position: relative;
   height: 0;
   overflow: hidden;
-  transition: height 1s ease-in-out; }
+  transition: height 1s cubic-bezier(0.65, 0.12, 0.54, 0.76); }
+  .comments-container .row {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; }
 
 .comments-button {
-  margin-bottom: 4rem; }
+  margin: 4rem 0 3rem; }
 
 .header {
   display: block;
