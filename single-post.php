@@ -64,8 +64,17 @@ while ( have_posts() ): the_post();
   }  
 
   ?> <!-- end modules loop -->
-
-  <section class="comments-container">
+  <section class="container">
+    <div class="row row--med">
+      <a class="js-commentsToggle comments-button button--alt" href="#0" target="_blank">
+        <span class="button--alt-icon icon-plus"></span>
+        <span class="button--alt-text">
+          view comments
+        </span>
+      </a>
+    </div>
+  </section>
+  <section class="js-comments comments-container">
     <div class="row row--med">
       <?php
         // If comments are open or we have at least one comment, load up the comment template.

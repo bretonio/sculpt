@@ -1914,6 +1914,13 @@ a {
 .icon-close:before {
   content: "\e601"; }
 
+.icon-plus {
+  font-size: 1.3rem !important;
+  transform: rotate(45deg);
+  transition: transform 0.3s; }
+  .icon-plus:before {
+    content: "\e601"; }
+
 .icon-boxes:before {
   content: "\e602"; }
 
@@ -3085,7 +3092,11 @@ div.mce_inline_error {
   display: block;
   position: relative;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: height 1s ease-in-out; }
+
+.comments-button {
+  margin-bottom: 4rem; }
 
 .header {
   display: block;

@@ -7,6 +7,7 @@ jQuery(function($){
 			this.general();
 			this.headerOffset();
 			this.offCanvas();
+			this.comments();
 
 			if ($('.js-video-play').length) {
 				this.wistia.init();
@@ -148,6 +149,27 @@ jQuery(function($){
 				player.player_container.css({'opacity': 0, 'bottom' : '100%'});
 				player.outer_container.css('background-image', player.placeholder);
 			}
+		},
+
+		comments: function (){
+			var $toggle = $('.js-commentsToggle'),
+				$comments = $('.js-comments');
+
+			$toggle.on('click', function(e){
+				e.preventDefault();
+
+				var height = $comments.find('.row').outerHeight(true);
+
+				if ($comments.height() == 0) {
+					$comments.css({'height': height});
+					$(this).find('.button--alt-icon').css({'transform': 'rotate(90deg)'});
+					$(this).find('.button--alt-text').html('hide comments');
+				} else {
+					$comments.css({'height': 0});
+					$(this).find('.button--alt-icon').css({'transform': 'rotate(45deg)'});
+					$(this).find('.button--alt-text').html('view comments');
+				}
+			});
 		}
 	};
 

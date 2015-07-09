@@ -36,6 +36,15 @@
 	content: "\e601";
 }
 
+.icon-plus {
+	font-size: 1.3rem !important;
+	transform: rotate(45deg);
+	transition: transform .3s;
+	&:before {
+		content: "\e601";
+	}
+}
+
 .icon-boxes:before {
 	content: "\e602";
 }
