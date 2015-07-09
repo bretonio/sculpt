@@ -65,6 +65,18 @@ while ( have_posts() ): the_post();
 
   ?> <!-- end modules loop -->
 
+  <section class="comments-container">
+    <div class="row row--med">
+      <?php
+        // If comments are open or we have at least one comment, load up the comment template.
+        if ( comments_open() || get_comments_number() ) :
+          include( locate_template( "/partials/comments.php" ) );
+        endif;
+      ?>
+    </div>
+  </section>
+
+  <!-- Author Section -->
   <section class="blogAuthor container pad--med">
     <div class="row row--med">
       <span class="divider"></span>

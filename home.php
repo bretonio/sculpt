@@ -6,7 +6,6 @@ Template Name: Blog Template
   get_header();
 ?>
 
-<!-- HERO SECTION -->
 <section class="blogListing blogPage container">
 
   <?php 
@@ -65,7 +64,7 @@ Template Name: Blog Template
   <div class="row row--lg inline">
 
   <?php 
-    $recent_posts = wp_get_recent_posts(array('numberposts' => 2, 'post_status', 'publish'));
+    $recent_posts = wp_get_recent_posts(array('numberposts' => 2, 'post_status' => 'publish'));
 
     foreach ($recent_posts as $post) { ?>
 

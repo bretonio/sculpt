@@ -3081,6 +3081,12 @@ div.mce_inline_error {
   .popularPosts .post-byline {
     color: rgba(43, 46, 51, 0.6); }
 
+.comments-container {
+  display: block;
+  position: relative;
+  height: 0;
+  overflow: hidden; }
+
 .header {
   display: block;
   position: fixed;
