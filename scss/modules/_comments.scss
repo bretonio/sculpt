@@ -1,0 +1,6 @@
+.comments-container {
+	@include blockRel;
+
+	height: 0;
+	overflow: hidden;
+}
