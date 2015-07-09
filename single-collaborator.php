@@ -124,7 +124,7 @@ while ( have_posts() ): the_post();
   <div class="row row--lg inline">
 
   <?php 
-    $recent_posts = wp_get_recent_posts(array('numberposts' => 2, 'post_status', 'publish'));
+    $recent_posts = wp_get_recent_posts(array('numberposts' => 2, 'post_status' => 'publish'));
 
     foreach ($recent_posts as $post) { ?>
 
