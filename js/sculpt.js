@@ -158,16 +158,23 @@ jQuery(function($){
 			$toggle.on('click', function(e){
 				e.preventDefault();
 
-				var height = $comments.find('.row').outerHeight(true);
+				var $comments_inner = $comments.find('.row'),
+					height = $comments_inner.outerHeight(true);
 
 				if ($comments.height() == 0) {
 					$comments.css({'height': height});
 					$(this).find('.button--alt-icon').css({'transform': 'rotate(90deg)'});
 					$(this).find('.button--alt-text').html('hide comments');
+					setTimeout(function(){
+						$comments_inner.css({'opacity': 1});
+					}, 300);
 				} else {
-					$comments.css({'height': 0});
+					$comments_inner.css({'opacity': 0});
 					$(this).find('.button--alt-icon').css({'transform': 'rotate(45deg)'});
 					$(this).find('.button--alt-text').html('view comments');
+					setTimeout(function(){
+						$comments.css({'height': 0});
+					}, 300);
 				}
 			});
 		}
