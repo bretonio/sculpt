@@ -48,7 +48,7 @@ get_header();
 	    		<?php if (have_rows('sculptron_links')):
 						while (have_rows('sculptron_links')): the_row(); ?>
 
-							<a class="icon-<?php the_sub_field('icon'); ?>" href="<?php the_sub_field('url'); ?>" target="_blank"></a>
+							<a class="icon-<?php the_sub_field('icon'); ?>" href="http://<?php the_sub_field('url'); ?>" target="_blank"></a>
 
 						<?php endwhile; 
 					endif; ?>

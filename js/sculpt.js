@@ -8,6 +8,7 @@ jQuery(function($){
 			this.headerOffset();
 			this.offCanvas();
 			this.comments();
+			this.lazyLoading();
 
 			if ($('.js-video-play').length) {
 				this.wistia.init();
@@ -17,12 +18,6 @@ jQuery(function($){
 		general: function(){
 			// Fast click
 		    FastClick.attach(document.body);
-
-	    	// $('.js-lazy').append('<span class="loader"></div>');
-
-	    	$('.js-lazy').lazyload({
-	    		effect: "fadeIn"
-	    	});
 
 			/*
 			 * Header
@@ -177,6 +172,15 @@ jQuery(function($){
 					}, 300);
 				}
 			});
+		},
+
+		lazyLoading: function(){
+			/*
+		     * Lazy load images in the photo modules (background images)
+		     */
+	    	$('.js-lazy').lazyload({
+	    		effect: "fadeIn"
+	    	});
 		}
 	};
 
