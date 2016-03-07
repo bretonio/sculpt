@@ -42,13 +42,13 @@
 		<?php } elseif ($layout == 'single_large' || $layout == 'single_small') { ?>
 			<div class="block photoModule-photo s1 js-lazy" data-original="<?php echo $photo; ?>"><div class="loader"></div></div>
 		<?php } elseif ($layout == 'twoUp_large' || $layout == 'twoUp_small') { ?>
-			<div class="block photoModule-photo s1 med_s12 js-lazy" data-original="<?php echo $photo12; ?>"><div class="loader"></div></div>
-			<div class="block photoModule-photo s1 med_s12 js-lazy" data-original="<?php echo $photo22; ?>"><div class="loader"></div></div>
+			<div class="block photoModule-photo s1 sm_s12 js-lazy" data-original="<?php echo $photo12; ?>"><div class="loader"></div></div>
+			<div class="block photoModule-photo s1 sm_s12 js-lazy" data-original="<?php echo $photo22; ?>"><div class="loader"></div></div>
 		<?php } elseif ($layout == 'fourUp') { ?>
-			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14 js-lazy" data-original="<?php echo $photo14; ?>"><div class="loader"></div></div>
-			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14 js-lazy" data-original="<?php echo $photo24; ?>"><div class="loader"></div></div>
-			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14 js-lazy" data-original="<?php echo $photo34; ?>"><div class="loader"></div></div>
-			<div class="block photoModule-photo photoModule-fourUp s12 lg_s14 js-lazy" data-original="<?php echo $photo44; ?>"><div class="loader"></div></div>
+			<div class="block photoModule-photo photoModule-fourUp s12 med_s14 js-lazy" data-original="<?php echo $photo14; ?>"><div class="loader"></div></div>
+			<div class="block photoModule-photo photoModule-fourUp s12 med_s14 js-lazy" data-original="<?php echo $photo24; ?>"><div class="loader"></div></div>
+			<div class="block photoModule-photo photoModule-fourUp s12 med_s14 js-lazy" data-original="<?php echo $photo34; ?>"><div class="loader"></div></div>
+			<div class="block photoModule-photo photoModule-fourUp s12 med_s14 js-lazy" data-original="<?php echo $photo44; ?>"><div class="loader"></div></div>
 		<?php } ?>
 	</div>
 </section>

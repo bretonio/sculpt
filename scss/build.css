@@ -2215,7 +2215,24 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   background-repeat: no-repeat;
   padding-top: 25%; }
   .photoModule--large .photoModule-photo {
-    padding-top: 50%; }
+    padding-top: 50%;
+    /**
+     * This selects only those .photoModule--large styled
+     * grids that contain *exactly* 2 items.
+     */ }
+    @media (max-width: 550px) {
+      .photoModule--large .photoModule-photo:first-child:nth-last-child(2),
+      .photoModule--large .photoModule-photo:first-child:nth-last-child(2) ~ .photoModule-photo {
+        padding-top: 100%; } }
+  .photoModule--small .photoModule-photo {
+    /**
+     * This selects only those .photoModule--large styled
+     * grids that contain *exactly* 2 items.
+     */ }
+    @media (max-width: 550px) {
+      .photoModule--small .photoModule-photo:first-child:nth-last-child(2),
+      .photoModule--small .photoModule-photo:first-child:nth-last-child(2) ~ .photoModule-photo {
+        padding-top: 50%; } }
   .photoModule--full .photoModule-photo {
     height: 100vh;
     padding-top: 60%; }
