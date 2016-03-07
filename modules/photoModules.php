@@ -28,7 +28,7 @@
 	} else if ($layout == 'single_full') {
 		$size = 'photoModule--full';
 	} else if ($layout == 'single_small' || $layout == 'twoUp_small') {
-		$size = 'h-photoModule--small';
+		$size = 'photoModule--small';
 	} else if ($layout == 'fourUp') {
 		$size = '';
 	}

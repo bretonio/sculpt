@@ -6,12 +6,6 @@
 	background-repeat: no-repeat;
 	padding-top: 25%;
 
-	.h-photoModule--small & {
-		@media screen and (max-width: $med) {
-			padding-top: 50%;
-		}
-	}
-
 	.photoModule--large & {
 		padding-top: 50%;
 	}
