@@ -1687,6 +1687,7 @@ button, .button {
     background-color: #ffa26e;
     color: #FFFFFF;
     height: 100%;
+    font-family: MuseoSans-900;
     font-weight: 900;
     float: left;
     line-height: 4.5rem !important;
@@ -2353,6 +2354,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       color: #ff9254; }
     .textModule.colorScheme--orange a {
       color: #FFFFFF;
+      font-family: MuseoSans-900;
       font-weight: 900;
       transition: color .1s; }
       .textModule.colorScheme--orange a:hover {
@@ -2369,6 +2371,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       color: white; }
     .textModule.colorScheme--dark a {
       color: #FFFFFF;
+      font-family: MuseoSans-900;
       font-weight: 900;
       transition: color .1s; }
       .textModule.colorScheme--dark a:hover {
@@ -2425,6 +2428,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     opacity: .8;
     text-align: center; }
   .textFeature .textFeature-byline a {
+    font-family: MuseoSans-900;
     font-weight: 900;
     opacity: .8; }
   .textFeature.colorScheme--light {
@@ -2459,6 +2463,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     margin-bottom: 1.8rem; }
   .rte a {
     color: #ff9254;
+    font-family: MuseoSans-900;
     font-weight: 900; }
     .rte a:hover {
       color: #ffa26e; }
@@ -2682,6 +2687,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   position: relative;
   background-color: #ff9254;
   color: #FFFFFF;
+  font-family: MuseoSans-900;
   font-weight: 900;
   font-size: 1.3rem;
   float: left;
@@ -2782,6 +2788,7 @@ div.mce_inline_error {
         max-width: 75%; } }
     .endModule .endModule-content a {
       color: #ff9254;
+      font-family: MuseoSans-900;
       font-weight: 900;
       transition: color .1s; }
   .endModule .endModule-cta {
@@ -2862,6 +2869,7 @@ div.mce_inline_error {
   .featPost-inner:hover .featPost-overlay {
     opacity: 0; }
   .featPost-inner h4 {
+    font-family: MuseoSans-100;
     font-weight: 100; }
   .featPost-inner .featPost-title {
     display: inline-block;
@@ -3181,6 +3189,7 @@ div.mce_inline_error {
     font-weight: 100;
     line-height: 2rem;
     display: none;
+    font-family: MuseoSans-500;
     font-weight: 500;
     height: 40px;
     margin-right: 2rem;
@@ -3522,6 +3531,7 @@ div.mce_inline_error {
     font-weight: 100;
     line-height: 2rem;
     color: #55555d;
+    font-family: MuseoSans-900;
     font-weight: 900;
     height: 50px;
     line-height: 50px;
@@ -3699,6 +3709,7 @@ body {
   display: block;
   position: relative;
   color: #ff9254;
+  font-family: MuseoSans-900;
   font-weight: 900;
   margin-top: .6rem; }
 
@@ -3878,6 +3889,7 @@ body {
 
 .blog-date {
   color: rgba(90, 96, 106, 0.6);
+  font-family: MuseoSans-900;
   font-weight: 900;
   margin-bottom: 2rem;
   transition: opacity .6s ease-in-out; }
@@ -3994,6 +4006,7 @@ body {
   .postNav .allPosts a {
     background-color: #c8c8c8;
     color: #FFFFFF;
+    font-family: MuseoSans-900;
     font-weight: 900;
     text-align: center; }
   .postNav .icon-arrow {
