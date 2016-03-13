@@ -979,7 +979,7 @@
                             "name": "photoModule_layout",
                             "prefix": "",
                             "type": "select",
-                            "instructions": "How many photos do you want in this bitch?",
+                            "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
