@@ -98,7 +98,8 @@
 		background-color: #FFFFFF;
 		border: 0;
 		border-left: 3px solid transparent;
-		font-weight: 300;
+    font-family: museo-sans;
+		font-weight: 500;
 		margin: 1rem 0 0 0;
 		padding: 2rem;
 		transition: border .1s, color .1s;
@@ -123,6 +124,7 @@
 
 		background-color: $c1;
 		color: #FFFFFF;
+    font-family: museo-sans;
 		font-weight: 900;
 		margin: 0 2rem 2rem;
 		padding: 2rem;
