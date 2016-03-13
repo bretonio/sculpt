@@ -28,10 +28,6 @@
   <script>jQuery(function($){$('input, textarea').placeholder();});</script>
   <![endif]-->
 
-  <!--    Fonts from TypeKit-->
-  <script src="//use.typekit.net/hxi4ugl.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-
   <!-- messy JS snippets for third-party software and analytics INCLUDING Google Analytics -->
   <?php include_once('partials/head_scripts.php'); ?>
 

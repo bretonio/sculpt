@@ -1,7 +1,4 @@
 .photoModule {
-	.row {
-		// height: 100%;
-	}
 }
 .photoModule-photo {
 	background-size: cover;
@@ -9,15 +6,33 @@
 	background-repeat: no-repeat;
 	padding-top: 25%;
 
-	.h-photoModule--small & {
-		@media screen and (max-width: $med) {
-			padding-top: 50%;
-		}
-	}
-
 	.photoModule--large & {
 		padding-top: 50%;
+
+    /**
+     * This selects only those .photoModule--large styled
+     * grids that contain *exactly* 2 items.
+     */
+    &:first-child:nth-last-child(2),
+    &:first-child:nth-last-child(2) ~ .photoModule-photo {
+      @media (max-width: $sm){
+        padding-top: 100%;
+      }
+    }
 	}
+
+  .photoModule--small & {
+    /**
+     * This selects only those .photoModule--large styled
+     * grids that contain *exactly* 2 items.
+     */
+    &:first-child:nth-last-child(2),
+    &:first-child:nth-last-child(2) ~ .photoModule-photo {
+      @media (max-width: $sm){
+        padding-top: 50%;
+      }
+    }
+  }
 
 	.photoModule--full & {
 		height: 100vh;
