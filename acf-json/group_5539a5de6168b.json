@@ -826,7 +826,7 @@
                             "name": "photoModule_layout",
                             "prefix": "",
                             "type": "select",
-                            "instructions": "How many photos do you want in this bitch?",
+                            "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -898,7 +898,7 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ".jpg"
+                            "mime_types": ""
                         },
                         {
                             "key": "field_5539a5de76dec",
@@ -938,7 +938,7 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ".jpg"
+                            "mime_types": ""
                         },
                         {
                             "key": "field_5539a5de76dfd",
@@ -2702,7 +2702,7 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ".jpg"
+                            "mime_types": ""
                         },
                         {
                             "key": "field_554e735a59eaf",
@@ -2793,7 +2793,7 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ".jpg"
+                            "mime_types": ""
                         },
                         {
                             "key": "field_554e737859eb0",
@@ -2870,7 +2870,7 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ".jpg"
+                            "mime_types": ""
                         },
                         {
                             "key": "field_554e73a159eb4",
@@ -2933,7 +2933,7 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ".jpg"
+                            "mime_types": ""
                         }
                     ],
                     "min": "",

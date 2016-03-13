@@ -1,23 +1,85 @@
+@import url("//hello.myfonts.net/count/3080f4");
+// @font-face {
+//   font-family: 'museo-sans';
+//   src: url('./assets/fonts/3080F4_0_0.eot');
+//   src: url('./assets/fonts/3080F4_0_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_0_0.woff2') format('woff2'),url('./assets/fonts/3080F4_0_0.woff') format('woff'),url('./assets/fonts/3080F4_0_0.ttf') format('truetype');
+//   font-weight: 700;
+// }
+// @font-face {
+//   font-family: 'museo-sans';
+//   src: url('./assets/fonts/3080F4_1_0.eot');
+//   src: url('./assets/fonts/3080F4_1_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_1_0.woff2') format('woff2'),url('./assets/fonts/3080F4_1_0.woff') format('woff'),url('./assets/fonts/3080F4_1_0.ttf') format('truetype');
+//   font-weight: 300;
+// }
+@font-face {
+  font-family: 'museo-sans';
+  src: url('./assets/fonts/3080F4_2_0.eot');
+  src: url('./assets/fonts/3080F4_2_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_2_0.woff2') format('woff2'),url('./assets/fonts/3080F4_2_0.woff') format('woff'),url('./assets/fonts/3080F4_2_0.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'museo-sans';
+  src: url('./assets/fonts/3080F4_3_0.eot');
+  src: url('./assets/fonts/3080F4_3_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_3_0.woff2') format('woff2'),url('./assets/fonts/3080F4_3_0.woff') format('woff'),url('./assets/fonts/3080F4_3_0.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'museo-sans';
+  src: url('./assets/fonts/3080F4_4_0.eot');
+  src: url('./assets/fonts/3080F4_4_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_4_0.woff2') format('woff2'),url('./assets/fonts/3080F4_4_0.woff') format('woff'),url('./assets/fonts/3080F4_4_0.ttf') format('truetype');
+  font-weight: 100;
+}
+// @font-face {
+//   font-family: 'museo-sans';
+//   src: url('./assets/fonts/3080F4_5_0.eot');
+//   src: url('./assets/fonts/3080F4_5_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_5_0.woff2') format('woff2'),url('./assets/fonts/3080F4_5_0.woff') format('woff'),url('./assets/fonts/3080F4_5_0.ttf') format('truetype');
+//   font-weight: 700;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'museo-sans';
+//   src: url('./assets/fonts/3080F4_6_0.eot');
+//   src: url('./assets/fonts/3080F4_6_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_6_0.woff2') format('woff2'),url('./assets/fonts/3080F4_6_0.woff') format('woff'),url('./assets/fonts/3080F4_6_0.ttf') format('truetype');
+//   font-weight: 300;
+//   font-style: italic;
+// }
+@font-face {
+  font-family: 'museo-sans';
+  src: url('./assets/fonts/3080F4_7_0.eot');
+  src: url('./assets/fonts/3080F4_7_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_7_0.woff2') format('woff2'),url('./assets/fonts/3080F4_7_0.woff') format('woff'),url('./assets/fonts/3080F4_7_0.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'museo-sans';
+  src: url('./assets/fonts/3080F4_8_0.eot');
+  src: url('./assets/fonts/3080F4_8_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_8_0.woff2') format('woff2'),url('./assets/fonts/3080F4_8_0.woff') format('woff'),url('./assets/fonts/3080F4_8_0.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {font-family: 'museo-sans';
+  src: url('./assets/fonts/3080F4_9_0.eot');
+  src: url('./assets/fonts/3080F4_9_0.eot?#iefix') format('embedded-opentype'),url('./assets/fonts/3080F4_9_0.woff2') format('woff2'),url('./assets/fonts/3080F4_9_0.woff') format('woff'),url('./assets/fonts/3080F4_9_0.ttf') format('truetype');
+  font-weight: 900;
+}
+
 html, body {
     font-size: 62.5%; // Set to 10px
     color: $black;
 }
 
 // Default font stacks
-$font-one: "museo-sans", Helvetica, arial, sans-serif;
-$font-two: "museo-sans", Helvetica, arial, sans-serif;
+$font-one: museo-sans, Helvetica, arial, sans-serif;
 
 // Default font mixins
 .f1 {
     font-family: $font-one;
 }
-.f2 {
-    font-family: $font-two;
-}
 
 // Assign font stack
 @mixin h0 {
-    font-family: $font-one;
+    font-family: museo-sans;
     font-size: 3.8rem;
     font-weight: 900;
     line-height: 4rem;
@@ -35,7 +97,7 @@ $font-two: "museo-sans", Helvetica, arial, sans-serif;
     }
 }
 @mixin h1 {
-    font-family: $font-one;
+    font-family: museo-sans;
     font-size: 3.2rem;
     font-weight: 900;
     line-height: 4rem;
@@ -47,7 +109,7 @@ $font-two: "museo-sans", Helvetica, arial, sans-serif;
     }
 }
 @mixin h2 {
-    font-family: $font-one;
+    font-family: museo-sans;
     font-size: 2.5rem;
     font-weight: 100;
     line-height: 3.3rem;
@@ -59,7 +121,7 @@ $font-two: "museo-sans", Helvetica, arial, sans-serif;
     }
 }
 @mixin h3 {
-    font-family: $font-one;
+    font-family: museo-sans;
     font-size: 2rem;
     font-weight: 900;
     line-height: 3rem;
@@ -71,25 +133,25 @@ $font-two: "museo-sans", Helvetica, arial, sans-serif;
     }
 }
 @mixin h4 {
-    font-family: $font-one;
+    font-family: museo-sans;
     font-size: 1.8rem;
     font-weight: 900;
     line-height: 3rem;
 }
 @mixin h5 {
-    font-family: $font-one;
+    font-family: museo-sans;
     font-size: 1.5rem;
     font-weight: 100;
     line-height: 2rem;
 }
 @mixin h6 {
-    font-family: $font-one;
+    font-family: museo-sans;
     font-size: 1.2rem;
     font-weight: 900;
     line-height: 1.8rem;
 }
 @mixin p {
-    font-family: $font-one;
+    font-family: museo-sans;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 2.6rem;
@@ -165,6 +227,7 @@ i {
 }
 
 strong, b, .bold {
+    font-family: museo-sans;
     font-weight: 900;
 }
 

@@ -979,7 +979,7 @@
                             "name": "photoModule_layout",
                             "prefix": "",
                             "type": "select",
-                            "instructions": "How many photos do you want in this bitch?",
+                            "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1051,7 +1051,7 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ".jpg"
+                            "mime_types": ""
                         },
                         {
                             "key": "field_552f1731cf33a",
@@ -1091,7 +1091,7 @@
                             "max_width": "",
                             "max_height": "",
                             "max_size": "",
-                            "mime_types": ".jpg"
+                            "mime_types": ""
                         },
                         {
                             "key": "field_552f1731cf34e",
@@ -2131,5 +2131,6 @@
         "tags",
         "send-trackbacks"
     ],
-    "modified": 1433716253
+    "modified": 1433718511,
+    "local": "json"
 }

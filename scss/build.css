@@ -17,6 +17,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url("//hello.myfonts.net/count/3080f4");
 article,
 aside,
 details,
@@ -274,7 +275,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -495,46 +497,46 @@ input[type="password"],
   width: 100%; }
 
 .row.inline .s12 {
-  width: calc( 50% - 6rem/2 ); }
+  width: calc( 50% - 6rem/2); }
 
 .row.inline .s13 {
-  width: calc( 33.333333% - 6rem/2 ); }
+  width: calc( 33.333333% - 6rem/2); }
 
 .row.inline .s23 {
-  width: calc( 66.666666% - 6rem/2 ); }
+  width: calc( 66.666666% - 6rem/2); }
 
 .row.inline .s14 {
-  width: calc( 25% - 6rem/2 ); }
+  width: calc( 25% - 6rem/2); }
 
 .row.inline .s34 {
-  width: calc( 75% - 6rem/2 ); }
+  width: calc( 75% - 6rem/2); }
 
 .row.inline .s16 {
-  width: calc( 16.666666% - 6rem/2 ); }
+  width: calc( 16.666666% - 6rem/2); }
 
 .row.inline .s56 {
-  width: calc( 83.333333% - 6rem/2 ); }
+  width: calc( 83.333333% - 6rem/2); }
 
 .row.inline .p12 {
-  left: calc( 50% + 6rem/2 ); }
+  left: calc( 50% + 6rem/2); }
 
 .row.inline .p13 {
-  left: calc( 33.333333% + 6rem/2 ); }
+  left: calc( 33.333333% + 6rem/2); }
 
 .row.inline .p23 {
-  left: calc( 66.666666% + 6rem/2 ); }
+  left: calc( 66.666666% + 6rem/2); }
 
 .row.inline .p14 {
-  left: calc( 25% + 6rem/2 ); }
+  left: calc( 25% + 6rem/2); }
 
 .row.inline .p34 {
-  left: calc( 75% + 6rem/2 ); }
+  left: calc( 75% + 6rem/2); }
 
 .row.inline .p16 {
-  left: calc( 16.666666% + 6rem/2 ); }
+  left: calc( 16.666666% + 6rem/2); }
 
 .row.inline .p56 {
-  left: calc( 83.333333% + 6rem/2 ); }
+  left: calc( 83.333333% + 6rem/2); }
 
 .row.inline .p12,
 .row.inline .p13,
@@ -546,78 +548,78 @@ input[type="password"],
   min-height: 1px; }
 
 .row.inline .pl12 {
-  left: calc( -50% + 6rem/2 ); }
+  left: calc( -50% + 6rem/2); }
 
 .row.inline .pl13 {
-  left: calc( -33.333333% + 6rem/2 ); }
+  left: calc( -33.333333% + 6rem/2); }
 
 .row.inline .pl23 {
-  left: calc( -66.666666% + 6rem/2 ); }
+  left: calc( -66.666666% + 6rem/2); }
 
 .row.inline .pl14 {
-  left: calc( -25% + 6rem/2 ); }
+  left: calc( -25% + 6rem/2); }
 
 .row.inline .pl34 {
-  left: calc( -75% + 6rem/2 ); }
+  left: calc( -75% + 6rem/2); }
 
 .row.inline .pl16 {
-  left: calc( -16.666666% + 6rem/2 ); }
+  left: calc( -16.666666% + 6rem/2); }
 
 .row.inline .pl56 {
-  left: calc( -83.333333% + 6rem/2 ); }
+  left: calc( -83.333333% + 6rem/2); }
 
 .row.inline .sx12 {
-  margin-right: calc( 50% + 6rem/2 ); }
+  margin-right: calc( 50% + 6rem/2); }
 
 .row.inline .sx13 {
-  margin-right: calc( 33.333333% + 6rem/2 ); }
+  margin-right: calc( 33.333333% + 6rem/2); }
 
 .row.inline .sx23 {
-  margin-right: calc( 66.666666% + 6rem/2 ); }
+  margin-right: calc( 66.666666% + 6rem/2); }
 
 .row.inline .sx14 {
-  margin-right: calc( 25% + 6rem/2 ); }
+  margin-right: calc( 25% + 6rem/2); }
 
 .row.inline .sx34 {
-  margin-right: calc( 75% + 6rem/2 ); }
+  margin-right: calc( 75% + 6rem/2); }
 
 .row.inline .sx16 {
-  margin-right: calc( 16.666666% + 6rem/2 ); }
+  margin-right: calc( 16.666666% + 6rem/2); }
 
 .row.inline .sx56 {
-  margin-right: calc( 83.333333% + 6rem/2 ); }
+  margin-right: calc( 83.333333% + 6rem/2); }
 
 @media screen and (min-width: 399px) {
   .row.inline .xs_s1 {
     width: 100%; }
   .row.inline .xs_s12 {
-    width: calc( 50% - 6rem/2 ); }
+    width: calc( 50% - 6rem/2); }
   .row.inline .xs_s13 {
-    width: calc( 33.333333% - 6rem/2 ); }
+    width: calc( 33.333333% - 6rem/2); }
   .row.inline .xs_s23 {
-    width: calc( 66.666666% - 6rem/2 ); }
+    width: calc( 66.666666% - 6rem/2); }
   .row.inline .xs_s14 {
-    width: calc( 25% - 6rem/2 ); }
+    width: calc( 25% - 6rem/2); }
   .row.inline .xs_s34 {
-    width: calc( 75% - 6rem/2 ); }
+    width: calc( 75% - 6rem/2); }
   .row.inline .xs_s16 {
-    width: calc( 16.666666% - 6rem/2 ); }
+    width: calc( 16.666666% - 6rem/2); }
   .row.inline .xs_s56 {
-    width: calc( 83.333333% - 6rem/2 ); }
+    width: calc( 83.333333% - 6rem/2); }
   .row.inline .xs_p12 {
-    left: calc( 50% + 6rem/2 ); }
+    left: calc( 50% + 6rem/2); }
   .row.inline .xs_p13 {
-    left: calc( 33.333333% + 6rem/2 ); }
+    left: calc( 33.333333% + 6rem/2); }
   .row.inline .xs_p23 {
-    left: calc( 66.666666% + 6rem/2 ); }
+    left: calc( 66.666666% + 6rem/2); }
   .row.inline .xs_p14 {
-    left: calc( 25% + 6rem/2 ); }
+    left: calc( 25% + 6rem/2); }
   .row.inline .xs_p34 {
-    left: calc( 75% + 6rem/2 ); }
+    left: calc( 75% + 6rem/2); }
   .row.inline .xs_p16 {
-    left: calc( 16.666666% + 6rem/2 ); }
+    left: calc( 16.666666% + 6rem/2); }
   .row.inline .xs_p56 {
-    left: calc( 83.333333% + 6rem/2 ); }
+    left: calc( 83.333333% + 6rem/2); }
   .row.inline .xs_p12,
   .row.inline .xs_p13,
   .row.inline .xs_p23,
@@ -627,65 +629,65 @@ input[type="password"],
   .row.inline .xs_p56 {
     min-height: 1px; }
   .row.inline .xs_pl12 {
-    left: calc( -50% + 6rem/2 ); }
+    left: calc( -50% + 6rem/2); }
   .row.inline .xs_pl13 {
-    left: calc( -33.333333% + 6rem/2 ); }
+    left: calc( -33.333333% + 6rem/2); }
   .row.inline .xs_pl23 {
-    left: calc( -66.666666% + 6rem/2 ); }
+    left: calc( -66.666666% + 6rem/2); }
   .row.inline .xs_pl14 {
-    left: calc( -25% + 6rem/2 ); }
+    left: calc( -25% + 6rem/2); }
   .row.inline .xs_pl34 {
-    left: calc( -75% + 6rem/2 ); }
+    left: calc( -75% + 6rem/2); }
   .row.inline .xs_pl16 {
-    left: calc( -16.666666% + 6rem/2 ); }
+    left: calc( -16.666666% + 6rem/2); }
   .row.inline .xs_pl56 {
-    left: calc( -83.333333% + 6rem/2 ); }
+    left: calc( -83.333333% + 6rem/2); }
   .row.inline .xs_sx12 {
-    margin-right: calc( 50% + 6rem/2 ); }
+    margin-right: calc( 50% + 6rem/2); }
   .row.inline .xs_sx13 {
-    margin-right: calc( 33.333333% + 6rem/2 ); }
+    margin-right: calc( 33.333333% + 6rem/2); }
   .row.inline .xs_sx23 {
-    margin-right: calc( 66.666666% + 6rem/2 ); }
+    margin-right: calc( 66.666666% + 6rem/2); }
   .row.inline .xs_sx14 {
-    margin-right: calc( 25% + 6rem/2 ); }
+    margin-right: calc( 25% + 6rem/2); }
   .row.inline .xs_sx34 {
-    margin-right: calc( 75% + 6rem/2 ); }
+    margin-right: calc( 75% + 6rem/2); }
   .row.inline .xs_sx16 {
-    margin-right: calc( 16.666666% + 6rem/2 ); }
+    margin-right: calc( 16.666666% + 6rem/2); }
   .row.inline .xs_sx56 {
-    margin-right: calc( 83.333333% + 6rem/2 ); } }
+    margin-right: calc( 83.333333% + 6rem/2); } }
 
 @media screen and (min-width: 550px) {
   .row.inline .sm_s1 {
     width: 100%; }
   .row.inline .sm_s12 {
-    width: calc( 50% - 6rem/2 ); }
+    width: calc( 50% - 6rem/2); }
   .row.inline .sm_s13 {
-    width: calc( 33.333333% - 6rem/2 ); }
+    width: calc( 33.333333% - 6rem/2); }
   .row.inline .sm_s23 {
-    width: calc( 66.666666% - 6rem/2 ); }
+    width: calc( 66.666666% - 6rem/2); }
   .row.inline .sm_s14 {
-    width: calc( 25% - 6rem/2 ); }
+    width: calc( 25% - 6rem/2); }
   .row.inline .sm_s34 {
-    width: calc( 75% - 6rem/2 ); }
+    width: calc( 75% - 6rem/2); }
   .row.inline .sm_s16 {
-    width: calc( 16.666666% - 6rem/2 ); }
+    width: calc( 16.666666% - 6rem/2); }
   .row.inline .sm_s56 {
-    width: calc( 83.333333% - 6rem/2 ); }
+    width: calc( 83.333333% - 6rem/2); }
   .row.inline .sm_p12 {
-    left: calc( 50% + 6rem/2 ); }
+    left: calc( 50% + 6rem/2); }
   .row.inline .sm_p13 {
-    left: calc( 33.333333% + 6rem/2 ); }
+    left: calc( 33.333333% + 6rem/2); }
   .row.inline .sm_p23 {
-    left: calc( 66.666666% + 6rem/2 ); }
+    left: calc( 66.666666% + 6rem/2); }
   .row.inline .sm_p14 {
-    left: calc( 25% + 6rem/2 ); }
+    left: calc( 25% + 6rem/2); }
   .row.inline .sm_p34 {
-    left: calc( 75% + 6rem/2 ); }
+    left: calc( 75% + 6rem/2); }
   .row.inline .sm_p16 {
-    left: calc( 16.666666% + 6rem/2 ); }
+    left: calc( 16.666666% + 6rem/2); }
   .row.inline .sm_p56 {
-    left: calc( 83.333333% + 6rem/2 ); }
+    left: calc( 83.333333% + 6rem/2); }
   .row.inline .sm_p12,
   .row.inline .sm_p13,
   .row.inline .sm_p23,
@@ -695,65 +697,65 @@ input[type="password"],
   .row.inline .sm_p56 {
     min-height: 1px; }
   .row.inline .sm_pl12 {
-    left: calc( -50% + 6rem/2 ); }
+    left: calc( -50% + 6rem/2); }
   .row.inline .sm_pl13 {
-    left: calc( -33.333333% + 6rem/2 ); }
+    left: calc( -33.333333% + 6rem/2); }
   .row.inline .sm_pl23 {
-    left: calc( -66.666666% + 6rem/2 ); }
+    left: calc( -66.666666% + 6rem/2); }
   .row.inline .sm_pl14 {
-    left: calc( -25% + 6rem/2 ); }
+    left: calc( -25% + 6rem/2); }
   .row.inline .sm_pl34 {
-    left: calc( -75% + 6rem/2 ); }
+    left: calc( -75% + 6rem/2); }
   .row.inline .sm_pl16 {
-    left: calc( -16.666666% + 6rem/2 ); }
+    left: calc( -16.666666% + 6rem/2); }
   .row.inline .sm_pl56 {
-    left: calc( -83.333333% + 6rem/2 ); }
+    left: calc( -83.333333% + 6rem/2); }
   .row.inline .sm_sx12 {
-    margin-right: calc( 50% + 6rem/2 ); }
+    margin-right: calc( 50% + 6rem/2); }
   .row.inline .sm_sx13 {
-    margin-right: calc( 33.333333% + 6rem/2 ); }
+    margin-right: calc( 33.333333% + 6rem/2); }
   .row.inline .sm_sx23 {
-    margin-right: calc( 66.666666% + 6rem/2 ); }
+    margin-right: calc( 66.666666% + 6rem/2); }
   .row.inline .sm_sx14 {
-    margin-right: calc( 25% + 6rem/2 ); }
+    margin-right: calc( 25% + 6rem/2); }
   .row.inline .sm_sx34 {
-    margin-right: calc( 75% + 6rem/2 ); }
+    margin-right: calc( 75% + 6rem/2); }
   .row.inline .sm_sx16 {
-    margin-right: calc( 16.666666% + 6rem/2 ); }
+    margin-right: calc( 16.666666% + 6rem/2); }
   .row.inline .sm_sx56 {
-    margin-right: calc( 83.333333% + 6rem/2 ); } }
+    margin-right: calc( 83.333333% + 6rem/2); } }
 
 @media screen and (min-width: 768px) {
   .row.inline .med_s1 {
     width: 100%; }
   .row.inline .med_s12 {
-    width: calc( 50% - 6rem/2 ); }
+    width: calc( 50% - 6rem/2); }
   .row.inline .med_s13 {
-    width: calc( 33.333333% - 6rem/2 ); }
+    width: calc( 33.333333% - 6rem/2); }
   .row.inline .med_s23 {
-    width: calc( 66.666666% - 6rem/2 ); }
+    width: calc( 66.666666% - 6rem/2); }
   .row.inline .med_s14 {
-    width: calc( 25% - 6rem/2 ); }
+    width: calc( 25% - 6rem/2); }
   .row.inline .med_s34 {
-    width: calc( 75% - 6rem/2 ); }
+    width: calc( 75% - 6rem/2); }
   .row.inline .med_s16 {
-    width: calc( 16.666666% - 6rem/2 ); }
+    width: calc( 16.666666% - 6rem/2); }
   .row.inline .med_s56 {
-    width: calc( 83.333333% - 6rem/2 ); }
+    width: calc( 83.333333% - 6rem/2); }
   .row.inline .med_p12 {
-    left: calc( 50% + 6rem/2 ); }
+    left: calc( 50% + 6rem/2); }
   .row.inline .med_p13 {
-    left: calc( 33.333333% + 6rem/2 ); }
+    left: calc( 33.333333% + 6rem/2); }
   .row.inline .med_p23 {
-    left: calc( 66.666666% + 6rem/2 ); }
+    left: calc( 66.666666% + 6rem/2); }
   .row.inline .med_p14 {
-    left: calc( 25% + 6rem/2 ); }
+    left: calc( 25% + 6rem/2); }
   .row.inline .med_p34 {
-    left: calc( 75% + 6rem/2 ); }
+    left: calc( 75% + 6rem/2); }
   .row.inline .med_p16 {
-    left: calc( 16.666666% + 6rem/2 ); }
+    left: calc( 16.666666% + 6rem/2); }
   .row.inline .med_p56 {
-    left: calc( 83.333333% + 6rem/2 ); }
+    left: calc( 83.333333% + 6rem/2); }
   .row.inline .med_p12,
   .row.inline .med_p13,
   .row.inline .med_p23,
@@ -763,65 +765,65 @@ input[type="password"],
   .row.inline .med_p56 {
     min-height: 1px; }
   .row.inline .med_pl12 {
-    left: calc( -50% + 6rem/2 ); }
+    left: calc( -50% + 6rem/2); }
   .row.inline .med_pl13 {
-    left: calc( -33.333333% + 6rem/2 ); }
+    left: calc( -33.333333% + 6rem/2); }
   .row.inline .med_pl23 {
-    left: calc( -66.666666% + 6rem/2 ); }
+    left: calc( -66.666666% + 6rem/2); }
   .row.inline .med_pl14 {
-    left: calc( -25% + 6rem/2 ); }
+    left: calc( -25% + 6rem/2); }
   .row.inline .med_pl34 {
-    left: calc( -75% + 6rem/2 ); }
+    left: calc( -75% + 6rem/2); }
   .row.inline .med_pl16 {
-    left: calc( -16.666666% + 6rem/2 ); }
+    left: calc( -16.666666% + 6rem/2); }
   .row.inline .med_pl56 {
-    left: calc( -83.333333% + 6rem/2 ); }
+    left: calc( -83.333333% + 6rem/2); }
   .row.inline .med_sx12 {
-    margin-right: calc( 50% + 6rem/2 ); }
+    margin-right: calc( 50% + 6rem/2); }
   .row.inline .med_sx13 {
-    margin-right: calc( 33.333333% + 6rem/2 ); }
+    margin-right: calc( 33.333333% + 6rem/2); }
   .row.inline .med_sx23 {
-    margin-right: calc( 66.666666% + 6rem/2 ); }
+    margin-right: calc( 66.666666% + 6rem/2); }
   .row.inline .med_sx14 {
-    margin-right: calc( 25% + 6rem/2 ); }
+    margin-right: calc( 25% + 6rem/2); }
   .row.inline .med_sx34 {
-    margin-right: calc( 75% + 6rem/2 ); }
+    margin-right: calc( 75% + 6rem/2); }
   .row.inline .med_sx16 {
-    margin-right: calc( 16.666666% + 6rem/2 ); }
+    margin-right: calc( 16.666666% + 6rem/2); }
   .row.inline .med_sx56 {
-    margin-right: calc( 83.333333% + 6rem/2 ); } }
+    margin-right: calc( 83.333333% + 6rem/2); } }
 
 @media screen and (min-width: 1024px) {
   .row.inline .lg_s1 {
     width: 100%; }
   .row.inline .lg_s12 {
-    width: calc( 50% - 6rem/2 ); }
+    width: calc( 50% - 6rem/2); }
   .row.inline .lg_s13 {
-    width: calc( 33.333333% - 6rem/2 ); }
+    width: calc( 33.333333% - 6rem/2); }
   .row.inline .lg_s23 {
-    width: calc( 66.666666% - 6rem/2 ); }
+    width: calc( 66.666666% - 6rem/2); }
   .row.inline .lg_s14 {
-    width: calc( 25% - 6rem/2 ); }
+    width: calc( 25% - 6rem/2); }
   .row.inline .lg_s34 {
-    width: calc( 75% - 6rem/2 ); }
+    width: calc( 75% - 6rem/2); }
   .row.inline .lg_s16 {
-    width: calc( 16.666666% - 6rem/2 ); }
+    width: calc( 16.666666% - 6rem/2); }
   .row.inline .lg_s56 {
-    width: calc( 83.333333% - 6rem/2 ); }
+    width: calc( 83.333333% - 6rem/2); }
   .row.inline .lg_p12 {
-    left: calc( 50% + 6rem/2 ); }
+    left: calc( 50% + 6rem/2); }
   .row.inline .lg_p13 {
-    left: calc( 33.333333% + 6rem/2 ); }
+    left: calc( 33.333333% + 6rem/2); }
   .row.inline .lg_p23 {
-    left: calc( 66.666666% + 6rem/2 ); }
+    left: calc( 66.666666% + 6rem/2); }
   .row.inline .lg_p14 {
-    left: calc( 25% + 6rem/2 ); }
+    left: calc( 25% + 6rem/2); }
   .row.inline .lg_p34 {
-    left: calc( 75% + 6rem/2 ); }
+    left: calc( 75% + 6rem/2); }
   .row.inline .lg_p16 {
-    left: calc( 16.666666% + 6rem/2 ); }
+    left: calc( 16.666666% + 6rem/2); }
   .row.inline .lg_p56 {
-    left: calc( 83.333333% + 6rem/2 ); }
+    left: calc( 83.333333% + 6rem/2); }
   .row.inline .lg_p12,
   .row.inline .lg_p13,
   .row.inline .lg_p23,
@@ -831,65 +833,65 @@ input[type="password"],
   .row.inline .lg_p56 {
     min-height: 1px; }
   .row.inline .lg_pl12 {
-    left: calc( -50% + 6rem/2 ); }
+    left: calc( -50% + 6rem/2); }
   .row.inline .lg_pl13 {
-    left: calc( -33.333333% + 6rem/2 ); }
+    left: calc( -33.333333% + 6rem/2); }
   .row.inline .lg_pl23 {
-    left: calc( -66.666666% + 6rem/2 ); }
+    left: calc( -66.666666% + 6rem/2); }
   .row.inline .lg_pl14 {
-    left: calc( -25% + 6rem/2 ); }
+    left: calc( -25% + 6rem/2); }
   .row.inline .lg_pl34 {
-    left: calc( -75% + 6rem/2 ); }
+    left: calc( -75% + 6rem/2); }
   .row.inline .lg_pl16 {
-    left: calc( -16.666666% + 6rem/2 ); }
+    left: calc( -16.666666% + 6rem/2); }
   .row.inline .lg_pl56 {
-    left: calc( -83.333333% + 6rem/2 ); }
+    left: calc( -83.333333% + 6rem/2); }
   .row.inline .lg_sx12 {
-    margin-right: calc( 50% + 6rem/2 ); }
+    margin-right: calc( 50% + 6rem/2); }
   .row.inline .lg_sx13 {
-    margin-right: calc( 33.333333% + 6rem/2 ); }
+    margin-right: calc( 33.333333% + 6rem/2); }
   .row.inline .lg_sx23 {
-    margin-right: calc( 66.666666% + 6rem/2 ); }
+    margin-right: calc( 66.666666% + 6rem/2); }
   .row.inline .lg_sx14 {
-    margin-right: calc( 25% + 6rem/2 ); }
+    margin-right: calc( 25% + 6rem/2); }
   .row.inline .lg_sx34 {
-    margin-right: calc( 75% + 6rem/2 ); }
+    margin-right: calc( 75% + 6rem/2); }
   .row.inline .lg_sx16 {
-    margin-right: calc( 16.666666% + 6rem/2 ); }
+    margin-right: calc( 16.666666% + 6rem/2); }
   .row.inline .lg_sx56 {
-    margin-right: calc( 83.333333% + 6rem/2 ); } }
+    margin-right: calc( 83.333333% + 6rem/2); } }
 
 @media screen and (min-width: 1280px) {
   .row.inline .xl_s1 {
     width: 100%; }
   .row.inline .xl_s12 {
-    width: calc( 50% - 6rem/2 ); }
+    width: calc( 50% - 6rem/2); }
   .row.inline .xl_s13 {
-    width: calc( 33.333333% - 6rem/2 ); }
+    width: calc( 33.333333% - 6rem/2); }
   .row.inline .xl_s23 {
-    width: calc( 66.666666% - 6rem/2 ); }
+    width: calc( 66.666666% - 6rem/2); }
   .row.inline .xl_s14 {
-    width: calc( 25% - 6rem/2 ); }
+    width: calc( 25% - 6rem/2); }
   .row.inline .xl_s34 {
-    width: calc( 75% - 6rem/2 ); }
+    width: calc( 75% - 6rem/2); }
   .row.inline .xl_s16 {
-    width: calc( 16.666666% - 6rem/2 ); }
+    width: calc( 16.666666% - 6rem/2); }
   .row.inline .xl_s56 {
-    width: calc( 83.333333% - 6rem/2 ); }
+    width: calc( 83.333333% - 6rem/2); }
   .row.inline .xl_p12 {
-    left: calc( 50% + 6rem/2 ); }
+    left: calc( 50% + 6rem/2); }
   .row.inline .xl_p13 {
-    left: calc( 33.333333% + 6rem/2 ); }
+    left: calc( 33.333333% + 6rem/2); }
   .row.inline .xl_p23 {
-    left: calc( 66.666666% + 6rem/2 ); }
+    left: calc( 66.666666% + 6rem/2); }
   .row.inline .xl_p14 {
-    left: calc( 25% + 6rem/2 ); }
+    left: calc( 25% + 6rem/2); }
   .row.inline .xl_p34 {
-    left: calc( 75% + 6rem/2 ); }
+    left: calc( 75% + 6rem/2); }
   .row.inline .xl_p16 {
-    left: calc( 16.666666% + 6rem/2 ); }
+    left: calc( 16.666666% + 6rem/2); }
   .row.inline .xl_p56 {
-    left: calc( 83.333333% + 6rem/2 ); }
+    left: calc( 83.333333% + 6rem/2); }
   .row.inline .xl_p12,
   .row.inline .xl_p13,
   .row.inline .xl_p23,
@@ -899,65 +901,65 @@ input[type="password"],
   .row.inline .xl_p56 {
     min-height: 1px; }
   .row.inline .xl_pl12 {
-    left: calc( -50% + 6rem/2 ); }
+    left: calc( -50% + 6rem/2); }
   .row.inline .xl_pl13 {
-    left: calc( -33.333333% + 6rem/2 ); }
+    left: calc( -33.333333% + 6rem/2); }
   .row.inline .xl_pl23 {
-    left: calc( -66.666666% + 6rem/2 ); }
+    left: calc( -66.666666% + 6rem/2); }
   .row.inline .xl_pl14 {
-    left: calc( -25% + 6rem/2 ); }
+    left: calc( -25% + 6rem/2); }
   .row.inline .xl_pl34 {
-    left: calc( -75% + 6rem/2 ); }
+    left: calc( -75% + 6rem/2); }
   .row.inline .xl_pl16 {
-    left: calc( -16.666666% + 6rem/2 ); }
+    left: calc( -16.666666% + 6rem/2); }
   .row.inline .xl_pl56 {
-    left: calc( -83.333333% + 6rem/2 ); }
+    left: calc( -83.333333% + 6rem/2); }
   .row.inline .xl_sx12 {
-    margin-right: calc( 50% + 6rem/2 ); }
+    margin-right: calc( 50% + 6rem/2); }
   .row.inline .xl_sx13 {
-    margin-right: calc( 33.333333% + 6rem/2 ); }
+    margin-right: calc( 33.333333% + 6rem/2); }
   .row.inline .xl_sx23 {
-    margin-right: calc( 66.666666% + 6rem/2 ); }
+    margin-right: calc( 66.666666% + 6rem/2); }
   .row.inline .xl_sx14 {
-    margin-right: calc( 25% + 6rem/2 ); }
+    margin-right: calc( 25% + 6rem/2); }
   .row.inline .xl_sx34 {
-    margin-right: calc( 75% + 6rem/2 ); }
+    margin-right: calc( 75% + 6rem/2); }
   .row.inline .xl_sx16 {
-    margin-right: calc( 16.666666% + 6rem/2 ); }
+    margin-right: calc( 16.666666% + 6rem/2); }
   .row.inline .xl_sx56 {
-    margin-right: calc( 83.333333% + 6rem/2 ); } }
+    margin-right: calc( 83.333333% + 6rem/2); } }
 
 @media screen and (min-width: 1400px) {
   .row.inline .xxl_s1 {
     width: 100%; }
   .row.inline .xxl_s12 {
-    width: calc( 50% - 6rem/2 ); }
+    width: calc( 50% - 6rem/2); }
   .row.inline .xxl_s13 {
-    width: calc( 33.333333% - 6rem/2 ); }
+    width: calc( 33.333333% - 6rem/2); }
   .row.inline .xxl_s23 {
-    width: calc( 66.666666% - 6rem/2 ); }
+    width: calc( 66.666666% - 6rem/2); }
   .row.inline .xxl_s14 {
-    width: calc( 25% - 6rem/2 ); }
+    width: calc( 25% - 6rem/2); }
   .row.inline .xxl_s34 {
-    width: calc( 75% - 6rem/2 ); }
+    width: calc( 75% - 6rem/2); }
   .row.inline .xxl_s16 {
-    width: calc( 16.666666% - 6rem/2 ); }
+    width: calc( 16.666666% - 6rem/2); }
   .row.inline .xxl_s56 {
-    width: calc( 83.333333% - 6rem/2 ); }
+    width: calc( 83.333333% - 6rem/2); }
   .row.inline .xxl_p12 {
-    left: calc( 50% + 6rem/2 ); }
+    left: calc( 50% + 6rem/2); }
   .row.inline .xxl_p13 {
-    left: calc( 33.333333% + 6rem/2 ); }
+    left: calc( 33.333333% + 6rem/2); }
   .row.inline .xxl_p23 {
-    left: calc( 66.666666% + 6rem/2 ); }
+    left: calc( 66.666666% + 6rem/2); }
   .row.inline .xxl_p14 {
-    left: calc( 25% + 6rem/2 ); }
+    left: calc( 25% + 6rem/2); }
   .row.inline .xxl_p34 {
-    left: calc( 75% + 6rem/2 ); }
+    left: calc( 75% + 6rem/2); }
   .row.inline .xxl_p16 {
-    left: calc( 16.666666% + 6rem/2 ); }
+    left: calc( 16.666666% + 6rem/2); }
   .row.inline .xxl_p56 {
-    left: calc( 83.333333% + 6rem/2 ); }
+    left: calc( 83.333333% + 6rem/2); }
   .row.inline .xxl_p12,
   .row.inline .xxl_p13,
   .row.inline .xxl_p23,
@@ -967,33 +969,33 @@ input[type="password"],
   .row.inline .xxl_p56 {
     min-height: 1px; }
   .row.inline .xxl_pl12 {
-    left: calc( -50% + 6rem/2 ); }
+    left: calc( -50% + 6rem/2); }
   .row.inline .xxl_pl13 {
-    left: calc( -33.333333% + 6rem/2 ); }
+    left: calc( -33.333333% + 6rem/2); }
   .row.inline .xxl_pl23 {
-    left: calc( -66.666666% + 6rem/2 ); }
+    left: calc( -66.666666% + 6rem/2); }
   .row.inline .xxl_pl14 {
-    left: calc( -25% + 6rem/2 ); }
+    left: calc( -25% + 6rem/2); }
   .row.inline .xxl_pl34 {
-    left: calc( -75% + 6rem/2 ); }
+    left: calc( -75% + 6rem/2); }
   .row.inline .xxl_pl16 {
-    left: calc( -16.666666% + 6rem/2 ); }
+    left: calc( -16.666666% + 6rem/2); }
   .row.inline .xxl_pl56 {
-    left: calc( -83.333333% + 6rem/2 ); }
+    left: calc( -83.333333% + 6rem/2); }
   .row.inline .xxl_sx12 {
-    margin-right: calc( 50% + 6rem/2 ); }
+    margin-right: calc( 50% + 6rem/2); }
   .row.inline .xxl_sx13 {
-    margin-right: calc( 33.333333% + 6rem/2 ); }
+    margin-right: calc( 33.333333% + 6rem/2); }
   .row.inline .xxl_sx23 {
-    margin-right: calc( 66.666666% + 6rem/2 ); }
+    margin-right: calc( 66.666666% + 6rem/2); }
   .row.inline .xxl_sx14 {
-    margin-right: calc( 25% + 6rem/2 ); }
+    margin-right: calc( 25% + 6rem/2); }
   .row.inline .xxl_sx34 {
-    margin-right: calc( 75% + 6rem/2 ); }
+    margin-right: calc( 75% + 6rem/2); }
   .row.inline .xxl_sx16 {
-    margin-right: calc( 16.666666% + 6rem/2 ); }
+    margin-right: calc( 16.666666% + 6rem/2); }
   .row.inline .xxl_sx56 {
-    margin-right: calc( 83.333333% + 6rem/2 ); } }
+    margin-right: calc( 83.333333% + 6rem/2); } }
 
 /**
  * Float based grid layouts, by default.
@@ -1509,18 +1511,54 @@ input[type="password"],
   .xxl_sx56 {
     margin-right: 83.333333%; } }
 
+@font-face {
+  font-family: 'museo-sans';
+  src: url("./assets/fonts/3080F4_2_0.eot");
+  src: url("./assets/fonts/3080F4_2_0.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/3080F4_2_0.woff2") format("woff2"), url("./assets/fonts/3080F4_2_0.woff") format("woff"), url("./assets/fonts/3080F4_2_0.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'museo-sans';
+  src: url("./assets/fonts/3080F4_3_0.eot");
+  src: url("./assets/fonts/3080F4_3_0.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/3080F4_3_0.woff2") format("woff2"), url("./assets/fonts/3080F4_3_0.woff") format("woff"), url("./assets/fonts/3080F4_3_0.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'museo-sans';
+  src: url("./assets/fonts/3080F4_4_0.eot");
+  src: url("./assets/fonts/3080F4_4_0.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/3080F4_4_0.woff2") format("woff2"), url("./assets/fonts/3080F4_4_0.woff") format("woff"), url("./assets/fonts/3080F4_4_0.ttf") format("truetype");
+  font-weight: 100; }
+
+@font-face {
+  font-family: 'museo-sans';
+  src: url("./assets/fonts/3080F4_7_0.eot");
+  src: url("./assets/fonts/3080F4_7_0.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/3080F4_7_0.woff2") format("woff2"), url("./assets/fonts/3080F4_7_0.woff") format("woff"), url("./assets/fonts/3080F4_7_0.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'museo-sans';
+  src: url("./assets/fonts/3080F4_8_0.eot");
+  src: url("./assets/fonts/3080F4_8_0.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/3080F4_8_0.woff2") format("woff2"), url("./assets/fonts/3080F4_8_0.woff") format("woff"), url("./assets/fonts/3080F4_8_0.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'museo-sans';
+  src: url("./assets/fonts/3080F4_9_0.eot");
+  src: url("./assets/fonts/3080F4_9_0.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/3080F4_9_0.woff2") format("woff2"), url("./assets/fonts/3080F4_9_0.woff") format("woff"), url("./assets/fonts/3080F4_9_0.ttf") format("truetype");
+  font-weight: 900; }
+
 html, body {
   font-size: 62.5%;
   color: #171f26; }
 
 .f1 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif; }
-
-.f2 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif; }
+  font-family: museo-sans, Helvetica, arial, sans-serif; }
 
 .h0 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 3.8rem;
   font-weight: 900;
   line-height: 4rem;
@@ -1536,7 +1574,7 @@ html, body {
 
 h1,
 .h1 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 3.2rem;
   font-weight: 900;
   line-height: 4rem;
@@ -1549,7 +1587,7 @@ h1,
 
 h2,
 .h2 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 2.5rem;
   font-weight: 100;
   line-height: 3.3rem;
@@ -1562,7 +1600,7 @@ h2,
 
 h3,
 .h3 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 2rem;
   font-weight: 900;
   line-height: 3rem;
@@ -1575,7 +1613,7 @@ h3,
 
 h4,
 .h4 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 3rem;
@@ -1583,7 +1621,7 @@ h4,
 
 h5,
 .h5 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2rem;
@@ -1591,7 +1629,7 @@ h5,
 
 h6,
 .h6 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.2rem;
   font-weight: 900;
   line-height: 1.8rem;
@@ -1599,14 +1637,14 @@ h6,
 
 p,
 .p {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2.6rem;
   margin-bottom: .618rem; }
 
 .p0 {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2.6rem;
@@ -1618,6 +1656,7 @@ i {
     font-style: normal; }
 
 strong, b, .bold {
+  font-family: museo-sans;
   font-weight: 900; }
 
 .f-c1 {
@@ -1650,18 +1689,19 @@ button, .button {
   button .button-left, .button .button-left {
     display: block;
     position: relative;
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 2rem;
     font-weight: 900;
     line-height: 3rem;
     background-color: #ffa26e;
     color: #FFFFFF;
     height: 100%;
+    font-family: MuseoSans-900;
     font-weight: 900;
     float: left;
     line-height: 4.5rem !important;
-    padding: 0.3rem 1.5rem;
-    transition: 0.2s background, 0.2s color; }
+    padding: .3rem 1.5rem;
+    transition: .2s background, .2s color; }
     @media screen and (min-width: 550px) {
       button .button-left, .button .button-left {
         font-size: 2.2rem;
@@ -1677,7 +1717,7 @@ button, .button {
     line-height: 50px;
     text-align: center;
     width: 50px;
-    transition: 0.2s background, 0.2s color; }
+    transition: .2s background, .2s color; }
   button:hover .button-left, .button:hover .button-left {
     background-color: #ff9254; }
   button.button--dark .button-left, .button.button--dark .button-left {
@@ -1700,7 +1740,7 @@ button, .button {
 .button--alt {
   display: inline-block;
   position: relative;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2.6rem;
@@ -1710,7 +1750,7 @@ button, .button {
   height: 35px;
   line-height: 35px;
   padding: 0 1.2rem;
-  transition: background 0.2s, border 0.2s; }
+  transition: background .2s, border .2s; }
   .button--alt .button--alt-icon {
     font-size: 2rem;
     margin-right: .5rem;
@@ -1828,8 +1868,7 @@ a {
   margin: 0 auto;
   width: 100%;
   z-index: 1; }
-  .row::before,
-  .row::after {
+  .row::before, .row::after {
     content: " ";
     /* 1 */
     display: table;
@@ -1917,7 +1956,7 @@ a {
 .icon-plus {
   font-size: 1.3rem !important;
   transform: rotate(45deg);
-  transition: transform 0.3s; }
+  transition: transform .3s; }
   .icon-plus:before {
     content: "\e601"; }
 
@@ -2214,11 +2253,25 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 25%; }
-  @media screen and (max-width: 768px) {
-    .h-photoModule--small .photoModule-photo {
-      padding-top: 50%; } }
   .photoModule--large .photoModule-photo {
-    padding-top: 50%; }
+    padding-top: 50%;
+    /**
+     * This selects only those .photoModule--large styled
+     * grids that contain *exactly* 2 items.
+     */ }
+    @media (max-width: 550px) {
+      .photoModule--large .photoModule-photo:first-child:nth-last-child(2),
+      .photoModule--large .photoModule-photo:first-child:nth-last-child(2) ~ .photoModule-photo {
+        padding-top: 100%; } }
+  .photoModule--small .photoModule-photo {
+    /**
+     * This selects only those .photoModule--large styled
+     * grids that contain *exactly* 2 items.
+     */ }
+    @media (max-width: 550px) {
+      .photoModule--small .photoModule-photo:first-child:nth-last-child(2),
+      .photoModule--small .photoModule-photo:first-child:nth-last-child(2) ~ .photoModule-photo {
+        padding-top: 50%; } }
   .photoModule--full .photoModule-photo {
     height: 100vh;
     padding-top: 60%; }
@@ -2253,7 +2306,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   opacity: 0;
   overflow: hidden;
   text-align: center;
-  transition: opacity 0.3s; }
+  transition: opacity .3s; }
   .videoEmbed-inner::after {
     display: inline-block;
     position: relative;
@@ -2310,8 +2363,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       color: #ff9254; }
     .textModule.colorScheme--orange a {
       color: #FFFFFF;
+      font-family: museo-sans;
       font-weight: 900;
-      transition: color 0.1s; }
+      transition: color .1s; }
       .textModule.colorScheme--orange a:hover {
         color: rgba(255, 255, 255, 0.8); }
   .textModule.colorScheme--dark {
@@ -2326,8 +2380,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       color: white; }
     .textModule.colorScheme--dark a {
       color: #FFFFFF;
+      font-family: museo-sans;
       font-weight: 900;
-      transition: color 0.1s; }
+      transition: color .1s; }
       .textModule.colorScheme--dark a:hover {
         color: rgba(255, 255, 255, 0.8); }
 
@@ -2368,7 +2423,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     opacity: .8;
     text-align: center; }
   .textFeature .textFeature-body p {
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 2.5rem;
     font-weight: 100;
     line-height: 3.3rem;
@@ -2382,6 +2437,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     opacity: .8;
     text-align: center; }
   .textFeature .textFeature-byline a {
+    font-family: museo-sans;
     font-weight: 900;
     opacity: .8; }
   .textFeature.colorScheme--light {
@@ -2416,6 +2472,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     margin-bottom: 1.8rem; }
   .rte a {
     color: #ff9254;
+    font-family: museo-sans;
     font-weight: 900; }
     .rte a:hover {
       color: #ffa26e; }
@@ -2432,12 +2489,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     margin: 0 0 1.6rem;
     padding: 0 0 0 3rem; }
   .rte li {
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 2.6rem; }
   .rte pre {
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 2.6rem;
@@ -2462,14 +2519,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       height: auto !important;
       width: 100%; }
     .rte figure figcaption {
-      font-family: "museo-sans", Helvetica, arial, sans-serif;
+      font-family: museo-sans;
       font-size: 1.5rem;
       font-weight: 100;
       line-height: 2rem;
       border-bottom: 2px solid #f5f5f5;
       color: rgba(43, 46, 51, 0.6);
       max-width: 500px;
-      padding: 0.5rem 0 1rem; }
+      padding: .5rem 0 1rem; }
   .rte hr {
     display: block;
     position: relative;
@@ -2494,7 +2551,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     .rte.colorScheme--orange blockquote {
       border-left: 4px solid #FFFFFF; }
     .rte.colorScheme--orange pre {
-      font-family: "museo-sans", Helvetica, arial, sans-serif;
+      font-family: museo-sans;
       font-size: 1.8rem;
       font-weight: 300;
       line-height: 2.6rem;
@@ -2513,7 +2570,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     .rte.colorScheme--dark blockquote {
       border-left: 4px solid #FFFFFF; }
     .rte.colorScheme--dark pre {
-      font-family: "museo-sans", Helvetica, arial, sans-serif;
+      font-family: museo-sans;
       font-size: 1.8rem;
       font-weight: 300;
       line-height: 2.6rem;
@@ -2610,7 +2667,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .signUp-input {
   display: block;
   position: relative;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2.6rem;
@@ -2622,7 +2679,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   line-height: 60px;
   padding: 0 1.5rem;
   width: calc(100% - 60px);
-  transition: border 0.2s; }
+  transition: border .2s; }
   .signUp-input:focus {
     border-left: 3px solid #ff9254;
     outline: 0; }
@@ -2639,6 +2696,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   position: relative;
   background-color: #ff9254;
   color: #FFFFFF;
+  font-family: museo-sans;
   font-weight: 900;
   font-size: 1.3rem;
   float: left;
@@ -2657,7 +2715,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     .signUp-submit {
       height: 50px; } }
   .signUp--large .signUp-submit {
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 2rem;
     font-weight: 900;
     line-height: 3rem;
@@ -2691,7 +2749,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .signUp-response {
   display: inline-block;
   position: relative;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 2rem;
   font-weight: 900;
   line-height: 3rem;
@@ -2705,7 +2763,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       line-height: 3.3rem; } }
 
 #mce-error-response {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2.6rem; }
@@ -2718,7 +2776,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 div.mce_inline_error {
   display: block;
   position: absolute;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.2rem;
   font-weight: 900;
   line-height: 1.8rem;
@@ -2739,8 +2797,9 @@ div.mce_inline_error {
         max-width: 75%; } }
     .endModule .endModule-content a {
       color: #ff9254;
+      font-family: museo-sans;
       font-weight: 900;
-      transition: color 0.1s; }
+      transition: color .1s; }
   .endModule .endModule-cta {
     margin-top: 1rem; }
   .endModule .endModule-links-heading {
@@ -2819,6 +2878,7 @@ div.mce_inline_error {
   .featPost-inner:hover .featPost-overlay {
     opacity: 0; }
   .featPost-inner h4 {
+    font-family: museo-sans;
     font-weight: 100; }
   .featPost-inner .featPost-title {
     display: inline-block;
@@ -2834,7 +2894,7 @@ div.mce_inline_error {
   top: 0;
   background-color: #2b2e33;
   opacity: .9;
-  transition: opacity 0.6s ease-in-out;
+  transition: opacity .6s ease-in-out;
   transition-delay: 0s; }
   @media screen and (min-width: 768px) {
     .featPost-overlay {
@@ -2851,7 +2911,7 @@ div.mce_inline_error {
 .footLink-link {
   display: inline-block;
   position: relative;
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 2.6rem;
@@ -2902,7 +2962,7 @@ div.mce_inline_error {
       .contactForm .contactForm-s12 {
         padding: 2rem; } }
   .contactForm input {
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 2rem;
     font-weight: 900;
     line-height: 3rem;
@@ -2913,7 +2973,7 @@ div.mce_inline_error {
     height: 50px;
     outline: 0;
     padding: 1rem 2rem;
-    transition: border 0.1s, color 0.1s;
+    transition: border .1s, color .1s;
     width: 100%; }
     @media screen and (min-width: 550px) {
       .contactForm input {
@@ -2928,7 +2988,7 @@ div.mce_inline_error {
     height: 50px;
     line-height: 30px;
     margin: 2rem 0;
-    transition: background 0.1s;
+    transition: background .1s;
     text-transform: lowercase;
     width: auto; }
     .contactForm input[type="submit"]:hover {
@@ -2939,7 +2999,7 @@ div.mce_inline_error {
   .contactForm select {
     display: block;
     position: relative;
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 2rem;
     font-weight: 900;
     line-height: 3rem;
@@ -2950,7 +3010,7 @@ div.mce_inline_error {
     color: rgba(90, 96, 106, 0.6);
     height: 50px;
     padding: 0 2rem;
-    transition: border 0.1s, color 0.1s;
+    transition: border .1s, color .1s;
     width: 100%;
     -webkit-appearance: none; }
     @media screen and (min-width: 550px) {
@@ -2988,17 +3048,18 @@ div.mce_inline_error {
   .contactForm textarea {
     display: block;
     position: relative;
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 2rem;
     font-weight: 900;
     line-height: 3rem;
     background-color: #FFFFFF;
     border: 0;
     border-left: 3px solid transparent;
-    font-weight: 300;
+    font-family: museo-sans;
+    font-weight: 500;
     margin: 1rem 0 0 0;
     padding: 2rem;
-    transition: border 0.1s, color 0.1s;
+    transition: border .1s, color .1s;
     width: 100%; }
     @media screen and (min-width: 550px) {
       .contactForm textarea {
@@ -3016,19 +3077,20 @@ div.mce_inline_error {
   .contactForm .validation_error {
     display: block;
     position: relative;
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 1.8rem;
     font-weight: 900;
     line-height: 3rem;
     background-color: #ff9254;
     color: #FFFFFF;
+    font-family: museo-sans;
     font-weight: 900;
     margin: 0 2rem 2rem;
     padding: 2rem; }
   .contactForm .validation_message {
     display: block;
     position: absolute;
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 1.2rem;
     font-weight: 900;
     line-height: 1.8rem;
@@ -3079,7 +3141,7 @@ div.mce_inline_error {
   .popularPosts .post-title {
     display: inline-block;
     position: relative;
-    transition: color 0.1s;
+    transition: color .1s;
     width: auto; }
     .popularPosts .post-title:hover {
       color: #5a606a; }
@@ -3096,7 +3158,7 @@ div.mce_inline_error {
   transition: height 1s cubic-bezier(0.65, 0.12, 0.54, 0.76); }
   .comments-container .row {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; }
+    transition: opacity .3s ease-in-out; }
 
 .comments-button {
   margin: 4rem 0 3rem; }
@@ -3108,7 +3170,7 @@ div.mce_inline_error {
   padding: 2rem 2rem;
   right: 0;
   top: 0;
-  transition: padding 0.2s ease-out, background 0.2s ease-out;
+  transition: padding .2s ease-out, background .2s ease-out;
   width: 100%;
   z-index: 50; }
   @media screen and (min-width: 768px) {
@@ -3118,7 +3180,7 @@ div.mce_inline_error {
     .header.has-scrolled {
       background-color: #FFFFFF;
       padding: 1rem 1.5rem;
-      transition: padding 0.2s ease-out, background 0.2s ease-out; } }
+      transition: padding .2s ease-out, background .2s ease-out; } }
 
 .header-desktop-inner {
   display: block;
@@ -3133,11 +3195,12 @@ div.mce_inline_error {
   .header-desktop-inner > li {
     display: inline-block;
     position: relative;
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 1.5rem;
     font-weight: 100;
     line-height: 2rem;
     display: none;
+    font-family: museo-sans;
     font-weight: 500;
     height: 40px;
     margin-right: 2rem;
@@ -3158,7 +3221,7 @@ div.mce_inline_error {
         margin-right: 2rem; } }
     .header-desktop-inner > li.has-sub-menu {
       border-radius: 3px 3px 0 0;
-      transition: background 0.1s; }
+      transition: background .1s; }
       .header-desktop-inner > li.has-sub-menu:hover {
         background-color: #2b2e33;
         color: #FFFFFF !important; }
@@ -3180,14 +3243,14 @@ div.mce_inline_error {
       padding: 0;
       right: 0;
       top: 100%;
-      transition: opacity 0.1s, max-height 0.1s;
+      transition: opacity .1s, max-height .1s;
       width: 240px; }
       .header-desktop-inner > li .sub-menu > li {
         display: block;
         position: relative;
         color: #FFFFFF;
         width: 100%;
-        transition: background 0.1s; }
+        transition: background .1s; }
         .header-desktop-inner > li .sub-menu > li:hover {
           color: #FFFFFF;
           background: rgba(255, 255, 255, 0.1); }
@@ -3201,9 +3264,9 @@ div.mce_inline_error {
         opacity: 0 !important;
         right: 100%;
         top: 0;
-        transition: opacity 0.1s, max-width 0.1s; }
+        transition: opacity .1s, max-width .1s; }
         .header-desktop-inner > li .sub-menu .sub-menu > li {
-          transition: background 0.1s; }
+          transition: background .1s; }
           .header-desktop-inner > li .sub-menu .sub-menu > li:hover {
             background: rgba(255, 255, 255, 0.1); }
     .header-desktop-inner > li a {
@@ -3307,7 +3370,7 @@ div.mce_inline_error {
   top: 0;
   overflow-y: auto;
   transform: translateX(100%);
-  transition: transform 0.3s;
+  transition: transform .3s;
   transition-delay: 0s;
   width: 100%;
   z-index: 100; }
@@ -3337,7 +3400,7 @@ div.mce_inline_error {
     opacity: .3;
     padding-right: 2rem;
     text-align: right;
-    transition: opacity 0.1s;
+    transition: opacity .1s;
     width: 100%;
     z-index: 100; }
     .navContainer-scroll .menuClose:hover {
@@ -3350,7 +3413,7 @@ div.mce_inline_error {
   .mainNav li {
     display: block;
     position: relative;
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 3.2rem;
     font-weight: 900;
     line-height: 4rem;
@@ -3359,7 +3422,7 @@ div.mce_inline_error {
     margin: 1rem 0;
     opacity: .5;
     text-align: right;
-    transition: opacity 0.1s, border 0.1s;
+    transition: opacity .1s, border .1s;
     width: 100%; }
     @media screen and (min-width: 550px) {
       .mainNav li {
@@ -3370,7 +3433,7 @@ div.mce_inline_error {
     .mainNav li ul {
       margin: 0; }
       .mainNav li ul li {
-        font-family: "museo-sans", Helvetica, arial, sans-serif;
+        font-family: museo-sans;
         font-size: 2.5rem;
         font-weight: 100;
         line-height: 3.3rem;
@@ -3414,7 +3477,7 @@ div.mce_inline_error {
     vertical-align: middle; }
     .footer-location.row .footer-location-right a {
       color: #ff9254;
-      transition: color 0.1s; }
+      transition: color .1s; }
       .footer-location.row .footer-location-right a:hover {
         color: #ffa26e; }
     @media screen and (min-width: 550px) {
@@ -3450,7 +3513,7 @@ div.mce_inline_error {
     font-size: 3rem;
     margin: 0 2rem 0 0;
     opacity: .8;
-    transition: opacity 0.1s;
+    transition: opacity .1s;
     vertical-align: middle; }
     .footer-social-links .footer-social-link:hover {
       opacity: 1; }
@@ -3468,22 +3531,23 @@ div.mce_inline_error {
     display: none !important; }
   @media screen and (min-width: 768px) {
     .footer-nav {
-      padding: 1.2rem 2.5% 0.6rem; }
+      padding: 1.2rem 2.5% .6rem; }
       .footer-nav::after {
         display: inline-block !important; } }
   .footer-nav li {
     display: inline-block;
     position: relative;
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 1.5rem;
     font-weight: 100;
     line-height: 2rem;
     color: #55555d;
+    font-family: museo-sans;
     font-weight: 900;
     height: 50px;
     line-height: 50px;
     padding: 0 5%;
-    transition: color 0.1s;
+    transition: color .1s;
     text-transform: lowercase;
     width: 100%; }
     .footer-nav li:hover {
@@ -3556,7 +3620,7 @@ body {
   left: 100%;
   right: 0;
   top: 0;
-  transition: background 0.3s, opacity 0.3s;
+  transition: background .3s, opacity .3s;
   z-index: 100; }
   .nav--is-visible .bodyOverlay {
     background-color: rgba(23, 31, 38, 0.95);
@@ -3578,13 +3642,13 @@ body {
   .teamPage-social [class^="icon-"] {
     color: #ff9254;
     font-size: 2.5rem;
-    margin: 0.5rem 0.3rem; }
+    margin: .5rem .3rem; }
     .teamPage-social [class^="icon-"]:first-of-type {
       margin-left: 0rem; }
     @media screen and (min-width: 550px) {
       .teamPage-social [class^="icon-"] {
         font-size: 2rem;
-        margin: 0 0.3rem; }
+        margin: 0 .3rem; }
         .teamPage-social [class^="icon-"]:first-of-type {
           margin-left: 1.2rem; } }
 
@@ -3636,7 +3700,7 @@ body {
       padding: 3rem;
       position: absolute;
       transform: translateY(100%);
-      transition: transform 0.2s; } }
+      transition: transform .2s; } }
   .postGrid-block-caption .divider {
     display: block;
     position: relative;
@@ -3649,13 +3713,14 @@ body {
         display: none; } }
 
 .postGrid-block-tags {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2rem;
   display: block;
   position: relative;
   color: #ff9254;
+  font-family: museo-sans;
   font-weight: 900;
   margin-top: .6rem; }
 
@@ -3707,7 +3772,7 @@ body {
       padding: 3rem;
       position: absolute;
       transform: translateY(100%);
-      transition: transform 0.2s; } }
+      transition: transform .2s; } }
   .teamGrid-block-caption .divider {
     display: block;
     position: relative;
@@ -3720,7 +3785,7 @@ body {
         display: none; } }
 
 .teamGrid-position {
-  font-family: "museo-sans", Helvetica, arial, sans-serif;
+  font-family: museo-sans;
   font-size: 1.5rem;
   font-weight: 100;
   line-height: 2rem; }
@@ -3803,7 +3868,7 @@ body {
     right: 0;
     top: 0;
     opacity: 0;
-    transition: opacity 0.6s ease-in-out; }
+    transition: opacity .6s ease-in-out; }
   .blogListing .post-overlay {
     display: block;
     position: absolute;
@@ -3813,7 +3878,7 @@ body {
     right: 0;
     top: 0;
     opacity: 0;
-    transition: opacity 0.6s ease-in-out; }
+    transition: opacity .6s ease-in-out; }
 
 .blogPage {
   padding: 45% 0 3rem; }
@@ -3831,16 +3896,17 @@ body {
 .blog-title {
   color: #ff9254;
   margin-bottom: 2rem;
-  transition: color 0.6s ease-in-out; }
+  transition: color .6s ease-in-out; }
 
 .blog-date {
   color: rgba(90, 96, 106, 0.6);
+  font-family: museo-sans;
   font-weight: 900;
   margin-bottom: 2rem;
-  transition: opacity 0.6s ease-in-out; }
+  transition: opacity .6s ease-in-out; }
 
 .blog-lede {
-  transition: opacity 0.6s ease-in-out; }
+  transition: opacity .6s ease-in-out; }
 
 @media screen and (min-width: 768px) {
   .blogAuthor {
@@ -3918,7 +3984,7 @@ body {
   .blogAuthor-info [class^="icon-"] {
     color: #ff9254;
     margin-right: 1rem;
-    transition: color 0.1s; }
+    transition: color .1s; }
     .blogAuthor-info [class^="icon-"]:hover {
       color: #ffa26e; }
 
@@ -3928,7 +3994,7 @@ body {
 .postNav {
   background-color: #e1e1e1; }
   .postNav .prevPost, .postNav .nextPost, .postNav .allPosts {
-    font-family: "museo-sans", Helvetica, arial, sans-serif;
+    font-family: museo-sans;
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 2.6rem;
@@ -3939,7 +4005,7 @@ body {
       position: relative;
       background-color: rgba(43, 46, 51, 0);
       height: 100%;
-      transition: background 0.1s;
+      transition: background .1s;
       text-align: center;
       width: 100%; }
       .postNav .prevPost a:hover, .postNav .nextPost a:hover, .postNav .allPosts a:hover {
@@ -3951,6 +4017,7 @@ body {
   .postNav .allPosts a {
     background-color: #c8c8c8;
     color: #FFFFFF;
+    font-family: museo-sans;
     font-weight: 900;
     text-align: center; }
   .postNav .icon-arrow {
