@@ -2,12 +2,12 @@
 	overflow: hidden;
 
 	&:nth-of-type(odd) {
-		@media screen and (min-width: $med){
+		@media screen and (min-width: $sm){
 			background-color: $gray10;
 		}
 	}
 
-	@media screen and (min-width: $med){
+	@media screen and (min-width: $sm){
 		padding-top: 50%;
 	}
 	@media screen and (min-width: $xl){
@@ -24,10 +24,10 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding-top: 50%;
+	padding-top: 100%;
 	width: 100%;
 
-	@media screen and (min-width: $med){
+	@media screen and (min-width: $sm){
 		bottom: 0; left: 0; right: 0; top: 0;
 		position: absolute;
 		padding-top: 0;
@@ -43,7 +43,7 @@
 		margin-bottom: 0;
 	}
 
-	@media screen and (min-width: $med){
+	@media screen and (min-width: $sm){
 		background-color: rgba(#FFFFFF, .9);
 		bottom: 0; left: 0; right: 0;
 		margin-bottom: 0;
@@ -61,7 +61,7 @@
 		margin-top: 1rem;
 		width: 100px;
 
-		@media screen and (min-width: $med){
+		@media screen and (min-width: $sm){
 			display: none;
 		}
 	}
