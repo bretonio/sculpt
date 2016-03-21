@@ -7,7 +7,7 @@
   $pos = get_field('sculptron_subtitle', false); 
 ?>
 
-<div class="teamGrid-block block s1 med_s12 xl_s13">
+<div class="teamGrid-block block s1 sm_s12 xl_s13">
   <a href="<?php the_permalink(); ?>" class="teamGrid-block-img" style="background-image: url('<?php echo $img['sizes']['src']; ?>');"></a>
   <div class="teamGrid-block-caption">
     <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
