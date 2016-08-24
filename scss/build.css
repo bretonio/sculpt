@@ -3324,12 +3324,13 @@ div.mce_inline_error {
   float: left;
   height: 65px;
   width: 65px; }
-  .mainLogo h1 {
+  .mainLogo span {
+    display: block;
     font-size: 0;
     line-height: 0;
     margin-bottom: 0;
     height: 43px; }
-    .mainLogo h1 a {
+    .mainLogo span a {
       max-height: 43px; }
   .mainLogo .sculptLogo {
     display: none; }
@@ -3583,7 +3584,7 @@ div.mce_inline_error {
 .footContact {
   background-color: #ff9254;
   text-align: left; }
-  .footContact h2 {
+  .footContact .footContact-title {
     color: white;
     display: inline-block;
     margin: 1rem 2rem 1rem 0;
