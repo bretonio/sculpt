@@ -32,9 +32,9 @@ Template Name: Blog Template
         <div class="post-overlay"></div>
         <div class="row row--med">
           <div class="block s1">
-              <h5 class="blog-date">Posted <?php echo $date.' by '.$author; ?></h5>
-              <a href="<?php the_permalink(); ?>"><h1 class="h0 blog-title"><?php the_title(); ?></h1></a>
-              <h2 class="blog-lede"><?php echo strip_tags($excerpt); ?></h2>
+              <p class="blog-date h5">Posted <?php echo $date.' by '.$author; ?></p>
+              <a href="<?php the_permalink(); ?>"><h2 class="h0 blog-title"><?php the_title(); ?></h2></a>
+              <h3 class="h2 blog-lede"><?php echo strip_tags($excerpt); ?></h3>
           </div>
         </div>
       </div>
