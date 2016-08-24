@@ -30,7 +30,6 @@
 			</a>
 		<?php } ?>
 
-
 		<?php if ($extra[0] == 'links' || $extra[1] == 'links') { ?>
 			<?php if ( have_rows('endModule_links') ): ?>
 
@@ -47,7 +46,6 @@
 
 			<?php endwhile; endif; ?>
 		<?php } ?>
-
 
 	</div>
 </section>

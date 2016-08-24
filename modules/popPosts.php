@@ -1,7 +1,7 @@
 <!-- popular posts module -->
 <section class="popularPosts container pad--sm">
   <div class="row row--lg inline">
-    <h3 class="popularPosts-title">new on the blog</h3>
+    <h2 class="popularPosts-title h3">new on the blog</h2>
   </div>
   <div class="row row--lg inline">
 

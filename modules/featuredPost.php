@@ -33,8 +33,8 @@
 			<div class="featPost-inner">
 				<div class="featPost-overlay"></div>
 				<div class="row row--lg">
-					<h4><?php echo $title ?></h4>
-					<h1 class="featPost-title"><?php the_title(); ?></h1>
+					<p class="h4"><?php echo $title ?></p>
+					<h2 class="featPost-title h1"><?php the_title(); ?></h2>
 				</div>
 			</div>
 		</a>

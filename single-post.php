@@ -30,7 +30,7 @@ Template Name: Project Template
   <div class="row row--med pad--lg">
 
       <div class="block s1">
-          <h5 class="blog-date">Posted <?php echo $date.' by '.$author; ?></h5>
+          <p class="blog-date h5">Posted <?php echo $date.' by '.$author; ?></p>
           <h1 class="h0 blog-title"><?php the_title(); ?></h1>
           <h2 class="blog-lede"><?php echo $lede; ?></h2>
       </div>
@@ -100,10 +100,10 @@ while ( have_posts() ): the_post();
         <?php } else { ?>
           <a class="author-name" href="<?php echo $sculptron_url; ?>"><h3><?php echo $sculptron_name; ?></h3></a>
         <?php } ?>
-        <h5 class="author-desc"><?php echo $sculptron_bio; ?><br/><br/>
+        <p class="author-desc h5"><?php echo $sculptron_bio; ?><br/><br/>
 
         <?php if (have_rows('sculptron_links', $sculptron_id)): ?>
-          <strong>Follow <?php the_author_meta('first_name'); ?>:</strong></h5>
+          <strong>Follow <?php the_author_meta('first_name'); ?>:</strong></p>
           <p>
 
             <?php while (have_rows('sculptron_links', $sculptron_id)): the_row(); ?>
@@ -140,7 +140,7 @@ while ( have_posts() ): the_post();
 <!-- popular posts module -->
 <section class="popularPosts container pad--sm">
   <div class="row row--lg inline">
-    <h3 class="popularPosts-title">new on the blog</h3>
+    <h2 class="popularPosts-title h3">new on the blog</h2>
   </div>
   <div class="row row--lg inline">
 
