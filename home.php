@@ -6,12 +6,11 @@ Template Name: Blog Template
   get_header();
 ?>
 
+<h1 style="display: none">Blog</h1>
+
 <section class="blogListing blogPage container">
 
   <?php 
-    // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-    // $posts = new WP_Query( array( 'posts_per_page' => 5, 'post_type' => 'post' ));
-
     while ( have_posts() ): the_post();
 
       $author = get_the_author_meta( 'display_name' );
