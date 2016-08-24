@@ -43,13 +43,11 @@ add_action( 'wp_enqueue_scripts', function() {
 
    wp_enqueue_style( 'main',
     get_template_directory_uri().'/style.css',
-    array(),
     $theme_ver
   );
 
   wp_enqueue_script( 'main',
     get_template_directory_uri().'/js/scripts.js',
-    array( 'jquery' ),
     $theme_ver,
     true
   );

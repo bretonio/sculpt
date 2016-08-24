@@ -2,25 +2,25 @@
 	$layout = get_sub_field('photoModule_layout');
 
 	$photo = get_sub_field('photoModule_img_1');
-	$photo = $photo ? $photo['sizes']['high_res'] : '';
+	$photo = $photo ? $photo['sizes']['src'] : '';
 
 	$photo12 = get_sub_field('photoModule_img_12');
-	$photo12 = $photo12 ? $photo12['sizes']['two_up'] : '';
+	$photo12 = $photo12 ? $photo12['sizes']['src'] : '';
 
 	$photo22 = get_sub_field('photoModule_img_22');
-	$photo22 = $photo22 ? $photo22['sizes']['two_up'] : '';
+	$photo22 = $photo22 ? $photo22['sizes']['src'] : '';
 
 	$photo14 = get_sub_field('photoModule_img_14');
-	$photo14 = $photo14 ? $photo14['sizes']['four_up'] : '';
+	$photo14 = $photo14 ? $photo14['sizes']['src'] : '';
 
 	$photo24 = get_sub_field('photoModule_img_24');
-	$photo24 = $photo24 ? $photo24['sizes']['four_up'] : '';
+	$photo24 = $photo24 ? $photo24['sizes']['src'] : '';
 
 	$photo34 = get_sub_field('photoModule_img_34');
-	$photo34 = $photo34 ? $photo34['sizes']['four_up'] : '';
+	$photo34 = $photo34 ? $photo34['sizes']['src'] : '';
 
 	$photo44 = get_sub_field('photoModule_img_44');
-	$photo44 = $photo44 ? $photo44['sizes']['four_up'] : '';
+	$photo44 = $photo44 ? $photo44['sizes']['src'] : '';
 
 
 	if ($layout == 'single_large' || $layout == 'twoUp_large') {

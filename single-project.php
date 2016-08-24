@@ -19,7 +19,7 @@ Template Name: Project Template
       <div class="hero-content block s1 xl_s34">
           <h1 class="hero-title"><?php echo $title; ?></h1>
           <span class="project-tags">
-            <h4>
+            <p class="h4">
               <?php 
                 $cats = array();
                 $i = 1;
@@ -34,7 +34,7 @@ Template Name: Project Template
 
                 echo $print;
               ?>
-            </h4>
+            </p>
           </span>
           <p class="hero-body"><?php echo $lede; ?></p>
       </div>

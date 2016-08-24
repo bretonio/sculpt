@@ -1,6 +1,6 @@
 	<section class="footContact container pad--sm">
 		<div class="row row--lg">
-			<h2 class="footContact-title"><?php the_field('footer_secondary_copy', 'option'); ?></h2>
+			<p class="footContact-title h2"><?php the_field('footer_secondary_copy', 'option'); ?></p>
 
 			<a href="<?php the_field('footer_secondary_url', 'option'); ?>" class="button button--dark footContact-cta">
 				<span class="button-left"><?php the_field('footer_secondary_cta', 'option'); ?></span>
