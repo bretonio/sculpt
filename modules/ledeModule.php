@@ -30,10 +30,10 @@
 		<div class="block s1">
 
 			<?php if ($title != '') { ?>
-				<h3 class="ledeModule-title"><?php echo $title; ?></h3>
+				<h2 class="ledeModule-title h3"><?php echo $title; ?></h3>
 			<?php } ?>
 
-			<h2 class="ledeModule-lede"><?php echo $lede; ?></h2>
+			<p class="ledeModule-lede h2"><?php echo $lede; ?></p>
 
 			<?php if ($layout == 'lede_body') { ?>
 				<div class="ledeModule-body">

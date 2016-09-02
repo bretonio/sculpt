@@ -93,10 +93,8 @@
       <nav class="header-desktop-inner<?php echo ' '.$menu_color; ?> row">
 
         <div class="mainLogo">
-          <h1>
+          <span>
             <a href="/">
-              Sculpt
-
               <?php if ($logo == 'sculptLogo--light') { ?>
                 <svg class="sculptLogo" viewBox="0 0 300 100">
                   <use xlink:href="#sculptLogo--light"></use>
@@ -136,7 +134,7 @@
                 </svg>
               <?php } ?>
             </a>
-          </h1>
+          </span>
         </div>
 
         <?php

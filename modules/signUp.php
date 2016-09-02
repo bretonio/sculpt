@@ -37,8 +37,8 @@
 <?php } elseif ($layout == 'signUp--large') { ?>
 	<section class="signUp<?php echo ' '.$layout; ?>  container pad--xl<?php echo ' '.$color; ?>">
 		<div class="row row--lg">
-			<h1 class="signUp-title"><?php echo $title; ?></h1>
-			<h2 class="signUp-body"><?php echo $body; ?></h2>
+			<h2 class="signUp-title h1"><?php echo $title; ?></h2>
+			<h3 class="signUp-body h2"><?php echo $body; ?></h3>
 
 			<form data-success="<?php the_field('newsletter_success', 'option'); ?>" data-error="<?php the_field('newsletter_error', 'option'); ?>" class="signUp-form validate" action="<?php echo $mce_url; ?>" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 				<div class="inputGroup mc-field-group">
@@ -63,11 +63,3 @@
 <?php } ?>
 <script src="<?php bloginfo('template_url'); ?>/js/inc/mc-validate.js"></script>
 <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-
-<!-- 
-<script type="text/javascript">
-    var __ss_noform = __ss_noform || [];
-    __ss_noform.push(['baseURI', 'https://app-1B4AH0I.sharpspring.com/webforms/receivePostback/MzI2MAcA/']);
-    __ss_noform.push(['endpoint', '90e60f21-bf5d-4ad5-ac43-415c433af061']);
-</script>
-<script type="text/javascript" src="https://koi-1B4AH0I.sharpspring.com/client/noform.js?ver=1.0" ></script> -->

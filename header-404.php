@@ -58,7 +58,7 @@
       <nav class="header-desktop-inner row">
 
         <div class="mainLogo">
-          <h1>
+          <span>
             <a href="/">
               	Sculpt
 
@@ -69,7 +69,7 @@
 	              <use xlink:href="#sculptLogo"></use>
 	            </svg>
             </a>
-          </h1>
+          </span>
         </div>
 
       </nav>

@@ -30,7 +30,7 @@ Template Name: Project Template
   <div class="row row--med pad--lg">
 
       <div class="block s1">
-          <h5 class="blog-date">Posted <?php echo $date.' by '.$author; ?></h5>
+          <p class="blog-date h5">Posted <?php echo $date.' by '.$author; ?></p>
           <h1 class="h0 blog-title"><?php the_title(); ?></h1>
           <h2 class="blog-lede"><?php echo $lede; ?></h2>
       </div>
@@ -119,7 +119,7 @@ while ( have_posts() ): the_post();
 <!-- popular posts module -->
 <section class="popularPosts container pad--sm">
   <div class="row row--lg inline">
-    <h3 class="popularPosts-title">new on the blog</h3>
+    <h2 class="popularPosts-title h3">new on the blog</h2>
   </div>
   <div class="row row--lg inline">
 
