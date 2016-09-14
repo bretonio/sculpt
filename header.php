@@ -28,14 +28,13 @@
   <script>jQuery(function($){$('input, textarea').placeholder();});</script>
   <![endif]-->
 
-  <!-- messy JS snippets for third-party software and analytics INCLUDING Google Analytics -->
-  <?php include_once('partials/head_scripts.php'); ?>
-
   <?php wp_head(); ?>
 
 </head>
 
 <body <?php body_class(); ?>>
+  <!-- messy JS snippets for third-party software and analytics INCLUDING Google Analytics -->
+  <?php include_once('partials/head_scripts.php'); ?>
 
   <!--[if lte IE 9]>
   <div class="container">
