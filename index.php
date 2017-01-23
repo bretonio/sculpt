@@ -1,43 +1,44 @@
 <?php
 get_header();
 
-  while ( have_posts() ) { the_post();
+while ( have_posts() ) { the_post();
 
-    // Check if ACF is enabled and the modules field exists
-    if ( function_exists('get_field') && get_field('modules') !== null ) {
+  // Check if ACF is enabled and the modules field exists
+  if ( function_exists('get_field') && get_field('modules') !== null ) {
+    $modules = get_field('modules');
 
-      // Loop through rows of flexible content field
-      while( the_flexible_field('modules') ) {
+    foreach ($modules as $module) {
+      /* print("<pre>".print_r($module,true)."</pre>"); */
 
-        // Render module template based on the row layout's name
-        $module_name = str_replace('_', '-', get_row_layout());
-        // Use "include(locate_template(...))" instead of "get_template_part" to retain scope
-        include( locate_template( "/modules/$module_name.php" ) );
+      $layout = ucfirst($module['acf_fc_layout']);
 
-      }
+      $render = "\component\\${layout}";
 
-    } else {
-
-      // Standard post content
-      the_title('<h1>', '</h1>');
-      the_content();
-
+      function_exists($render) ? print($render($module)) : print("${layout}");
     }
+
+  } else {
+
+    // Standard post content
+    the_title('<h1>', '</h1>');
+    the_content();
 
   }
 
-  global $post;
-  $post_slug=$post->post_name;
+}
 
-  // this only works if the Services page-slug stays 'services'
-  if ( is_child('services') && $post_slug != "services"):
+global $post;
+$post_slug=$post->post_name;
 
-    // "View All" Link
-    $viewAll = get_field('viewAll_services', 'option');
-    $viewAll_url = '/services';
-    $viewAll_classes = 'services'; // string of optional classnames
-    include( locate_template( "/partials/viewAll.php" ) );
+// this only works if the Services page-slug stays 'services'
+if ( is_child('services') && $post_slug != "services"):
 
-  endif; 
+  // "View All" Link
+  $viewAll = get_field('viewAll_services', 'option');
+  $viewAll_url = '/services';
+  $viewAll_classes = 'services'; // string of optional classnames
+  include( locate_template( "/partials/viewAll.php" ) );
+
+endif; 
 
 get_footer(); ?>

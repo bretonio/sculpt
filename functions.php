@@ -1,5 +1,7 @@
 <?php
 
+require 'src/index.php';
+
 // Hide Admin Bar - Comment this out if need be
 show_admin_bar( false );
 
