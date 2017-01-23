@@ -6,6 +6,16 @@ show_admin_bar( false );
 // Style Editor
 add_editor_style( 'inc/editor.css' );
 
+/**
+ * @see http://mekshq.com/remove-archives-wordpress-improve-seo/
+ */
+add_action('template_redirect', 'redirect_archives');
+function redirect_archives(){
+  if( is_category() || is_tag() || is_date() || is_author() ) {
+    wp_redirect( '/blog' );
+  }
+}
+
 add_action( 'after_setup_theme', function() {
   add_theme_support( 'title-tag' );
   add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
