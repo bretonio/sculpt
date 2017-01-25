@@ -1,4 +1,5 @@
 <?php
+
 class h0 {
   static function attrs($props){
     $output = '';
@@ -83,5 +84,5 @@ class h0 {
 }
 
 function h(){
-    return call_user_func_array(array('h0', 'open'), func_get_args());
+  return call_user_func_array(array('h0', 'open'), func_get_args());
 }

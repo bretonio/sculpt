@@ -12,7 +12,7 @@ while ( have_posts() ) { the_post();
 
       $layout = ucfirst($module['acf_fc_layout']);
 
-      $render = "\component\\${layout}";
+      $render = "\Component\\{$layout}";
 
       function_exists($render) ? print($render($module)) : print("${layout}");
     }

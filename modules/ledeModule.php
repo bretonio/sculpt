@@ -27,28 +27,6 @@
 
 <section class="rte ledeModule container pad--lg<?php echo ' '.$color; ?>">
 	<div class="row row--lg inline">
-		<div class="block s1">
-
-			<?php if ($title != '') { ?>
-				<h2 class="ledeModule-title h3"><?php echo $title; ?></h3>
-			<?php } ?>
-
-			<p class="ledeModule-lede h2"><?php echo $lede; ?></p>
-
-			<?php if ($layout == 'lede_body') { ?>
-				<div class="ledeModule-body">
-					<?php echo apply_filters('the_content', $body); ?>
-				</div>
-		 	<?php } ?>
-
-			<?php if ($cta == true && ($layout == 'lede' || $layout == 'lede_body')) { ?>
-				<a href="<?php echo $cta_url; ?>" class="button"<?php echo $cta_ext ? ' target="_blank"' : '' ; ?>>
-					<span class="button-left"><?php echo $cta_text; ?></span>
-					<span class="button-right icon-arrow"></span>
-				</a>
-			<?php } ?>
-
-		</div>
 
 	<!-- COLUMN 1 -->
 	<?php if ($layout == 'lede_threeUp') { ?>

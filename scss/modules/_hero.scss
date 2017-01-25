@@ -1,18 +1,9 @@
 .hero {
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-
 	// above 768px wide, the page has a border
 	&.u-h_s1 {
 		@media screen and (min-width: $med) {
 			height: calc(100vh - 3rem);
 		}
-	}
-
-	// since .hero-content is blockAb, needs to fill height
-	.row {
-		height: 100%;
 	}
 
 	/*
@@ -61,21 +52,6 @@
 		.hero-body {
 			color: #FFFFFF;
 		}
-	}
-}
-.hero-content {
-	@include blockAb;
-
-	bottom: 0;
-	left: 0;
-	padding-bottom: 3rem;
-
-	@media screen and (min-width: $med) {
-		padding-bottom: 3rem;
-	}
-
-	@media screen and (min-width: $xl) {
-		padding-bottom: 3rem;
 	}
 }
 .hero-title {

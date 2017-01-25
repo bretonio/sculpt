@@ -1,0 +1,14 @@
+.lede {
+
+}
+.lede__title {
+  &::after {
+    content:'';
+    display: block;
+    position: relative;
+    background-color: currentColor;
+    height: 4px;
+    margin-top: 0.5em;
+    width: 100px;
+  }
+}

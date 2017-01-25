@@ -1,6 +1,6 @@
 <?php
 
-namespace component;
+namespace Component;
 
 function Button($children, $props){
   return h('a')([
@@ -9,6 +9,6 @@ function Button($children, $props){
     'target' => $props['target'] || '',
   ])([
     h('span')(['class' => 'button-left'])($children),
-    h('span')(['class' => 'button-right'])(''),
+    h('span')(['class' => 'button-right icon-arrow'])(''),
   ]);
 }

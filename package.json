@@ -1,24 +1,45 @@
 {
   "name": "sculpt_site",
   "version": "1.0.0",
-  "description": "A site for Sculpt, wearesculpt.com",
-  "main": "index.js",
+  "description": "A site for Sculpt.",
+  "style": "src/styles/index.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "",
+    "dev": "concurrently 'npm run dev:js' 'npm run dev:css'",
+    "build:js": "NODE_ENV=production webpack --config webpack.config.js -p",
+    "dev:js": "NODE_ENV=development webpack --config webpack.config.js -d -w",
+    "build:css": "NODE_ENV=production postcss -c postcss.config.js",
+    "dev:css": "NODE_ENV=development postcss -w -c postcss.config.js",
+    "lint": "eslint app/**/**/*.js server/**/**/*.js"
   },
-  "author": "Eric Bailey",
-  "license": "ISC",
+  "author": "estrattonbailey",
+  "license": "Copyright 2017 Sculpt, LLC",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-autoprefixer": "^2.1.0",
-    "grunt-contrib-concat": "^0.5.0",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-newer": "^1.1.0",
-    "grunt-phplint": "0.0.5",
-    "grunt-sass": "^1.0.0",
-    "grunt-svgstore": "^0.5.0",
-    "node-sass": "^3.4.2"
+    "autoprefixer": "^6.5.3",
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "concurrently": "^3.1.0",
+    "cssnano": "^3.7.4",
+    "eslint": "^3.14.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "postcss": "^5.2.11",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^9.1.0",
+    "postcss-prettify": "^0.3.4",
+    "postcss-reporter": "^2.0.0",
+    "postcss-scss": "^0.4.0",
+    "precss": "^1.4.0",
+    "webpack": "^2.1.0-beta.25"
+  },
+  "dependencies": {
+    "babel-loader": "^6.2.10",
+    "postcss-nested": "^1.0.0"
   }
 }

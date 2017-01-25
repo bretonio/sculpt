@@ -1,19 +1,17 @@
 <?php
 
-namespace lib;
+namespace Lib;
 
-function classname($props){
-  $res = '';
+function classname(){
+  $names = func_get_args();
+  $names = gettype($names[0]) === 'array' ? $names[0] : $names;
 
-  if (!$props || gettype($props) !== 'array') {
+  if (!$names || gettype($names) !== 'array') {
     return '';
   }
 
-  foreach($props as $prop){
-    if ($prop) {
-      $res .= ' '.$prop;
-    }
-  }
-
-  return $res;
+  return array_reduce($names, function($res, $name){
+    $res .= $name ? ' '.$name : '';
+    return $res;
+  });
 }

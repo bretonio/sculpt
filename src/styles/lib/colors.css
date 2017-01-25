@@ -1,0 +1,19 @@
+:root {
+  --orange: #ff9254;
+  --dark: #2b2e33; /* deep gray blue */
+  --gray: #e1e1e1;
+}
+
+.theme {
+  color: var(--orange)
+}
+.dark {
+  color: var(--dark)
+}
+.gray {
+  color: bar(--gray)
+}
+
+.opacity025 {
+  opacity: 0.25;
+}

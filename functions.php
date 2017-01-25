@@ -5,9 +5,6 @@ require 'src/index.php';
 // Hide Admin Bar - Comment this out if need be
 show_admin_bar( false );
 
-// Style Editor
-add_editor_style( 'inc/editor.css' );
-
 /**
  * @see http://mekshq.com/remove-archives-wordpress-improve-seo/
  */
@@ -19,8 +16,8 @@ function redirect_archives(){
 }
 
 add_action( 'after_setup_theme', function() {
-  add_theme_support( 'title-tag' );
-  add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
+  /* add_theme_support( 'title-tag' ); */
+  /* add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) ); */
 
   /* Create Custom Image Sizing */
   add_image_size( 'src' );

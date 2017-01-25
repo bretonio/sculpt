@@ -1,0 +1,6 @@
+.hero {
+
+}
+.hero--primary {
+  height: calc(100vh - 3rem);
+}
