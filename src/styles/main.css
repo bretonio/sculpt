@@ -7,6 +7,7 @@
 @import 'lib/floats';
 @import 'lib/z-index';
 @import 'lib/typography';
+@import 'lib/wysiwyg';
 @import 'lib/buttons';
 @import 'lib/forms';
 @import 'lib/lists';

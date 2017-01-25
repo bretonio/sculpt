@@ -5,21 +5,6 @@ namespace Component;
 function LedeModule($props){
   extract($props);
 
-	$col_1_title = get_sub_field('ledeModule_col_1_title');
-	$col_2_title = get_sub_field('ledeModule_col_2_title');
-	$col_3_title = get_sub_field('ledeModule_col_3_title');
-	$col_4_title = get_sub_field('ledeModule_col_4_title');
-
-	$col_1_url = get_sub_field('ledeModule_col_1_url');
-	$col_2_url = get_sub_field('ledeModule_col_2_url');
-	$col_3_url = get_sub_field('ledeModule_col_3_url');
-	$col_4_url = get_sub_field('ledeModule_col_4_url');
-
-	$col_1_body = get_sub_field('ledeModule_col_1_body');
-	$col_2_body = get_sub_field('ledeModule_col_2_body');
-	$col_3_body = get_sub_field('ledeModule_col_3_body');
-	$col_4_body = get_sub_field('ledeModule_col_4_body');
-
 	$layout = $ledeModule_layout;
 
   if ($layout == 'lede_twoUp') {
@@ -29,6 +14,8 @@ function LedeModule($props){
   } elseif ($layout == 'lede_fourUp') {
     $cols = 4;
   }
+
+  $columnClass = "grid-${cols}";
 
   $columns = array();
 
@@ -41,22 +28,21 @@ function LedeModule($props){
   };
 
   $Column = function($column){
-    return h('div')(['class' => 'textModule-block block s1'])([
+    $Title = h('h3')(['class' => 'textModule-title'])($column['title']);
+
+    return h('div')(['class' => 'lede__column ph05'])([
       $column['url'] ? (
-        h('a')([
-          'class' => 'textModule-block-link',
-          'href' => $column['url']
-          ])(
-          h('h3')(['class' => 'textModule-title'])(
-            $column['title']
-          )
+        $column['title'] ? (
+          h('a')([
+            'href' => $column['url']
+          ])($Title)
+        ) : (
+          null
         )
       ) : (
-        h('h3')(['class' => 'textModule-title'])(
-          $column['title']
-        )
+        $Title
       ),
-      h('div')(['class' => 'p'])(apply_filters('the_content', $column['body']))
+      h('div')(['class' => 'wysiwyg'])(apply_filters('the_content', $column['body']))
     ]);
   };
 
@@ -65,9 +51,9 @@ function LedeModule($props){
       \Lib\check($ledeModule_title)(h('h2')(['class' => 'lede__title h3 pb05 dark opacity025'])(
         $ledeModule_title
       )),
-      h('p')(['class' => 'ledeModule-lede h2'])($ledeModule_lede),
+      h('p')(['class' => 'lede__lede h2'])($ledeModule_lede),
       \Lib\check($layout == 'lede_body')(
-        h('div')(['class' => 'ledeModule-body'])(
+        h('div')(['class' => 'lede__body wysiwyg'])(
           apply_filters('the_content', $ledeModule_body)
         )
       ),
@@ -79,8 +65,10 @@ function LedeModule($props){
         ])
       )
     ]),
-    h('div')(['class' => 'flex flex-items-start flex-wrap'])(
-      array_map($Column, $columns)
+    h('div')(['class' => 'mhn05 mt1'])(
+      h('div')(['class' => \Lib\classname('lede__columns flex flex-items-start flex-wrap', $columnClass)])(
+        array_map($Column, $columns)
+      )
     )
   ]);
 }

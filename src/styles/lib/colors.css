@@ -1,7 +1,12 @@
 :root {
   --orange: #ff9254;
+  --light-orange: #ffa26e;
   --dark: #2b2e33; /* deep gray blue */
-  --gray: #e1e1e1;
+  --gray1: #e1e1e1;
+  --gray2: #cccccc;
+  --gray3: #999999;
+  --gray4: #6b6b6b;
+  --gray5: #262626;
 }
 
 .theme {
@@ -10,8 +15,8 @@
 .dark {
   color: var(--dark)
 }
-.gray {
-  color: bar(--gray)
+.gray1 {
+  color: var(--gray1)
 }
 
 .opacity025 {

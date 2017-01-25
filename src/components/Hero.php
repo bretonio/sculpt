@@ -21,14 +21,13 @@ function Hero($props){
 
         h('h2')(['class' => 'hero-body'])($hero_body),
 
-        $hero_cta_enabled ? (
+        \Lib\check($hero_cta_enabled)(
           \Component\Button($hero_cta, [
             'url' => $hero_cta_url,
             'class' => 'hero-cta',
             'target' => $cta_is_external ? '_blank' : ''
           ])
-        ) : null
-
+        )
       ])
     )
   );
